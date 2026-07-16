@@ -1,0 +1,5221 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{titlesec}
+\titleformat{\section}
+{\Large\bfseries}
+{שאלה \thesection}
+{0pt}
+{}
+[]
+
+\AtBeginDocument{
+\renewcommand{\labelenumi}{\bfseries)\alph{enumi}(}
+\renewcommand{\labelenumii}{\bfseries\roman{enumii}.}
+}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "C:/Users/Inbar Avigdor/lyx files/MacrosHeb.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם נזהה בין 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ ל-
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+ בצורה הרגילה, נקבל ש-
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא פשוט המידה המרוכבת שנתונה ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $d\mu=e^{i\theta}d\theta$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $K\subseteq\kaliComplex$
+\end_inset
+
+ הטווח של 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ ברור ש-
+\begin_inset Formula $\mu_{1},\mu_{2}$
+\end_inset
+
+ לא אטומיות ולכן 
+\begin_inset Formula $K$
+\end_inset
+
+ קמורה וקומפקטית.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $t\in\left[0,2\pi\right]$
+\end_inset
+
+ כלשהו.
+ תהא 
+\begin_inset Formula $E$
+\end_inset
+
+ הקשת 
+\begin_inset Formula $\left[t-\nicefrac{\pi}{2},t+\nicefrac{\pi}{2}\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים
+\begin_inset Formula 
+\[
+\mu\left(E\right)=\intop_{t-\nicefrac{\pi}{2}}^{t+\nicefrac{\pi}{2}}e^{i\theta}d\theta=ie^{i\left(t-\nicefrac{\pi}{2}\right)}-ie^{i\left(t+\nicefrac{\pi}{2}\right)}=2e^{it}
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $2e^{it}\in K$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left[0,2\pi\right]$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $K$
+\end_inset
+
+ מכילה את המעגל ברדיוס 
+\begin_inset Formula $2$
+\end_inset
+
+ סביב 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מקמירות 
+\begin_inset Formula $K$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\overline{D\left(0,2\right)}\subseteq K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני לכל לכל 
+\begin_inset Formula $E\subseteq T$
+\end_inset
+
+ מדידה נוכל לקחת 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ כלשהו עבורו 
+\begin_inset Formula $e^{-i\alpha}\intop_{E}e^{i\theta}d\theta\geq0$
+\end_inset
+
+ ואז נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{E}e^{i\theta}d\theta\right| & =\left|e^{-i\alpha}\intop_{E}e^{i\theta}d\theta\right|=\text{Re}\intop_{E}e^{i\left(\theta-\alpha\right)}d\theta=\intop_{E}\cos\left(\theta-\alpha\right)d\theta\\
+ & =\intop_{E+\alpha}\cos\left(\theta\right)d\theta\leq\intop_{0}^{2\pi}\max\left\{ 0,\cos\theta\right\} d\theta=\intop_{-\nicefrac{\pi}{2}}^{\nicefrac{\pi}{2}}\cos\theta d\theta=2
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $K\subseteq\overline{D\left(0,2\right)}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $K$
+\end_inset
+
+ היא בדיוק הדיסק הסגור ברדיוס 
+\begin_inset Formula $2$
+\end_inset
+
+ עם מרכז ב-
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נסמן ב-
+\begin_inset Formula $S$
+\end_inset
+
+ את הריבוע עם הקודקודים בתרגיל.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right) & =\begin{cases}
+-2 & 0\leq x\leq\frac{1}{2}\\
+2 & \frac{1}{2}<x\leq1
+\end{cases}\\
+g\left(x\right) & =\begin{cases}
+2 & x\in\left[0,\frac{1}{4}\right]\cup\left[\frac{3}{4},1\right]\\
+-2 & x\in\left(\frac{1}{4},\frac{3}{4}\right)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $E\subseteq\left[0,1\right]$
+\end_inset
+
+ מדידה מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\mu_{1}\left(E\right) & =2\left(m\left(E\cap\left[\frac{1}{2},1\right]\right)-m\left(E\cap\left[0,\frac{1}{2}\right]\right)\right)\\
+\mu_{2}\left(E\right) & =2\left(m\left(E\cap\left(\left[0,\frac{1}{4}\right]\cup\left[\frac{3}{4},1\right]\right)\right)-m\left(E\cap\left[\frac{1}{4},\frac{3}{4}\right]\right)\right)
+\end{align*}
+
+\end_inset
+
+נקבע 
+\begin_inset Formula $E$
+\end_inset
+
+ כזו.
+ נסמן 
+\begin_inset Formula $\alpha_{i}=m\left(E\cap\left[\nicefrac{\left(i-1\right)}{4},\nicefrac{i}{4}\right]\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i=1,2,3,4$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\mu_{1}\left(E\right) & =2\left(\alpha_{4}-\alpha_{2}+\alpha_{3}-\alpha_{1}\right)\\
+\mu_{2}\left(E\right) & =2\left(\alpha_{4}-\alpha_{2}-\left(\alpha_{3}-\alpha_{1}\right)\right)
+\end{align*}
+
+\end_inset
+
+ולכן אם נסמן 
+\begin_inset Formula $p=\alpha_{4}-\alpha_{2},q=\alpha_{3}-\alpha_{1}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\left|\mu_{1}\left(E\right)\right|+\left|\mu_{2}\left(E\right)\right|=2\left(\left|p+q\right|+\left|p-q\right|\right)
+\]
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+\left|p+q\right|+\left|p-q\right|=\begin{cases}
+2p & p\geq q,p\geq-q\\
+-2q & p\geq q,p<-q\\
+2q & p<q,p\geq-q\\
+-2p & p<q,p<-q
+\end{cases}
+\]
+
+\end_inset
+
+ולכן בכל מקרה
+\begin_inset Formula 
+\[
+\left|p+q\right|+\left|p-q\right|\leq2\max\left\{ \left|p\right|,\left|q\right|\right\} 
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\left|\mu_{1}\left(E\right)\right|+\left|\mu_{2}\left(E\right)\right|=4\max\left\{ \left|\alpha_{4}-\alpha_{2}\right|,\left|\alpha_{3}-\alpha_{1}\right|\right\} 
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $0\leq\alpha_{1},\alpha_{2},\alpha_{2},\alpha_{4}\leq\nicefrac{1}{4}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|\alpha_{4}-\alpha_{2}\right|,\left|\alpha_{3}-\alpha_{1}\right|\leq\nicefrac{1}{4}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left|\mu_{1}\left(E\right)\right|+\left|\mu_{2}\left(E\right)\right|\leq1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $E\subseteq\left[0,1\right]$
+\end_inset
+
+ מדידה.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה שהטווח של מוכל 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ב-
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן, 
+\begin_inset Formula $\mu_{1},\mu_{2}$
+\end_inset
+
+ הן לא אטומיות ולכן הטווח של 
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא קבוצה קמורה.
+\begin_inset Newline newline
+\end_inset
+
+אז כדי לסיים מספיק להראות שהקודקודים של 
+\begin_inset Formula $S$
+\end_inset
+
+ נמצאים בטווח של 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אכן מתקיים
+\begin_inset Formula 
+\begin{align*}
+\mu\left(\left[0,\frac{1}{2}\right]\right) & =\left(-1,0\right)\\
+\mu\left(\left[\frac{1}{4},\frac{3}{4}\right]\right) & =\left(0,-1\right)\\
+\mu\left(\left[\frac{1}{2},1\right]\right) & =\left(1,0\right)\\
+\mu\left(\left[0,\frac{1}{4}\right]\cup\left[\frac{3}{4},1\right]\right) & =\left(0,1\right)
+\end{align*}
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $S$
+\end_inset
+
+ מרחב האודסורף קומפקטי, 
+\begin_inset Formula $Y\subseteq C\left(S\right)$
+\end_inset
+
+ תת-מרחב סגור, 
+\begin_inset Formula $K\subseteq S$
+\end_inset
+
+ קומפקטית, עבורם לכל 
+\begin_inset Formula $\mu\in Y^{\perp}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\mu\right|\left(K\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $\phi\in C\left(S\right),g\in C\left(K\right)$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $\phi>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|g\right|<\phi\mid_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נוכיח שקיים 
+\begin_inset Formula $f\in Y$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $f\mid_{K}=g$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|f\right|<\phi$
+\end_inset
+
+ בכל 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\phi>0$
+\end_inset
+
+ נוכל להגדיר 
+\begin_inset Formula $Y_{1}=\left\{ \nicefrac{f}{\phi}:f\in Y\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $Y_{1}\subseteq C\left(S\right)$
+\end_inset
+
+, וגם לוודא ש-
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ סגור לחיבור ולכפל בסקלר, ולכן 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ תת-מרחב.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן אם 
+\begin_inset Formula $\left\{ h_{n}\right\} $
+\end_inset
+
+ סדרה ב-
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $h_{n}\rightarrow h$
+\end_inset
+
+ עבור 
+\begin_inset Formula $h\in C\left(S\right)$
+\end_inset
+
+ כלשהי, אז יש 
+\begin_inset Formula $\phi h_{n}\in Y$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ואז 
+\begin_inset Formula 
+\[
+\left\Vert \phi h_{n}-\phi h\right\Vert _{\infty}\leq\left\Vert \phi\right\Vert _{\infty}\left\Vert h_{n}\left(s\right)-h\left(s\right)\right\Vert _{\infty}\rightarrow0
+\]
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $Y$
+\end_inset
+
+ סגור נקבל 
+\begin_inset Formula $\phi h\in Y$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $h\in Y_{1}$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ תת-מרחב סגור.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\mu_{1}\in Y_{1}^{\perp}$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $f\in Y$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\intop_{S}\nicefrac{f}{\phi}d\mu_{1}=0$
+\end_inset
+
+ ולכן אם נסמן 
+\begin_inset Formula $\mu$
+\end_inset
+
+ המידה שעבורה 
+\begin_inset Formula $d\mu=\nicefrac{1}{\phi}d\mu_{1}$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\mu\in Y^{\perp}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left|\mu\right|\left(K\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\nicefrac{1}{\phi}>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $d\left|\mu\right|=\nicefrac{1}{\phi}d\left|\mu_{1}\right|$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $\intop_{K}\nicefrac{1}{\phi}d\left|\mu_{1}\right|=0$
+\end_inset
+
+.
+ אבל אינטגרל של פונקציה רציפה חיובית כנגד מידה חיובית מתאפס אם ורק אם הקבוצה
+ עליה עושים את האינטגרל היא ממידה 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left|\mu_{1}\right|\left(K\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה שלכל 
+\begin_inset Formula $\mu_{1}\in Y_{1}^{\perp}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\mu_{1}\right|\left(K\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף נסמן 
+\begin_inset Formula $g_{1}=\nicefrac{g}{\phi}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $g_{1}\in C\left(K\right)$
+\end_inset
+
+ ומכך ש-
+\begin_inset Formula $\left|g\right|<\phi$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left|g_{1}\right|<1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז התנאים של משפט האינטרפוליה של בישוף מתקיים עבור 
+\begin_inset Formula $Y_{1},K,g_{1}$
+\end_inset
+
+ ולכן קיימת פונקציה 
+\begin_inset Formula $f_{1}\in Y_{1}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $f_{1}\mid_{K}=g_{1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|f_{1}\right|<1$
+\end_inset
+
+ בכל 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $f=\phi f_{1}$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $f\in Y$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f\mid_{K}=\phi g_{1}=g$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|f\right|<\phi$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $T$
+\end_inset
+
+ מעגל היחידה, ויהא 
+\begin_inset Formula $P$
+\end_inset
+
+ האוסף של מידות הסתברות בורל על 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\mu\in P$
+\end_inset
+
+ כלשהי.
+ אם קיימות 
+\begin_inset Formula $A,B\subseteq T$
+\end_inset
+
+ בורל עבורן 
+\begin_inset Formula $A\cap B=\emptyset,A\cup B=T$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\mu\left(A\right),\mu\left(B\right)>0$
+\end_inset
+
+, אז נוכל להגדיר 
+\begin_inset Formula 
+\begin{align*}
+\mu_{A}\left(E\right) & =\mu\left(A\right)^{-1}\mu\left(E\cap A\right)\\
+\mu_{B}\left(E\right) & =\mu\left(B\right)^{-1}\mu\left(E\cap B\right)
+\end{align*}
+
+\end_inset
+
+ ואז 
+\begin_inset Formula $\mu_{A},\mu_{B}\in P$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\mu=\mu\left(A\right)\mu_{A}+\mu\left(B\right)\mu_{B}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mu\left(A\right)+\mu\left(B\right)=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mu\left(A\right),\mu\left(B\right)\in\left(0,1\right)$
+\end_inset
+
+, וכמו כן ברור ש-
+\begin_inset Formula $\mu_{A}\neq\mu_{B}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\mu_{A}\left(A\right)=1,\mu_{B}\left(A\right)=0$
+\end_inset
+
+.
+ אז במקרה זה 
+\begin_inset Formula $\mu$
+\end_inset
+
+ אינה נקודת קיצון של 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה שאם 
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא כן נקודת קיצון של 
+\begin_inset Formula $P$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $A\subseteq T$
+\end_inset
+
+ קבוצת בורל מתקיים 
+\begin_inset Formula $\mu\left(A\right)\in\left\{ 0,1\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $\theta\in\left[0,2\pi\right]$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $E_{\theta}=\left\{ e^{it}:t\in\left[0,\theta\right]\right\} $
+\end_inset
+
+.
+ נקבע 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נקודת קיצון של 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ אז ממה שראינו, 
+\begin_inset Formula $\mu\left(E_{\theta}\right)\in\left\{ 0,1\right\} $
+\end_inset
+
+ לכל 
+\begin_inset Formula $\theta\in\left[0,2\pi\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $E_{2\pi}=T$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\mu\left(E_{2\pi}\right)=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\{ \theta:\mu\left(E_{\theta}\right)=1\right\} $
+\end_inset
+
+ לא ריקה.
+\begin_inset Newline newline
+\end_inset
+
+אז נוכל לסמן 
+\begin_inset Formula $\theta_{0}=\inf\left\{ \theta:\mu\left(E_{\theta}\right)=1\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $\theta_{n}\in\left(\theta_{0},2\pi\right]$
+\end_inset
+
+ סדרה יורדת עבורה 
+\begin_inset Formula $\mu\left(E_{\theta_{n}}\right)=1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\theta_{n}\rightarrow\theta_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $\bigcap_{n}E_{\theta_{n}}=E_{\theta_{0}}$
+\end_inset
+
+ ו-
+\begin_inset Formula $E_{\theta_{n}}$
+\end_inset
+
+ יורדת בהכלה, ולכן נקבל 
+\begin_inset Formula $\mu\left(E_{\theta_{n}}\right)\rightarrow\mu\left(E_{\theta_{0}}\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mu\left(E_{\theta_{0}}\right)=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני אם ניקח סדרה עולה כלשהי 
+\begin_inset Formula $\phi_{n}\in\left[0,\theta_{0}\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\phi_{n}\rightarrow\theta_{0}$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\mu\left(E_{\phi_{n}}\right)\neq1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mu\left(E_{\phi_{n}}\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $\bigcup_{n}E_{\phi_{n}}=\left\{ e^{it}:\left[0,\theta_{0}\right)\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $E_{\phi_{n}}$
+\end_inset
+
+ עולה בהכלה, ולכן 
+\begin_inset Formula $\mu\left(E_{\phi_{n}}\right)\rightarrow\mu\left(\left\{ e^{it}:\left[0,\theta_{0}\right)\right\} \right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mu\left(\left\{ e^{it}:\left[0,\theta_{0}\right)\right\} \right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\[
+\mu\left(\left\{ e^{i\theta_{0}}\right\} \right)=\mu\left(E_{\theta_{0}}\setminus\left\{ e^{it}:\left[0,\theta_{0}\right)\right\} \right)=\mu\left(E_{\theta_{0}}\right)-\mu\left(\left\{ e^{it}:\left[0,\theta_{0}\right)\right\} \right)=1-0=1
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נתמכת על היחידון 
+\begin_inset Formula $\left\{ e^{i\theta_{0}}\right\} $
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $W$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ ב-
+\begin_inset Formula $G$
+\end_inset
+
+, ונראה שקיימת 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $U^{-1}=U$
+\end_inset
+
+ וגם 
+\begin_inset Formula $U\cdot U\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אכן, מתקיים 
+\begin_inset Formula $e\cdot e=e$
+\end_inset
+
+ ומכך שהכפל רציף יש סביבות 
+\begin_inset Formula $V_{1},V_{2}$
+\end_inset
+
+ של 
+\begin_inset Formula $e$
+\end_inset
+
+ עבורן 
+\begin_inset Formula $V_{1}V_{2}\subseteq W$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $U=V_{1}\cap V_{2}\cap V_{1}^{-1}\cap V_{2}^{-1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לקיחת הופכי היא הומיאומורפיזם של 
+\begin_inset Formula $G$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $U$
+\end_inset
+
+ פתוחה.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן 
+\begin_inset Formula $e\in V_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $e\in V_{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $e^{-1}=e$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $e\in U$
+\end_inset
+
+, כלומר אכן 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן מכך שלקיחת הופכי היא חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל, מתקיים 
+\begin_inset Formula $U^{-1}=U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף, מתקיים 
+\begin_inset Formula $U\subseteq V_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $U\subseteq V_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $U\cdot U\subseteq V_{1}V_{2}\subseteq W$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $K,C\subseteq G$
+\end_inset
+
+, 
+\begin_inset Formula $K$
+\end_inset
+
+ קומפקטית, 
+\begin_inset Formula $C$
+\end_inset
+
+ סגורה ו-
+\begin_inset Formula $K\cap C=\emptyset$
+\end_inset
+
+.
+ נראה שיש 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left(KV\right)\cap\left(CV\right)=\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $K=\emptyset$
+\end_inset
+
+ אז לכל סביבה 
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $e$
+\end_inset
+
+ שנבחר מתקיים 
+\begin_inset Formula $K+V=\emptyset$
+\end_inset
+
+ וסיימנו.
+\begin_inset Newline newline
+\end_inset
+
+אז נניח 
+\begin_inset Formula $K\neq\emptyset$
+\end_inset
+
+, ונקבע 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ כלשהי.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $C$
+\end_inset
+
+ סגור ו-
+\begin_inset Formula $x\notin C$
+\end_inset
+
+, נקבל ש-
+\begin_inset Formula $e\notin x^{-1}C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $G\setminus\left(x^{-1}C\right)$
+\end_inset
+
+ היא סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ אז ממה שראינו, יש 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $V_{x}^{-1}=V_{x}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $V_{x}\cdot V_{x}\cdot V_{x}\subseteq G\setminus\left(x^{-1}C\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $xV_{x}^{3}\subseteq G\setminus C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $xV_{x}^{3}\cap C=\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אם 
+\begin_inset Formula $a,b,c\in V_{x}$
+\end_inset
+
+, מתקיים גם 
+\begin_inset Formula $c^{-1}\in V_{x}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $xabc^{-1}\notin C$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $xab\notin Cc$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a,b,c\in V_{x}$
+\end_inset
+
+, זה מראה 
+\begin_inset Formula $\left(xV_{x}^{2}\right)\cap\left(CV_{x}\right)=\emptyset$
+\end_inset
+
+.
+ את הבניה הזו עושים לכל 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ בעלת התכונות האלה.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\{ xV_{x}\right\} $
+\end_inset
+
+ הוא כיסוי פתוח של 
+\begin_inset Formula $K$
+\end_inset
+
+, ולכן יש 
+\begin_inset Formula $x_{1},\ldots,x_{n}$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $K\subseteq\bigcup_{i=1}^{n}x_{i}V_{x_{i}}$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $V=\bigcap_{i=1}^{n}V_{x_{i}}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ ומתקיים
+\begin_inset Formula 
+\[
+KV=\bigcup_{i=1}^{n}x_{i}V_{x_{i}}V\subseteq\bigcup_{i=1}^{n}x_{i}V_{x_{i}}^{2}
+\]
+
+\end_inset
+
+אבל ממה שראינו 
+\begin_inset Formula $x_{i}V_{x_{i}}^{2}\cap CV_{x_{i}}=\emptyset$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, ומתקיים 
+\begin_inset Formula $V\subseteq V_{x_{i}}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(\bigcup_{i=1}^{n}x_{i}V_{x_{i}}^{2}\right)\cap CV=\emptyset$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $KV\cap CV=\emptyset$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $\kaliBBasis$
+\end_inset
+
+ בסיס מקומי ב-
+\begin_inset Formula $e$
+\end_inset
+
+ עבור הטופולוגיה של 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $W\in\kaliBBasis$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $G\setminus W$
+\end_inset
+
+ היא קבוצה סגורה, ו-
+\begin_inset Formula $G\setminus W\cap\left\{ e\right\} =\emptyset$
+\end_inset
+
+, וכמובן 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ קומפקטית.
+\begin_inset Newline newline
+\end_inset
+
+אז מהמשפט הקודם, יש 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $V\cap\left(\left(G\setminus W\right)V\right)=\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נבחין כי 
+\begin_inset Formula $\left(G\setminus W\right)V$
+\end_inset
+
+ היא קבוצה פתוחה, ולכן 
+\begin_inset Formula $G\setminus\left(\left(G\setminus W\right)V\right)$
+\end_inset
+
+ היא קבוצה סגורה שמכילה את 
+\begin_inset Formula $V$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\overline{V}\cap\left(\left(G\setminus W\right)V\right)=\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בפרט 
+\begin_inset Formula $\overline{V}\cap\left(G\setminus W\right)=\emptyset$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\overline{V}\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו ניקח 
+\begin_inset Formula $U\in\kaliBBasis$
+\end_inset
+
+ כלשהי שמקיימת 
+\begin_inset Formula $U\subseteq V$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\overline{U}\subseteq\overline{V}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{U}\subseteq W$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נניח שכל היחידונים ב-
+\begin_inset Formula $G$
+\end_inset
+
+ סגורים.
+ אז לכל 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+, הקבוצות 
+\begin_inset Formula $\left\{ x\right\} ,\left\{ y\right\} $
+\end_inset
+
+ סגורות וקומפקטיות, שוב מאותו משפט נקבל שיש 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $xV\cap yV=\emptyset$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $xV,yV$
+\end_inset
+
+ הן סביבות של 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בהתאמה ולכן 
+\begin_inset Formula $G$
+\end_inset
+
+ האוסדורף כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נתחיל עם טענת עזר.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $A,B\subseteq G$
+\end_inset
+
+ קשירות כלשהן.
+ נראה ש-
+\begin_inset Formula $AB,A^{-1}$
+\end_inset
+
+ גם הן קשירות.
+\begin_inset Newline newline
+\end_inset
+
+ראשית, אם 
+\begin_inset Formula $U,V\subseteq G$
+\end_inset
+
+ פתוחות ומקיימות
+\begin_inset Formula 
+\begin{align*}
+U\cap A^{-1} & \neq\emptyset,\\
+\left(U\cup V\right)\cap A^{-1} & =A^{-1}\\
+U\cap V\cap A & =\emptyset
+\end{align*}
+
+\end_inset
+
+אז מתקיים
+\begin_inset Formula 
+\begin{align*}
+U^{-1}\cap A & \neq\emptyset\\
+\left(U^{-1}\cup V^{-1}\right)\cap A & =A\\
+U^{-1}\cap V^{-1}\cap A^{-1} & =\emptyset
+\end{align*}
+
+\end_inset
+
+גם 
+\begin_inset Formula $U^{-1},V^{-1}$
+\end_inset
+
+ פתוחות, ולכן מכך ש-
+\begin_inset Formula $A$
+\end_inset
+
+ קשירה נקבל 
+\begin_inset Formula $V^{-1}\cap A=\emptyset$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $V\cap A^{-1}=\emptyset$
+\end_inset
+
+.
+ זה מראה ש- 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ קשירה.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $B=\emptyset$
+\end_inset
+
+ ברור ש-
+\begin_inset Formula $AB$
+\end_inset
+
+ קשירה.
+ נניח 
+\begin_inset Formula $B\neq\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נניח 
+\begin_inset Formula $U,V\subseteq G$
+\end_inset
+
+ פתוחות ומקיימות
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+U\cap AB & \neq\emptyset,\\
+\left(U\cup V\right)\cap AB & =AB\\
+U\cap V\cap AB & =\emptyset
+\end{align*}
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left(U\cup V\right)\cap aB & =aB\\
+U\cap V\cap aB & =\emptyset
+\end{align*}
+
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $aB$
+\end_inset
+
+ קשירה, מתקיים 
+\begin_inset Formula $aB\subseteq U,aB\cap V=\emptyset$
+\end_inset
+
+ או 
+\begin_inset Formula $aB\subseteq V,aB\cap U=\emptyset$
+\end_inset
+
+ ובכל מקרה נקבל 
+\begin_inset Formula $a\in UB^{-1}\cup VB^{-1}$
+\end_inset
+
+ ו-
+\begin_inset Formula $a\notin UB^{-1}\cap VB^{-1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\left(UB^{-1}\cup VB^{-1}\right)\cap A & =A\\
+UB^{-1}\cap VB^{-1}\cap A & =\emptyset
+\end{align*}
+
+\end_inset
+
+כמו כן 
+\begin_inset Formula $UB^{-1},VB^{-1}$
+\end_inset
+
+ פתוחות, ו-
+\begin_inset Formula $UB^{-1}\neq\emptyset$
+\end_inset
+
+, כי 
+\begin_inset Formula $U,B$
+\end_inset
+
+ שתיהן לא ריקות.
+\begin_inset Newline newline
+\end_inset
+
+אז מקשירות 
+\begin_inset Formula $A$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $VB^{-1}\cap A=\emptyset$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $b\notin B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $ab\notin V$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $V\cap AB=\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $AB$
+\end_inset
+
+ קשירה.
+\begin_inset Newline newline
+\end_inset
+
+זה מסיים את טענת העזר.
+\begin_inset Newline newline
+\end_inset
+
+עכשי ומכך ש-
+\begin_inset Formula $H$
+\end_inset
+
+ קשירה, נקבל 
+\begin_inset Formula $H^{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $H^{-1}$
+\end_inset
+
+ קשירות.
+ כמו כן 
+\begin_inset Formula $e\in H^{-1},H^{2}$
+\end_inset
+
+, ולכן מכך ש-
+\begin_inset Formula $H$
+\end_inset
+
+ רכיב הקשירות של 
+\begin_inset Formula $H$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $H^{-1}\subseteq H$
+\end_inset
+
+ וגם 
+\begin_inset Formula $H^{2}\subseteq H$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $H$
+\end_inset
+
+ היא תת-חבורה.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף, אם 
+\begin_inset Formula $x\in G$
+\end_inset
+
+, אז כפל ב-
+\begin_inset Formula $x$
+\end_inset
+
+ הוא הומיאומורפיזם ולכן 
+\begin_inset Formula $x^{-1}Hx$
+\end_inset
+
+ קשירה, ומתקיים 
+\begin_inset Formula $e=x^{-1}ex\in x^{-1}Hx$
+\end_inset
+
+, ולכן נקבל 
+\begin_inset Formula $x^{-1}Hx\subseteq H$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל לכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ גם 
+\begin_inset Formula $H\subseteq x^{-1}\left(xHx^{-1}\right)x\subseteq x^{-1}Hx$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה 
+\begin_inset Formula $x^{-1}Hx=H$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+, כלומר אכן 
+\begin_inset Formula $H$
+\end_inset
+
+ תת-חבורה נורמלית של 
+\begin_inset Formula $G$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה טופולוגית, 
+\begin_inset Formula $H\subseteq G$
+\end_inset
+
+ תת-חבורה פתוחה.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $h\in H$
+\end_inset
+
+ ו-
+\begin_inset Formula $x\in G$
+\end_inset
+
+, וגם 
+\begin_inset Formula $xh\in H$
+\end_inset
+
+, אז 
+\begin_inset Formula $x\in h^{-1}H=H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן אם 
+\begin_inset Formula $h\in H,x\in G\setminus H$
+\end_inset
+
+, אז 
+\begin_inset Formula $xh\in G\setminus H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x\in G\setminus H$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $xH\subseteq G\setminus H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $x\in G\setminus H$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x=xe\in xH$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה את השוויון 
+\begin_inset Formula $G\setminus H=\bigcup_{x\in G\setminus H}xH$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $H$
+\end_inset
+
+ פתוחה, גם 
+\begin_inset Formula $xH$
+\end_inset
+
+ פתוחה לכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $G\setminus H$
+\end_inset
+
+ פתוחה כאיחוד של קבוצות פתוחות, ולכן 
+\begin_inset Formula $H$
+\end_inset
+
+ סגורה כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $A\subseteq C\left(G\right)$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $C_{A}$
+\end_inset
+
+ את אוסף הפונקציות 
+\begin_inset Formula $f\in C\left(G\right)$
+\end_inset
+
+ עבורן 
+\begin_inset Formula $f=0$
+\end_inset
+
+ מחוץ ל-
+\begin_inset Formula $A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $0\leq f\leq1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נטען שלכל 
+\begin_inset Formula $W$
+\end_inset
+
+ קבוצת פתוחה מתקיים 
+\begin_inset Formula $m\left(W\right)=\sup_{f\in C_{W}}\intop_{G}fdm$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ברור שאם 
+\begin_inset Formula $f\in C_{W}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\intop_{G}fdm\leq m\left(W\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\sup_{f\in C_{W}}\intop_{G}fdm\leq m\left(W\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בכיוון השני, 
+\begin_inset Formula $G$
+\end_inset
+
+ היא האוסדורף קומפקטית ולכן מהלמה של אוריסון לכל 
+\begin_inset Formula $K\subseteq W$
+\end_inset
+
+ קומפקטית יש 
+\begin_inset Formula $f_{K}\in C_{W}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $f_{K}=1$
+\end_inset
+
+ על 
+\begin_inset Formula $K$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\sup_{f\in C_{W}}\intop_{G}fdm\geq\intop_{G}f_{K}dm\geq m\left(K\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $K\subseteq W$
+\end_inset
+
+ קומפקטית.
+ מרגולריות 
+\begin_inset Formula $m$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\sup_{f\in C_{W}}\intop_{G}fdm\geq m\left(W\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אכן קיבלנו את הדרוש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו אם 
+\begin_inset Formula $W$
+\end_inset
+
+ פתוחה, 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ כלשהי.
+ נבחין כי אם 
+\begin_inset Formula $f\in C_{W}$
+\end_inset
+
+, אז 
+\begin_inset Formula $L_{x^{-1}}f\in C_{xW}$
+\end_inset
+
+, כי אם 
+\begin_inset Formula $f\left(y\right)=0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $y\notin W$
+\end_inset
+
+, אז 
+\begin_inset Formula $f\left(x^{-1}y\right)=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $y\notin xW$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל עכשיו אם 
+\begin_inset Formula $f\in C\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $L_{x^{-1}}f\in C_{xW}$
+\end_inset
+
+, אז 
+\begin_inset Formula $L_{x}L_{x^{-1}}f\in C_{x^{-1}xW}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $f\in C_{W}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $C_{xW}=L_{x^{-1}}\left(C_{W}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $W$
+\end_inset
+
+ פתוחה 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+m\left(xW\right)=\sup_{f\in C_{xW}}\intop_{G}fdm=\sup_{f\in C_{W}}\intop_{G}L_{x^{-1}}fdm=\sup_{f\in C_{W}}\intop_{G}fdm=m\left(W\right)
+\]
+
+\end_inset
+
+ומרגולריות חיצונית, לכל 
+\begin_inset Formula $E\subseteq G$
+\end_inset
+
+ בורל ולכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+m\left(xE\right) & =\inf\left\{ m\left(W\right):xE\subseteq W,W\text{ open}\right\} \\
+ & =\inf\left\{ m\left(x^{-1}W\right):E\subseteq x^{-1}W,W\text{ open}\right\} \\
+ & =\inf\left\{ m\left(W\right):E\subseteq W,W\text{ open}\right\} \\
+ & =m\left(E\right)
+\end{align*}
+
+\end_inset
+
+וזה מראה ש-
+\begin_inset Formula $m$
+\end_inset
+
+ אינווריאנטית להזזות כלשהן.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נקבע 
+\begin_inset Formula $x_{0}\in V$
+\end_inset
+
+ כלשהו.
+ אז לכל 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in xx_{0}^{-1}V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז האוסף 
+\begin_inset Formula $\left\{ xV\right\} _{x\in G}$
+\end_inset
+
+ הוא כיסוי פתוח של 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מקומפקטיות, יש 
+\begin_inset Formula $x_{1},\ldots,x_{n}$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $G=\bigcup_{i}x_{i}V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $1=m\left(G\right)\leq\sum_{i=1}^{n}m\left(x_{i}V\right)=n\cdot m\left(V\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $m\left(V\right)\geq n^{-1}>0$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $f\in A\cap B$
+\end_inset
+
+.
+ נבחין כי 
+\begin_inset Formula $A,B$
+\end_inset
+
+ הם מרחבי הילברט, 
+\begin_inset Formula $\left\{ e_{n}:n\geq0\right\} $
+\end_inset
+
+ קבוצה אורתוגנלית מקסימלית ב-
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ e_{-n}+ne_{n}:n\geq1\right\} $
+\end_inset
+
+ קבוצה אורתוגונלית מקסימלית ב-
+\begin_inset Formula $B$
+\end_inset
+
+.
+ לכן מתקיים 
+\begin_inset Formula 
+\begin{align*}
+f & =\sum_{n=1}^{\infty}\left\langle f,e_{-n}+ne_{n}\right\rangle \left(e_{-n}+ne_{n}\right)\\
+f & =\sum_{n=0}^{\infty}\left\langle f,e_{n}\right\rangle e_{n}
+\end{align*}
+
+\end_inset
+
+כאשר ההתכנסות של הטורים הם בנורמת 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ כמובן.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\left\langle f,e_{n}\right\rangle e_{n}=\sum_{n=1}^{\infty}\left(\left\langle f,e_{-n}+ne_{n}\right\rangle e_{-n}+n\left\langle f,e_{-n}+ne_{n}\right\rangle e_{n}\right)
+\]
+
+\end_inset
+
+אבל גם 
+\begin_inset Formula $\left\{ e_{n}:n\in\kaliInteger\right\} $
+\end_inset
+
+ היא קבוצה אורתוגונלית מקסימלית, ולכן השוויון האחרון גורר שהמקדמים של כל
+ 
+\begin_inset Formula $e_{n}$
+\end_inset
+
+ בשני האגפים הם שווים.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $\left\langle f,e_{0}\right\rangle =0$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+n\left\langle f,e_{-n}+ne_{n}\right\rangle  & =\left\langle f,e_{n}\right\rangle \\
+\left\langle f,e_{-n}+ne_{n}\right\rangle  & =0
+\end{align*}
+
+\end_inset
+
+מהמשוואה השני נקבל 
+\begin_inset Formula $\left\langle f,e_{-n}\right\rangle =-n\left\langle f,e_{n}\right\rangle $
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\begin{align*}
+\left\langle f,e_{n}\right\rangle  & =n\left\langle f,e_{-n}+ne_{n}\right\rangle =n\left\langle f,e_{-n}\right\rangle +n^{2}\left\langle f,e_{n}\right\rangle \\
+ & =n\left(-n\left\langle f,e_{n}\right\rangle \right)+n^{2}\left\langle f,e_{n}\right\rangle =0
+\end{align*}
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+, ואז גם 
+\begin_inset Formula $\left\langle f,e_{-n}\right\rangle =-n\left\langle f,e_{n}\right\rangle =\left\langle f,e_{-n}\right\rangle =0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\langle f,e_{n}\right\rangle =0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+זה הוכח כבר בתרגיל 
+\begin_inset Formula $20$
+\end_inset
+
+ של פרק 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $P:X\rightarrow X$
+\end_inset
+
+ ההטלה על טווח 
+\begin_inset Formula $A$
+\end_inset
+
+ וגרעין 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Pe_{n}=e_{n}$
+\end_inset
+
+ )כי 
+\begin_inset Formula $e_{n}\in A$
+\end_inset
+
+( ולכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $Pe_{-n}=P\left(e_{-n}+ne_{n}\right)-nPe_{n}=ne_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(n^{-1}e_{-n}\right)=e_{n}$
+\end_inset
+
+ ולכן הסדרה 
+\begin_inset Formula $\left\{ P\left(n^{-1}e_{-n}\right)\right\} $
+\end_inset
+
+ לא מתכנסת, למרות ש- 
+\begin_inset Formula $n^{-1}e_{-n}\xrightarrow[n\rightarrow\infty]{}0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $P$
+\end_inset
+
+ לא רציפה, כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $x^{*}\in X^{*}$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left\langle x,P^{*}\left(P^{*}x^{*}\right)\right\rangle =\left\langle Px,P^{*}x^{*}\right\rangle =\left\langle P\left(Px\right),x^{*}\right\rangle =\left\langle Px,x^{*}\right\rangle =\left\langle x,P^{*}x^{*}\right\rangle 
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $P^{*}x^{*}=P^{*}\left(P^{*}x^{*}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left(P^{*}\right)^{2}=P^{*}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $PQ=QP$
+\end_inset
+
+ ו-
+\begin_inset Formula $P\neq Q$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $P\left(I-Q\right)\neq0$
+\end_inset
+
+ או 
+\begin_inset Formula $Q\left(I-P\right)\neq0$
+\end_inset
+
+ )כי אחרת 
+\begin_inset Formula $Q=QP=PQ=P$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $P\left(I-Q\right)\neq0$
+\end_inset
+
+, אז קיים 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $P\left(I-Q\right)x\neq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\left(P-Q\right)\left(P\left(I-Q\right)x\right) & =PP\left(I-Q\right)x-QP\left(I-Q\right)x\\
+ & =P\left(I-Q\right)x-P\left(Q-Q^{2}\right)x\\
+ & =P\left(I-Q\right)x
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula 
+\[
+\left\Vert \left(P-Q\right)\left(\frac{P\left(I-Q\right)x}{\left\Vert P\left(I-Q\right)x\right\Vert }\right)\right\Vert =1
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $Q\left(I-P\right)\neq0$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $Q\left(I-P\right)x\neq0$
+\end_inset
+
+ ואז
+\begin_inset Formula 
+\begin{align*}
+\left(P-Q\right)Q\left(I-P\right)x & =PQ\left(I-P\right)x-QQ\left(I-P\right)x\\
+ & =Q\left(P-P^{2}\right)x-Q\left(I-P\right)x\\
+ & =-Q\left(I-P\right)x
+\end{align*}
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\left\Vert \left(P-Q\right)\left(\frac{Q\left(I-P\right)x}{\left\Vert Q\left(I-P\right)x\right\Vert }\right)\right\Vert =\frac{\left\Vert -Q\left(I-P\right)x\right\Vert }{\left\Vert Q\left(I-P\right)x\right\Vert }=1
+\]
+
+\end_inset
+
+ולכן בכל מקרה יש וקטור מנורמה 
+\begin_inset Formula $1$
+\end_inset
+
+ ש-
+\begin_inset Formula $P-Q$
+\end_inset
+
+ שולח לוקטור אחר מנורמה 
+\begin_inset Formula $1$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left\Vert P-Q\right\Vert \geq1$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $PQ=QP=0$
+\end_inset
+
+.
+ אז מתקיים
+\begin_inset Formula 
+\[
+\left(P+Q\right)^{2}=P^{2}+PQ+QP+Q^{2}=P+Q
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $P+Q$
+\end_inset
+
+ הטלה כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+בכיוון השני נניח 
+\begin_inset Formula $P+Q$
+\end_inset
+
+ הטלה.
+ אז מתקיים
+\begin_inset Formula 
+\[
+P+Q=\left(P+Q\right)^{2}=P^{2}+PQ+QP+Q^{2}=P+PQ+QP+Q
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $PQ+QP=0$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+PQ-QP=PQ-\left(QP\right)P=P^{2}Q+PQP=P\left(PQ+QP\right)=0
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $PQ=QP$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $PQ=QP=0$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נניח שאכן 
+\begin_inset Formula $P+Q$
+\end_inset
+
+ הטלה.
+\begin_inset Newline newline
+\end_inset
+
+ברור ש-
+\begin_inset Formula $\mathcal{N}\left(P\right)\cap\mathcal{N}\left(Q\right)\subseteq\mathcal{N}\left(P+Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן 
+\begin_inset Formula $P\left(P+Q\right)=P^{2}+PQ=P$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{N}\left(P+Q\right)\subseteq\mathcal{N}\left(P\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $Q\left(P+Q\right)=QP+Q^{2}=Q$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{N}\left(P+Q\right)\subseteq\mathcal{N}\left(Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\mathcal{N}\left(P+Q\right)\subseteq\mathcal{N}\left(P\right)\cap\mathcal{N}\left(Q\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\mathcal{N}\left(P+Q\right)=\mathcal{N}\left(P\right)\cap\mathcal{N}\left(Q\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+ברור שמתקיים 
+\begin_inset Formula $\mathcal{R}\left(P+Q\right)\subseteq\mathcal{R}\left(P\right)+\mathcal{R}\left(Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני אם מכך ש-
+\begin_inset Formula $\left(P+Q\right)P=P$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\mathcal{R}\left(P\right)\subseteq\mathcal{R}\left(P+Q\right)$
+\end_inset
+
+ ומכך ש-
+\begin_inset Formula $\left(P+Q\right)Q=Q$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\mathcal{R}\left(Q\right)\subseteq\mathcal{R}\left(P+Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\mathcal{R}\left(P\right)+\mathcal{R}\left(Q\right)\subseteq\mathcal{R}\left(P+Q\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{R}\left(P\right)+\mathcal{R}\left(Q\right)=\mathcal{R}\left(P+Q\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף אם 
+\begin_inset Formula $Px=Qy$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ כלשהם אז 
+\begin_inset Formula $Px=P^{2}x=PQy=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{R}\left(P\right)\cap\mathcal{R}\left(Q\right)=\left\{ 0\right\} $
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $PQ=QP$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left(PQ\right)^{2}=PQPQ=P^{2}Q^{2}=PQ$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $x\in\mathcal{N}\left(PQ\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $PQx=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $QPx=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $Px\in\mathcal{N}\left(Q\right)$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $x-Px\in\mathcal{N}\left(P\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\in\mathcal{N}\left(P\right)+\mathcal{N}\left(Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\mathcal{N}\left(PQ\right)\subseteq\mathcal{N}\left(P\right)+\mathcal{N}\left(Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בכיוון השני, אם 
+\begin_inset Formula $x\in\mathcal{N}\left(P\right),y\in\mathcal{N}\left(Q\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula 
+\[
+PQ\left(x+y\right)=QPx+PQy=0
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\mathcal{N}\left(P\right)+\mathcal{N}\left(Q\right)\subseteq\mathcal{N}\left(PQ\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mathcal{N}\left(PQ\right)=\mathcal{N}\left(P\right)+\mathcal{N}\left(Q\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+ברור ש-
+\begin_inset Formula $\mathcal{R}\left(PQ\right)\subseteq\mathcal{R}\left(P\right)$
+\end_inset
+
+ ומצד שני 
+\begin_inset Formula $\mathcal{R}\left(PQ\right)=\mathcal{R}\left(QP\right)\subseteq\mathcal{R}\left(Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\mathcal{R}\left(PQ\right)\subseteq\mathcal{R}\left(P\right)\cap\mathcal{R}\left(Q\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בכיוון השני, אם 
+\begin_inset Formula $x,y\in Y$
+\end_inset
+
+ ו-
+\begin_inset Formula $Px=Qy$
+\end_inset
+
+ אז 
+\begin_inset Formula $Px=P^{2}x=PQy\in\mathcal{R}\left(PQ\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{R}\left(P\right)\cap\mathcal{R}\left(Q\right)\subseteq\mathcal{R}\left(PQ\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mathcal{R}\left(PQ\right)=\mathcal{R}\left(P\right)\cap\mathcal{R}\left(Q\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula 
+\[
+P=\begin{pmatrix}1 & 0\\
+0 & 0
+\end{pmatrix},Q=\begin{pmatrix}1 & -1\\
+0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $P,Q$
+\end_inset
+
+ הטלות.
+ מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\mathcal{N}\left(P\right) & =\left\{ \left(0,\beta\right):\beta\in\kaliComplex\right\} \\
+\mathcal{N}\left(Q\right) & =\left\{ \left(\alpha,\alpha\right):\alpha\in\kaliComplex\right\} 
+\end{align*}
+
+\end_inset
+
+אבל 
+\begin_inset Formula $PQ=Q$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\mathcal{N}\left(P\right)+\mathcal{N}\left(Q\right)\neq\mathcal{N}\left(PQ\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה שהמסקנה של הסעיף הקודם לא נכונה לכל שתי הטלות כלשהן 
+\begin_inset Formula $P,Q$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נתחיל בטענה כללית: אם 
+\begin_inset Formula $G$
+\end_inset
+
+ חבורה קומפקטית, ו-
+\begin_inset Formula $g\in C\left(T\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה במ
+\begin_inset Quotes erd
+\end_inset
+
+ש במובן שבו לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ יש 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e\in G$
+\end_inset
+
+ עבורה אם 
+\begin_inset Formula $x^{-1}y\in V$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|g\left(x\right)-g\left(y\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אכן מרציפות 
+\begin_inset Formula $g$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ יש סביבה 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ של 
+\begin_inset Formula $e$
+\end_inset
+
+ עבורה אם 
+\begin_inset Formula $y\in xV_{x}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|g\left(x\right)-g\left(y\right)\right|<\nicefrac{\varepsilon}{2}$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ יש 
+\begin_inset Formula $U_{x}$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $e$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $U_{x}^{2}\subseteq V_{x}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מקומפקטיות יש 
+\begin_inset Formula $x_{1},\ldots,x_{n}\in G$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $G=\bigcup_{i}V=U_{x_{i}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ניקח 
+\begin_inset Formula $V=\bigcap_{i}U_{x_{i}}$
+\end_inset
+
+.
+ אז אם 
+\begin_inset Formula $x^{-1}y\in V$
+\end_inset
+
+, ניקח 
+\begin_inset Formula $i$
+\end_inset
+
+ כלשהו עבורו 
+\begin_inset Formula $x\in U_{x_{i}}$
+\end_inset
+
+.
+ מתקיים בפרט 
+\begin_inset Formula $x^{-1}y\in U_{x_{i}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $y=x\cdot x^{-1}y\in U_{x_{i}}^{2}\subseteq V_{x_{i}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $x,y$
+\end_inset
+
+ שניהם ב-
+\begin_inset Formula $V_{x_{i}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\left|g\left(x\right)-g\left(y\right)\right|\leq\left|g\left(x\right)-g\left(x_{i}\right)\right|+\left|g\left(x_{i}\right)-g\left(y\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נסמן ב-
+\begin_inset Formula $\sigma$
+\end_inset
+
+ את מידת האר על 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $\left\Vert f\right\Vert _{1}=\intop_{T}fd\sigma$
+\end_inset
+
+ לכל 
+\begin_inset Formula $f\in L^{1}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $f\in L^{1}\left(T\right)$
+\end_inset
+
+ כלשהי.
+ יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ הפונקציות הרציפות צפופות ב-
+\begin_inset Formula $L^{1}\left(T\right)$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $g\in C\left(T\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left\Vert f-g\right\Vert _{1}<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מקומפקטיות 
+\begin_inset Formula $T$
+\end_inset
+
+, ומהטענה שראינו, יש סביבה 
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $1\in T$
+\end_inset
+
+ עבורה אם 
+\begin_inset Formula $\zeta,\xi\in T$
+\end_inset
+
+ ו-
+\begin_inset Formula $\zeta^{-1}\xi\in V$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left|g\left(\zeta\right)-g\left(\xi\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\zeta_{1},\zeta_{2}\in T$
+\end_inset
+
+ ו-
+\begin_inset Formula $\zeta_{1}^{-1}\zeta_{2}\in V$
+\end_inset
+
+, אז גם לכל 
+\begin_inset Formula $\xi$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(\zeta_{1}\xi\right)^{-1}\zeta_{2}\xi\in V$
+\end_inset
+
+, כלומר לכל 
+\begin_inset Formula $\xi\in T$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|g\left(\zeta_{1}\xi\right)-g\left(\zeta_{2}\xi\right)\right|<\varepsilon$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left\Vert \tau_{\zeta_{1}}g-\tau_{\zeta_{2}}g\right\Vert _{\infty}<\varepsilon$
+\end_inset
+
+, ובפרט 
+\begin_inset Formula $\left\Vert \tau_{\zeta_{1}}g-\tau_{\zeta_{2}}g\right\Vert _{1}<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\zeta_{1},\zeta_{2}\in T$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\zeta_{1}^{-1}\zeta_{2}\in V$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\left\Vert \tau_{\zeta_{1}}f-\tau_{\zeta_{2}}f\right\Vert _{1} & \leq\left\Vert \tau_{\zeta_{1}}f-\tau_{\zeta_{1}}g\right\Vert _{1}+\left\Vert \tau_{\zeta_{1}}g-\tau_{\zeta_{2}}g\right\Vert _{1}+\left\Vert \tau_{\zeta_{2}}g-\tau_{\zeta_{2}}f\right\Vert _{1}\\
+ & <\intop_{T}\left|\tau_{\zeta_{1}}\left(f-g\right)\right|d\sigma+\varepsilon+\intop_{T}\left|\tau_{\zeta_{2}}\left(f-g\right)\right|d\sigma\\
+ & =\intop_{T}\left|f-g\right|d\sigma+\varepsilon+\intop_{T}\left|f-g\right|d\sigma\\
+ & =2\left\Vert f-g\right\Vert _{1}+\varepsilon=3\varepsilon
+\end{align*}
+
+\end_inset
+
+זה מראה שלכל 
+\begin_inset Formula $f\in L^{1}\left(T\right)$
+\end_inset
+
+ קבועה, הפונקציה 
+\begin_inset Formula $\zeta\mapsto\tau_{\zeta}f$
+\end_inset
+
+ היא פונקציה רציפה במ
+\begin_inset Quotes erd
+\end_inset
+
+ש מ-
+\begin_inset Formula $T$
+\end_inset
+
+ ל-
+\begin_inset Formula $L^{1}\left(T\right)$
+\end_inset
+
+ )במ
+\begin_inset Quotes erd
+\end_inset
+
+ש במובן דומה לזה שהוגדר בטענה הכללית(.
+ 
+\begin_inset Newline newline
+\end_inset
+
+עכשיו אם 
+\begin_inset Formula $\zeta\in T,g\in L^{1}\left(T\right)$
+\end_inset
+
+ פונקציות כלשהן, וניקח 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, אז יש סביבה 
+\begin_inset Formula $V$
+\end_inset
+
+ של 
+\begin_inset Formula $1\in T$
+\end_inset
+
+ עבורה אם 
+\begin_inset Formula $\xi\in\zeta V$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\Vert \tau_{\xi}g-\tau_{\zeta}g\right\Vert _{1}<\varepsilon$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $\xi\in\zeta V$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $f\in B_{\varepsilon}\left(g\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left\Vert \tau_{\xi}f-\tau_{\zeta}g\right\Vert _{1} & \leq\left\Vert \tau_{\xi}f-\tau_{\xi}g\right\Vert _{1}+\left\Vert \tau_{\xi}g-\tau_{\zeta}g\right\Vert _{1}\\
+ & <\intop_{T}\left|\tau_{\xi}\left(f-g\right)\right|d\sigma+\varepsilon\\
+ & =\intop_{T}\left|f-g\right|d\sigma+\varepsilon\\
+ & =\left\Vert f-g\right\Vert _{1}+\varepsilon<2\varepsilon
+\end{align*}
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נקבע 
+\begin_inset Formula $g\in L^{1}$
+\end_inset
+
+ כלשהי עבורה 
+\begin_inset Formula $\intop_{R}gdm\neq0$
+\end_inset
+
+ ונטען ש-
+\begin_inset Formula $g+Y$
+\end_inset
+
+ פורש של 
+\begin_inset Formula $L^{1}/Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אכן, תהא 
+\begin_inset Formula $f\in L^{1}$
+\end_inset
+
+ כלשהי.
+ אז מכך ש-
+\begin_inset Formula $\intop_{R}gdm\neq0$
+\end_inset
+
+, יש 
+\begin_inset Formula $\alpha\in\kaliComplex$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\alpha\intop_{R}gdm=\intop_{R}fdm$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f-\alpha g\in Y$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $f\in\alpha\left(g+Y\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $L^{1}/Y$
+\end_inset
+
+ הוא חד-ממדי ולכן קיימת השלמה ל-
+\begin_inset Formula $Y$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו תהא 
+\begin_inset Formula $P$
+\end_inset
+
+ הטלה כלשהי של 
+\begin_inset Formula $X$
+\end_inset
+
+ על 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $X=Y+\mathcal{N}\left(P\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $Y\cap\mathcal{N}\left(P\right)=\left\{ 0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\pi:X\rightarrow L^{1}/Y$
+\end_inset
+
+ מפת החלוקה.
+ אם 
+\begin_inset Formula $\pi f=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\in\mathcal{N}\left(P\right)$
+\end_inset
+
+ כלשהו, אז 
+\begin_inset Formula $f\in Y$
+\end_inset
+
+, אבל אז 
+\begin_inset Formula $f=0$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $\pi$
+\end_inset
+
+ חח
+\begin_inset Quotes erd
+\end_inset
+
+ע על 
+\begin_inset Formula $\mathcal{N}\left(P\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{N}\left(P\right)$
+\end_inset
+
+ איזומורפי כמרחב וקטורי ל-
+\begin_inset Formula $\pi\left(\mathcal{N}\left(P\right)\right)$
+\end_inset
+
+, אבל 
+\begin_inset Formula $\pi\left(\mathcal{N}\left(P\right)\right)\subseteq L^{1}/Y$
+\end_inset
+
+ ולכן ממה שראינו נקבל ש-
+\begin_inset Formula $\pi\left(\mathcal{N}\left(P\right)\right)$
+\end_inset
+
+ הוא ממד לכל היותר 
+\begin_inset Formula $1$
+\end_inset
+
+, ולכן גם 
+\begin_inset Formula $\mathcal{N}\left(P\right)$
+\end_inset
+
+ הוא לכל היותר חד-ממדי.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, 
+\begin_inset Formula $X=Y+\mathcal{N}\left(P\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $X\neq Y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{N}\left(P\right)\neq\left\{ 0\right\} $
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mathcal{N}\left(P\right)$
+\end_inset
+
+ היא מרחב חד-ממדי.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $g\in\mathcal{N}\left(P\right)$
+\end_inset
+
+ כלשהו עבורו 
+\begin_inset Formula $g\neq0$
+\end_inset
+
+, ואז 
+\begin_inset Formula $\mathcal{N}\left(P\right)=\left\{ \alpha g:\alpha\in\kaliComplex\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע לרגע 
+\begin_inset Formula $f\in L^{1}$
+\end_inset
+
+ כלשהי.
+ אז 
+\begin_inset Formula $f-Pf\in\mathcal{N}\left(P\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $P$
+\end_inset
+
+ הטלה.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $\alpha\in\kaliComplex$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\alpha g=f-Pf$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\alpha\intop_{R}gdm=\intop_{R}\left(f-Pf\right)dm=\intop_{R}fdm-\intop_{R}Pfdm=\intop_{R}fdm
+\]
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $g\neq0,g\in\mathcal{N}\left(P\right)$
+\end_inset
+
+, בפרט 
+\begin_inset Formula $g\notin Y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\intop_{R}gdm\neq0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\alpha=\left(\intop_{R}gdm\right)^{-1}\left(\intop_{R}fdm\right)
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+Pf=f-\left(\intop_{R}gdm\right)^{-1}\left(\intop_{R}fdm\right)g
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $f\in L^{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו מכך ש-
+\begin_inset Formula $\intop_{R}gdm\neq0$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula 
+\[
+\intop_{\left[-N,N\right]}gdm\xrightarrow[N\rightarrow\infty]{}\intop_{R}gdm
+\]
+
+\end_inset
+
+הרי שקיים 
+\begin_inset Formula $N$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $\intop_{\left[-N,N\right]}gdm\neq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $s=2N$
+\end_inset
+
+.
+ אם בשלילה 
+\begin_inset Formula $\tau_{s}g=g$
+\end_inset
+
+, אז גם 
+\begin_inset Formula $\tau_{s}^{-1}g=\tau_{s}^{-1}\tau_{s}g=g$
+\end_inset
+
+ ומשם באינדוציה פשוטה 
+\begin_inset Formula $\tau_{ks}g=\tau_{s}^{k}g=g$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\in\kaliInteger$
+\end_inset
+
+, ואז האינווריאנטיות תחת הזזות של מידת לבג נותנת
+\begin_inset Formula 
+\begin{align*}
+\intop_{N+\left(k-1\right)s}^{N+ks}g\left(x\right)dx & =\intop_{R}\chi_{\left[N+\left(k-1\right)s,N+ks\right]}\left(x\right)g\left(x\right)dx\\
+ & =\intop_{R}\chi_{\left[-N,N\right]}\left(x-ks\right)\left(\tau_{-ks}g\right)\left(x\right)dx\\
+ & =\intop_{R}\chi_{\left[-N,N\right]}\left(x-ks\right)g\left(x-ks\right)dx\\
+ & =\intop_{R}\tau_{-ks}\left(\chi_{\left[-N,N\right]}\left(x\right)g\left(x\right)\right)dx\\
+ & =\intop_{R}\chi_{\left[-N,N\right]}\left(x\right)g\left(x\right)dx\\
+ & =\intop_{\left[-N,N\right]}g\left(x\right)dx\neq0
+\end{align*}
+
+\end_inset
+
+לכל 
+\begin_inset Formula $k\in\kaliInteger$
+\end_inset
+
+, בסתירה לכך ש-
+\begin_inset Formula $g\in L^{1}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\tau_{s}g\neq g$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז שוב מהאינווריאנטיות של מידת לבג נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\tau_{s}g=\tau_{s}g-\left(\intop_{R}gdm\right)^{-1}\left(\intop_{R}\tau_{s}gdm\right)g=\tau_{s}g-g\neq0
+\]
+
+\end_inset
+
+בעוד 
+\begin_inset Formula $\tau_{s}Pg=\tau_{s}0=0$
+\end_inset
+
+, וזה מראה ש-
+\begin_inset Formula $\tau_{s}P\neq P\tau_{s}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x-TSx=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $x=TSx$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $x\in\mathcal{R}\left(T\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\mathcal{N}\left(I-TS\right)\subseteq\mathcal{R}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(I-TS\right)Tx=Tx-TSTx=Tx-Tx=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\mathcal{R}\left(T\right)\subseteq\mathcal{N}\left(I-TS\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mathcal{R}\left(T\right)=\mathcal{N}\left(I-TS\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות 
+\begin_inset Formula $T,S$
+\end_inset
+
+, 
+\begin_inset Formula $I-TS$
+\end_inset
+
+ רציף ולכן 
+\begin_inset Formula $\mathcal{N}\left(I-TS\right)$
+\end_inset
+
+ סגור ולכן 
+\begin_inset Formula $\mathcal{R}\left(T\right)$
+\end_inset
+
+ סגור כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $E$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\mu=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $E=\emptyset$
+\end_inset
+
+ והטענה מתקיימת באופן ריק.
+\begin_inset Newline newline
+\end_inset
+
+נניח 
+\begin_inset Formula $\mu\neq0$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $t\in R$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $t\mu\in A^{\perp}$
+\end_inset
+
+, ולכן אם בשלילה 
+\begin_inset Formula $\left\Vert \mu\right\Vert <1$
+\end_inset
+
+, נוכל לבחור 
+\begin_inset Formula $t>1$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left\Vert \mu\right\Vert <t\left\Vert \mu\right\Vert <1$
+\end_inset
+
+, ונקבל ש-
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא נקודה פנימית בקטע 
+\begin_inset Formula $\left[0,t\mu\right]$
+\end_inset
+
+, שהקצוות שלו מוכלים בכדור היחידה הסגור של 
+\begin_inset Formula $A^{\perp}$
+\end_inset
+
+, בסתירה לכך ש-
+\begin_inset Formula $\mu$
+\end_inset
+
+ נקודת קיצון של הכדור הזה.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\Vert \mu\right\Vert =1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות 
+\begin_inset Formula $f$
+\end_inset
+
+ וקומפקטיות 
+\begin_inset Formula $S$
+\end_inset
+
+, יש 
+\begin_inset Formula $M<\infty$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left|f\right|<M$
+\end_inset
+
+ בכל 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר מידות 
+\begin_inset Formula $\sigma,\tau$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $d\sigma=\frac{1}{2M}\left(M+f\right)d\mu,d\tau=\frac{1}{2M}\left(M-f\right)d\mu$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $g\in A$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{S}gd\sigma & =\frac{1}{2M}\intop_{S}g\left(M+f\right)d\mu=\intop_{S}gd\mu+\frac{1}{2M}\intop_{S}gfd\mu=0\\
+\intop_{S}gd\tau & =\frac{1}{2M}\intop_{S}g\left(M-f\right)d\mu=\intop_{S}gd\mu-\frac{1}{2M}\intop_{S}gfd\mu=0
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\sigma,\tau\in A^{\perp}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $f$
+\end_inset
+
+ ממשית ו-
+\begin_inset Formula $\left|f\right|<M$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $M+f,M-f>0$
+\end_inset
+
+ בכל 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן מכך ש-
+\begin_inset Formula $f$
+\end_inset
+
+ ממשית מתקיים 
+\begin_inset Formula $d\left|\sigma\right|=\frac{1}{2M}\left(M+f\right)d\left|\mu\right|,d\left|\tau\right|=\frac{1}{2M}\left(M-f\right)d\left|\mu\right|$
+\end_inset
+
+ ולכן נקבל 
+\begin_inset Formula $\left\Vert \sigma\right\Vert ,\left\Vert \tau\right\Vert >0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים גם
+\begin_inset Formula 
+\[
+\left\Vert \sigma\right\Vert +\left\Vert \tau\right\Vert =\frac{1}{2M}\intop_{S}\left(M+f\right)d\left|\mu\right|+\frac{1}{2M}\intop_{S}\left(M-f\right)d\left|\mu\right|=\left|\mu\right|\left(S\right)=1
+\]
+
+\end_inset
+
+וגם 
+\begin_inset Formula 
+\[
+\mu=\sigma+\tau=\left\Vert \sigma\right\Vert \left(\left\Vert \sigma\right\Vert ^{-1}\sigma\right)+\left\Vert \tau\right\Vert \left(\left\Vert \tau\right\Vert ^{-1}\tau\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נמצאת בקטע 
+\begin_inset Formula $\left[\left\Vert \sigma\right\Vert ^{-1}\sigma,\left\Vert \tau\right\Vert ^{-1}\tau\right]$
+\end_inset
+
+.
+ ראינו ש-
+\begin_inset Formula $\sigma,\tau\in A^{\perp}$
+\end_inset
+
+ ולכן הקצוות של הקטע האחרון נמצאים בכדור היחידה הסגור של 
+\begin_inset Formula $A^{\perp}$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא נקודת קיצון של הכדור הזה, הרי שמתקיים 
+\begin_inset Formula $\mu=\left\Vert \sigma\right\Vert ^{-1}\sigma$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left\Vert \sigma\right\Vert \mu=\sigma$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\Vert \sigma\right\Vert d\mu=d\sigma=\frac{1}{2M}\left(M+f\right)d\mu$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה מתקיים
+\begin_inset Formula 
+\[
+\intop_{E}\frac{1}{2M}\left(M+f\right)-\left\Vert \sigma\right\Vert d\mu=0
+\]
+
+\end_inset
+
+ממשפט רדון-ניקודים, יש 
+\begin_inset Formula $h\in L^{1}\left(S\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left|h\right|=1$
+\end_inset
+
+ כמעט בכל מקום ו-
+\begin_inset Formula $d\mu=hd\left|\mu\right|$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $E$
+\end_inset
+
+ מדידה נקבל 
+\begin_inset Formula 
+\[
+\intop_{E}\left(\frac{1}{2M}\left(M+f\right)-\left\Vert \sigma\right\Vert \right)hd\left|\mu\right|=0
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left(\frac{1}{2M}\left(M+f\right)-\left\Vert \sigma\right\Vert \right)h=0$
+\end_inset
+
+ כמעט בכל מקום 
+\begin_inset Formula $\left[\left|\mu\right|\right]$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula $\left|h\right|=1$
+\end_inset
+
+ כמעט בכל מקום נקבל 
+\begin_inset Formula $f=2M\left\Vert \sigma\right\Vert -M$
+\end_inset
+
+ כמעט בכל מקום 
+\begin_inset Formula $\left[\left|\mu\right|\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $V$
+\end_inset
+
+ קבוצה פתוחה עבורה 
+\begin_inset Formula $V\cap E\neq\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $E\setminus V=E\cap\left(S\setminus V\right)$
+\end_inset
+
+ היא קומפקטית כחיתוך של קבוצה קומפקטית וקבוצה סגורה, ומכך ש-
+\begin_inset Formula $V\cap E\neq\emptyset$
+\end_inset
+
+ נקבל ש-
+\begin_inset Formula $E\setminus V$
+\end_inset
+
+ תת-קבוצה ממש של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $E$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\mu$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\left|\mu\right|\left(E\setminus V\right)<\left\Vert \mu\right\Vert $
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left|\mu\right|\left(V\cap E\right)>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $f=2M\left\Vert \sigma\right\Vert -M$
+\end_inset
+
+ במעט בכל מקום 
+\begin_inset Formula $\left[\left|\mu\right|\right]$
+\end_inset
+
+, הרי שיש לפחות נקודה אחת ב-
+\begin_inset Formula $V\cap E$
+\end_inset
+
+ שבה 
+\begin_inset Formula $f=2M\left\Vert \sigma\right\Vert -M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה שהקבוצה 
+\begin_inset Formula $\left\{ x\in E:f\left(x\right)=2M\left\Vert \sigma\right\Vert -M\right\} $
+\end_inset
+
+ צפופה ב-
+\begin_inset Formula $E$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות של 
+\begin_inset Formula $f$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $f=2M\left\Vert \sigma\right\Vert -M$
+\end_inset
+
+ בכל 
+\begin_inset Formula $E$
+\end_inset
+
+, ובפרט 
+\begin_inset Formula $f$
+\end_inset
+
+ קבועה ב-
+\begin_inset Formula $E$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $S=\left\{ 1,2,3\right\} $
+\end_inset
+
+ עם הטופולוגיה הדיסקטית.
+ ברור ש-
+\begin_inset Formula $S$
+\end_inset
+
+ האוסדורף קומפקטי.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $\mu,\sigma\in M\left(S\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\mu\left(\left\{ j\right\} \right)=\nicefrac{1}{3},\sigma\left(\left\{ j\right\} \right)=\frac{1}{3}\omega^{j-1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר גם 
+\begin_inset Formula $f\in C\left(S\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(j\right)=\omega^{j-1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $Y$
+\end_inset
+
+ תת-המרחב של 
+\begin_inset Formula $M\left(S\right)$
+\end_inset
+
+ שנפרש ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left\{ \mu,\sigma\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $A=^{\perp}Y$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ סגור ו-
+\begin_inset Formula $A^{\perp}=Y$
+\end_inset
+
+ כי גם 
+\begin_inset Formula $Y$
+\end_inset
+
+ סגור.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\sigma\in A^{\perp}$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $g\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\intop_{S}gfd\mu=0$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן ברור ש-
+\begin_inset Formula $f$
+\end_inset
+
+ לא קבועה על התומך ש-
+\begin_inset Formula $\mu$
+\end_inset
+
+, שהוא כל 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נותר להראות ש-
+\begin_inset Formula $\mu$
+\end_inset
+
+ נקודת קיצון של כדור היחידה הסגור של 
+\begin_inset Formula $A^{\perp}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $\mu_{1},\mu_{2}\in A^{\perp},t\in\left(0,1\right)$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\left\Vert \mu_{1}\right\Vert ,\left\Vert \mu_{2}\right\Vert \leq1$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mu=\left(1-t\right)\mu_{1}+t\mu_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\left\Vert \mu\right\Vert =1$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $1\leq\left(1-t\right)\left\Vert \mu_{1}\right\Vert +t\left\Vert \mu_{2}\right\Vert $
+\end_inset
+
+ ומכך ש-
+\begin_inset Formula $\left\Vert \mu_{1}\right\Vert ,\left\Vert \mu_{2}\right\Vert \leq1$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left\Vert \mu_{1}\right\Vert =\left\Vert \mu_{2}\right\Vert =1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+ מתקיים גם
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{3}=\left|\mu\left(\left\{ j\right\} \right)\right|\leq\left(1-t\right)\left|\mu_{1}\left(\left\{ j\right\} \right)\right|+t\left|\mu_{2}\left(\left\{ j\right\} \right)\right|
+\]
+
+\end_inset
+
+אבל אם בשלילה קיים 
+\begin_inset Formula $j$
+\end_inset
+
+ עבורו א
+\begin_inset Quotes erd
+\end_inset
+
+ש האחרון הוא חזק נוכל לסכום את כל שלוש הא
+\begin_inset Quotes erd
+\end_inset
+
+ש עבור 
+\begin_inset Formula $j=1,2,3$
+\end_inset
+
+ ולקבל 
+\begin_inset Formula $1<\left(1-t\right)\left\Vert \mu_{1}\right\Vert +t\left\Vert \mu_{2}\right\Vert \leq1$
+\end_inset
+
+ וזו סתירה.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula 
+\[
+\left|\left(1-t\right)\mu_{1}\left(\left\{ j\right\} \right)+t\mu_{2}\left(\left\{ j\right\} \right)\right|=\left|\left(1-t\right)\mu_{1}\left(\left\{ j\right\} \right)\right|+\left|t\mu_{2}\left(\left\{ j\right\} \right)\right|
+\]
+
+\end_inset
+
+שוויון בא
+\begin_inset Quotes erd
+\end_inset
+
+ש המשולש מתקיים אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הנסכמים הם כפולה חיובית זה של זה.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+ יש 
+\begin_inset Formula $\alpha_{j}>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left(1-t\right)\mu_{1}\left(\left\{ j\right\} \right)=\alpha_{j}t\mu_{2}\left(\left\{ j\right\} \right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left(\alpha_{j}+1\right)t\mu_{2}\left(\left\{ j\right\} \right) & =\alpha_{j}t\mu_{2}\left(\left\{ j\right\} \right)+t\mu_{2}\left(\left\{ j\right\} \right)=\left(1-t\right)\mu_{1}\left(\left\{ j\right\} \right)+t\mu_{2}\left(\left\{ j\right\} \right)\\
+ & =\mu\left(\left\{ j\right\} \right)=\frac{1}{3}
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\mu_{2}\left(\left\{ j\right\} \right)=\left(3\left(1+\alpha_{j}\right)t\right)^{-1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בפרט 
+\begin_inset Formula $\mu_{2}\left(\left\{ j\right\} \right)\in R$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $\mu_{2}\in A^{\perp}$
+\end_inset
+
+, יש 
+\begin_inset Formula $\alpha,\beta\in\kaliComplex$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\mu_{2}=\alpha\mu+\beta\sigma$
+\end_inset
+
+.
+ אז מתקיים 
+\begin_inset Formula $\alpha\mu\left(\left\{ j\right\} \right)+\beta\sigma\left(\left\{ j\right\} \right)\in R$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\in S$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\alpha+\beta,\alpha+\omega\beta,\alpha+\omega^{2}\beta\in R$
+\end_inset
+
+.
+ אז
+\begin_inset Formula 
+\[
+3\alpha=\alpha+\beta+\alpha+\omega\beta+\alpha+\omega^{2}\beta\in R
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\alpha\in R$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula $\alpha+\beta,\alpha+\omega\beta\in R$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\beta,\omega\beta\in R$
+\end_inset
+
+ וזה אפשרי רק אם 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+, כי כל כפולה ממשית שונה מ-
+\begin_inset Formula $0$
+\end_inset
+
+ של 
+\begin_inset Formula $\omega$
+\end_inset
+
+ היא לא ממשית.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\mu_{2}=\alpha\mu$
+\end_inset
+
+ ומכך ש-
+\begin_inset Formula $\left\Vert \mu_{2}\right\Vert =1=\left\Vert \mu\right\Vert $
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+, ו-
+\begin_inset Formula $\mu_{2}=\mu$
+\end_inset
+
+ ולכן גם 
+\begin_inset Formula $\mu_{1}=\mu$
+\end_inset
+
+ כלומר אכן 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נקודת קיצון של כדור היחידה של 
+\begin_inset Formula $A^{\perp}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $H=\text{co}\left(E\right)$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $T$
+\end_inset
+
+ אפינית, נקבל 
+\begin_inset Formula 
+\[
+T\left(\left(1-t\right)x+tx\right)=\left(1-t\right)Tx+tTx
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x,y\in H,t\in\left(0,1\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x_{1},\ldots,x_{n}\in H,t_{1},\ldots,t_{n}>0$
+\end_inset
+
+ עם 
+\begin_inset Formula $\sum_{j}t_{j}=1$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+T\left(\sum_{j=1}^{n}t_{j}x_{j}\right) & =T\left(\left(\sum_{k=1}^{n-1}t_{k}\right)\sum_{j=1}^{n-1}\left(\sum_{k=1}^{n-1}t_{k}\right)^{-1}t_{j}x_{j}+t_{n}x_{n}\right)\\
+ & =\left(\sum_{k=1}^{n-1}t_{k}\right)T\left(\sum_{j=1}^{n-1}\left(\sum_{k=1}^{n-1}t_{k}\right)^{-1}t_{j}x_{j}\right)+t_{n}Tx_{n}
+\end{align*}
+
+\end_inset
+
+ומתקיים גם 
+\begin_inset Formula $\sum_{j=1}^{n-1}\left(\sum_{k=1}^{n-1}t_{k}\right)^{-1}t_{j}=\left(\sum_{k=1}^{n-1}t_{k}\right)^{-1}\sum_{j=1}^{n-1}t_{j}=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז באינדוקציה נקבל שלכל 
+\begin_inset Formula $x_{1},\ldots,x_{n}\in H,t_{1},\ldots,t_{n}>0$
+\end_inset
+
+ עם 
+\begin_inset Formula $\sum_{j}t_{j}=1$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+T\left(\sum_{j=1}^{n}t_{j}x_{j}\right)=\sum_{j=1}^{n}t_{j}Tx_{j}
+\]
+
+\end_inset
+
+עכשיו אם 
+\begin_inset Formula $x\in H$
+\end_inset
+
+, אז יש 
+\begin_inset Formula $t_{1},\ldots,t_{n}>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{1},\ldots,x_{n}\in E$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\sum_{j}t_{j}=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $x=\sum_{j}t_{j}x_{j}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $Tx=\sum_{j}t_{j}Tx_{j}$
+\end_inset
+
+ ומכך ש-
+\begin_inset Formula $T\left(E\right)\subseteq E$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $Tx_{j}\in E$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $Tx$
+\end_inset
+
+ צירוף קמור של 
+\begin_inset Formula $E$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $Tx\in\text{co}\left(E\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+הטענה שגויה אם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מרחב מרוכב.
+\begin_inset Newline newline
+\end_inset
+
+למשל אם ניקח 
+\begin_inset Formula $X=Y=\kaliComplex$
+\end_inset
+
+ מעל המרוכבים ו-
+\begin_inset Formula $Tz=\overline{z}$
+\end_inset
+
+, ברור ש-
+\begin_inset Formula $T$
+\end_inset
+
+ משמרת צירופים קמורים ולכן אפינית, אבל 
+\begin_inset Formula $T$
+\end_inset
+
+ לא לינארית, כי למשל 
+\begin_inset Formula $T\left(i\cdot1\right)=-i\neq i=i\cdot T\left(1\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נניח 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב ממשי ונוכיח את הטענה במקרה הזה.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $S=T-T\left(0\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ כלשהו.
+ אז לכל 
+\begin_inset Formula $t\in\left(0,1\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+T\left(tx\right)=tT\left(x\right)+\left(1-t\right)T\left(0\right)
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\begin{align*}
+S\left(tx\right) & =tT\left(x\right)+\left(1-t\right)T\left(0\right)-T\left(0\right)=tT\left(x\right)+tT\left(0\right)\\
+ & =t\left(Tx-T\left(0\right)\right)=tSx
+\end{align*}
+
+\end_inset
+
+לכל 
+\begin_inset Formula $t\in\left(0,1\right)$
+\end_inset
+
+.
+ כמו כן, 
+\begin_inset Formula 
+\begin{align*}
+S\left(0\cdot x\right) & =S\left(0\right)=T\left(0\right)-T\left(0\right)=0\\
+S\left(1\cdot x\right) & =S\left(x\right)=1\cdot S\left(x\right)
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $S\left(tx\right)=tSx$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $t>1$
+\end_inset
+
+ אז 
+\begin_inset Formula $t^{-1}\in\left(0,1\right)$
+\end_inset
+
+ ואז
+\begin_inset Formula 
+\[
+S\left(tx\right)=t\left(t^{-1}S\left(tx\right)\right)=tS\left(t^{-1}tx\right)=tSx
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $S\left(tx\right)=tSx$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\geq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+S\left(a+b\right) & =T\left(\frac{1}{2}\left(2a\right)+\frac{1}{2}\left(2b\right)\right)-T\left(0\right)=\frac{1}{2}\left(T\left(2a\right)-T\left(0\right)\right)+\frac{1}{2}\left(T\left(2b\right)-T\left(0\right)\right)\\
+ & =\frac{1}{2}S\left(2a\right)+\frac{1}{2}S\left(2b\right)=S\left(\frac{1}{2}\cdot2a\right)+S\left(\frac{1}{2}\cdot2b\right)=Sa+Sb
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $S$
+\end_inset
+
+ אדיטיבית כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $S\left(-x\right)+S\left(x\right)=S\left(x-x\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $S\left(-x\right)=-Sx$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $\alpha<0$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $S\left(\alpha x\right)=-S\left(-\alpha x\right)=-\left(-\alpha Sx\right)=\alpha x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\alpha\in R$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $S\left(\alpha x\right)=\alpha Sx$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $S$
+\end_inset
+
+ לינארית כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+ראשית נראה שמתקיים 
+\begin_inset Formula $\overline{\text{co}}\left(K\right)\subseteq\Omega$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $x\in X\setminus\Omega$
+\end_inset
+
+ כלשהי.
+ אז מכך ש-
+\begin_inset Formula $\Omega$
+\end_inset
+
+ קמורה, יש 
+\begin_inset Formula $\Lambda\in X^{*}$
+\end_inset
+
+ ממשי ו-
+\begin_inset Formula $\gamma\in R$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\Lambda y<\gamma\leq\Lambda x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y\in\Omega$
+\end_inset
+
+.
+ מקומפקטיות 
+\begin_inset Formula $K$
+\end_inset
+
+ ורציפות 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ מקבל מקסימום ב-
+\begin_inset Formula $K$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\gamma^{\prime}=\max_{y\in K}\Lambda y$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $y\in\Omega$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\Lambda y=\gamma^{\prime}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\gamma^{\prime}<\gamma$
+\end_inset
+
+.
+ מלינאריות 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+, לכל 
+\begin_inset Formula $t_{1},\ldots,t_{n}\geq0$
+\end_inset
+
+ עם 
+\begin_inset Formula $\sum_{j}t_{j}=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $x_{1},\ldots,x_{n}\in K$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\Lambda\left(\sum_{j=1}^{n}t_{j}x_{j}\right)=\sum_{j=1}^{n}t_{j}\Lambda x_{j}\leq\sum_{j=1}^{n}t_{j}\gamma^{\prime}=\gamma^{\prime}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\Lambda y\leq\gamma^{\prime}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y\in\text{co}\left(K\right)$
+\end_inset
+
+.
+ מרציפות 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left\{ y\in X:\Lambda y\leq\gamma^{\prime}\right\} $
+\end_inset
+
+ היא סגורה, וראינו שהיא מכילה את 
+\begin_inset Formula $\text{co}\left(K\right)$
+\end_inset
+
+ ולכן היא מכילהל גם את 
+\begin_inset Formula $\overline{\text{co}}\left(K\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $y\in\overline{\text{co}}\left(K\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda y\leq\gamma^{\prime}<\gamma$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $\Lambda x\geq\gamma$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\notin\overline{\text{co}}\left(K\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה 
+\begin_inset Formula $\overline{\text{co}}\left(K\right)\subseteq\Omega$
+\end_inset
+
+, ולכן הצמצום של 
+\begin_inset Formula $f$
+\end_inset
+
+ ל-
+\begin_inset Formula $\overline{\text{co}}\left(K\right)$
+\end_inset
+
+ מוגדר ורציף.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב פרשה, 
+\begin_inset Formula $\overline{\text{co}}\left(K\right)$
+\end_inset
+
+ קומפקטית וקמורה.
+ אז מרציפות 
+\begin_inset Formula $f$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $f\left(p\right)=p$
+\end_inset
+
+ עבור 
+\begin_inset Formula $p\in\overline{\text{co}}\left(K\right)$
+\end_inset
+
+ כלשהי.
+ אבל 
+\begin_inset Formula $f\left(\Omega\right)\subseteq K$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(p\right)\in K$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $p\in K$
+\end_inset
+
+.
+ אז ל-
+\begin_inset Formula $f$
+\end_inset
+
+ יש נקודת שבת ב-
+\begin_inset Formula $K$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $C\left(I\right)$
+\end_inset
+
+ מרחב הפונקציות הממשיות הרציפות על 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $f\in C\left(I\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $Tf\left(x\right)=\intop_{0}^{1}\sin\left(x+f^{2}\left(t\right)\right)dt$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sin$
+\end_inset
+
+ היא רציפה במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב-
+\begin_inset Formula $R$
+\end_inset
+
+, ולכן קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left|x-y\right|<\delta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left|\sin x-\sin y\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $f\in C\left(I\right)$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $x,y\in I$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\left|x-y\right|<\delta$
+\end_inset
+
+ נקבל גם
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|Tf\left(x\right)-Tf\left(y\right)\right|\leq\intop_{0}^{1}\left|\sin\left(x+f^{2}\left(t\right)\right)-\sin\left(y+f^{2}\left(t\right)\right)\right|dt<\intop_{0}^{1}\varepsilon dt=\varepsilon
+\]
+
+\end_inset
+
+ולכן הקבוצה 
+\begin_inset Formula $\left\{ Tf:f\in C\left(I\right)\right\} $
+\end_inset
+
+ היא רציפה במידה אחידה )ובפרט 
+\begin_inset Formula $Tf\in C\left(I\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $f\in C\left(I\right)$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן, לכל 
+\begin_inset Formula $f\in C\left(I\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left|Tf\left(x\right)\right|\leq\intop_{0}^{1}\left|\sin\left(x+f^{2}\left(t\right)\right)\right|dt\leq1
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $T\left(C\left(I\right)\right)$
+\end_inset
+
+ גם חסומה במידה אחידה.
+\begin_inset Newline newline
+\end_inset
+
+אז ממשפט ארצלה-אסקולי, 
+\begin_inset Formula $\overline{T\left(C\left(I\right)\right)}$
+\end_inset
+
+ קומפקטית ב-
+\begin_inset Formula $C\left(I\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נראה ש-
+\begin_inset Formula $T$
+\end_inset
+
+ עצמה רציפה.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $f\in C\left(I\right)$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\sin$
+\end_inset
+
+ רציפה במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב-
+\begin_inset Formula $R$
+\end_inset
+
+, יש 
+\begin_inset Formula $r>0$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|x-y\right|<r$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\sin x-\sin y\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ קטנה מספיק כך ש-
+\begin_inset Formula $\left(2\left\Vert f\right\Vert _{\infty}+\delta\right)\delta<r$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $g\in C\left(I\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left\Vert f-g\right\Vert _{\infty}<\delta$
+\end_inset
+
+, נקבל לכל 
+\begin_inset Formula $t\in I$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|f^{2}\left(t\right)-g^{2}\left(t\right)\right| & =\left|f\left(t\right)+g\left(t\right)\right|\left|f\left(t\right)-g\left(t\right)\right|\\
+ & \leq\left\Vert f+g\right\Vert _{\infty}\left\Vert f-g\right\Vert _{\infty}\\
+ & <\left(\left\Vert f\right\Vert _{\infty}+\left\Vert g\right\Vert _{\infty}\right)\delta\\
+ & \leq\left(2\left\Vert f\right\Vert _{\infty}+\delta\right)\delta<r
+\end{align*}
+
+\end_inset
+
+ואז לכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\left|Tf\left(x\right)-Tg\left(x\right)\right| & \leq\intop_{0}^{1}\left|\sin\left(x+f^{2}\left(t\right)\right)-\sin\left(x+g^{2}\left(t\right)\right)\right|dt\\
+ & <\intop_{0}^{1}\varepsilon dt=\varepsilon
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\left\Vert Tf-Tf\right\Vert _{\infty}<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $C\left(I\right)$
+\end_inset
+
+ מרחב פרשה, 
+\begin_inset Formula $T:C\left(I\right)\rightarrow\overline{T\left(C\left(I\right)\right)}$
+\end_inset
+
+ היא פונקציה רציפה ו-
+\begin_inset Formula $\overline{T\left(C\left(I\right)\right)}$
+\end_inset
+
+ קומפקטית.
+ אז מהתרגיל הקודם יש ל-
+\begin_inset Formula $T$
+\end_inset
+
+ נקודת שבת ב-
+\begin_inset Formula $\overline{T\left(C\left(I\right)\right)}$
+\end_inset
+
+ ובפרט נקבל שקיימת 
+\begin_inset Formula $f\in C\left(I\right)$
+\end_inset
+
+ עבורה לכל 
+\begin_inset Formula $x\in$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+f\left(x\right)=Tf\left(x\right)=\intop_{0}^{1}\sin\left(x+f^{2}\left(t\right)\right)dt
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\end_body
+\end_document

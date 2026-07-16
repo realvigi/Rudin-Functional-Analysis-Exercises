@@ -1,0 +1,7106 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{titlesec}
+\titleformat{\section}
+{\Large\bfseries}
+{שאלה \thesection}
+{0pt}
+{}
+[]
+
+\AtBeginDocument{
+\renewcommand{\labelenumi}{\bfseries)\alph{enumi}(}
+\renewcommand{\labelenumii}{\bfseries\roman{enumii}.}
+}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding cp1255
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "C:/Users/Inbar Avigdor/lyx files/MacrosHeb.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב וקטורי טופולוגי ויהא 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+ עם פנים לא ריק.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $V\subseteq X$
+\end_inset
+
+ פתוחה עבורה 
+\begin_inset Formula $V\subseteq Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $y_{0}\in Y$
+\end_inset
+
+ כלשהו.
+ אז מכך ש-
+\begin_inset Formula $Y$
+\end_inset
+
+ תת-מרחב, הרי שלכל 
+\begin_inset Formula $t>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $t\left(V-y_{0}\right)\subseteq Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $V-y_{0}$
+\end_inset
+
+ היא סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $X=\bigcup_{t>0}\left(V-y_{0}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $X\subseteq Y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $X=Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז כל תת-מרחב ממש של 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא עם פנים ריק.
+\begin_inset Newline newline
+\end_inset
+
+לכן אם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא אינסוף-ממדי ו-
+\begin_inset Formula $X=\bigcup_{n}X_{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $X_{n}\subseteq X$
+\end_inset
+
+ תתי-מרחבים מממד סופי, אז 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ הם כולם תתי מרחבים ממש של 
+\begin_inset Formula $X$
+\end_inset
+
+, ולכן בעלי פנים ריק, ומכך שהם סוף ממדיים מתקיים 
+\begin_inset Formula $X_{n}=\overline{X_{n}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\overline{X_{n}}$
+\end_inset
+
+ עם פנים ריק, כלומר 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא איחוד בן-מניה של קבוצות דלילות ולכן 
+\begin_inset Formula $X$
+\end_inset
+
+ מקטגוריה ראשונה של עצמו כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו אם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מרחב 
+\begin_inset Formula $F$
+\end_inset
+
+ אינסוף ממדי, אז ממשפט בייר 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מקטגוריה שניה של עצמו ולכן ממה שראינו לא ניתן להציג את 
+\begin_inset Formula $X$
+\end_inset
+
+ באיחוד בן-מניה של תתי-מרחבים סוף-ממדיים.
+\begin_inset Newline newline
+\end_inset
+
+אז תת-קבוצה בת-מניה 
+\begin_inset Formula $\left\{ b_{n}\right\} \subseteq X$
+\end_inset
+
+, נוכל לסמן ב-
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ את תת-המרחב של 
+\begin_inset Formula $X$
+\end_inset
+
+ שנפרש ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left\{ b_{1},\ldots,b_{n}\right\} $
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $X_{n}\subseteq X$
+\end_inset
+
+ תת-מרחב סוף ממדי של 
+\begin_inset Formula $X$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $X\neq\bigcup_{n}X_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני אם 
+\begin_inset Formula $X_{0}$
+\end_inset
+
+ הוא המרחב שנפרש ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left\{ b_{n}:n\in\kaliNatural\right\} $
+\end_inset
+
+, אז 
+\begin_inset Formula $X_{n}\subseteq X_{0}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+, ומצד שני לכל 
+\begin_inset Formula $x\in X_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x=\sum_{k=1}^{n}\lambda_{k}b_{k}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ כלשהו ו-
+\begin_inset Formula $\lambda_{1},\ldots,\lambda_{n}$
+\end_inset
+
+ סקלרים ולכן 
+\begin_inset Formula $x\in X_{n}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $X_{0}\subseteq\bigcup_{n}X_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $X_{0}=\bigcup_{n}X_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $X_{0}$
+\end_inset
+
+ תת-מרחב ממש של 
+\begin_inset Formula $X$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ היא לא קבוצה פורשת של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז הראינו שאם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מרחב 
+\begin_inset Formula $F$
+\end_inset
+
+ מממד אינסופי אז אין לו אף קבוצה פורשת בת-מניה, ולכן אין לו בסיס האמל בן-מניה
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $r\in\left(0,\frac{1}{3}\right)$
+\end_inset
+
+, נגדיר סדרה 
+\begin_inset Formula $\left(l_{n,r}\right)$
+\end_inset
+
+ באופן רקורסיבי, ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $l_{0}=1$
+\end_inset
+
+, 
+\begin_inset Formula $l_{n,r}=\frac{1}{2}\left(l_{n-1,r}-r^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $l_{0,r}>3r^{1}$
+\end_inset
+
+.
+ כמו כן אם 
+\begin_inset Formula $l_{n-1,r}>3r^{n}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+l_{n,r}=\frac{1}{2}\left(l_{n-1,r}-r^{n}\right)>l_{n,r}=\frac{1}{2}\left(3r^{n}-r^{n}\right)=r^{n}>3r^{n+1}
+\]
+
+\end_inset
+
+אז מאינדוקציה, 
+\begin_inset Formula $l_{n,r}>3r^{n+1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עבור 
+\begin_inset Formula $r\in\left(0,\frac{1}{3}\right)$
+\end_inset
+
+, נבנה סדרה 
+\begin_inset Formula $\left\{ \Omega_{n}^{r}\right\} $
+\end_inset
+
+ שכל איבר בה הוא אוסף של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2^{n}$
+\end_inset
+
+
+\numeric off
+ תתי-קטעים סגורים של 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+, זרים בזוגות ומאורך 
+\begin_inset Formula $l_{n,r}$
+\end_inset
+
+ כל אחד.
+\begin_inset Newline newline
+\end_inset
+
+ראשית נגדיר 
+\begin_inset Formula $\Omega_{0}^{r}=\left\{ \left[0,1\right]\right\} $
+\end_inset
+
+.
+ ברור ש-
+\begin_inset Formula $\Omega_{0}^{r}$
+\end_inset
+
+ עומד בדרישות.
+\begin_inset Newline newline
+\end_inset
+
+נניח שהוגדר 
+\begin_inset Formula $\Omega_{n-1}^{r}$
+\end_inset
+
+ אוסף של 
+\begin_inset Formula $2^{n-1}$
+\end_inset
+
+ תתי-קטעים סגורים של 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+, זרים בזוגות מאורך 
+\begin_inset Formula $l_{n-1,r}$
+\end_inset
+
+ כל אחד.
+\begin_inset Newline newline
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $\left[a,b\right]\in\Omega_{n-1}^{r}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\frac{a+b-r^{n}}{2}-a & =\frac{1}{2}\left(b-a-r^{n}\right)=\frac{1}{2}\left(l_{n-1,r}-r^{n}\right)=l_{n,r}>3r^{n+1}>0\\
+b-\frac{a+b+r^{n}}{2} & =\frac{1}{2}\left(b-a-r^{n}\right)=\frac{1}{2}\left(l_{n-1,r}-r^{n}\right)=l_{n,r}>3r^{n+1}>0
+\end{align*}
+
+\end_inset
+
+ובפרט 
+\begin_inset Formula $a<\frac{1}{2}\left(a+b-r^{n}\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\frac{1}{2}\left(a+b+r^{n}\right)<b$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נוכל להגדיר את 
+\begin_inset Formula $\Omega_{n}^{r}$
+\end_inset
+
+ להיות אוסף הקטעים מהצורות 
+\begin_inset Formula $\left[a,\frac{a+b-r^{n}}{2}\right],\left[\frac{a+b+r^{n}}{2},b\right]$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\left[a,b\right]\in\Omega_{n-1}^{r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+החישוב שעשינו מראה שכל אחד מהקטעים ב-
+\begin_inset Formula $\Omega_{n}^{r}$
+\end_inset
+
+ הוא מאורך 
+\begin_inset Formula $l_{n,r}$
+\end_inset
+
+, ברור שהם כולם תתי-קטעים סגורים של 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן כל קטע ב-
+\begin_inset Formula $\Omega_{n}^{r}$
+\end_inset
+
+ מוכל בקטע מתוך 
+\begin_inset Formula $\Omega_{n-1}^{r}$
+\end_inset
+
+, וכל קטע ב-
+\begin_inset Formula $\Omega_{n-1}^{r}$
+\end_inset
+
+ מכיל בדיוק שני קטעים ב-
+\begin_inset Formula $\Omega_{n}^{r}$
+\end_inset
+
+.
+ לכן מספר הקטעים ב-
+\begin_inset Formula $\Omega_{n}^{r}$
+\end_inset
+
+ הוא כפול מב-
+\begin_inset Formula $\Omega_{n-1}^{r}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף, אם 
+\begin_inset Formula $I_{1},I_{2}\in\Omega_{n}^{r}$
+\end_inset
+
+ קטעים שונים, אז יש 
+\begin_inset Formula $J_{1},J_{2}\in\Omega_{n-1}^{r}$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $I_{i}\subseteq J_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $J_{1}\neq J_{2}$
+\end_inset
+
+, אז 
+\begin_inset Formula $J_{1}\cap J_{2}=\emptyset$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $I_{1}\cap I_{2}=\emptyset$
+\end_inset
+
+, ואחרת 
+\begin_inset Formula $I_{1},I_{2}\subseteq J_{1}$
+\end_inset
+
+ ולכן אם 
+\begin_inset Formula $J_{1}=\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\{ I_{1},I_{2}\right\} =\left\{ \left[a,\frac{a+b-r^{n}}{2}\right],\left[\frac{a+b+r^{n}}{2},b\right]\right\} $
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $I_{1}\cap I_{2}=\emptyset$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Omega_{n}^{r}$
+\end_inset
+
+ הוא אכן אוסף של 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ תתי-קטעים זרים בזוגות של 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ שכל אחד מהם הוא מאורך 
+\begin_inset Formula $l_{n,r}$
+\end_inset
+
+, והבניה ממשיכה.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נגדיר 
+\begin_inset Formula $C_{n}^{r}=\bigcup\Omega_{n}^{r}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+ הוא איחוד של 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ קטעים סגורים וזרים, באורך 
+\begin_inset Formula $l_{n,r}$
+\end_inset
+
+ כל אחד, ולכן 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+ סגורה וממידה 
+\begin_inset Formula $2^{n}l_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן, אם 
+\begin_inset Formula $x\in C_{n}^{r}$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $I\in\Omega_{n}^{r}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $x\in I$
+\end_inset
+
+, ויש 
+\begin_inset Formula $J\in\Omega_{n-1}^{r}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $I\subseteq J$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x\in\bigcup\Omega_{n-1}^{r}=C_{n}^{r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\{ C_{n}^{r}\right\} $
+\end_inset
+
+ יורדת בהכלה.
+ נגדיר 
+\begin_inset Formula $C^{r}=\bigcap_{n\in\kaliNatural}C_{n}^{r}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+ סגורה, כחיתוך של קבוצות סגורות.
+ נסמן 
+\begin_inset Formula $s_{n,r}=2^{n}l_{n,r}$
+\end_inset
+
+ אז 
+\begin_inset Formula $m\left(C_{n}^{r}\right)=s_{n,r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות המידה נקבל שהסדרה 
+\begin_inset Formula $s_{n,r}$
+\end_inset
+
+ מתכנסת ומתקיים 
+\begin_inset Formula $s_{n,r}\rightarrow m\left(C^{r}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+s_{n-1,r}-s_{n,r} & =s_{n-1,r}-2^{n}l_{n,r}=s_{n-1,r}-2^{n}\cdot\frac{1}{2}\left(l_{n-1,r}-r^{n}\right)\\
+ & =2^{n-1}l_{n-1,r}-2^{n-1}l_{n-1,r}+2^{n-1}r^{n}=2^{n-1}r^{n}
+\end{align*}
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+1-s_{n,r}=s_{0,r}-s_{n,r}=\sum_{k=0}^{n}\left(s_{k-1,r}-s_{k,r}\right)=\sum_{k=1}^{n}2^{k-1}r^{k}
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+s_{n,r}=1-\sum_{k=1}^{n}2^{k-1}r^{k}=1-r\sum_{k=0}^{n-1}\left(2r\right)^{k}\xrightarrow[n\rightarrow\infty]{}1-\frac{r}{1-2r}=\frac{1-3r}{1-2r}
+\]
+
+\end_inset
+
+ כלומר 
+\begin_inset Formula $m\left(C^{r}\right)=\frac{1-3r}{1-2r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $C=\bigcup_{n\geq4}C^{\nicefrac{1}{n}}$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $n\geq4$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+m\left(C\right)\geq m\left(C^{\nicefrac{1}{n}}\right)=\frac{1-\nicefrac{3}{n}}{1-\nicefrac{2}{n}}=\frac{n-3}{n-2}
+\]
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $\frac{n-3}{n-2}\rightarrow1$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $m\left(C\right)=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נשאר להראות ש-
+\begin_inset Formula $C$
+\end_inset
+
+ היא מקטגוריה ראשונה.
+\begin_inset Newline newline
+\end_inset
+
+מההגדרה, 
+\begin_inset Formula $C$
+\end_inset
+
+ היא איחוד בן-מניה של קבוצות מהצורה 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מספיק להראות שלכל 
+\begin_inset Formula $r\in\left(0,\frac{1}{3}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+ היא קבוצה דלילה.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+ היא סגורה, ולכן מספיק להראות שהפנים של 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+ ריק.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $x\in C^{r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ מתקיים כפי שכבר ראינו הסדרה 
+\begin_inset Formula $\left(2^{n}l_{n,r}\right)$
+\end_inset
+
+ מתכנסת, ובפרט היא חסומה.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $M>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $2^{n}l_{n,r}<M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $0\leq l_{n,r}<2^{-n}M$
+\end_inset
+
+, ולכן יש 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $l_{n,r}<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $x\in C^{r}$
+\end_inset
+
+ נקבל בפרט 
+\begin_inset Formula $x\in C_{n}^{r}$
+\end_inset
+
+, ולכן יש 
+\begin_inset Formula $I\in\Omega_{n}^{r}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $x\in I$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $I$
+\end_inset
+
+ הוא קטע סגור מאורך 
+\begin_inset Formula $l_{n,r}$
+\end_inset
+
+ שמכיל את 
+\begin_inset Formula $x$
+\end_inset
+
+, ולכן 
+\begin_inset Formula 
+\[
+I\subseteq\left[x-l_{n,r},x+l_{n,r}\right]\subseteq\left(x-\varepsilon,x+\varepsilon\right)
+\]
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $I=\left[a,b\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז הקטעים היחידים ב-
+\begin_inset Formula $\Omega_{n+1}^{r}$
+\end_inset
+
+ שחותכים את 
+\begin_inset Formula $I$
+\end_inset
+
+ אם
+\begin_inset Formula 
+\[
+\left[a,\frac{a+b-r^{n}}{2}\right],\left[\frac{a+b+r^{n}}{2},b\right]
+\]
+
+\end_inset
+
+ובפרט את ב-
+\begin_inset Formula $\Omega_{n+1}^{r}$
+\end_inset
+
+ אף קטע שמכיל את הנקודה 
+\begin_inset Formula $\frac{1}{2}\left(a+b\right)$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\frac{1}{2}\left(a+b\right)\notin C_{n+1}^{r}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\frac{1}{2}\left(a+b\right)\notin C^{r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני 
+\begin_inset Formula $\frac{1}{2}\left(a+b\right)\in I$
+\end_inset
+
+ ולכן ממה שראינו 
+\begin_inset Formula $\frac{1}{2}\left(a+b\right)\in\left(x-\varepsilon,x+\varepsilon\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן כל סביבה פתוחה של 
+\begin_inset Formula $x$
+\end_inset
+
+ מכילה לפחות נקודה אחת מחוץ ל-
+\begin_inset Formula $C^{r}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $x$
+\end_inset
+
+ אינה נקודה פנימית של 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ל-
+\begin_inset Formula $C^{r}$
+\end_inset
+
+ אין נקודות פנימיות בכלל ולכן הפנים של 
+\begin_inset Formula $C^{r}$
+\end_inset
+
+ ריק וסיימנו.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $C^{\infty}\left(\Omega\right)$
+\end_inset
+
+ הוא מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\Omega\subseteq R$
+\end_inset
+
+ פתוחה, ולכן מכך ש-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ תת-מרחב סגור של 
+\begin_inset Formula $C^{\infty}\left(\Omega\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ פתוחה שמכילה את 
+\begin_inset Formula $K$
+\end_inset
+
+, נקבל ש-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ הוא גם כן מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\Lambda_{n}\phi=\intop_{-1}^{1}f_{n}\phi dm$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אז 
+\begin_inset Formula $\Lambda_{n}$
+\end_inset
+
+ הוא פונקציונל לינארי לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\phi_{k}$
+\end_inset
+
+ היא סדרה ב-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ שמתכנסת ל-
+\begin_inset Formula $0$
+\end_inset
+
+, אז בפרט 
+\begin_inset Formula $\phi_{k}\rightarrow0$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על 
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ יש 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $k>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left\Vert \phi_{k}\right\Vert _{\infty}<\left(1+\left\Vert f_{n}\right\Vert _{1}\right)^{-1}\varepsilon$
+\end_inset
+
+, ואז
+\begin_inset Formula 
+\begin{align*}
+\left|\Lambda_{n}\phi_{k}\right| & =\left|\intop_{-1}^{1}f_{n}\phi_{k}dm\right|\leq\intop_{-1}^{1}\left|f_{n}\right|\left|\phi_{k}\right|dm\leq\left\Vert f_{n}\right\Vert _{1}\left\Vert \phi_{k}\right\Vert _{\infty}\\
+ & <\frac{\left\Vert f_{n}\right\Vert _{1}}{1+\left\Vert f_{n}\right\Vert _{1}}\varepsilon<\varepsilon
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\Lambda_{n}\phi_{k}\xrightarrow[k\rightarrow\infty]{}0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ הוא מרחב 
+\begin_inset Formula $F$
+\end_inset
+
+, הוא בפרט מטריזבילי ולכן 
+\begin_inset Formula $\Lambda_{n}$
+\end_inset
+
+ רציף לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\{ \Lambda_{n}\right\} $
+\end_inset
+
+ היא סדרה של העתקות ליאריות רציפות מ-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ אל 
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+, ובפרט ממרחב 
+\begin_inset Formula $F$
+\end_inset
+
+ אל מרחב וקטורי טופולוגי, כך שלכל 
+\begin_inset Formula $x\in\mathcal{D}_{K}$
+\end_inset
+
+ הסדרה 
+\begin_inset Formula $\Lambda_{n}x$
+\end_inset
+
+ מתכנסת ל-
+\begin_inset Formula $\Lambda x$
+\end_inset
+
+.
+ אז מהמסקנות של משפט בנך-שטיינהאוס, נקבל ש-
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ רציפה.
+\begin_inset Newline newline
+\end_inset
+
+ברור ש-
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ לינארית ולכן 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ פונקציונל לינארי רציף כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ הסדרה 
+\begin_inset Formula $\left\{ \Lambda_{n}\phi\right\} $
+\end_inset
+
+ מתכנסת ובפרט חסומה.
+\begin_inset Newline newline
+\end_inset
+
+כפי שראינו, 
+\begin_inset Formula $\left\{ \Lambda_{n}\right\} $
+\end_inset
+
+ היא משפחה של פונקציונלים לינאריים רציפים על 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ שהוא מרחב 
+\begin_inset Formula $F$
+\end_inset
+
+..
+\begin_inset Newline newline
+\end_inset
+
+אז ממשפט בנך-שטיינהאוס, 
+\begin_inset Formula $\left\{ \Lambda_{n}\right\} $
+\end_inset
+
+ היא משפחה רציפה במידה אחידה.
+\begin_inset Newline newline
+\end_inset
+
+אז יש סביבה 
+\begin_inset Formula $V\subseteq\mathcal{D}_{K}$
+\end_inset
+
+ של 
+\begin_inset Formula $0$
+\end_inset
+
+, עבורה 
+\begin_inset Formula $\Lambda_{n}\left(V\right)\in\left(-1,1\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן
+\begin_inset Formula 
+\[
+V_{N}=\left\{ \phi\in\mathcal{D}_{K}:\max_{0\leq j\leq N}\left\Vert D^{j}\phi\right\Vert <\frac{1}{N}\right\} 
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $\left\{ V_{N}\right\} $
+\end_inset
+
+ הן בסיס מקומי עבורי 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז קיים 
+\begin_inset Formula $p$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $V_{p}\subseteq V$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\Lambda_{n}\left(V_{p}\right)\subseteq\left(-1,1\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left\Vert D^{j}\phi\right\Vert _{\infty}\leq p^{-1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $0\leq j\leq p$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left|\Lambda_{n}\phi\right|\leq1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ לא אפס.
+ אז 
+\begin_inset Formula $\max_{0\leq j\leq p}\left\Vert D^{j}\phi\right\Vert _{\infty}>0$
+\end_inset
+
+ ואז לכל 
+\begin_inset Formula $0\leq j\leq p$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left\Vert D^{j}\left(\frac{\phi}{p\max_{0\leq j\leq p}\left\Vert D^{j}\phi\right\Vert _{\infty}}\right)\right\Vert _{\infty}=\frac{\left\Vert D^{j}\left(\phi\right)\right\Vert _{\infty}}{p\max_{0\leq j\leq p}\left\Vert D^{j}\phi\right\Vert _{\infty}}\leq\frac{1}{p}
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left|\Lambda_{n}\left(\frac{\phi}{p\max_{0\leq j\leq p}\left\Vert D^{j}\phi\right\Vert _{\infty}}\right)\right|\leq1
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula 
+\[
+\left|\Lambda_{n}\phi\right|\leq p\max_{0\leq j\leq p}\left\Vert D^{j}\phi\right\Vert _{\infty}
+\]
+
+\end_inset
+
+מהגדרת 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+, ניתן להרחיב כל פונקציה 
+\begin_inset Formula $\psi\in\mathcal{D}_{K}$
+\end_inset
+
+ לפונקציה רציפה עם תומך מוכל ב-
+\begin_inset Formula $K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $\psi\in\mathcal{D}_{K}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\psi\left(-1\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו, מכך שלכל 
+\begin_inset Formula $j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $D^{j}\phi\in\mathcal{D}_{K}$
+\end_inset
+
+, נקבל מהמשפט היסודי של האינפי שלכל 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left|D^{j}\phi\left(x\right)\right| & =\left|D^{j}\phi\left(x\right)-D^{j}\phi\left(-1\right)\right|=\left|\intop_{-1}^{x}D^{j+1}\phi\left(t\right)dt\right|\\
+ & \leq\intop_{-1}^{x}\left|D^{j+1}\phi\left(t\right)\right|dt\leq\left\Vert D^{j+1}\phi\right\Vert _{\infty}\left(x+1\right)\leq2\left\Vert D^{j+1}\phi\right\Vert _{\infty}
+\end{align*}
+
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $0\leq j\leq p$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left\Vert D^{j}\phi\right\Vert _{\infty}\leq2^{p}\left\Vert D^{p}\phi\right\Vert _{\infty}$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\left|\Lambda_{n}\phi\right|\leq p\max_{0\leq j\leq p}\left\Vert D^{j}\phi\right\Vert _{\infty}\leq2^{p}p\left\Vert D^{p}\phi\right\Vert _{\infty}
+\]
+
+\end_inset
+
+כמו כן ברור שהא
+\begin_inset Quotes erd
+\end_inset
+
+ש האחרון נכון אם 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, ולכן קיבלנו שלכל 
+\begin_inset Formula $\phi$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\Lambda_{n}\phi\right|\leq2^{p}p\left\Vert D^{p}\phi\right\Vert _{\infty}$
+\end_inset
+
+ וסיימנו.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $f_{n}\left(t\right)=n^{3}t$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left|t\right|\leq n^{-1}$
+\end_inset
+
+, ואחרת 
+\begin_inset Formula $f_{n}\left(t\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+.
+ אז מאינטגרציה בחלקים נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\intop_{-1}^{1}f_{n}\left(t\right)\phi\left(t\right)dt & =n^{3}\intop_{-n^{-1}}^{n^{-1}}t\phi\left(t\right)dt\\
+ & =n^{3}\left(\frac{\left(\nicefrac{1}{n}\right)^{2}}{2}\phi\left(\frac{1}{n}\right)-\frac{\left(-\nicefrac{1}{n}\right)^{2}}{2}\phi\left(-\frac{1}{n}\right)-\intop_{-n^{-1}}^{n^{-1}}\frac{t^{2}}{2}D\phi\left(t\right)dt\right)\\
+ & =\frac{n}{2}\left(\phi\left(\frac{1}{n}\right)-\phi\left(-\frac{1}{n}\right)\right)-n^{3}\intop_{-n^{-1}}^{n^{-1}}\frac{t^{2}}{2}D\phi\left(t\right)dt\\
+ & =\frac{n}{2}\left(\intop_{-n^{-1}}^{n^{-1}}D\phi\left(t\right)dt\right)-n^{3}\intop_{-n^{-1}}^{n^{-1}}\frac{t^{2}}{2}D\phi\left(t\right)dt
+\end{align*}
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{-1}^{1}f_{n}\left(t\right)\phi\left(t\right)dt\right| & \leq\frac{n}{2}\left|\intop_{-n^{-1}}^{n^{-1}}D\phi\left(t\right)dt\right|+n^{3}\left|\intop_{-n^{-1}}^{n^{-1}}\frac{t^{2}}{2}D\phi\left(t\right)dt\right|\\
+ & \leq\frac{n}{2}\intop_{-n^{-1}}^{n^{-1}}\left|D\phi\left(t\right)\right|dt+n^{3}\intop_{-n^{-1}}^{n^{-1}}\frac{\left|t\right|^{2}}{2}\left|D\phi\left(t\right)\right|dt\\
+ & \leq\frac{n}{2}\cdot\frac{2}{n}\cdot\left\Vert D\phi\right\Vert _{\infty}+n^{3}\cdot\frac{2}{n}\cdot\frac{n^{-2}}{2}\left\Vert D\phi\right\Vert _{\infty}\\
+ & =2\left\Vert D\phi\right\Vert _{\infty}
+\end{align*}
+
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\intop_{-1}^{1}f_{n}\left(t\right)\phi\left(t\right)dt\right|\leq2\left\Vert D\phi\right\Vert _{\infty}$
+\end_inset
+
+, וסיימנו.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $f\in C^{1}\left(K\right)$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\phi\left(1\right)=\phi\left(-1\right)=0$
+\end_inset
+
+ ולכן מאינטגרציה בחלקים 
+\begin_inset Formula 
+\[
+\intop_{K}f^{\prime}\phi dm=f\left(1\right)\phi\left(1\right)-f\left(-1\right)\phi\left(-1\right)-\intop_{K}f\phi^{\prime}dm=-\intop_{K}f\phi^{\prime}dm
+\]
+
+\end_inset
+
+עכשיו נבחר 
+\begin_inset Formula $\psi\in\mathcal{D}_{K}$
+\end_inset
+
+ כלשהי עבורה 
+\begin_inset Formula $\left\Vert \psi\right\Vert _{1}=1$
+\end_inset
+
+ ו-
+\numeric on
+
+\begin_inset Formula $\psi\geq0$
+\end_inset
+
+
+\numeric off
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $g_{n}\left(x\right)=n\psi\left(nx\right)$
+\end_inset
+
+, ו-
+\begin_inset Formula $f_{n}=g_{n}^{\prime\prime}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נקבל 
+\begin_inset Formula 
+\[
+\intop_{K}f_{n}\phi dm=-\intop_{K}g_{n}^{\prime}\phi^{\prime}dm=\intop_{K}g_{n}\phi^{\prime\prime}dm=\intop_{-1}^{1}n\psi\left(nt\right)\phi^{\prime\prime}\left(t\right)dt=\intop_{-n}^{n}\psi\left(s\right)\phi^{\prime\prime}\left(\frac{s}{n}\right)ds=\intop_{-1}^{1}\psi\left(s\right)\phi^{\prime\prime}\left(\frac{s}{n}\right)ds
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left|\intop_{K}f_{n}\phi dm\right|\leq\left\Vert \psi\right\Vert _{\infty}\left\Vert \phi^{\prime\prime}\right\Vert _{\infty}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ מרציפות 
+\begin_inset Formula $\phi^{\prime\prime}$
+\end_inset
+
+, יש 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $t\in\left(-\delta,\delta\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\phi^{\prime\prime}\left(t\right)-\phi^{\prime\prime}\left(0\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נבחר 
+\begin_inset Formula $N$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $N^{-1}<\delta$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+, לכל 
+\begin_inset Formula $s\in\left[-1,1\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|n^{-1}s\right|\leq n^{-1}<N^{-1}<\delta$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|\phi^{\prime\prime}\left(n^{-1}s\right)-\phi^{\prime\prime}\left(0\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{K}f_{n}\phi dm-\phi^{\prime\prime}\left(0\right)\right| & =\left|\intop_{-1}^{1}\psi\left(s\right)\phi^{\prime\prime}\left(\frac{s}{n}\right)ds-\intop_{-1}^{1}\psi\left(s\right)\phi^{\prime\prime}\left(0\right)ds\right|=\left|\intop_{-1}^{1}\psi\left(s\right)\left(\phi^{\prime\prime}\left(\frac{s}{n}\right)-\phi^{\prime\prime}\left(0\right)\right)ds\right|\\
+ & \leq\intop_{-1}^{1}\left|\psi\left(s\right)\right|\left|\phi^{\prime\prime}\left(\frac{s}{n}\right)-\phi^{\prime\prime}\left(0\right)\right|ds<\varepsilon\intop_{-1}^{1}\left|\psi\left(s\right)\right|ds=\varepsilon
+\end{align*}
+
+\end_inset
+
+כלומר קיבלנו 
+\begin_inset Formula $\intop_{K}f_{n}\phi dm\rightarrow\phi^{\prime\prime}\left(0\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+, ובפרט הסדרה של האינטגרלים מתכנסת כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+נותר להראות שלא קיים 
+\begin_inset Formula $M>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left|\intop_{K}f_{n}\phi dm\right|<M\left\Vert \phi^{\prime}\right\Vert _{\infty}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\phi\in\mathcal{D}_{K},n\in\kaliNatural$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממה שראינו, לכל 
+\begin_inset Formula $\phi$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק עבורו יתקיים 
+\begin_inset Formula $\intop_{K}f_{n}\phi dm>\phi^{\prime\prime}\left(0\right)-1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מספיק להראות שלכל 
+\begin_inset Formula $M>0$
+\end_inset
+
+ יש 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\phi^{\prime\prime}\left(0\right)-1>M\left\Vert \phi^{\prime}\right\Vert _{\infty}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\varphi\in\mathcal{D}_{K}$
+\end_inset
+
+ איזושהי פונקציה עבורה 
+\begin_inset Formula $\left\Vert \varphi\right\Vert _{\infty}=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $r\geq1$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $h_{r}\left(x\right)=r^{-1}\varphi\left(rx\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $h_{r}$
+\end_inset
+
+ חלקה והתומך שלה מוכל ב-
+\begin_inset Formula $\left[-r^{-1},r^{-1}\right]$
+\end_inset
+
+ ובפרט ב-
+\begin_inset Formula $K$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $h_{r}\in\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן 
+\begin_inset Formula $h_{r}^{\prime}\left(x\right)=\varphi\left(rx\right),h_{r}^{\prime\prime}\left(x\right)=\varphi\left(rx\right)$
+\end_inset
+
+, ולכן 
+\begin_inset Formula 
+\begin{align*}
+\left\Vert h_{r}^{\prime}\right\Vert _{\infty} & =\left\Vert \varphi\right\Vert _{\infty}=1\\
+\left\Vert h_{r}^{\prime\prime}\right\Vert _{\infty} & =r\left\Vert \varphi\right\Vert _{\infty}=r
+\end{align*}
+
+\end_inset
+
+בפרט, לכל 
+\begin_inset Formula $r\geq1$
+\end_inset
+
+ יש 
+\begin_inset Formula $x_{r}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $h_{r}^{\prime\prime}\left(x_{r}\right)=r$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $h_{r}^{\prime\prime}$
+\end_inset
+
+ נתמכת על 
+\begin_inset Formula $\left[-r^{-1},r^{-1}\right]$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\left|x_{r}\right|\leq r^{-1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו לכל 
+\begin_inset Formula $r\geq2$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\phi_{r}\left(x\right)=h_{r}\left(x+x_{r}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\phi_{r}$
+\end_inset
+
+ חלקה, וכמו כן מכך ש-
+\begin_inset Formula $h_{r}$
+\end_inset
+
+ נתמכת על 
+\begin_inset Formula $\left[-r^{-1},r^{-1}\right]$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\phi_{r}$
+\end_inset
+
+ נתמכת על 
+\begin_inset Formula $\left[-r^{-1}-x_{r},r^{-1}-x_{r}\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממה שראינו מתקיים 
+\begin_inset Formula $-\frac{1}{2}\leq x_{r}\leq\frac{1}{2}$
+\end_inset
+
+ וכמו כן 
+\begin_inset Formula $r^{-1}\leq\frac{1}{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\begin{align*}
+-r^{-1}-x_{r} & \geq-\frac{1}{2}-\frac{1}{2}=1\\
+r^{-1}-x_{r} & \leq\frac{1}{2}+\frac{1}{2}=1
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\left[-r^{-1}-x_{r},r^{-1}-x_{r}\right]\subseteq K$
+\end_inset
+
+ ולכן התומך של 
+\begin_inset Formula $\phi_{r}$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $K$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\phi_{r}\in\mathcal{D}_{K}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $r\geq2$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף מתקיים 
+\begin_inset Formula $\phi_{r}^{\prime}\left(x\right)=h_{r}^{\prime}\left(x+x_{r}\right),\phi_{r}^{\prime\prime}\left(x\right)=h_{r}^{\prime\prime}\left(x+x_{r}\right)$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+\left\Vert \phi_{r}^{\prime}\right\Vert _{\infty} & =\left\Vert h_{r}^{\prime}\right\Vert _{\infty}=1\\
+\phi_{r}^{\prime\prime}\left(0\right) & =h_{r}^{\prime\prime}\left(x_{r}\right)=r
+\end{align*}
+
+\end_inset
+
+לכל 
+\begin_inset Formula $r\geq2$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $M>0$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $r=M+2$
+\end_inset
+
+, 
+\begin_inset Formula $\phi=\phi_{r}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\phi\in\mathcal{D}_{K}$
+\end_inset
+
+, כי 
+\begin_inset Formula $r\geq2$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממה שראינו נקבל
+\begin_inset Formula 
+\[
+\phi^{\prime\prime}\left(0\right)-1=M+2-1=M+1>M=M\left\Vert \phi^{\prime}\right\Vert _{\infty}
+\]
+
+\end_inset
+
+וקיבלנו את הדרוש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $I=\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+ מידת לבג על 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $M>0$
+\end_inset
+
+ ותהא 
+\begin_inset Formula $\left\{ f_{n}\right\} $
+\end_inset
+
+ סדרה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+ עבורה ו-
+\begin_inset Formula $f\in L^{1}$
+\end_inset
+
+ עבורן 
+\begin_inset Formula $\left\Vert f_{n}-f\right\Vert _{1}\rightarrow0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left\Vert f_{n}\right\Vert _{2}^{2}\leq M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש תת-סדרה 
+\begin_inset Formula $\left\{ f_{n_{k}}\right\} $
+\end_inset
+
+ עבורה כמעט לכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f_{n_{k}}\left(x\right)\rightarrow f\left(x\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מהלמה של פאטו נקבל
+\begin_inset Formula 
+\[
+\intop_{I}\left|f\right|^{2}dm\leq\liminf_{k\rightarrow\infty}\intop_{I}\left|f_{n_{k}}\right|^{2}dm=\liminf_{k\rightarrow\infty}\left\Vert f_{n_{k}}\right\Vert _{2}^{2}\leq M
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left\Vert f\right\Vert _{2}^{2}\leq M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז הקבוצה 
+\begin_inset Formula $\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq M\right\} $
+\end_inset
+
+ היא סגורה.
+ נראה שהפנים שלה ריק.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $h\left(x\right)=x^{-\nicefrac{1}{2}}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\intop_{I}\left|h\right|dm=2$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $h\in L^{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $h_{n}=h\chi_{\left[0,n^{-1}\right]}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $h_{n}\rightarrow0$
+\end_inset
+
+ נקודתית כמעט בכל מקום, וכמו כן 
+\begin_inset Formula $h_{n}\leq\left|h\right|$
+\end_inset
+
+, ולכן ממשפט ההתכנסות הנשלטת נקבל 
+\begin_inset Formula $\left\Vert h_{n}\right\Vert _{1}\rightarrow0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $g\in L^{1}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left\Vert g\right\Vert _{2}^{2}\leq M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $\left\Vert \left(g+h_{n}\right)-g\right\Vert _{1}\rightarrow0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $g+h_{n}\rightarrow g$
+\end_inset
+
+ ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left\Vert h_{n}\right\Vert _{2}=\left\Vert g+h_{n}-g\right\Vert _{2}\leq\left\Vert g+h_{n}\right\Vert _{2}+\left\Vert g\right\Vert _{2}
+\]
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $\left\Vert h_{n}\right\Vert _{2}=\infty$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left\Vert g+h_{n}\right\Vert _{2}+\left\Vert g\right\Vert _{2}=\infty$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\left\Vert g\right\Vert _{2}\leq M^{\nicefrac{1}{2}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\Vert g+h_{n}\right\Vert _{2}=\infty$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula 
+\[
+g+h_{n}\in L^{1}\setminus\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq M\right\} 
+\]
+
+\end_inset
+
+אז הראינו שיש סדרה מחוץ ל-
+\begin_inset Formula $\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq M\right\} $
+\end_inset
+
+ שמתכנסת ל-
+\begin_inset Formula $g$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $g$
+\end_inset
+
+ היא לא נקודה פנימית של 
+\begin_inset Formula $\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq M\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ל-
+\begin_inset Formula $\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq M\right\} $
+\end_inset
+
+ אין נקודות פנימיות ולכן היא בעלת פנים.
+\begin_inset Newline newline
+\end_inset
+
+אז בפרט לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq n\right\} $
+\end_inset
+
+ היא קבוצה סגורה בעלת פנים ריק כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $L^{2}=\bigcup_{n\geq1}\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}^{2}\leq n\right\} $
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ היא מקטגוריה ראשונה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $g_{n}=n\chi_{\left[0,n^{-3}\right]}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $g_{n}\in L^{1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכ 
+\begin_inset Formula $f\in L^{2}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+, נקבל מא
+\begin_inset Quotes erd
+\end_inset
+
+ש הלדר
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{I}fg_{n}dm\right| & \leq\intop_{I}\left|f\right|g_{n}dm\leq\left\Vert f\right\Vert _{2}\left\Vert g_{n}\right\Vert _{2}=\left\Vert f\right\Vert _{2}\left(\intop_{0}^{n^{-3}}n^{2}dm\right)^{\nicefrac{1}{2}}\\
+ & =\left\Vert f\right\Vert _{2}\sqrt{\frac{1}{n}}
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\intop_{I}fg_{n}dm\rightarrow0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $f\in L^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, אם 
+\begin_inset Formula $f\left(x\right)=x^{-\nicefrac{2}{3}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\intop_{I}\left|f\right|dm=3$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\in L^{1}$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\intop_{I}fg_{n}dm=n\intop_{0}^{n^{-3}}x^{-\nicefrac{2}{3}}dx=n\cdot3\left(n^{-3}\right)^{\nicefrac{1}{3}}=3
+\]
+
+\end_inset
+
+עכשיו נגדיר 
+\begin_inset Formula $\Lambda_{n}:L^{1}\rightarrow\kaliComplex$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\Lambda_{n}f=\intop_{I}fg_{n}dm$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Lambda_{n}$
+\end_inset
+
+ הוא פונקציונל לינארי רציף על 
+\begin_inset Formula $L^{1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $L\subseteq L^{1}$
+\end_inset
+
+ אוסף 
+\begin_inset Formula $f\in L^{1}$
+\end_inset
+
+ עבורם הסדרה 
+\begin_inset Formula $\Lambda_{n}f$
+\end_inset
+
+ מתכנסת.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+ הוא בפרט מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $L$
+\end_inset
+
+ חייבת להיות או מקטגוריה ראשונה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+, או שמתקיים 
+\begin_inset Formula $L^{1}=L$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממה שראינו, 
+\begin_inset Formula $L^{1}\neq L$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $L$
+\end_inset
+
+ היא מקטגוריה ראשונה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממה שראינו מתקיים גם 
+\begin_inset Formula $L^{2}\subseteq L$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ היא מקטגוריה ראשונה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+ וסיימנו.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $\iota:L^{2}\rightarrow L^{1}$
+\end_inset
+
+ העתקת הזהות.
+ אז 
+\begin_inset Formula $\iota$
+\end_inset
+
+ לינארית.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, אם 
+\begin_inset Formula $f\in L^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\Vert f\right\Vert _{2}<\varepsilon$
+\end_inset
+
+ אז גם 
+\begin_inset Formula $\left\Vert f\right\Vert _{1}<\varepsilon$
+\end_inset
+
+, כי 
+\begin_inset Formula $\left\Vert f\right\Vert _{1}\leq\left\Vert f\right\Vert _{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\iota$
+\end_inset
+
+ רציפה כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ הוא מרחב בנך ובפרט מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+, ולכן אם 
+\begin_inset Formula $\iota\left(L^{2}\right)$
+\end_inset
+
+ היא מקטגוריה שניה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+, אז ממשפט ההעתקה הפתוחה 
+\begin_inset Formula $\iota\left(L^{2}\right)=L^{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\iota\left(L^{2}\right)=L^{2}\neq L^{1}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\iota\left(L^{2}\right)=L^{2}$
+\end_inset
+
+ היא לא מקטגוריה שניה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ היא מקטגוריה ראשונה ב-
+\begin_inset Formula $L^{1}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הפעם מתקיים 
+\begin_inset Formula $\ell^{p}\subseteq\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $M>0$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $E=\left\{ x\in\ell^{q}:\left\Vert x\right\Vert _{p}^{p}\leq M\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\left\{ x_{k}\right\} $
+\end_inset
+
+ סדרה ב-
+\begin_inset Formula $E$
+\end_inset
+
+, ונניח שיש 
+\begin_inset Formula $x\in\ell^{q}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $\left\Vert x_{k}-x\right\Vert _{q}\rightarrow0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש תת-סדרה 
+\begin_inset Formula $\left\{ x_{k_{j}}\right\} $
+\end_inset
+
+ עבורה 
+\begin_inset Formula $x_{k_{j}}\xrightarrow[j\rightarrow\infty]{}x$
+\end_inset
+
+ נקודתית כמעט בכל מקום, ביחס למידת המניה על 
+\begin_inset Formula $\kaliNatural\cup\left\{ 0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $x_{k_{j}}\left(n\right)\xrightarrow[j\rightarrow\infty]{}x\left(n\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מהלמה של פאטו נקבל
+\begin_inset Formula 
+\begin{align*}
+\left\Vert x\right\Vert _{p}^{p} & =\sum_{n=0}^{\infty}\left|x\left(n\right)\right|^{p}=\sum_{n=0}^{\infty}\left(\liminf_{j\rightarrow\infty}\left|x_{k_{j}}\left(n\right)\right|\right)^{p}\\
+ & \leq\liminf_{j\rightarrow\infty}\sum_{n=0}^{\infty}\left(\left|x_{k_{j}}\left(n\right)\right|\right)^{p}=\liminf_{j\rightarrow\infty}\left\Vert x_{k_{j}}\right\Vert _{p}^{p}\\
+ & \leq\liminf_{j\rightarrow\infty}M=M
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נראה שהפנים של 
+\begin_inset Formula $E$
+\end_inset
+
+ ריק.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $y_{k}\left(n\right)=k^{-1}n^{-\nicefrac{1}{p}}$
+\end_inset
+
+לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+, 
+\begin_inset Formula $y_{k}\left(0\right)=0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $p^{-1}q>1$
+\end_inset
+
+, לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left\Vert y_{k}\right\Vert _{p}^{p} & =\frac{1}{k^{p}}\sum_{n=1}^{\infty}\frac{1}{n}=\infty\\
+\left\Vert y_{k}\right\Vert _{q}^{q} & =\frac{1}{k^{q}}\sum_{n=1}^{\infty}\frac{1}{n^{\nicefrac{q}{p}}}<\infty
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $y_{k}\in\ell^{q}\setminus\ell^{p}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו אם 
+\begin_inset Formula $x\in E$
+\end_inset
+
+ נקודה כלשהי אז מתקיים
+\begin_inset Formula 
+\[
+\left\Vert \left(x+y_{k}\right)-x\right\Vert _{q}=\left\Vert y_{k}\right\Vert _{q}=\left(\frac{1}{k^{q}}\sum_{n=1}^{\infty}\frac{1}{n^{\nicefrac{q}{p}}}\right)^{\nicefrac{1}{q}}=\frac{1}{k}\left\Vert y_{1}\right\Vert \xrightarrow[k\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $x+y_{k}\xrightarrow[k\rightarrow\infty]{}x$
+\end_inset
+
+ ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x+y_{k}\notin\ell^{p}$
+\end_inset
+
+, כי אחרת 
+\begin_inset Formula $y_{k}=\left(x+y_{k}\right)-x\in\ell^{p}$
+\end_inset
+
+ וראינו כבר שזה לא נכון.
+\begin_inset Newline newline
+\end_inset
+
+אז בפרט 
+\begin_inset Formula $x+y_{k}\notin E$
+\end_inset
+
+.
+ כלומר מצאנו סדרה ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+, שכל האיברים שלה מחוץ ל-
+\begin_inset Formula $E$
+\end_inset
+
+, שמתכנסת ל-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $x$
+\end_inset
+
+ לא נקודה פנימית.
+\begin_inset Newline newline
+\end_inset
+
+אז ל-
+\begin_inset Formula $E$
+\end_inset
+
+ אין נקודות פנימיות ולכן הפנים של 
+\begin_inset Formula $E$
+\end_inset
+
+ ריק.
+\begin_inset Newline newline
+\end_inset
+
+משרירותיות 
+\begin_inset Formula $M$
+\end_inset
+
+, נקבל שכל הקבוצות 
+\begin_inset Formula $E_{n}=\left\{ x\in\ell^{q}:\left\Vert x\right\Vert _{p}^{p}\leq n\right\} $
+\end_inset
+
+ הן סגורות עם פנים ריק ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\ell^{p}=\bigcup_{n}E_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\ell^{p}$
+\end_inset
+
+ הוא מקטגוריה ראשונה ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+ראשית נניח 
+\begin_inset Formula $1<p<q<\infty$
+\end_inset
+
+, ויהיו 
+\begin_inset Formula $p^{*},q^{*}$
+\end_inset
+
+ האקספוננטים הצמודים ל-
+\begin_inset Formula $p,q$
+\end_inset
+
+ בהתאמה.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $1<q^{*}<p^{*}<\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $\alpha=\frac{1}{2}\left(\left(q^{*}\right)^{-1}+\left(p^{*}\right)^{-1}\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n,k$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+y_{k}\left(n\right)=\begin{cases}
+k^{-\alpha} & n<k\\
+0 & n\geq k
+\end{cases}
+\]
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left\Vert y_{k}\right\Vert _{p^{*}} & =\left(k\left|k^{-\alpha}\right|^{p^{*}}\right)^{\nicefrac{1}{p^{*}}}=k^{\nicefrac{1}{p^{*}}-\alpha}\\
+\left\Vert y_{k}\right\Vert _{q^{*}} & =\left(k\left|a_{k}\right|^{q^{*}}\right)^{\nicefrac{1}{q^{*}}}=k^{\nicefrac{1}{q^{*}}-\alpha}
+\end{align*}
+
+\end_inset
+
+ובפרט 
+\begin_inset Formula $y_{k}\in\ell^{p^{*}},\ell^{q^{*}}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ משרה פונקציונלים לינאריים רציפים 
+\begin_inset Formula $\Lambda_{k}^{p},\Lambda^{q}$
+\end_inset
+
+ על 
+\begin_inset Formula $\ell^{p},\ell^{q}$
+\end_inset
+
+ בהתאמה, וכך שלכל 
+\begin_inset Formula $x\in\ell^{p},x^{\prime}\in\ell^{q}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\Lambda_{k}^{p}x & =\sum_{n=0}^{\infty}x\left(n\right)y_{k}\left(n\right)\\
+\Lambda_{k}^{q}x^{\prime} & =\sum_{n=0}^{\infty}x^{\prime}\left(n\right)y_{k}\left(n\right)
+\end{align*}
+
+\end_inset
+
+ויתרה מזאת מתקיים 
+\begin_inset Formula $\left\Vert \Lambda_{k}^{p}\right\Vert =\left\Vert y_{k}\right\Vert _{p},\left\Vert \Lambda_{k}^{q}\right\Vert =\left\Vert y_{k}\right\Vert _{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נבחין שהצמצום של 
+\begin_inset Formula $\Lambda_{k}^{q}$
+\end_inset
+
+ אל 
+\begin_inset Formula $\ell^{p}$
+\end_inset
+
+ הוא בדיוק 
+\begin_inset Formula $\Lambda_{k}^{p}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן מתקיים 
+\begin_inset Formula $\left(p^{*}\right)^{-1}-\alpha<0,\left(q^{*}\right)^{-1}-\alpha>0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\Vert y_{k}\right\Vert _{q^{*}}\rightarrow\infty,\left\Vert y_{k}\right\Vert _{p^{*}}\rightarrow0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\Vert \Lambda_{k}^{p}\right\Vert \rightarrow0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\Lambda_{k}^{p}x\rightarrow0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+, ולכן גם 
+\begin_inset Formula $\Lambda_{k}^{q}x\rightarrow0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $q^{-1}<\frac{1}{2}\left(q^{-1}+p^{-1}\right)$
+\end_inset
+
+, אבל חישוב פשוט נותן 
+\begin_inset Formula $,\frac{1}{2}\left(q^{-1}+p^{-1}\right)=1-\alpha$
+\end_inset
+
+ ולכן נוכל לקבוע 
+\begin_inset Formula $\beta\in\left(q^{-1},1-\alpha\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $x\left(n\right)=n^{-\beta}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אז מכך ש-
+\begin_inset Formula $q\beta>1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נקבל
+\begin_inset Formula $\sum_{n=0}^{\infty}n^{-q\beta}<\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כלומר 
+\begin_inset Formula $x\in\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\Lambda_{k}^{q}x=\sum_{n=0}^{k-1}n^{-\beta}k^{-\alpha}\geq\sum_{n=0}^{k-1}k^{-\beta}k^{-\alpha}=k\cdot k^{-\alpha-\beta}=k^{1-\alpha-\beta}
+\]
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula $1-\alpha-\beta>0$
+\end_inset
+
+ ולכן נקבל 
+\begin_inset Formula $\Lambda_{k}^{q}x\rightarrow\infty$
+\end_inset
+
+, ובפרט 
+\begin_inset Formula $\Lambda_{k}^{q}x$
+\end_inset
+
+ לא מתכנס ב-
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ לכן אם 
+\begin_inset Formula $L$
+\end_inset
+
+ הוא אוסף כל האיברים 
+\begin_inset Formula $x$
+\end_inset
+
+ ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+ עבורם קיים הגבול 
+\begin_inset Formula $\lim_{k\rightarrow0}\Lambda_{k}^{q}x$
+\end_inset
+
+, אז ממה שראינו מתקיים 
+\begin_inset Formula $\ell^{p}\subseteq L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $L\neq\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $L$
+\end_inset
+
+ היא מקטגוריה ראשונה ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\ell^{p}$
+\end_inset
+
+ היא מקטגוריה ראשונה גם כן ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $p=1$
+\end_inset
+
+, ההוכחה דומה אבל צריך להגדיר 
+\begin_inset Formula 
+\[
+y_{k}\left(n\right)=\begin{cases}
+k^{-1} & n<2^{k}\\
+0 & n\geq2^{k}
+\end{cases}
+\]
+
+\end_inset
+
+ואז 
+\begin_inset Formula $\left\Vert y_{k}\right\Vert _{\infty}=k^{-1},\left\Vert y_{k}\right\Vert _{q^{*}}=2^{k}k^{-1}$
+\end_inset
+
+.
+ כמו קודם נקבל פונקציונלים 
+\begin_inset Formula $\Lambda_{k}^{p},\Lambda_{k}^{q}$
+\end_inset
+
+ בעלי אותם תכונות, ומאותו טיעון נקבל 
+\begin_inset Formula $\Lambda_{k}^{p}x\rightarrow0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+הפעם אם נבחר 
+\begin_inset Formula $x\left(n\right)=n^{-2}$
+\end_inset
+
+ אז ברור ש-
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+, ומצד שני 
+\begin_inset Formula 
+\[
+\Lambda_{k}^{p}x=\sum_{n=0}^{2^{k}-1}n^{-2}k^{-1}\geq\sum_{n=0}^{2^{k}-1}k^{-3}=2^{k}k^{-3}\rightarrow\infty
+\]
+
+\end_inset
+
+ומכאן הכול אותו הדבר.
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $1\leq p<q\leq\infty$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\ell^{p}\subseteq\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נניח 
+\begin_inset Formula $q=\infty$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert _{\infty}^{p}=\left(\sup_{n\in\kaliNatural}\left|x\left(n\right)\right|\right)^{p}=\sup_{n\in\kaliNatural}\left|x\left(n\right)\right|^{p}\leq\sum_{n=0}^{\infty}\left|x\left(n\right)\right|^{p}=\left\Vert x\right\Vert _{p}^{p}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left\Vert x\right\Vert _{\infty}\leq\left\Vert x\right\Vert _{p}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אחרת, 
+\begin_inset Formula $q<\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $t>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left\Vert tx\right\Vert _{p}<1$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $t\left|x\left(n\right)\right|<1$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $t^{p}\left|x\left(n\right)\right|^{p}>t^{q}\left|x\left(n\right)\right|^{q}$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\left\Vert tx\right\Vert _{q}=\left(\sum_{n=0}^{\infty}t^{q}\left|x\left(n\right)\right|^{q}\right)^{\nicefrac{1}{q}}<\left(\sum_{n=0}^{\infty}t^{p}\left|x\left(n\right)\right|^{p}\right)^{\nicefrac{1}{p}}=\left\Vert tx\right\Vert _{p}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $t\left\Vert x\right\Vert _{q}\leq t\left\Vert x\right\Vert _{p}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\Vert x\right\Vert _{q}\leq\left\Vert x\right\Vert _{p}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+.
+ האי-שוויון הזה נכון בבירור גם עבור 
+\begin_inset Formula $x=0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left\Vert x\right\Vert _{q}\leq\left\Vert x\right\Vert _{p}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בין אם 
+\begin_inset Formula $q=\infty$
+\end_inset
+
+ או 
+\begin_inset Formula $q<\infty$
+\end_inset
+
+ קיבלנו אז הא
+\begin_inset Quotes erd
+\end_inset
+
+ש 
+\begin_inset Formula $\left\Vert x\right\Vert _{q}\leq\left\Vert x\right\Vert _{p}$
+\end_inset
+
+, ועכשיו נמשיך.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\iota:\ell^{p}\rightarrow\ell^{q}$
+\end_inset
+
+ העתקת הזהות.
+ נוכיח שהיא רציפה.
+ זו בבירור העתקה לינארית, ולכן מספיק להוכיח רציפות ב-
+\begin_inset Formula $0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $x\in\ell^{p}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left\Vert x\right\Vert _{p}<\varepsilon$
+\end_inset
+
+, מתקיים בפרט 
+\begin_inset Formula $\left\Vert x\right\Vert _{q}\leq\left\Vert x\right\Vert _{p}<\varepsilon$
+\end_inset
+
+ ולכן קיבלנו את הדרוש.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ell^{p}$
+\end_inset
+
+ הוא מרחב בנך ובפרט מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+, ולכן אם 
+\begin_inset Formula $\iota\left(\ell^{p}\right)$
+\end_inset
+
+ היא מקטגוריה שניה ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+, אז ממשפט ההעתקה הפתוחה 
+\begin_inset Formula $\iota\left(\ell^{p}\right)=\ell^{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\iota\left(\ell^{p}\right)=\ell^{q}\neq\ell^{p}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\iota\left(\ell^{p}\right)=\ell^{p}$
+\end_inset
+
+ היא לא מקטגוריה שניה ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\ell^{p}$
+\end_inset
+
+ היא מקטגוריה ראשונה ב-
+\begin_inset Formula $\ell^{q}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נסמן ב-
+\begin_inset Formula $X$
+\end_inset
+
+ את אוסף על ה-
+\begin_inset Formula $f\in L^{2}\left(T\right)$
+\end_inset
+
+ עבורם קיים הגבול 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\Lambda_{n}f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מלינאריות 
+\begin_inset Formula $\Lambda_{n}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+, ומרציפות החיבור והכפל בסקלר ב-
+\begin_inset Formula $L^{2}\left(T\right)$
+\end_inset
+
+ וב-
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+, נקבל ש-
+\begin_inset Formula $X$
+\end_inset
+
+ תת-מרחב של 
+\begin_inset Formula $L^{2}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\zeta\in T$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $e_{n}\left(\zeta\right)=\zeta^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $\widehat{e_{n}}\left(k\right)=1$
+\end_inset
+
+ אם 
+\begin_inset Formula $n=k$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $\widehat{e_{n}}\left(k\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $e_{n}\in X$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $f\in L^{2}\left(T\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{k=-n}^{n}\widehat{f}\left(k\right)e_{k}\in X$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אבל לכל 
+\begin_inset Formula $f\in L^{2}\left(T\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left\Vert f-\sum_{k=-n}^{n}\widehat{f}\left(k\right)e_{k}\right\Vert _{2}\xrightarrow[n\rightarrow\infty]{}0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $X$
+\end_inset
+
+ צפוף ב-
+\begin_inset Formula $L^{2}\left(T\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ היה מקטגוריה שניה, אז מכך ש-
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+ הוא מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+, היינו מקבלים ש-
+\begin_inset Formula $X=L^{2}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז כדי להראות ש-
+\begin_inset Formula $X$
+\end_inset
+
+ מקטגוריה ראשונה, מספיק למצוא 
+\begin_inset Formula $f\in L^{2}\left(T\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left\{ \Lambda_{n}f\right\} $
+\end_inset
+
+ לא מתכנסת ב-
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ההעתקה 
+\begin_inset Formula $f\mapsto\left\{ \widehat{f}\left(n\right)\right\} _{n\in\kaliInteger}$
+\end_inset
+
+ היא איזומורפיזם של מרחבי הילברט מ-
+\begin_inset Formula $L^{2}\left(T\right)$
+\end_inset
+
+ על 
+\begin_inset Formula $\ell^{2}\left(\kaliInteger\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בפרט יש 
+\begin_inset Formula $f\in L^{2}\left(T\right)$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\widehat{f}\left(n\right)=\left|n\right|^{-1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\kaliInteger\setminus\left\{ 0\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $\widehat{f}\left(0\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Lambda_{n}f=2\sum_{k=1}^{n}k^{-1}\xrightarrow[n\rightarrow\infty]{}\infty$
+\end_inset
+
+ ובוודאי הסדרה 
+\begin_inset Formula $\left\{ \Lambda_{n}f\right\} $
+\end_inset
+
+ לא מתכנסת ב-
+\begin_inset Formula $\kaliComplex$
+\end_inset
+
+ וסיימנו.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $\gamma:\kaliInteger\rightarrow\kaliComplex$
+\end_inset
+
+ סדרה של מספרים מרוכבים עבורה לכל 
+\begin_inset Formula $f\in C\left(T\right)$
+\end_inset
+
+ יש 
+\begin_inset Formula $\Lambda f\in C\left(T\right)$
+\end_inset
+
+ כלשהי שמקיימת 
+\begin_inset Formula $\widehat{\Lambda f}=\gamma\widehat{f}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ היא העתקה מ-
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ לעצמה, ולכל 
+\begin_inset Formula $f,g\in C\left(T\right),\lambda\in\kaliComplex$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\widehat{\Lambda\left(f+g\right)} & =\gamma\widehat{f+g}=\gamma\widehat{f}+\gamma\widehat{g}=\widehat{\Lambda f}+\widehat{\Lambda g}=\widehat{\Lambda f+\Lambda g}\\
+\widehat{\Lambda\left(\lambda f\right)} & =\gamma\widehat{\lambda f}=\lambda\gamma\widehat{f}=\lambda\widehat{\Lambda f}=\widehat{\lambda\left(\Lambda f\right)}
+\end{align*}
+
+\end_inset
+
+מכך ש-
+\begin_inset Formula $h\mapsto\widehat{h}$
+\end_inset
+
+ היא פונקציה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע מ-
+\begin_inset Formula $L^{2}\left(T\right)$
+\end_inset
+
+ על 
+\begin_inset Formula $\ell^{2}\left(\kaliInteger\right)$
+\end_inset
+
+, נקבל שלכל 
+\begin_inset Formula $h_{1},h_{2}\in C\left(T\right)$
+\end_inset
+
+, אם 
+\begin_inset Formula $\widehat{h_{1}}=\widehat{h_{2}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $h_{1}=h_{2}$
+\end_inset
+
+ כמעט בכל מקום, ומרציפות נקבל 
+\begin_inset Formula $h_{1}=h_{2}$
+\end_inset
+
+ בכל 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $h\mapsto\widehat{h}$
+\end_inset
+
+ היא פונקציה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע על 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Lambda\left(f+g\right)=\Lambda f+\Lambda g,\Lambda\left(\lambda f\right)=\lambda\Lambda f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כלומר 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ העתקה לינארית.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ אם נורמתת הסופרימום הוא מרחב בנך ובפרט מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן נבחין שלכל 
+\begin_inset Formula $h\in C\left(T\right)$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left|\widehat{h}\left(n\right)\right|=\left|\frac{1}{2\pi}\intop_{-\pi}^{\pi}h\left(e^{i\theta}\right)e^{-in\theta}d\theta\right|\leq\frac{1}{2\pi}\intop_{-\pi}^{\pi}\left|h\left(e^{i\theta}\right)\right|d\theta\leq\left\Vert h\right\Vert _{\infty}
+\]
+
+\end_inset
+
+נניח 
+\begin_inset Formula $\left\{ f_{k}\right\} ,\left\{ \Lambda f_{k}\right\} $
+\end_inset
+
+ מתכנסות ב-
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ לפונקציות 
+\begin_inset Formula $f,g\in C\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $k\in\kaliNatural$
+\end_inset
+
+ מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|\widehat{g}\left(n\right)-\widehat{\Lambda f}\left(n\right)\right| & \leq\left|\widehat{g}\left(n\right)-\widehat{\Lambda f_{k}}\left(n\right)\right|+\left|\widehat{\Lambda f_{k}}\left(n\right)-\widehat{\Lambda f}\left(n\right)\right|\\
+ & =\left|\widehat{g-\Lambda f_{k}}\left(n\right)\right|+\left|\gamma\left(n\right)\right|\left|\widehat{f_{k}-f}\left(n\right)\right|\\
+ & \leq\left\Vert g-\Lambda f_{k}\right\Vert _{\infty}+\left|\gamma\left(n\right)\right|\left\Vert f_{k}-f\right\Vert _{\infty}
+\end{align*}
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $\left\Vert f_{k}-f\right\Vert _{\infty},\left\Vert g-\Lambda f_{k}\right\Vert _{\infty}\xrightarrow[k\rightarrow\infty]{}0$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\left|\widehat{g}\left(n\right)-\widehat{\Lambda f}\left(n\right)\right|=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\widehat{g}\left(n\right)=\widehat{\Lambda f}\left(n\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\widehat{g}=\widehat{\Lambda f}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $g=\Lambda f$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממשפט הגרף הסגור נקבל ש-
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ העתקה לינארית רציפה מ-
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ אל עצמו.
+\begin_inset Newline newline
+\end_inset
+
+הפונקציונל 
+\begin_inset Formula $h\mapsto h\left(1\right)$
+\end_inset
+
+ הוא פונקציונל לינארי חסום על 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממה שראינו, הפונקציונל 
+\begin_inset Formula $f\mapsto\left(\Lambda f\right)\left(1\right)$
+\end_inset
+
+ גם הוא פונקציונל לינארי חסום על 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממשפט ההצגה של ריס, יש מידה מרוכבת 
+\begin_inset Formula $\mu$
+\end_inset
+
+ על 
+\begin_inset Formula $T$
+\end_inset
+
+ עבורה לכל 
+\begin_inset Formula $f\in C\left(T\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(\Lambda f\right)\left(1\right)=\intop_{T}fd\mu$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\zeta\in T$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $e_{n}\left(\zeta\right)=\zeta^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n,m\in\kaliInteger$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{\Lambda e_{n}}\left(m\right)=\gamma\left(n\right)\widehat{e_{n}}\left(m\right)$
+\end_inset
+
+, כלומר
+\begin_inset Formula $\widehat{\Lambda e_{n}}\left(m\right)=\gamma\left(n\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $n=m$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $\widehat{\Lambda e_{n}}\left(m\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+באופן דומה 
+\begin_inset Formula $\widehat{\gamma\left(n\right)e_{n}}\left(m\right)=\gamma\left(n\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $n=m$
+\end_inset
+
+ ואחרת 
+\begin_inset Formula $\widehat{\gamma\left(n\right)e_{n}}\left(m\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\widehat{\gamma\left(n\right)e_{n}}=\widehat{\Lambda e_{n}}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\gamma\left(n\right)e_{n}=\Lambda e_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממה שראינו לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+ נקבל 
+\begin_inset Formula 
+\[
+\gamma\left(n\right)e_{n}\left(1\right)=\intop_{T}e_{n}d\mu
+\]
+
+\end_inset
+
+אבל 
+\begin_inset Formula $e_{n}\left(1\right)=1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\gamma\left(n\right)=\intop_{T}e_{n}d\mu$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו אם נגדיר 
+\begin_inset Formula $\overline{\mu}\left(E\right)=\mu\left(\left\{ \overline{\zeta}:\zeta\in E\right\} \right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $\overline{\mu}$
+\end_inset
+
+ היא מידה מרוכבת על 
+\begin_inset Formula $T$
+\end_inset
+
+ ולכל פונקציה מדידה 
+\begin_inset Formula $f$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\intop_{T}fd\mu=\intop_{T}\overline{f}d\overline{\mu}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\gamma\left(n\right)=\intop_{T}\overline{e_{n}}d\overline{\mu}=\intop_{T}e_{-n}d\overline{\mu}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+, וקיבלנו את הדרוש.
+\end_layout
+
+\begin_layout Enumerate
+בכיוון השני, אם 
+\begin_inset Formula $\mu$
+\end_inset
+
+ היא מידה מרוכבת על 
+\begin_inset Formula $T$
+\end_inset
+
+, ו-
+\begin_inset Formula $\gamma\left(n\right)=\intop_{T}e_{-n}d\mu$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\kaliInteger$
+\end_inset
+
+, אנחנו צריכים להוכיח שלכל 
+\begin_inset Formula $f\in C\left(T\right)$
+\end_inset
+
+ יש 
+\begin_inset Formula $g\in C\left(T\right)$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\widehat{g}=\gamma\widehat{f}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $f\in C\left(T\right)$
+\end_inset
+
+, ונגדיר 
+\begin_inset Formula $g\left(\zeta\right)=\intop_{T}f\left(\xi^{-1}\zeta\right)d\mu\left(\xi\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\zeta\in T$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $d\sigma=\left(2\pi\right)^{-1}dm$
+\end_inset
+
+.
+ אז נקבל
+\begin_inset Formula 
+\[
+\widehat{g}\left(n\right)=\intop_{T}g\left(\zeta\right)\zeta^{-n}d\sigma\left(\zeta\right)=\intop_{T}\intop_{T}f\left(\xi^{-1}\zeta\right)d\mu\left(\xi\right)\zeta^{-n}d\sigma\left(\zeta\right)
+\]
+
+\end_inset
+
+מתקיים מכך ש-
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה, נוכל להפעיל את משפט פוביני ולכן
+\begin_inset Formula 
+\[
+\widehat{g}\left(n\right)=\intop_{T}\intop_{T}f\left(\xi^{-1}\zeta\right)\zeta^{-n}d\sigma\left(\zeta\right)d\mu\left(\xi\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $E\subseteq T$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\xi\in T$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sigma\left(\xi E\right)=\sigma\left(E\right)$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+\intop_{T}f\left(\xi^{-1}\zeta\right)\zeta^{-n}d\sigma\left(\zeta\right) & =\intop_{T}f\left(\zeta\right)\left(\xi\zeta\right)^{-n}d\sigma\left(\zeta\right)\\
+ & =\xi^{-n}\intop_{T}f\left(\zeta\right)\zeta^{-n}d\sigma\left(\zeta\right)\\
+ & =\xi^{-n}\widehat{f}\left(n\right)
+\end{align*}
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\widehat{g}\left(n\right)=\intop_{T}\xi^{-n}\widehat{f}\left(n\right)d\mu\left(\xi\right)\intop_{T}e_{-n}d\mu\widehat{f}\left(n\right)=\gamma\left(n\right)\widehat{f}\left(n\right)
+\]
+
+\end_inset
+
+כלומר אכן 
+\begin_inset Formula $g$
+\end_inset
+
+ מקיימת את הדרוש וסיימנו.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+ מטריזבילי ולכן מספיק להראות קומפקטיות סדרתית של 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז כל סדרה ב-
+\begin_inset Formula $K$
+\end_inset
+
+ היא מהצורה 
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+ עבור סדרה 
+\begin_inset Formula $n_{k}$
+\end_inset
+
+ שאינה עולה בהכרח.
+\begin_inset Newline newline
+\end_inset
+
+אם קיים 
+\begin_inset Formula $m$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left\{ k:n_{k}=m\right\} $
+\end_inset
+
+ היא קבצוה אינסופית, אז יש ל-
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+ תת-סדרה קבועה ובפרט מתכנסת וסיימנו.
+\begin_inset Newline newline
+\end_inset
+
+אחרת, יש ל-
+\begin_inset Formula $\left\{ n_{k}\right\} $
+\end_inset
+
+ תת-סדרה עולה ממש 
+\begin_inset Formula $\left\{ n_{k_{j}}\right\} $
+\end_inset
+
+.
+ למשל נבחר 
+\begin_inset Formula $k_{0}=0$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $j$
+\end_inset
+
+ הקבוצה
+\begin_inset Formula 
+\[
+\bigcup_{0\leq i\leq n_{k_{j}}}\left\{ k:n_{k}=i\right\} \cup\left\{ 0,\ldots,k_{j}\right\} 
+\]
+
+\end_inset
+
+היא איחוד של קבוצות סופיות, ולכן סופית, ולכן נוכל לבחור את 
+\begin_inset Formula $k_{j+1}$
+\end_inset
+
+ לא להיות בקבוצה הזאת, ובכך נקבל 
+\begin_inset Formula $k_{j}$
+\end_inset
+
+ סדרה עולה ממש וגם 
+\begin_inset Formula $n_{k_{j}}$
+\end_inset
+
+ עולה ממש, ולכן 
+\begin_inset Formula $\left\{ n_{k_{j}}\right\} $
+\end_inset
+
+ היא תת-סדרה עולה ממש של 
+\begin_inset Formula $\left\{ n_{k}\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left\{ x_{n_{k_{j}}}\right\} $
+\end_inset
+
+ תת-סדרה של 
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+, ולכל 
+\begin_inset Formula $i,j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left\Vert x_{n_{k_{i}}}-x_{n_{k_{j}}}\right\Vert _{2}^{2}=\left(\frac{1}{n_{k_{i}}}\right)^{2}+\left(\frac{1}{n_{k_{j}}}\right)^{2}
+\]
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $n_{k_{j}}$
+\end_inset
+
+ עולה ממש, הרי ש-
+\begin_inset Formula $n_{k_{j}}\xrightarrow[j\rightarrow\infty]{}\infty$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $x_{n_{k_{j}}}$
+\end_inset
+
+ סדרת קושי ב-
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+, ומשלמות 
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+ היא מתכנסת וסיימנו.
+\begin_inset Newline newline
+\end_inset
+
+אז אכן 
+\begin_inset Formula $K$
+\end_inset
+
+ קומפקטית.
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $x\in K$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\{ \Lambda_{m}x\right\} =\left\{ 0\right\} $
+\end_inset
+
+ ובפרט חסומה.
+\begin_inset Newline newline
+\end_inset
+
+אחרת יש 
+\begin_inset Formula $k\in\kaliNatural$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $x=x_{k}$
+\end_inset
+
+ ואז אם 
+\begin_inset Formula $m<k$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\Lambda_{m}x=\sum_{n=1}^{m}n^{2}x_{k}\left(n\right)=0
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $m\geq k$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\Lambda_{m}x=\sum_{n=1}^{m}n^{2}x_{k}\left(n\right)=\Lambda_{m}x=k^{2}x_{k}\left(k\right)=k
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left\{ \Lambda_{m}x\right\} =\left\{ 0,k\right\} $
+\end_inset
+
+, ובפרט זו קבוצה חסומה.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני חישוב פשוט מראה שלכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{m}x_{m}=m$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left\{ \Lambda_{m}x_{m}\right\} $
+\end_inset
+
+ היא לא חסומה.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\bigcup_{m\in\kaliNatural}\Lambda_{m}\left(K\right)$
+\end_inset
+
+ היא לא חסומה, ובפרט לכ קיימת 
+\begin_inset Formula $B$
+\end_inset
+
+ חסומה בשדה עבורה 
+\begin_inset Formula $\Lambda_{m}\left(K\right)\subseteq B$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ אז אכן הקמירות במשפט 
+\begin_inset Formula $2.9$
+\end_inset
+
+ היא הכרחית.
+\end_layout
+
+\begin_layout Enumerate
+נבנה את הסדרה 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ כמתואר.
+ אכן נבחר 
+\begin_inset Formula $c_{n}=\left(\sum_{k=1}^{\infty}k^{-2}\right)^{-1}n^{-2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים 
+\begin_inset Formula $c_{n}>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ וגם 
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}c_{n} & =\sum_{n=1}^{\infty}\left(\sum_{k=1}^{\infty}k^{-2}\right)^{-1}n^{-2}=\left(\sum_{k=1}^{\infty}k^{-2}\right)^{-1}\left(\sum_{n=1}^{\infty}n^{-2}\right)=1\\
+\sum_{n=1}^{\infty}nc_{n} & =\sum_{n=1}^{\infty}\left(\sum_{k=1}^{\infty}k^{-2}\right)^{-1}n^{-1}=\left(\sum_{k=1}^{\infty}k^{-2}\right)^{-1}\sum_{n=1}^{\infty}n^{-1}=\infty
+\end{align*}
+
+\end_inset
+
+כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+נטען שהסדרה 
+\begin_inset Formula $\left\{ \sum_{n=1}^{m}c_{n}x_{n}\right\} _{m\in\kaliNatural}$
+\end_inset
+
+ מתכנסת.
+\begin_inset Newline newline
+\end_inset
+
+אכן אם 
+\begin_inset Formula $m\leq k$
+\end_inset
+
+ אז 
+\begin_inset Formula 
+\begin{align*}
+\left\Vert \sum_{n=1}^{k}c_{n}x_{n}-\sum_{n=1}^{m}c_{n}x_{n}\right\Vert _{2} & =\left\Vert \sum_{n=m}^{k}c_{n}x_{n}\right\Vert _{2}\leq\sum_{n=m}^{k}c_{n}\left\Vert x_{n}\right\Vert _{2}=\sum_{n=m}^{k}\frac{c_{n}}{n}\\
+ & \leq\frac{1}{m}\sum_{n=m}^{\infty}c_{n}
+\end{align*}
+
+\end_inset
+
+הביטוי האחרון שואף ל-
+\begin_inset Formula $0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m\rightarrow\infty$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\sum_{n=1}^{m}c_{n}x_{n}$
+\end_inset
+
+ סדרת קושי, ולכן מתכנסת משלמות 
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נסמן 
+\begin_inset Formula $x=\sum_{n=1}^{\infty}c_{n}x_{n}$
+\end_inset
+
+, ו-
+\begin_inset Formula $H$
+\end_inset
+
+ הקמור של 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $m\geq1$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $y_{m}=\sum_{n=1}^{m-1}c_{n}x_{m}+\left(\sum_{n=m}^{\infty}c_{n}\right)x_{m}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $c_{n}>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, ו-
+\begin_inset Formula $\sum_{n=1}^{\infty}c_{n}=1$
+\end_inset
+
+, הרי שמתקיים 
+\begin_inset Formula $y_{m}\in H$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left\Vert x-y_{m}\right\Vert _{2} & =\left\Vert \sum_{n=m}^{\infty}c_{n}\left(x_{n}-x_{m}\right)\right\Vert _{2}\leq\sum_{n=m}^{\infty}c_{n}\left(\left\Vert x_{n}\right\Vert _{2}+\left\Vert x_{m}\right\Vert _{2}\right)\\
+ & =\sum_{n=m}^{\infty}c_{n}\left(\frac{1}{n}+\frac{1}{m}\right)\leq\frac{2}{m}\sum_{n=m}^{\infty}c_{n}\xrightarrow[m\rightarrow\infty]{}0
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $y_{m}\rightarrow x$
+\end_inset
+
+ ב-
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $x\in\overline{H}$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\left(k\right)=\sum_{n=1}^{\infty}c_{n}x_{n}\left(k\right)=c_{k}x_{k}\left(k\right)=k^{-1}c_{k}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{m}x=\sum_{n=1}^{m}n^{2}x\left(n\right)=\sum_{n=1}^{m}nc_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Lambda_{m}x\rightarrow\infty$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m\rightarrow\infty$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $\left\{ \Lambda_{m}x\right\} $
+\end_inset
+
+ לא חסום, כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני אם 
+\begin_inset Formula $z\in H$
+\end_inset
+
+, אז 
+\begin_inset Formula $z=\sum_{n=1}^{k}\lambda_{n}z_{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $z_{1},\ldots,z_{k}\in K$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{1},\ldots,\lambda_{k}>0,\sum_{n=1}^{k}\lambda_{k}=1$
+\end_inset
+
+, לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left|\Lambda_{m}z\right| & =\left|\sum_{n=1}^{k}\lambda_{n}\Lambda_{m}z_{n}\right|\leq\sum_{n=1}^{k}\lambda_{n}\left|\Lambda_{m}z_{n}\right|\leq\left(\sum_{n=1}^{k}\lambda_{n}\right)\max_{1\leq n\leq k}\left|\Lambda_{m}z_{n}\right|\\
+ & =\max_{1\leq n\leq k}\left|\Lambda_{m}z_{n}\right|\leq\max_{1\leq n\leq k}\left(\sup_{k\in\kaliNatural}\left|\Lambda_{k}z_{n}\right|\right)
+\end{align*}
+
+\end_inset
+
+ומכך ש-
+\begin_inset Formula $\left\{ \Lambda_{k}z_{n}:k\in\kaliNatural\right\} $
+\end_inset
+
+ היא קבוצה חסומה לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, הרי שיש 
+\begin_inset Formula $M<\infty$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left|\Lambda_{m}z\right|<M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז הוכחנו שלכל 
+\begin_inset Formula $z\in H$
+\end_inset
+
+, הקבוצה 
+\begin_inset Formula $\left\{ \Lambda_{m}z\right\} $
+\end_inset
+
+ היא חסומה.
+\begin_inset Newline newline
+\end_inset
+
+אבל כבר ראינו ש-
+\begin_inset Formula $\left\{ \Lambda_{m}x\right\} $
+\end_inset
+
+ לא חסומה ולכן 
+\begin_inset Formula $x\notin H$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\overline{H}\neq H$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $H$
+\end_inset
+
+ לא סגורה כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מרציפות 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $B^{-1}\left(\left\{ z\in Z:\left\Vert z\right\Vert <1\right\} \right)$
+\end_inset
+
+ היא סביבה פתוחה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן יש 
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $V\subseteq Y$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $Y$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $U\times V\subseteq B^{-1}\left(\left\{ z\in Z:\left\Vert z\right\Vert <1\right\} \right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula 
+\begin{align*}
+\left\{ x\in X:\left\Vert x\right\Vert <\delta\right\}  & \subseteq U\\
+\left\{ y\in Y:\left\Vert y\right\Vert <\delta\right\}  & \subseteq V
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $x\in X,y\in Y$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left\Vert x\right\Vert ,\left\Vert y\right\Vert <\delta$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula 
+\[
+\left(x,y\right)\in U\times V\subseteq B^{-1}\left(\left\{ z\in Z:\left\Vert z\right\Vert <1\right\} \right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\left\Vert B\left(x,y\right)\right\Vert <1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x\in X,y\in Y$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $x\neq0,y\neq0$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left\Vert B\left(x,y\right)\right\Vert =\frac{2\left\Vert x\right\Vert }{\delta}\cdot\frac{2\left\Vert y\right\Vert }{\delta}\left\Vert B\left(\frac{\delta}{2\left\Vert x\right\Vert }x,\frac{\delta}{2\left\Vert y\right\Vert }y\right)\right\Vert \leq\frac{4}{\delta^{2}}\left\Vert x\right\Vert \left\Vert y\right\Vert 
+\]
+
+\end_inset
+
+הא
+\begin_inset Quotes erd
+\end_inset
+
+ש בין האגפים החיצוניים בפרט נכון גם אם 
+\begin_inset Formula $x=0$
+\end_inset
+
+ או 
+\begin_inset Formula $y=0$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $x\in X,y\in Y$
+\end_inset
+
+, ולכן אם נבחר 
+\begin_inset Formula $M=4\delta^{-2}$
+\end_inset
+
+ אז
+\begin_inset Formula 
+\[
+\left\Vert B\left(x,y\right)\right\Vert \leq M\left\Vert x\right\Vert \left\Vert y\right\Vert 
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in X,y\in Y$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+לא השתמשנו בשלמות של אף אחד מהמרחבים 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+, ולכן ההנחה של השלמות מיותרת.
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ מרחבים וקטוריים טופולוגיים, ו-
+\begin_inset Formula $B:X\times Y\rightarrow Z$
+\end_inset
+
+ העתקה בי-לינארית שהיא רציפה ב-
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $x_{0}\in X,y_{0}\in Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $W\subseteq Z$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $W^{\prime}\subseteq Z$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $W^{\prime}+W^{\prime}+W^{\prime}\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $Y$
+\end_inset
+
+ עבורן 
+\begin_inset Formula $B\left(U\times V\right)\subseteq W^{\prime}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+קיים 
+\begin_inset Formula $t>0$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $x_{0}\in tU$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $t^{-1}x_{0}\in U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $y\in V$
+\end_inset
+
+ נקבל מבילינאריות
+\begin_inset Formula 
+\[
+B\left(x_{0},t^{-1}y\right)=B\left(t^{-1}x_{0},y\right)\subseteq B\left(U\times V\right)\subseteq W^{\prime}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $B\left(\left\{ x_{0}\right\} \times t^{-1}V\right)\subseteq W^{\prime}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+באופן דומה מוכיחים שקיים 
+\begin_inset Formula $s>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $B\left(s^{-1}U\times\left\{ y_{0}\right\} \right)\subseteq W^{\prime}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן 
+\begin_inset Formula $s^{-1}U$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $t^{-1}V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\left(U\cap s^{-1}U\right)\times\left(V\cap t^{-1}V\right)$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף לכל 
+\begin_inset Formula $\left(x,y\right)\in\left(U\cap s^{-1}U\right)\times\left(V\cap t^{-1}V\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+B\left(\left(x_{0},y_{0}\right)+\left(x,y\right)\right) & =B\left(x_{0},y_{0}\right)+B\left(x_{0},y\right)+B\left(x,y_{0}\right)+B\left(x,y\right)\\
+ & \in B\left(x_{0},y_{0}\right)+B\left(\left\{ x_{0}\right\} \times\left(t^{-1}V\right)\right)+B\left(\left(s^{-1}U\right)\times y_{0}\right)+B\left(U\times V\right)\\
+ & \subseteq B\left(x_{0},y_{0}\right)+W^{\prime}+W^{\prime}+W^{\prime}\subseteq B\left(x_{0},y_{0}\right)+W
+\end{align*}
+
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $W$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $Z$
+\end_inset
+
+ יש 
+\begin_inset Formula $U^{\prime}$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $B\left(\left(x_{0},y_{0}\right)+U^{\prime}\right)\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $B$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $B$
+\end_inset
+
+ רציפה בכל נקודה ב-
+\begin_inset Formula $X\times Y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $B$
+\end_inset
+
+ רציפה כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x_{1},x_{2},y,x_{1}^{\prime},x_{2}^{\prime},y^{\prime},,\lambda\in R$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+B\left(\left(x_{1},x_{2}\right)+\left(x_{1}^{\prime},x_{2}^{\prime}\right),y\right) & =B\left(\left(x_{1}+x_{1}^{\prime},x_{2}+x_{2}^{\prime}\right),y\right)=\left(\left(x_{1}+x_{1}^{\prime}\right)y,\left(x_{2}+x_{2}^{\prime}\right)y\right)\\
+ & =\left(x_{1}y,x_{2}y\right)+\left(x_{1}^{\prime}y,x_{2}^{\prime}y\right)=B\left(\left(x_{1},x_{2}\right),y\right)+B\left(\left(x_{1}^{\prime},x_{2}^{\prime}\right),y\right)\\
+B\left(\left(x_{1},x_{2}\right),y+y^{\prime}\right) & =\left(x_{1}\left(y+y^{\prime}\right),x_{2}\left(y+y^{\prime}\right)\right)=\left(x_{1}y,x_{2}y\right)+\left(x_{1}y^{\prime},x_{2}y^{\prime}\right)\\
+ & =B\left(\left(x_{1},x_{2}\right),y\right)+B\left(\left(x_{1},x_{2}\right),y^{\prime}\right)\\
+B\left(\lambda\left(x_{1},x_{2}\right),y\right) & =B\left(\left(\lambda x_{1},\lambda x_{2}\right),y\right)=\left(\lambda x_{1}y,\lambda x_{2}y\right)=\lambda\left(x_{1}y,x_{2}y\right)\\
+ & =\lambda B\left(\left(x_{1},x_{2}\right),y\right)\\
+B\left(\left(x_{1},x_{2}\right),\lambda y\right) & =\left(\lambda x_{1}y,\lambda x_{2}y\right)=\lambda\left(x_{1}y,x_{2}y\right)=\lambda B\left(\left(x_{1},x_{2}\right),y\right)
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $B$
+\end_inset
+
+ היא בי-לינארית כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B$
+\end_inset
+
+ היא על 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+, למשל כי 
+\begin_inset Formula $B\left(x,1\right)=x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in R^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B$
+\end_inset
+
+ היא רציפה, למשל כי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, מתקיים לכל 
+\begin_inset Formula $x\in R^{2},y\in R$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left\Vert x\right\Vert _{2}<\varepsilon,\left|y\right|<1$
+\end_inset
+
+ ש-ֲ
+\begin_inset Formula $\left\Vert B\left(x,y\right)\right\Vert _{2}=\left\Vert y\cdot x\right\Vert _{2}=\left|y\right|\left\Vert x\right\Vert _{2}<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $r>0$
+\end_inset
+
+, 
+\begin_inset Formula $x\in R^{2},\lambda\in R$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $D\left(x,r\right)$
+\end_inset
+
+ הדיסק הפתוח ברדיוס 
+\begin_inset Formula $r$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x$
+\end_inset
+
+ בנורמה האוקלידיות על 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $a=\left(a_{1},a_{2}\right)\in R^{2},a\neq0$
+\end_inset
+
+, ונוכיח ש-
+\begin_inset Formula $B$
+\end_inset
+
+ לא פתוחה ב-
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $a\neq0$
+\end_inset
+
+, יש 
+\begin_inset Formula $r>0$
+\end_inset
+
+ קטן מספיק עבורו 
+\begin_inset Formula $0\notin D\left(a,r\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $V=D\left(a,r\right)\times R$
+\end_inset
+
+ היא סביבה של 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $R^{2}\times R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $B\left(a,0\right)=0$
+\end_inset
+
+, ולכן כדי להראות ש-
+\begin_inset Formula $B$
+\end_inset
+
+ לא פתוחה ב-
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ מספיק להראות ש-
+\begin_inset Formula $0$
+\end_inset
+
+ היא לא נקודה פנימית של 
+\begin_inset Formula $B\left(V\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $b=\left(a_{2},-a_{1}\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $t\in R,n\in\kaliNatural$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left\Vert b-nta\right\Vert _{2}^{2}=\left(a_{2}-nta_{1}\right)^{2}+\left(-a_{1}-nta_{2}\right)^{2}=\left(1+n^{2}t^{2}\right)\left(a_{1}^{2}+a_{2}^{2}\right)\geq n^{2}t^{2}\left\Vert a\right\Vert _{2}^{2}
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $t\in R,n\in\kaliNatural$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $b\notin D\left(nta,n\left|t\right|r\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $b\notin ntD\left(a,r\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $n^{-1}b\notin tD\left(a,r\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $n^{-1}b\notin\bigcup_{t\in R}tD\left(a,r\right)=B\left(V\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $n^{-1}b\xrightarrow[n\rightarrow\infty]{}0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $0$
+\end_inset
+
+ היא לא נקודה פנימית של 
+\begin_inset Formula $B\left(V\right)$
+\end_inset
+
+ וקיבלנו את הדרוש.
+\begin_inset Newline newline
+\end_inset
+
+בפרט 
+\begin_inset Formula $B$
+\end_inset
+
+ לא פתוחה בנקודה 
+\begin_inset Formula $\left(\left(1,1\right),0\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נוכיח שכל שאר הנקודות של 
+\begin_inset Formula $R^{2}\times R$
+\end_inset
+
+ הן נקודות ש-
+\begin_inset Formula $B$
+\end_inset
+
+ פתוחה בהן.
+\begin_inset Newline newline
+\end_inset
+
+ראשית נראה ש-
+\begin_inset Formula $B$
+\end_inset
+
+ פתוחה ב-
+\begin_inset Formula $\left(\left(0,0\right),0\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אכן אם 
+\begin_inset Formula $V\subseteq R^{2}\times R$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $\left(\left(0,0\right),0\right)$
+\end_inset
+
+, אז יש 
+\begin_inset Formula $r>0$
+\end_inset
+
+ קטן מספיק עבורו 
+\begin_inset Formula $D\left(0,r\right)\times\left(-r,r\right)\subseteq V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula 
+\[
+B\left(D\left(0,r\right)\times\left(-r,r\right)\right)=\bigcup_{\left|\delta\right|<r}\delta D\left(0,r\right)=\bigcup_{0<\delta<r}D\left(0,r\delta\right)=D\left(0,r^{2}\right)
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $D\left(0,r^{2}\right)\subseteq V$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D\left(0,r^{2}\right)$
+\end_inset
+
+ היא סביבה פתוחה של 
+\begin_inset Formula $B\left(\left(0,0\right),0\right)=\left(0,0\right)$
+\end_inset
+
+ וקיבלנו את הדרוש.
+\begin_inset Newline newline
+\end_inset
+
+נותר להראות ש-
+\begin_inset Formula $B$
+\end_inset
+
+ פתוחה בנקודות מהצורה 
+\begin_inset Formula $\left(a,\lambda\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\lambda\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $a\in R^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $V\subseteq R^{2}\times R$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $\left(a,\lambda\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יש 
+\begin_inset Formula $r>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $D\left(a,r\right)\times\left(\lambda-r,\lambda+r\right)\subseteq V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+B\left(D\left(a,r\right)\times\left(\lambda-r,\lambda+r\right)\right) & =\bigcup_{\delta\in\left(-r,r\right)}\left(\lambda+\delta\right)D\left(a,r\right)
+\end{align*}
+
+\end_inset
+
+בפרט נקבל 
+\begin_inset Formula 
+\[
+D\left(\lambda a,\left|\lambda\right|r\right)=\lambda D\left(a,r\right)\subseteq B\left(D\left(a,r\right)\times\left(\lambda-r,\lambda+r\right)\right)\subseteq B\left(V\right)
+\]
+
+\end_inset
+
+כלומר יש סביבה פתוחה של 
+\begin_inset Formula $B\left(a,\lambda\right)=\lambda a$
+\end_inset
+
+ שמוכלת ב-
+\begin_inset Formula $B\left(V\right)$
+\end_inset
+
+ וסיימנו.
+\end_layout
+
+\begin_layout Enumerate
+מלינאריות האינטגרל, ברור ש-
+\begin_inset Formula $B$
+\end_inset
+
+ היא העתקה בי-לינאריות.
+\begin_inset Newline newline
+\end_inset
+
+נוכיח ש-
+\begin_inset Formula $B$
+\end_inset
+
+ רציפה בכל רכיב בנפרד.
+ מכך ש-
+\begin_inset Formula $B$
+\end_inset
+
+ סימטרית )
+\begin_inset Formula $B\left(f,g\right)=B\left(g,f\right)$
+\end_inset
+
+(, מספיק להראות ש-
+\begin_inset Formula $B$
+\end_inset
+
+ רציפה ברכיב הראשון.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבע 
+\begin_inset Formula $g\in X$
+\end_inset
+
+, וצריך להראות שההעתקה 
+\begin_inset Formula $f\mapsto B\left(f,g\right)$
+\end_inset
+
+ היא פונקציונל לינארי רציף.
+\begin_inset Newline newline
+\end_inset
+
+אכן לכל 
+\begin_inset Formula $f\in X$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left\Vert f\right\Vert <1$
+\end_inset
+
+ מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|B\left(f,g\right)\right| & \leq\intop_{0}^{1}\left|f\left(t\right)\right|\left|g\left(t\right)\right|dt\leq\sup_{t\in\left[0,1\right]}\left|g\left(t\right)\right|\intop_{0}^{1}\left|f\left(t\right)\right|dt\\
+ & =\left(\sup_{t\in\left[0,1\right]}\left|g\left(t\right)\right|\right)\cdot\left\Vert f\right\Vert \leq\sup_{t\in\left[0,1\right]}\left|g\left(t\right)\right|
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $f\mapsto B\left(f,g\right)$
+\end_inset
+
+ חסום על סביבה פתוחה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+ ולכן הוא פונקציונל לינארי רציף כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נוכיח ש-
+\begin_inset Formula $B$
+\end_inset
+
+ לא העתקה רציפה.
+\begin_inset Newline newline
+\end_inset
+
+מהלמה של אוריסון, לכל 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+, יש 
+\begin_inset Formula $f_{n}\in C\left(\left[0,1\right]\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $0\leq f_{n}\leq n$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{n}\left(t\right)=n$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left[0,n^{-2}\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $f_{n}\left(t\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left[n^{-2}+2^{-n},0\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ממשפט וויירשרטאס, לכל 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ יש 
+\begin_inset Formula $g\in X$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left|f_{n}\left(t\right)-g_{n}\left(t\right)\right|<2^{-n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\left\Vert g_{n}\right\Vert  & \leq\left\Vert g_{n}-f_{n}\right\Vert +\left\Vert f_{n}\right\Vert =\intop_{0}^{1}\left|g_{n}\left(t\right)-f_{n}\left(t\right)\right|dt+\intop_{0}^{1}\left|f_{n}\left(t\right)\right|dt\\
+ & \leq2^{-n}+\intop_{0}^{n^{-2}+2^{-n}}ndt=2^{-n}+n^{-1}+2^{-n}n\xrightarrow[n\rightarrow\infty]{}0
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $g_{n}\rightarrow0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left(g_{n},g_{n}\right)\rightarrow0$
+\end_inset
+
+ ב-
+\begin_inset Formula $X\times X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left|B\left(g_{n}-f_{n},g_{n}-f_{n}\right)\right| & \leq\intop_{0}^{1}\left|g_{n}\left(t\right)-f_{n}\left(t\right)\right|^{2}dt\leq2^{-2n}\\
+\left|B\left(g_{n}-f_{n},f_{n}\right)\right| & \leq\intop_{0}^{1}\left|g_{n}\left(t\right)-f_{n}\left(t\right)\right|\left|f_{n}\left(t\right)\right|dt\leq2^{-n}n\\
+B\left(f_{n},f_{n}\right) & =\intop_{0}^{1}\left(f_{n}\left(t\right)\right)^{2}dt\geq\intop_{0}^{n^{-2}}n^{2}dt=1
+\end{align*}
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק מתקיים 
+\begin_inset Formula $2^{-2n},2^{-n}n<\frac{1}{4}$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק נקבל 
+\begin_inset Formula 
+\begin{align*}
+B\left(g_{n},g_{n}\right) & =B\left(g_{n}-f_{n},g_{n}-f_{n}\right)+2B\left(g_{n}-f_{n},f_{n}\right)+B\left(f_{n},f_{n}\right)\\
+ & \geq-2^{-2n}-2\cdot2^{-n}n+1\geq-\frac{1}{4}-2\cdot\frac{1}{4}+1=\frac{1}{4}
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $B\left(g_{n},g_{n}\right)$
+\end_inset
+
+ בוודאי לא מתכנס ל-
+\begin_inset Formula $0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+, למרות שראינו 
+\begin_inset Formula $\left(g_{n},g_{n}\right)\xrightarrow[n\rightarrow\infty]{}0$
+\end_inset
+
+.
+ אז אכן 
+\begin_inset Formula $B$
+\end_inset
+
+ לא רציפה, כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מכך ש-
+\begin_inset Formula $K$
+\end_inset
+
+ בולעת, מתקיים 
+\begin_inset Formula $0\in tK$
+\end_inset
+
+ עבור 
+\begin_inset Formula $t>0$
+\end_inset
+
+ כלשהי, ולכן 
+\begin_inset Formula $0\in K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מקמירות 
+\begin_inset Formula $K$
+\end_inset
+
+, שלכל 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $tK\subseteq K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן אם 
+\begin_inset Formula $0<s\leq t$
+\end_inset
+
+, ו-
+\begin_inset Formula $x\in sK$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\[
+t^{-1}x=\left(t^{-1}s\right)s^{-1}x\in\left(t^{-1}s\right)K\subseteq K
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $x\in tK$
+\end_inset
+
+.
+ כלומר אם 
+\begin_inset Formula $0<s\leq t$
+\end_inset
+
+, אז 
+\begin_inset Formula $sK\subseteq tK$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $K$
+\end_inset
+
+ בולעת וממה שראינו, נקבל 
+\begin_inset Formula 
+\[
+X=\bigcup_{t>0}tK=\bigcup_{n\in\kaliNatural}nK
+\]
+
+\end_inset
+
+ולכן גם
+\begin_inset Formula 
+\[
+X=-X=\bigcup_{m\in\kaliNatural}\left(-mK\right)=\bigcup_{m\in\kaliNatural}m\left(-K\right)
+\]
+
+\end_inset
+
+ולכן נקבל
+\begin_inset Formula 
+\begin{align*}
+X & =X\cap X=\left(\bigcup_{n\in\kaliNatural}nK\right)\cap\left(\bigcup_{m\in\kaliNatural}m\left(-K\right)\right)=\bigcup_{n\in\kaliNatural}\bigcup_{m\in\kaliNatural}\left(nK\cap m\left(-K\right)\right)\\
+ & \subseteq\bigcup_{n\in\kaliNatural}\bigcup_{m\in\kaliNatural}\left(\max\left(n,m\right)\left(K\cap\left(-K\right)\right)\right)\subseteq\bigcup_{n\in\kaliNatural}n\left(K\cap\left(-K\right)\right)
+\end{align*}
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $H=K\cap\left(-K\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $H$
+\end_inset
+
+ סגורה, ולכן 
+\begin_inset Formula $nH$
+\end_inset
+
+ סגורה לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, וראינו ש-
+\begin_inset Formula $X=\bigcup_{n\in\kaliNatural}nH$
+\end_inset
+
+.
+ אז מכך ש-
+\begin_inset Formula $X$
+\end_inset
+
+ מקטגוריה שניה בתוך עצמו, קיים 
+\begin_inset Formula $n$
+\end_inset
+
+ כלשהו עובור הפנים של 
+\begin_inset Formula $nH$
+\end_inset
+
+ לא ריק.
+\begin_inset Newline newline
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $x\mapsto nx$
+\end_inset
+
+ הוא הומיאומורפיזם של 
+\begin_inset Formula $X$
+\end_inset
+
+, נקבל שגם הפנים של 
+\begin_inset Formula $H$
+\end_inset
+
+ לא ריק.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $V\subseteq H$
+\end_inset
+
+ פתוחה ולא ריקה.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $H$
+\end_inset
+
+ קמורה כי היא חיתוך של קבוצות קמורות, וכמו כן 
+\begin_inset Formula $-H=H$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+H=\frac{1}{2}H+\frac{1}{2}H=\frac{1}{2}H-\frac{1}{2}H
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula 
+\[
+\frac{1}{2}V-\frac{1}{2}V\subseteq H
+\]
+
+\end_inset
+
+נבחין כי 
+\begin_inset Formula $\frac{1}{2}V$
+\end_inset
+
+ פתוחה, ולכן 
+\begin_inset Formula $\frac{1}{2}V-\frac{1}{2}V$
+\end_inset
+
+ פתוחה, ומכך ש-
+\begin_inset Formula $V$
+\end_inset
+
+ לא ריקה, הרי ש-
+\begin_inset Formula $0\in\frac{1}{2}V-\frac{1}{2}V$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $H$
+\end_inset
+
+ מכילה סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $K$
+\end_inset
+
+ מכילה סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נוכיח שבלי הנחת הקמירות, המשפט לא נכון.
+\begin_inset Newline newline
+\end_inset
+
+אכן נבחר 
+\begin_inset Formula $X=R^{2}$
+\end_inset
+
+ ו-
+\begin_inset Formula $K=\left\{ 0\right\} \cup\left\{ x\in R:\left\Vert x\right\Vert _{2}=1\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $K$
+\end_inset
+
+ סגורה, ולכל 
+\begin_inset Formula $x\in R\setminus\left\{ 0\right\} $
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x=\left\Vert x\right\Vert _{2}\left\Vert x\right\Vert _{2}^{-1}x\in\left\Vert x\right\Vert _{2}K$
+\end_inset
+
+ ו-
+\begin_inset Formula $0\in K$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $K$
+\end_inset
+
+ בולעת.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ הוא מקטגוריה שניה בתוך עצמו כי הוא מרחב מטרי שלם.
+\begin_inset Newline newline
+\end_inset
+
+אבל הפנים של 
+\begin_inset Formula $K$
+\end_inset
+
+ ריק ובפרט 
+\begin_inset Formula $K$
+\end_inset
+
+ לא מכיל סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+, כלומר אכן מצאנו דוגמה נגדית כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $X=\left\{ f\in L^{1}:\left\Vert f\right\Vert _{2}<\infty\right\} $
+\end_inset
+
+, כלומר 
+\begin_inset Formula $X=L^{2}$
+\end_inset
+
+ עם הטופולוגיה שמתקבלת כתת-מרחב של 
+\begin_inset Formula $L^{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נבחר 
+\begin_inset Formula $K=\left\{ f\in X:\left\Vert f\right\Vert _{2}\leq1\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממה שראינו בתרגיל 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $K$
+\end_inset
+
+ סגורה.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן אם 
+\begin_inset Formula $f,g\in K,t\in\left[0,1\right]$
+\end_inset
+
+, אז 
+\begin_inset Formula 
+\[
+\left\Vert \left(1-t\right)f+tg\right\Vert _{2}\leq\left(1-t\right)\left\Vert f\right\Vert _{2}+t\left\Vert g\right\Vert _{2}\leq\left(1-t\right)+t=1
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $K$
+\end_inset
+
+ קמורה.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף, 
+\begin_inset Formula $K$
+\end_inset
+
+ מכילה את 
+\begin_inset Formula $0$
+\end_inset
+
+ ומצד שני אם 
+\begin_inset Formula $f\in X\setminus\left\{ 0\right\} $
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\Vert f\right\Vert _{2}^{-1}f\in K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל כפי שכבר ראינו בתרגיל 
+\begin_inset Formula $4$
+\end_inset
+
+, הפנים של 
+\begin_inset Formula $K$
+\end_inset
+
+ הוא ריק ובפרט 
+\begin_inset Formula $K$
+\end_inset
+
+ לא מכילה אף סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ולכן מצאנו את הדוגמה הנגדית הדרושה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $x_{1},x_{2}\in C$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left\{ \Lambda_{n}x_{1}\right\} ,\left\{ \Lambda_{n}x_{2}\right\} $
+\end_inset
+
+ סדרות קושי ב-
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $W\subseteq Y$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $V\subseteq Y$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $V+V\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{n}x_{i}-\Lambda_{m}x_{i}\in V$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\Lambda_{n}\left(x_{1}+x_{2}\right)-\Lambda_{m}\left(x_{1}+x_{2}\right)=\Lambda_{n}x_{1}-\Lambda_{m}x_{1}+\Lambda_{n}x_{2}-\Lambda_{m}x_{2}\in V+V\subseteq W
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left\{ \Lambda_{n}\left(x_{1}+x_{2}\right)\right\} $
+\end_inset
+
+ היא סדרת קושי ב-
+\begin_inset Formula $Y$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $x_{1}+x_{2}\in C$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $C$
+\end_inset
+
+ סגור לחיבור.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ ויהא 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ סקלר.
+ אם 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+ אז ברור ש-
+\begin_inset Formula $\Lambda_{n}\left(\alpha x\right)$
+\end_inset
+
+ קושי ב-
+\begin_inset Formula $Y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\alpha x\in C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נניח 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $W\subseteq Y$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{n}x-\Lambda_{m}x\in\alpha^{-1}W$
+\end_inset
+
+ ואז לכל 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\Lambda_{n}\alpha x-\Lambda_{m}\alpha x=\alpha\left(\Lambda_{n}x-\Lambda_{m}x\right)\in\alpha\alpha^{-1}W=W$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Lambda_{n}\left(\alpha x\right)$
+\end_inset
+
+ סדרת קושי ב-
+\begin_inset Formula $Y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\alpha x\in C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $C$
+\end_inset
+
+ סגור לכפל בסקלר.
+\begin_inset Newline newline
+\end_inset
+
+אז אכן 
+\begin_inset Formula $C$
+\end_inset
+
+ תת-מרחב של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $x\in\overline{C}$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $W\subseteq Y$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $V\subseteq Y$
+\end_inset
+
+ סביבה מאוזנת של 
+\begin_inset Formula $0$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $V+V+V\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות במידה אחידה של 
+\begin_inset Formula $\left\{ \Lambda_{n}\right\} $
+\end_inset
+
+, יש 
+\begin_inset Formula $U\subseteq X$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\Lambda_{n}\left(U\right)\subseteq V$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $x-U$
+\end_inset
+
+ היא סביבה של 
+\begin_inset Formula $x$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left(x-U\right)\cap C\neq\emptyset$
+\end_inset
+
+, כלומר יש 
+\begin_inset Formula $x^{\prime}\in C$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $x-x^{\prime}\in U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{n}\left(x-x^{\prime}\right)\in V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $x^{\prime}\in C$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda_{n}x^{\prime}$
+\end_inset
+
+ היא סדרת קושי ב-
+\begin_inset Formula $Y$
+\end_inset
+
+, ולכן יש 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{n}x^{\prime}-\Lambda_{m}x^{\prime}\in V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+ נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\Lambda_{n}x-\Lambda_{m}x & =\Lambda_{n}\left(x-x^{\prime}\right)+\Lambda_{n}x^{\prime}-\Lambda_{m}x^{\prime}-\Lambda_{m}\left(x-x^{\prime}\right)\\
+ & \in V+V-V\subseteq V+V+V\subseteq W
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\left\{ \Lambda_{n}x\right\} $
+\end_inset
+
+ היא סדרת קושי ב-
+\begin_inset Formula $Y$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $C=\overline{C}$
+\end_inset
+
+ כלומר אכן 
+\begin_inset Formula $C$
+\end_inset
+
+ סגור כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+כמו קודם, נסמן ב-
+\begin_inset Formula $C$
+\end_inset
+
+ את אוסף ה-
+\begin_inset Formula $x\in X$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\left\{ \Lambda_{n}x\right\} $
+\end_inset
+
+ היא סדרת קושי.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $Y$
+\end_inset
+
+ הוא מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\left\{ \Lambda_{n}x\right\} $
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן מהנתון נקבל ש-
+\begin_inset Formula $C$
+\end_inset
+
+ צפופה ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+ אבל בסעיף הקודם ראינו ש-
+\begin_inset Formula $C$
+\end_inset
+
+ סגורה ולכן נקבל 
+\begin_inset Formula $C=X$
+\end_inset
+
+.
+ כלומר הגבול 
+\begin_inset Formula $\Lambda x=\lim_{n\rightarrow\infty}\Lambda_{n}x$
+\end_inset
+
+ קיים לכל 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+ברור ש-
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ לינארית, ולכן מספיק להראות ש-
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $W\subseteq Y$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $W^{\prime}\subseteq W$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\overline{W^{\prime}}\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות במידה אחידה, יש 
+\begin_inset Formula $V\subseteq X$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\Lambda_{n}\left(V\right)\subseteq W^{\prime}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x\in V$
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ \Lambda_{n}x\right\} $
+\end_inset
+
+ היא סדרה ב-
+\begin_inset Formula $W^{\prime}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\Lambda x=\lim_{n\rightarrow\infty}\Lambda_{n}x\in\overline{W^{\prime}}\subseteq W
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\Lambda\left(V\right)\subseteq W$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אכן 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $0$
+\end_inset
+
+ וסיימנו.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מכך ש-
+\begin_inset Formula $X\setminus Y$
+\end_inset
+
+ הוא מקטגוריה ראשונה ב-
+\begin_inset Formula $X$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula $X$
+\end_inset
+
+ הוא קטגוריה שניה ב-
+\begin_inset Formula $X$
+\end_inset
+
+ )כי הוא מרחב-
+\begin_inset Formula $F$
+\end_inset
+
+(, ומכך שאיחוד שתי קבוצות מקטגוריה ראשונה היא תמיד עדיין מקטגוריה ראשונה,
+ הרי ש-
+\begin_inset Formula $Y$
+\end_inset
+
+ לא יכול להיות מקטגוריה ראשונה.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $Y$
+\end_inset
+
+ הוא מקטגוריה שניה ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $a\mapsto x+a$
+\end_inset
+
+ הוא הומיאומורפיזם של 
+\begin_inset Formula $X$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $x+Y$
+\end_inset
+
+ גם הוא מקטגוריה שניה ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תת-קבוצה של קבוצה מקטגוריה ראשונה היא בעצמה מקטגוריה ראשונה, ולכן לא יתכן
+ כי 
+\begin_inset Formula $x+Y$
+\end_inset
+
+ היא תת-קבוצה של 
+\begin_inset Formula $X\setminus Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז קיים 
+\begin_inset Formula $y\in x+Y$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.
+ כלומר יש 
+\begin_inset Formula $y,y^{\prime}\in Y$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $y=x+y^{\prime}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $x=y-y^{\prime}$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $Y$
+\end_inset
+
+ הוא תת-מרחב נקבל 
+\begin_inset Formula $x\in Y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אכן 
+\begin_inset Formula $X=Y$
+\end_inset
+
+ וסיימנו.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ סדרה ב-
+\begin_inset Formula $X$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ כלשהו.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $I\subseteq\kaliNatural$
+\end_inset
+
+ קבוצה אינסופית כלשהי.
+\begin_inset Newline newline
+\end_inset
+
+מקומפקטיות 
+\begin_inset Formula $K$
+\end_inset
+
+, יש 
+\begin_inset Formula $J\subseteq I$
+\end_inset
+
+ אינסופית עבורה 
+\begin_inset Formula $\left(f\left(x_{n}\right)\right)_{n\in J}$
+\end_inset
+
+ מתכנסת.
+ נסמן את הגבול שלה ב-
+\begin_inset Formula $y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\left(\left(x_{n},f\left(x_{n}\right)\right)\right)_{n\in J}$
+\end_inset
+
+ מתכנסת ל-
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $X\times K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך שהגרף של 
+\begin_inset Formula $f$
+\end_inset
+
+ סגור ב-
+\begin_inset Formula $X\times K$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left(x,y\right)\in K$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(x\right)=y$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left(f\left(x_{n}\right)\right)_{n\in J}$
+\end_inset
+
+ מתכנסת ל-
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בפרט לכל 
+\begin_inset Formula $I\subseteq\kaliNatural$
+\end_inset
+
+ אינסופית, ולכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, יש 
+\begin_inset Formula $n\in I$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $d\left(f\left(x_{n}\right),f\left(x\right)\right)<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ הקבוצה 
+\begin_inset Formula $\left\{ n:d\left(f\left(x_{n}\right),f\left(x\right)\right)\geq\varepsilon\right\} $
+\end_inset
+
+ חייבת להיות סופית, ולכן 
+\begin_inset Formula $f\left(x_{n}\right)\rightarrow f\left(x\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נבחר 
+\begin_inset Formula $K=\left\{ n^{-1}:n\in\kaliNatural\right\} $
+\end_inset
+
+ ו-
+\begin_inset Formula $X=\left\{ 0\right\} \cup\left(K\setminus\left\{ 1\right\} \right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $X,K$
+\end_inset
+
+ שניהם יורשים את המטריקה הרגילה מ-
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ברור ש-
+\begin_inset Formula $X$
+\end_inset
+
+ קומפקטי )למשל כי זו קבוצה סגורה וחסומה ב-
+\begin_inset Formula $R$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן הטופולוגיה של 
+\begin_inset Formula $K$
+\end_inset
+
+ היא דיסקרטית.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $f:X\rightarrow K$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(x\right)=x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ ו-
+\begin_inset Formula $f\left(0\right)=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $f$
+\end_inset
+
+ חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל ומתקיים 
+\begin_inset Formula $f^{-1}\left(y\right)=y$
+\end_inset
+
+ לכל 
+\begin_inset Formula $y\neq1$
+\end_inset
+
+ ו-
+\begin_inset Formula $f^{-1}\left(1\right)=0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נטען שהגרף של 
+\begin_inset Formula $f$
+\end_inset
+
+ סגור.
+\begin_inset Newline newline
+\end_inset
+
+אכן אם 
+\begin_inset Formula $\left(x_{n},f\left(x_{n}\right)\right)\rightarrow\left(x,y\right)$
+\end_inset
+
+ ב-
+\begin_inset Formula $X\times K$
+\end_inset
+
+, אז 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+ ב-
+\begin_inset Formula $X$
+\end_inset
+
+ ו-
+\begin_inset Formula $f\left(x_{n}\right)\rightarrow y$
+\end_inset
+
+ ב-
+\begin_inset Formula $K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך שהטופולוגיה של 
+\begin_inset Formula $K$
+\end_inset
+
+ דיסקרטית, נקבל 
+\begin_inset Formula $f\left(x_{n}\right)=y$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $y\neq1$
+\end_inset
+
+ אז נקבל שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק מתקיים 
+\begin_inset Formula $x_{n}=f^{-1}\left(y\right)=y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x=\lim_{n\rightarrow\infty}x_{n}=y$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)=y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אחרת, 
+\begin_inset Formula $y=1$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ גדול מספיק 
+\begin_inset Formula $x_{n}=f^{-1}\left(1\right)=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $x=\lim_{n\rightarrow\infty}x_{n}=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(x\right)=f\left(0\right)=1=y$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בכל מקרה 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ נמצאת בגרף של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אז אכן הגרף של 
+\begin_inset Formula $f$
+\end_inset
+
+ סגור כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+נראה ש-
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה ובכך נסיים.
+\begin_inset Newline newline
+\end_inset
+
+אכן 
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+ היא קבוצה פתוחה ש-
+\begin_inset Formula $K$
+\end_inset
+
+ אבל 
+\begin_inset Formula $f^{-1}\left(\left\{ 1\right\} \right)=\left\{ 0\right\} $
+\end_inset
+
+ היא לא פתוחה ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
