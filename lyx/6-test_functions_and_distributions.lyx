@@ -5326,7 +5326,7 @@ T\left(\mathcal{D}_{K}\right)\cap\left(\prod_{\left|\alpha\right|\leq N}B\left(0
 \begin_inset Newline newline
 \end_inset
 
-תריך להוכיח ש-
+צריך להוכיח ש-
 \begin_inset Formula $\left(f\Lambda\right)=0$
 \end_inset
 
@@ -5601,7 +5601,7 @@ T\left(\mathcal{D}_{K}\right)\cap\left(\prod_{\left|\alpha\right|\leq N}B\left(0
 \begin_inset Formula $C^{\prime}=C\left\Vert h\right\Vert _{N}m\left(S\right)$
 \end_inset
 
-ו-
+ ו-
 \begin_inset Formula $c_{j}=\sup\left\{ \left|\phi\left(x\right)\right|:x\in A+\overline{B_{2j^{-1}}\left(0\right)}\right\} $
 \end_inset
 
@@ -6271,15 +6271,4418 @@ D^{\alpha}\phi\left(x\right)=h\left(1\right)=\intop_{0}^{1}h^{\prime}\left(t\rig
 \end_inset
 
 
-\begin_inset Formula 
-\[
-\]
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $\left\{ k_{i}\right\} $
+\end_inset
+
+ סדרה של שלמים שכל שלם בה פעם אחת בדיוק.
+\begin_inset Newline newline
+\end_inset
+
+לעל 
+\begin_inset Formula $i$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $Q_{i}=\left[k_{i}-\nicefrac{1}{2},k_{i}+\nicefrac{1}{2}\right],V_{i}=\left(k_{i}+1,k_{i}-1\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ שלם, קיימת 
+\begin_inset Formula $\phi_{i}\in\mathcal{D}\left(V_{i}\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\phi_{i}=1$
+\end_inset
+
+ על 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\psi_{m}=\phi_{m}\prod_{i=1}^{m-1}\left(1-\phi_{i}\right)$
+\end_inset
+
+ )כאשר מכפלה ריקה שווה ל-
+\begin_inset Formula $1$
+\end_inset
+
+(.
+ אז ברור ש-
+\begin_inset Formula $\psi_{m}\in\mathcal{D}\left(V_{i}\right)$
+\end_inset
+
+.
+ כמו כן ברור ש-
+\begin_inset Formula $0\leq\psi_{m}\leq1$
+\end_inset
+
+ בכל 
+\begin_inset Formula $R$
+\end_inset
+
+, לכל 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $\psi_{1}=\phi_{1}=1-\left(1-\phi_{1}\right)$
+\end_inset
+
+, ואם עבור 
+\begin_inset Formula $m$
+\end_inset
+
+ כלשהו מתקיים 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{m}\psi_{j}=1-\prod_{i=1}^{m}\left(1-\phi_{i}\right)
+\]
+
+\end_inset
+
+ אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\sum_{j=1}^{m+1}\psi_{j} & =\left(1-\prod_{i=1}^{m}\left(1-\phi_{i}\right)\right)+\left(\phi_{m+1}\prod_{i=1}^{m}\left(1-\phi_{i}\right)\right)\\
+ & =\left(1-\phi_{m+1}\right)\prod_{i=1}^{m}\left(1-\phi_{i}\right)=\prod_{i=1}^{m+1}\left(1-\phi_{i}\right)
+\end{align*}
+
+\end_inset
+
+ולכן מאינדוקציה, לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{j=1}^{m}\psi_{j}=1-\prod_{i=1}^{m}\left(1-\phi_{i}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\phi_{i}=1$
+\end_inset
+
+ על 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $\prod_{i=1}^{m}\left(1-\phi_{i}\right)=0$
+\end_inset
+
+ על 
+\begin_inset Formula $\bigcup_{i=1}^{m}Q_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m$
+\end_inset
+
+, ולכן ממה שראינו, 
+\begin_inset Formula $\sum_{j=1}^{m}\psi_{j}=1$
+\end_inset
+
+ על 
+\begin_inset Formula $\bigcup_{i=1}^{m}Q_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ כלשהו.
+ אז יש 
+\begin_inset Formula $N$
+\end_inset
+
+ כלשהו עבורו 
+\begin_inset Formula $x\in\bigcup_{i=1}^{N}Q_{i}$
+\end_inset
+
+.
+ אז גם לכל 
+\begin_inset Formula $m>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in\bigcup_{i=1}^{m}Q_{i}$
+\end_inset
+
+, ולכן ממה שראינו, לכל 
+\begin_inset Formula $m>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{j=1}^{m}\psi_{j}\left(x\right)=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\sum_{j=1}^{m}\psi_{j}=1$
+\end_inset
+
+ בכל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן אם 
+\begin_inset Formula $K\subseteq R$
+\end_inset
+
+ קומפקטית, אז יש 
+\begin_inset Formula $m$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $K\subseteq\bigcup_{i=1}^{m}Q_{i}^{\circ}$
+\end_inset
+
+, וכאמור 
+\begin_inset Formula $\sum_{j=1}^{m}\psi_{j}=1$
+\end_inset
+
+ על 
+\begin_inset Formula $\bigcup_{i=1}^{m}Q_{i}$
+\end_inset
+
+ ובפרט על 
+\begin_inset Formula $\bigcup_{i=1}^{m}Q_{i}^{\circ}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\sum_{j=1}^{m}\psi_{j}=1$
+\end_inset
+
+ על קבוצה פתוחה שמכילה את 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ בפרט אם 
+\begin_inset Formula $K$
+\end_inset
+
+ קומפקטית אז יש סביבה של 
+\begin_inset Formula $K$
+\end_inset
+
+ שעליה 
+\begin_inset Formula $\psi_{i}=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ גדול מספיק.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $W_{i}=\left(k_{i}-2,k_{i}+2\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\overline{V_{i}}\subseteq W_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\setminus\overline{V_{i}}\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\psi_{i}\phi=0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(\psi_{i}\Lambda\right)\phi=0$
+\end_inset
+
+.
+ לכן התומך של 
+\begin_inset Formula $\psi_{i}\Lambda$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $\overline{V_{i}}$
+\end_inset
+
+, ובפרט 
+\begin_inset Formula $\psi_{i}\Lambda$
+\end_inset
+
+ היא בעלת תומך קומפקטי.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן, מכך ש-
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ היא מסדר 
+\begin_inset Formula $N$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\psi_{i}\Lambda$
+\end_inset
+
+ היא לכל היותר מסדר 
+\begin_inset Formula $N$
+\end_inset
+
+, וזה לכל 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $i$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $j\leq N+2$
+\end_inset
+
+ יש 
+\begin_inset Formula $f_{i,j}$
+\end_inset
+
+ רציפה עם תומך ב-
+\begin_inset Formula $W_{i}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\psi_{i}\Lambda=\sum_{j=1}^{N+2}D^{j}f_{i,j}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכיוון שלכל 
+\begin_inset Formula $K\subseteq R$
+\end_inset
+
+ קומפקטית מתקיים ש-
+\begin_inset Formula $\left\{ i:W_{i}\cap K\neq\emptyset\right\} $
+\end_inset
+
+ סופית, לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ הסכום 
+\begin_inset Formula $g_{j}=\sum_{i=1}^{\infty}f_{i,j}$
+\end_inset
+
+ הוא סופי על כל קבוצה קומפקטית ולכן 
+\begin_inset Formula $g_{j}$
+\end_inset
+
+ רציפה על כל קבוצה קומפקטית, ולכן רציפה בכל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו תהא 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ כלשהי.
+ אז 
+\begin_inset Formula 
+\begin{align*}
+\Lambda\phi & =\Lambda\left(\sum_{i=1}^{\infty}\psi_{i}\phi\right)=\sum_{i=1}^{\infty}\left(\psi_{i}\Lambda\right)\phi=\sum_{i=1}^{\infty}\sum_{j=1}^{N+2}\left(D^{j}f_{i,j}\right)\phi\\
+ & \sum_{i=1}^{\infty}\sum_{j=1}^{N+2}\left(-1\right)^{j}\intop_{R}f_{i,j}\left(x\right)D^{j}\phi\left(x\right)dx=\sum_{j=1}^{N+2}\left(-1\right)^{j}\sum_{i=1}^{\infty}\intop_{R}f_{i,j}\left(x\right)D^{j}\phi\left(x\right)dx
+\end{align*}
+
+\end_inset
+
+אז אם 
+\begin_inset Formula $S$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\phi$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+, התומך של 
+\begin_inset Formula $f_{i,j}$
+\end_inset
+
+ חותך את 
+\begin_inset Formula $S$
+\end_inset
+
+ רק עבור כמות סופית של ערכי 
+\begin_inset Formula $i$
+\end_inset
+
+, ולכן נקבל
+\begin_inset Formula 
+\begin{align*}
+\Lambda\phi & =\sum_{j=1}^{N+2}\left(-1\right)^{j}\sum_{i=1}^{\infty}\intop_{S}f_{i,j}\left(x\right)D^{j}\phi\left(x\right)dx=\sum_{j=1}^{N+2}\left(-1\right)^{j}\intop_{S}\sum_{i=1}^{\infty}f_{i,j}\left(x\right)D^{j}\phi\left(x\right)dx\\
+ & =\sum_{j=1}^{N+2}\left(-1\right)^{j}\intop_{R}g_{j}\left(x\right)D^{j}\phi\left(x\right)dx=\sum_{j=1}^{N+2}\left(D^{j}g_{j}\right)\phi
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\Lambda=\sum_{j=1}^{N+2}\left(D^{j}g_{j}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מעכשיו, כדי לעשות את הסימונים ברורים, עבור פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ כלשהי נסמן ב-
+\begin_inset Formula $f^{\left(k\right)}$
+\end_inset
+
+ את הנגזרת הרגילה של 
+\begin_inset Formula $f$
+\end_inset
+
+ )אם קיימת( וב-
+\begin_inset Formula $D^{k}f$
+\end_inset
+
+ את הנגזרת ההתפלגותית של 
+\begin_inset Formula $f$
+\end_inset
+
+ )אם קיימת(.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $j$
+\end_inset
+
+, מרציפות 
+\begin_inset Formula $g_{j}$
+\end_inset
+
+ יש לה פונקציה קדומה מכל סדר, ובפרט 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ גזירה ברציפות 
+\begin_inset Formula $N+2-j$
+\end_inset
+
+ פעמים עבורה 
+\begin_inset Formula $h_{j}^{\left(N+2-j\right)}=g_{j}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ גזירה ברציפות 
+\begin_inset Formula $N+2-j$
+\end_inset
+
+ פעמים, נקבל לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י אינטגרציה בחלקים 
+\begin_inset Formula $N+2-j$
+\end_inset
+
+ פעמים, את השוויון 
+\begin_inset Formula 
+\begin{align*}
+\left(D^{N+2-j}h_{j}\right)\phi & =\intop_{R}h_{j}\left(x\right)D^{N+2-j}\phi\left(x\right)dx\\
+ & =\left(-1\right)^{N+2-j}\intop_{R}h_{j}^{\left(N+2-j\right)}\left(x\right)\phi\left(x\right)dx\\
+ & =\left(-1\right)^{N+2-j}\intop_{R}g_{j}\left(x\right)\phi\left(x\right)dx
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $D^{N+2-j}h_{j}=g_{j}$
+\end_inset
+
+ כהתפלגויות, ולכן 
+\begin_inset Formula $D^{N+2}h_{j}=D^{j}g_{j}$
+\end_inset
+
+.
+ זה לכל 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Lambda=\sum_{j=1}^{N+2}\left(D^{N+2}h_{j}\right)=D^{N+2}\left(\sum_{j=1}^{N+2}h_{j}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sum_{j=1}^{N+2}h_{j}$
+\end_inset
+
+ היא רציפה כסכום של סופי של פונקציות רציפות ולכן סיימנו.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $f$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\delta=D^{2}f$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\phi\left(0\right)=\intop_{R}f\left(x\right)\phi^{\prime\prime}\left(x\right)dx$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $r>0$
+\end_inset
+
+ כלשהו.
+\begin_inset Newline newline
+\end_inset
+
+נטען שבתחום 
+\begin_inset Formula $\left(0,r\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ חייבת להיות מהצורה 
+\begin_inset Formula $f\left(x\right)=ax+b$
+\end_inset
+
+ עבור 
+\begin_inset Formula $a,b\in\kaliComplex$
+\end_inset
+
+ כלשהם.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(\left(0,r\right)\right)$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $S\phi\left(t\right)=\intop_{-\infty}^{t}\phi\left(x\right)dx$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left(S\phi\right)^{\prime}=\phi$
+\end_inset
+
+ ו-
+\begin_inset Formula $S$
+\end_inset
+
+ הוא אופרטור לינארי מ-
+\begin_inset Formula $\mathcal{D}\left(\left(0,\infty\right)\right)$
+\end_inset
+
+ אל 
+\begin_inset Formula $C^{\infty}\left(R\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ברור שלכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(\left(0,r\right)\right)$
+\end_inset
+
+, התומך של 
+\begin_inset Formula $S\phi$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יתרה מזאת, אם 
+\begin_inset Formula $\intop_{R}\phi\left(x\right)dx=0$
+\end_inset
+
+, קל לוודא שהתומך של 
+\begin_inset Formula $S\phi$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $\left(0,r\right)$
+\end_inset
+
+ ולכן במקרה זה נקבל 
+\begin_inset Formula $S\phi\in\mathcal{D}\left(\left(0,r\right)\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $h\in\mathcal{D}\left(\left(0,r\right)\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\intop_{R}h\left(x\right)dx=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(\left(0,r\right)\right)$
+\end_inset
+
+ נגדיר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $T\phi=\phi-\left(\intop_{R}\phi\left(x\right)dx\right)h$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $T$
+\end_inset
+
+ אופרטור לינארי מ-
+\begin_inset Formula $\mathcal{D}\left(\left(0,\infty\right)\right)$
+\end_inset
+
+ לעצמו.
+\begin_inset Newline newline
+\end_inset
+
+נבחין גם שלכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(\left(0,\infty\right)\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\intop_{R}T\phi\left(x\right)dx=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז למעשה 
+\begin_inset Formula $ST$
+\end_inset
+
+ הוא אופרטור לינארי מ
+\numeric on
+-
+\numeric off
+
+\begin_inset Formula $\mathcal{D}\left(\left(0,r\right)\right)$
+\end_inset
+
+ לעצמו.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula 
+\begin{align*}
+a & =\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt\\
+b & =\left(\intop_{R}f\left(t\right)h\left(t\right)dt\right)+\left(\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt\right)\left(A-A\left(\intop_{R}h\left(t\right)dt\right)+\left(\intop_{R}th\left(t\right)dt\right)\right)
+\end{align*}
+
+\end_inset
+
+עכשיו נקבע 
+\begin_inset Formula $\phi\in\mathcal{D}\left(0,r\right)$
+\end_inset
+
+ כלשהו.
+ מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(STST\phi\right)^{\prime}=TST\phi=ST\phi-\left(\intop_{R}ST\phi\left(x\right)dx\right)h
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\left(STST\phi\right)^{\prime\prime}=\left(ST\phi\right)^{\prime}-\left(\intop_{R}ST\phi\left(x\right)dx\right)h^{\prime}=T\phi-\left(\intop_{R}ST\phi\left(x\right)dx\right)h^{\prime}=\phi-\left(\intop_{R}\phi\left(x\right)dx\right)h-\left(\intop_{R}ST\phi\left(x\right)dx\right)h^{\prime}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\begin{align*}
+\intop_{R}f\left(t\right)\left(STST\phi\right)^{\prime\prime}\left(t\right)dt & =\intop_{R}f\left(t\right)\left(\phi\left(t\right)-\left(\intop_{R}\phi\left(x\right)dx\right)h\left(t\right)-\left(\intop_{R}ST\phi\left(x\right)dx\right)h^{\prime}\left(t\right)\right)dt\\
+ & =\intop_{R}f\left(t\right)\phi\left(t\right)-\left(\intop_{R}\phi\left(x\right)dx\right)f\left(t\right)h\left(t\right)-\left(\intop_{R}ST\phi\left(x\right)dx\right)f\left(t\right)h^{\prime}\left(t\right)dt\\
+ & =\intop_{R}f\left(t\right)\phi\left(t\right)dt-\left(\intop_{R}\phi\left(x\right)dx\right)\intop_{R}f\left(t\right)h\left(t\right)dt-\left(\intop_{R}ST\phi\left(x\right)dx\right)\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt
+\end{align*}
+
+\end_inset
+
+מצד שני, מכך ש-
+\begin_inset Formula $STST\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\intop_{R}f\left(t\right)\left(STST\phi\right)^{\prime\prime}\left(t\right)dt=0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\intop_{R}f\left(t\right)\phi\left(t\right)dt=\left(\intop_{R}\phi\left(x\right)dx\right)\left(\intop_{R}f\left(t\right)h\left(t\right)dt\right)+\left(\intop_{R}ST\phi\left(x\right)dx\right)\left(\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt\right)
+\]
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{R}ST\phi\left(x\right)dx & =\intop_{0}^{A}\intop_{0}^{x}T\phi\left(t\right)dtdx=\intop_{0}^{A}\intop_{t}^{A}T\phi\left(t\right)dxdt=\intop_{0}^{A}\left(A-t\right)T\phi\left(t\right)dt\\
+ & =\intop_{0}^{A}\left(A-t\right)\left(\phi\left(t\right)-\left(\intop_{R}\phi\left(x\right)dx\right)h\left(t\right)\right)dt\\
+ & =A\intop_{0}^{A}\phi\left(t\right)dt-A\left(\intop_{R}\phi\left(x\right)dx\right)\intop_{0}^{A}h\left(t\right)dt-\intop_{0}^{A}t\phi\left(t\right)dt+\left(\intop_{R}\phi\left(x\right)dx\right)\left(\intop_{0}^{A}th\left(t\right)dt\right)\\
+ & =\left(A-A\left(\intop_{R}h\left(t\right)dt\right)+\left(\intop_{R}th\left(t\right)dt\right)\right)\left(\intop_{R}\phi\left(x\right)dx\right)-\intop_{R}x\phi\left(x\right)dx
+\end{align*}
+
+\end_inset
+
+ולכן סך הכול נקבל
+\begin_inset Formula 
+\begin{align*}
+\intop_{R}f\left(t\right)\phi\left(t\right)dt & =\left(\intop_{R}\phi\left(x\right)dx\right)\left(\intop_{R}f\left(t\right)h\left(t\right)dt\right)+\left(\left(A-A\left(\intop_{R}h\left(t\right)dt\right)+\left(\intop_{R}th\left(t\right)dt\right)\right)\left(\intop_{R}\phi\left(x\right)dx\right)-\intop_{R}x\phi\left(x\right)dx\right)\left(\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt\right)\\
+ & =\left(\left(\intop_{R}f\left(t\right)h\left(t\right)dt\right)+\left(\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt\right)\left(A-A\left(\intop_{R}h\left(t\right)dt\right)+\left(\intop_{R}th\left(t\right)dt\right)\right)\right)\left(\intop_{R}\phi\left(x\right)dx\right)-\left(\intop_{R}f\left(t\right)h^{\prime}\left(t\right)dt\right)\left(\intop_{R}x\phi\left(x\right)dx\right)\\
+ & =a\left(\intop_{R}x\phi\left(x\right)dx\right)+b\left(\intop_{R}\phi\left(x\right)dx\right)=\intop_{R}\left(ax+b\right)\phi\left(x\right)dx
+\end{align*}
+
+\end_inset
+
+וזה נכון לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(0,r\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז הפונקציות 
+\begin_inset Formula $f$
+\end_inset
+
+ ו-
+\begin_inset Formula $x\mapsto ax+b$
+\end_inset
+
+ הן זהות כהתפלגויות על 
+\begin_inset Formula $\left(0,r\right)$
+\end_inset
+
+, ולכן הן שוות על 
+\begin_inset Formula $\left(0,r\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז הראינו שלכל 
+\begin_inset Formula $r>0$
+\end_inset
+
+, יש 
+\begin_inset Formula $a_{r},b_{r}$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $f\left(x\right)=a_{r}x+b_{r}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x\in\left(0,r\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מרציפות 
+\begin_inset Formula $f$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $f\left(0\right)=b_{r}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $r$
+\end_inset
+
+, ובפרט 
+\begin_inset Formula $b_{r}=b_{s}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $s,r>0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $s<r$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\frac{1}{2}a_{r}s+b_{r}=f\left(\nicefrac{s}{2}\right)=\frac{1}{2}a_{s}s+b_{s}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $a_{r}=a_{s}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $s,r>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $a,b$
+\end_inset
+
+ כלשהם עבורם 
+\begin_inset Formula $f\left(x\right)=ax+b$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left(0,\infty\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם נסמן 
+\begin_inset Formula $g\left(x\right)=-f\left(-x\right)$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\intop_{R}g\left(x\right)\phi^{\prime\prime}\left(x\right)dx=-\intop_{R}f\left(-x\right)\phi^{\prime\prime}\left(x\right)dx=\intop_{R}f\left(x\right)\phi^{\prime\prime}\left(-x\right)dx=\phi\left(-0\right)=\phi\left(0\right)
+\]
+
+\end_inset
+
+כלומר גם 
+\begin_inset Formula $D^{2}g=\delta$
+\end_inset
+
+, ולכן אותם טיעונים בדיוק מראים שיש 
+\begin_inset Formula $c,d$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $-f\left(-x\right)=g\left(x\right)=cx+d$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x<0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)=cx-d$
+\end_inset
+
+, ומרציפות נקבל 
+\begin_inset Formula $-d=f\left(0\right)=b$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בינתיים קיבלנו 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+ax+b & x\geq0\\
+cx+b & x<0
+\end{cases}
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\phi\left(0\right) & =\intop_{-\infty}^{0}\left(cx+b\right)\phi^{\prime\prime}\left(x\right)dx+\intop_{0}^{\infty}\left(ax+b\right)\phi^{\prime\prime}\left(x\right)dx\\
+ & =b\phi^{\prime}\left(0\right)-c\intop_{-\infty}^{0}\phi^{\prime}\left(x\right)dx-b\phi^{\prime}\left(0\right)-a\intop_{0}^{\infty}\phi^{\prime}\left(x\right)dx\\
+ & =-c\phi\left(0\right)+a\phi\left(0\right)=\left(a-c\right)\phi\left(0\right)
+\end{align*}
+
+\end_inset
+
+ובפרט אם ניקח 
+\begin_inset Formula $\phi$
+\end_inset
+
+ כלשהי עבורה 
+\begin_inset Formula $\phi\left(0\right)=1$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $a-c=1$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $a=c+1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בסך הכול קיבלנו ש-
+\begin_inset Formula $f$
+\end_inset
+
+ חייבת להיות מהצורה
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+cx+b & x<0\\
+\left(c+1\right)x+b & x\geq0
+\end{cases}
+\]
+
+\end_inset
+
+וזו הצורה הכללית ביותר.
+ אכן, אם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא פונקציה כלשהי מהצורה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{R}f\left(x\right)\phi^{\prime\prime}\left(x\right)dx & =\intop_{-\infty}^{0}\left(cx+b\right)\phi^{\prime\prime}\left(x\right)dx+\intop_{0}^{\infty}\left(\left(c+1\right)x+b\right)\phi^{\prime\prime}\left(x\right)dx\\
+ & =b\phi^{\prime}\left(0\right)-c\intop_{-\infty}^{0}\phi^{\prime}\left(x\right)dx-b\phi^{\prime}\left(0\right)-\left(c+1\right)\intop_{0}^{\infty}\phi^{\prime}\left(x\right)dx\\
+ & =-c\phi\left(0\right)+\left(c+1\right)\phi\left(0\right)=\phi\left(0\right)
+\end{align*}
+
+\end_inset
+
+כנדרש.
+\end_layout
+
 \end_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $V\subseteq\Omega$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ אז צריך למצוא 
+\begin_inset Formula $f_{\alpha}$
+\end_inset
+
+ רציפות לכל 
+\begin_inset Formula $\alpha\leq\left(2,2\right)$
+\end_inset
+
+ כך שהתומך של 
+\begin_inset Formula $f_{\alpha}$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $V$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\delta=\sum_{\alpha\leq\left(2,2\right)}D^{\alpha}f_{\alpha}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $f\left(x\right)=\max\left\{ 0,x\right\} $
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $F\left(x,y\right)=f\left(x\right)f\left(y\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\numeric on
+
+\begin_inset Formula $r>0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קטן מספיק עבורו 
+\begin_inset Formula $\left[-r,r\right]^{2}\subseteq V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ניקח 
+\begin_inset Formula $\psi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ כלשהי עבורה 
+\begin_inset Formula $\psi=0$
+\end_inset
+
+ מחוץ ל-
+\begin_inset Formula $\left(-r,r\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\psi=1$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $0$
+\end_inset
+
+, ונסמן 
+\begin_inset Formula $\Psi\left(x,y\right)=\psi\left(x\right)\psi\left(y\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{2}\right)$
+\end_inset
+
+ כלשהי.
+ אז מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{R^{2}}\Psi\cdot F\cdot\left(D^{\left(2,2\right)}\phi\right)dm & =\intop_{0}^{\infty}y\psi\left(y\right)\intop_{0}^{\infty}x\psi\left(x\right)D^{\left(2,2\right)}\phi\left(x,y\right)dxdy\\
+ & =\intop_{0}^{\infty}y\psi\left(y\right)\left(-\intop_{0}^{\infty}\left(\psi\left(x\right)+x\psi^{\prime}\left(x\right)\right)D^{\left(1,2\right)}\phi\left(x,y\right)dx\right)dy\\
+ & =\intop_{0}^{\infty}y\psi\left(y\right)\left(D^{\left(0,2\right)}\phi\left(0,y\right)+\intop_{0}^{\infty}\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)D^{\left(0,2\right)}\phi\left(x,y\right)dx\right)dy\\
+ & =\intop_{0}^{\infty}y\psi\left(y\right)D^{\left(0,2\right)}\phi\left(0,y\right)dy+\intop_{0}^{\infty}\intop_{0}^{\infty}y\psi\left(y\right)\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)D^{\left(0,2\right)}\phi\left(x,y\right)dxdy
+\end{align*}
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $A\left(x,y\right)=\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)y\psi\left(y\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x,y\geq0$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ פונקציה רציפה בתחום הסגור 
+\begin_inset Formula $\left\{ \left(x,y\right):x\geq0,y\geq0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\left(x,0\right)=0$
+\end_inset
+
+ וכמו כן מכך ש-
+\begin_inset Formula $\psi$
+\end_inset
+
+ קבועה בסביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\psi^{\prime}\left(0\right)=0$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\left(x,0\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אם נסמן 
+\begin_inset Formula $A\left(x,y\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x,y$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $x<0$
+\end_inset
+
+ או 
+\begin_inset Formula $y<0$
+\end_inset
+
+ אז קיבלנו 
+\begin_inset Formula $A$
+\end_inset
+
+ פונקציה ברציפה בכל 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ ומתקיים
+\begin_inset Formula 
+\[
+\intop_{R^{2}}A\cdot\left(D^{\left(0,2\right)}\phi\right)dm=\intop_{0}^{\infty}\intop_{0}^{\infty}y\psi\left(y\right)\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)D^{\left(0,2\right)}\phi\left(x,y\right)dxdy
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\begin{align*}
+\intop_{R^{2}}\Psi\cdot F\cdot\left(D^{\left(2,2\right)}\phi\right)dm & =\intop_{0}^{\infty}y\psi\left(y\right)D^{\left(0,2\right)}\phi\left(0,y\right)dy+\intop_{R^{2}}A\cdot\left(D^{\left(0,2\right)}\phi\right)dm\\
+ & =-\intop_{0}^{\infty}\left(\psi\left(y\right)+y\psi^{\prime}\left(y\right)\right)D^{\left(0,1\right)}\phi\left(0,y\right)dy+\intop_{R^{2}}A\cdot\left(D^{\left(0,2\right)}\phi\right)dm\\
+ & =\phi\left(0,0\right)+\intop_{0}^{\infty}\left(2\psi^{\prime}\left(y\right)+y\psi^{\prime\prime}\left(y\right)\right)\phi\left(0,y\right)dy+\intop_{R^{2}}A\cdot\left(D^{\left(0,2\right)}\phi\right)dm
+\end{align*}
+
+\end_inset
+
+עכשיו נגדיר 
+\begin_inset Formula $B\left(x,y\right)=A\left(y,x\right)$
+\end_inset
+
+.
+ אז ברור שגם 
+\begin_inset Formula $B$
+\end_inset
+
+ רציפה בכל 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ וש-
+\begin_inset Formula $B\left(x,y\right)=0$
+\end_inset
+
+ אם 
+\begin_inset Formula $x<0$
+\end_inset
+
+ או 
+\begin_inset Formula $y<0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן נגדיר 
+\begin_inset Formula $C\left(x,y\right)=\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)\left(2\psi^{\prime}\left(y\right)+y\psi^{\prime\prime}\left(y\right)\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x,y\geq0$
+\end_inset
+
+ ואחרת נגדיר 
+\begin_inset Formula $C\left(x,y\right)=0$
+\end_inset
+
+.
+ אז גם 
+\begin_inset Formula $C$
+\end_inset
+
+ רציפה בכל 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $y\in R$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\intop_{0}^{\infty}x\psi\left(x\right)D^{\left(2,0\right)}\phi\left(x,y\right)dx=-\intop_{0}^{\infty}\left(\psi\left(x\right)+x\psi^{\prime}\left(x\right)\right)D^{\left(1,0\right)}\phi\left(x,y\right)dx=\phi\left(0,y\right)-\intop_{0}^{\infty}\left(2^{\prime}\psi\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)\phi\left(x,y\right)dx
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\begin{align*}
+\intop_{0}^{\infty}\left(2\psi^{\prime}\left(y\right)+y\psi^{\prime\prime}\left(y\right)\right)\phi\left(0,y\right)dy & =\intop_{0}^{\infty}\left(2\psi^{\prime}\left(y\right)+y\psi^{\prime\prime}\left(y\right)\right)\left(\intop_{0}^{\infty}x\psi\left(x\right)D^{\left(2,0\right)}\phi\left(x,y\right)dx+\intop_{0}^{\infty}\left(2^{\prime}\psi\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)\phi\left(x,y\right)dx\right)dy\\
+ & =\intop_{0}^{\infty}\intop_{0}^{\infty}B\left(x,y\right)D^{\left(2,0\right)}\phi\left(x,y\right)dxdy+\intop_{0}^{\infty}\intop_{0}^{\infty}C\left(x,y\right)\phi\left(x,y\right)dxdy\\
+ & =\intop_{R^{2}}B\cdot\left(D^{\left(2,0\right)}\phi\right)dm+\intop_{R^{2}}C\cdot\phi dm
+\end{align*}
+
+\end_inset
+
+ולכן בסך הכול נקבל
+\begin_inset Formula 
+\[
+\intop_{R^{2}}\Psi\cdot F\cdot\left(D^{\left(2,2\right)}\phi\right)dm=\phi\left(0,0\right)+\intop_{R^{2}}A\cdot\left(D^{\left(0,2\right)}\phi\right)dm+\intop_{R^{2}}B\cdot\left(D^{\left(2,0\right)}\phi\right)dm+\intop_{R^{2}}C\cdot\phi dm
+\]
+
+\end_inset
+
+וזה נכון לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{2}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן מתקיים 
+\begin_inset Formula $\delta=D^{\left(2,2\right)}\left(\Psi\cdot F\right)-D^{\left(0,2\right)}A-D^{\left(2,0\right)}B-C$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נטען ש-
+\begin_inset Formula $\Psi\cdot F,A,B,C$
+\end_inset
+
+ כולן עם תומך שמוכל ב-
+\begin_inset Formula $\left[-r,r\right]^{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $x\notin\left[-r,r\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $y\in R$
+\end_inset
+
+ כלשהו, אז 
+\begin_inset Formula $\psi\left(x\right)=\psi^{\prime}\left(x\right)=\psi^{\prime\prime}\left(x\right)=0$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\begin{align*}
+\Psi\left(x,y\right)F\left(x,y\right) & =\psi\left(x\right)\psi\left(y\right)f\left(x\right)f\left(y\right)=0\\
+A\left(x,y\right) & =\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)y\psi\left(y\right)=0\\
+B\left(x,y\right) & =\left(2\psi^{\prime}\left(y\right)+x\psi^{\prime\prime}\left(y\right)\right)x\psi\left(x\right)=0\\
+C\left(x,y\right) & =\left(2\psi^{\prime}\left(x\right)+x\psi^{\prime\prime}\left(x\right)\right)\left(2\psi^{\prime}\left(y\right)+y\psi^{\prime\prime}\left(y\right)\right)=0
+\end{align*}
+
+\end_inset
+
+ובאופן דומה אם 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ כלשהו ו-
+\begin_inset Formula $y\notin\left[-r,r\right]$
+\end_inset
+
+, אז 
+\begin_inset Formula $\Psi\left(x,y\right)F\left(x,y\right)=A\left(x,y\right)=B\left(x,y\right)=C\left(x,y\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Psi\cdot F,A,B,C$
+\end_inset
+
+ כולן מתאפסות בכל נקודה 
+\begin_inset Formula $\left(x,y\right)\notin\left[-r,r\right]^{2}$
+\end_inset
+
+, כלומר אכן התומך של 
+\begin_inset Formula $\Psi\cdot F,A,B,C$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $\left[-r,r\right]^{2}$
+\end_inset
+
+ ולכן גם ב-
+\begin_inset Formula $V$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+בהוכחה של תרגיל 
+\begin_inset Formula $14$
+\end_inset
+
+ הראינו שאם 
+\begin_inset Formula $A$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ ו-
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $D^{\alpha}\phi=0$
+\end_inset
+
+ כל 
+\begin_inset Formula $A$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, אז 
+\begin_inset Formula $\Lambda\phi=0$
+\end_inset
+
+, וזה בדיוק מה שצריך להראות בתרגיל הזה.
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $\Phi\in\left(C^{\infty}\left(\Omega\right)\right)^{*}$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ הצמצום של 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ למרחב 
+\begin_inset Formula $\mathcal{D}\left(\Omega\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $K\subseteq\Omega$
+\end_inset
+
+ קומקפטית, הצמצום של 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ ל-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ הוא רציף כאשר 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ מקבל את טופולוגיית תת-המרחב מ-
+\begin_inset Formula $C^{\infty}\left(\Omega\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל הטופולוגיה של 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ כתת-מרחב של 
+\begin_inset Formula $C^{\infty}\left(\Omega\right)$
+\end_inset
+
+ היא אותה טופולוגיה כמו זו שהוא יורש מ-
+\begin_inset Formula $\mathcal{D}\left(\Omega\right)$
+\end_inset
+
+, ולכן הצמצום של 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ ל-
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ רציף גם כאשר 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ מקבל את טופולוגיית תת-המרחב של 
+\begin_inset Formula $\mathcal{D}\left(\Omega\right)$
+\end_inset
+
+.
+ מכך שזה נכון לכל 
+\begin_inset Formula $K$
+\end_inset
+
+ קומקפטית נקבל 
+\begin_inset Formula $\Lambda\in\mathcal{D}^{\prime}\left(\Omega\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\left\{ K_{j}\right\} $
+\end_inset
+
+ סדרה של תתי-קבוצות קומפקטיות של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $K_{j}\subseteq K_{j+1}^{\circ}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\Omega=\bigcup_{j}K_{j}^{\circ}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $S$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ נניח בשלילה ש-
+\begin_inset Formula $S$
+\end_inset
+
+ לא קומפקטי.
+ אז בפרט, 
+\begin_inset Formula $S$
+\end_inset
+
+ לא מוכל ב-
+\begin_inset Formula $K_{j}$
+\end_inset
+
+ עבור אף 
+\begin_inset Formula $j$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ לא נעלמת על 
+\begin_inset Formula $\Omega\setminus K_{j}$
+\end_inset
+
+ עבור אף 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ יש 
+\begin_inset Formula $\psi_{j}\in\mathcal{D}\left(\Omega\setminus K_{j}\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\Lambda\psi_{j}\neq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ יש 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $c_{j}\Lambda\psi_{j}=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ נסמן 
+\begin_inset Formula 
+\[
+V_{N}=\bigcap_{x\in K_{N}}\bigcap_{\left|\alpha\right|\leq N}\left\{ f\in C^{\infty}\left(\Omega\right):\left|D^{\alpha}f\left(x\right)\right|<\frac{1}{N}\right\} 
+\]
+
+\end_inset
+
+אז 
+\begin_inset Formula $\left\{ V_{N}\right\} $
+\end_inset
+
+ בסיס מקומי לטופולוגיה של 
+\begin_inset Formula $C^{\infty}\left(\Omega\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $N$
+\end_inset
+
+ כלשהו.
+ אז לכל 
+\begin_inset Formula $j\geq N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $K_{N}\subseteq K_{j}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Omega\setminus K_{j}\subseteq\Omega\setminus K_{N}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\mathcal{D}\left(\Omega\setminus K_{j}\right)\subseteq\mathcal{D}\left(\Omega\setminus K_{N}\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $j\geq N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $c_{j}\psi_{j}\in\mathcal{D}\left(\Omega\setminus K_{N}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j\geq N$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $x\in K_{N}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $c_{j}\psi_{j}=0$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ לכן לכל 
+\begin_inset Formula $j\geq N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $D^{\alpha}\left(c_{j}\psi_{j}\right)=0$
+\end_inset
+
+ על 
+\begin_inset Formula $K_{N}$
+\end_inset
+
+ ובפרט נקבל 
+\begin_inset Formula $c_{j}\psi_{j}\in V_{N}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j\geq N$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $c_{j}\psi_{j}\rightarrow0$
+\end_inset
+
+ במרחב 
+\begin_inset Formula $C^{\infty}\left(\Omega\right)$
+\end_inset
+
+, ולכן מרציפות 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\Phi\left(c_{j}\psi_{j}\right)\rightarrow0$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $\Phi\left(c_{j}\psi_{j}\right)=c_{j}\Phi\psi_{j}=c_{j}\Lambda\psi_{j}=1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ ולכן קיבלנו סתירה.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $S$
+\end_inset
+
+ חייב להיות קומפקטי, כלומר 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ היא התפלגות בעלת תומך קומפקטי ולכן 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ היא הרחבה של התפלגות עם תומך קומפקטי כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נניח את 
+\begin_inset Formula $\left(a\right)$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $p,\gamma<\infty$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\left|a_{n}\right|\leq\gamma\cdot n^{p}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $g\left(z\right)=\left(1-z\right)^{-1}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $g\left(z\right)=\sum_{n=0}^{\infty}z^{n}$
+\end_inset
+
+ ב-
+\begin_inset Formula $U$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+g^{\left(m\right)}\left(z\right)=\sum_{n=m}^{\infty}\frac{n!}{\left(n-m\right)!}z^{n-m}
+\]
+
+\end_inset
+
+מצד שני, אינדוקציה פשוטה מראה שלכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $g^{\left(m\right)}\left(z\right)=m!\cdot\left(1-z\right)^{-m-1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $z\in U$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left(1-z\right)^{-m-1}=\sum_{n=m}^{\infty}\frac{n!}{\left(n-m\right)!m!}z^{n-m}=\sum_{n=m}^{\infty}{n \choose m}z^{n-m}
+\]
+
+\end_inset
+
+ובפרט לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $m$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left(1-r\right)^{-m-1}=\sum_{n=m}^{\infty}{n \choose m}r^{n-m}=\sum_{n=0}^{\infty}{n+m \choose m}r^{n}
+\]
+
+\end_inset
+
+נקבע 
+\begin_inset Formula $m$
+\end_inset
+
+ שלם חיובי כלשהו עבורו 
+\begin_inset Formula $m\geq p$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\zeta\in T,r\in\left(0,1\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\left|f\left(r\zeta\right)\right| & \leq\sum_{n=0}^{\infty}\left|a_{n}\right|r^{n}\leq\gamma\sum_{n=0}^{\infty}n^{p}r^{n}\leq\gamma\sum_{n=0}^{\infty}n^{m}r^{n}\\
+ & \leq\gamma\sum_{n=0}^{\infty}\frac{\left(n+m\right)!}{n!}r^{n}=\gamma m!\sum_{n=0}^{\infty}{n+m \choose m}r^{n}\\
+ & =\gamma m!\left(1-r\right)^{-m-1}
+\end{align*}
+
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $z\in U$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(z\right)\right|\leq\left(\gamma m!\right)\cdot\left(1-\left|z\right|\right)^{-\left(m+1\right)}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נניח את 
+\begin_inset Formula $\left(b\right)$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $p,\gamma<\infty$
+\end_inset
+
+ עבורם לכל 
+\begin_inset Formula $z\in U$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(z\right)\right|\leq\gamma\left(1-\left|z\right|\right)^{-p}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ אם 
+\begin_inset Formula $p\leq p^{\prime}$
+\end_inset
+
+ ו-
+\begin_inset Formula $z\in U$
+\end_inset
+
+, אז 
+\begin_inset Formula $0<1-\left|z\right|\leq1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(1-\left|z\right|\right)^{-1}\geq1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left(1-\left|z\right|\right)^{-p}<\left(1-\left|z\right|\right)^{-p^{\prime}}$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $p^{\prime}\geq p$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(z\right)\right|\leq\gamma\left(1-\left|z\right|\right)^{-p^{\prime}}$
+\end_inset
+
+.
+ אז נוכל להניח בה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $p\geq1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\zeta\in T$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $f_{r}\left(\zeta\right)=f\left(r\zeta\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f_{r}\right|\leq\gamma\left(1-r\right)^{-p}$
+\end_inset
+
+ בכל 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $r$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f_{r}\right|^{p}\leq\gamma^{p}\left(1-r\right)\leq\gamma^{p}$
+\end_inset
+
+ בכל 
+\begin_inset Formula $T$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\sup_{r\in\left(0,1\right)}\intop_{T}\left|f_{r}\right|d\sigma\leq\gamma^{p}<\infty
+\]
+
+\end_inset
+
+ומתקיים 
+\begin_inset Formula $1\leq p<\infty$
+\end_inset
+
+, וכמו כן 
+\begin_inset Formula $f$
+\end_inset
+
+ הרמונית ב-
+\begin_inset Formula $U$
+\end_inset
+
+ )כי היא הולומורפית( ולכן יש מידת בורל מרוכבת 
+\begin_inset Formula $\mu$
+\end_inset
+
+ על 
+\begin_inset Formula $T$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $f=P\left[d\mu\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $P$
+\end_inset
+
+ גרעין פואסון על מעגל היחידה, כלומר לכל 
+\begin_inset Formula $z\in U,\zeta\in T$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+P\left(z,\zeta\right)=\frac{1-\left|z\right|^{2}}{\left|z-\zeta\right|^{2}}
+\]
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\zeta,\xi\in T,z\in U$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+P\left(\xi z,\xi\zeta\right)=\frac{1-\left|\xi z\right|^{2}}{\left|\xi z-\xi\zeta\right|^{2}}=\frac{1-\left|z\right|^{2}}{\left|z-\zeta\right|^{2}}=P\left(z,\zeta\right)
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $r\in\left(0,1\right),\zeta\in T$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+f\left(r\zeta\right)=\intop_{T}P\left(r\zeta,\xi\right)d\sigma\left(\xi\right)=\intop_{T}P\left(r\xi^{-1},\zeta^{-1}\right)d\mu\left(\xi\right)
+\]
+
+\end_inset
+
+נקבע 
+\begin_inset Formula $\phi\in C\left(T\right)$
+\end_inset
+
+ כלשהי.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\intop_{T}f\left(r\zeta\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right) & =\intop_{T}\intop_{T}P\left(r\xi^{-1},\zeta^{-1}\right)d\mu\left(\xi\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right)\\
+ & =\intop_{T}\intop_{T}P\left(r\xi^{-1},\zeta^{-1}\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right)d\mu\left(\xi\right)\\
+ & =\intop_{T}\intop_{T}P\left(r\xi^{-1},\zeta\right)\phi\left(\zeta^{-1}\right)d\sigma\left(\zeta\right)d\mu\left(\xi\right)
+\end{align*}
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $\psi\left(\zeta\right)=\phi\left(\zeta^{-1}\right)$
+\end_inset
+
+.
+ אז קיבלנו
+\begin_inset Formula 
+\begin{align*}
+\intop_{T}f\left(r\zeta\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right) & =\intop_{T}\intop_{T}P\left(r\xi^{-1},\zeta\right)\psi\left(\zeta\right)d\sigma\left(\zeta\right)d\mu\left(\xi\right)\\
+ & =\intop_{T}P\left[\psi\right]\left(r\xi^{-1}\right)d\mu\left(\xi\right)\\
+ & =\intop_{T}P\left[\psi\right]\left(r\xi\right)d\mu\left(\xi\right)
+\end{align*}
+
+\end_inset
+
+נגדיר 
+\begin_inset Formula $h\left(z\right)=P\left[\psi\right]\left(z\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $z\in U$
+\end_inset
+
+, ו-
+\begin_inset Formula $h\left(z\right)=\psi\left(z\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $z\in T$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מכך ש-
+\begin_inset Formula $\psi$
+\end_inset
+
+ רציפה, נקבל ש-
+\begin_inset Formula $h$
+\end_inset
+
+ רציפה בכל 
+\begin_inset Formula $\overline{U}$
+\end_inset
+
+, ומקומפקטיות נקבל רציפות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על 
+\begin_inset Formula $\overline{U}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $z,w\in\overline{U}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left|z-w\right|<\delta$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left|h\left(z\right)-h\left(w\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בפרט לכל 
+\begin_inset Formula $\zeta\in T$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left(1-\delta,1\right)$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left|h\left(r\zeta\right)-h\left(\zeta\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $r\in\left(1-\delta,1\right)$
+\end_inset
+
+, נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{T}f\left(r\zeta\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right)-\intop_{T}\psi d\mu\right| & =\left|\intop_{T}h\left(r\xi\right)-h\left(\xi\right)d\mu\left(\xi\right)\right|\\
+ & \leq\intop_{T}\left|h\left(r\xi\right)-h\left(\xi\right)\right|d\left|\mu\right|\left(\xi\right)\\
+ & \leq\varepsilon\left|\mu\right|\left(T\right)
+\end{align*}
+
+\end_inset
+
+וכמובן 
+\begin_inset Formula $\left|\mu\right|\left(T\right)$
+\end_inset
+
+ לא תלוי ב-
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, ולכן זה מראה את הגבול
+\begin_inset Formula 
+\[
+\intop_{T}f\left(r\zeta\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right)\xrightarrow[r\rightarrow1]{}\intop_{T}\psi d\mu
+\]
+
+\end_inset
+
+ומשרירותיות 
+\begin_inset Formula $\phi$
+\end_inset
+
+, נקבל שהגבול 
+\begin_inset Formula $\lim_{r\rightarrow1}\intop_{T}f\left(r\zeta\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right)$
+\end_inset
+
+ קיים לכל 
+\begin_inset Formula $\phi\in C\left(T\right)$
+\end_inset
+
+ ובפרט לכל 
+\begin_inset Formula $\phi\in C^{\infty}\left(T\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נניח את 
+\begin_inset Formula $\left(c\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $\phi\in C^{\infty}\left(T\right)$
+\end_inset
+
+ הגבול 
+\begin_inset Formula $\lim_{r\rightarrow1}\intop_{T}f\left(r\zeta\right)\phi\left(\zeta\right)d\sigma\left(\zeta\right)$
+\end_inset
+
+ קיים.
+\begin_inset Newline newline
+\end_inset
+
+נתייחס ל-
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+ כאל תת המרחב של 
+\begin_inset Formula $C^{\infty}\left(R\right)$
+\end_inset
+
+ שמורכב מכל הפונקציות עם מחזור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+ תת-מרחב סגור של 
+\begin_inset Formula $C^{\infty}\left(R\right)$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+ הוא מרחב פרשה.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in C^{\infty}\left(T\right)$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\Lambda_{r}\phi=\intop_{0}^{2\pi}f\left(re^{i\theta}\right)\phi\left(\theta\right)d\theta$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\Lambda_{r}$
+\end_inset
+
+ פונקציונל לינארי על 
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\left\{ \phi_{i}\right\} $
+\end_inset
+
+ סדרה ב-
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\phi_{i}\rightarrow0$
+\end_inset
+
+ ב-
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+.
+ אז בפררט 
+\begin_inset Formula $\phi_{i}\rightarrow0$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על 
+\begin_inset Formula $\left[0,2\pi\right]$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\Lambda_{r}\phi_{i}\rightarrow0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+ מטריזבילי זה מספיק כדי להראות ש-
+\begin_inset Formula $\Lambda_{r}$
+\end_inset
+
+ רציף.
+ אז לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Lambda_{r}\in C^{\infty}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מ-
+\begin_inset Formula $\left(c\right)$
+\end_inset
+
+ נקבל שהגבול 
+\begin_inset Formula $\lim_{r\rightarrow1}\Lambda_{r}\phi$
+\end_inset
+
+ קיים לכל 
+\begin_inset Formula $\phi\in C^{\infty}\left(T\right)$
+\end_inset
+
+, ובפרט 
+\begin_inset Formula $\sup_{r\in\left(0,1\right)}\left|\Lambda_{r}\phi\right|<\infty$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\phi\in C^{\infty}\left(T\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממשפט בנך-שטיינהאוס נקבל ש-
+\begin_inset Formula $\left\{ \Lambda_{r}:r\in\left(0,1\right)\right\} $
+\end_inset
+
+ רציפה במידה אחידה.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\numeric on
+
+\begin_inset Formula $0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב-
+\begin_inset Formula $C^{\infty}\left(T\right)$
+\end_inset
+
+ עבורה לכל 
+\begin_inset Formula $\phi\in V$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\Lambda_{r}\phi\right|<1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ נסמן 
+\begin_inset Formula 
+\begin{align*}
+p_{N}\left(g\right) & =\max\left\{ \left|D^{k}g\left(x\right)\right|:k\leq N,x\in\left[-N,N\right]\right\} \\
+V_{N} & =\left\{ g\in C^{\infty}\left(R\right):p_{N}\left(g\right)<N^{-1}\right\} 
+\end{align*}
+
+\end_inset
+
+אז 
+\begin_inset Formula $\left\{ V_{N}\right\} $
+\end_inset
+
+ בסיס מקומי של 
+\begin_inset Formula $C^{\infty}\left(R\right)$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $V_{N}\cap C^{\infty}\left(T\right)\subseteq V$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in C^{\infty}\left(T\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $p_{N}\left(\phi\right)<N^{-1}$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left|\Lambda_{r}\phi\right|<1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $e_{n}\left(\theta\right)=e^{-in\theta}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $e_{n}\in C^{\infty}\left(T\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $E=\left\{ e_{n}:n\geq0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז חישוב פשוט מראה 
+\begin_inset Formula $D^{k}e_{n}=\left(-in\right)^{k}e_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $k\leq N$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\left|D^{k}\left(\frac{1}{Nn^{N+1}}e_{n}\right)\left(x\right)\right| & =\frac{1}{Nn^{N+1}}\left|D^{k}e_{n}\left(x\right)\right|=\frac{1}{Nn^{N+1}}\left|\left(-in\right)^{k}e_{n}\left(x\right)\right|\\
+ & =\frac{n^{k}}{Nn^{N+1}}<\frac{1}{N}
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $p_{N}\left(\left(Nn^{N+1}\right)^{-1}e_{n}\right)\leq N^{-1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\Lambda_{r}\left(\left(Nn^{N+1}\right)^{-1}e_{n}\right)\right|<1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\Lambda_{r}e_{n}\right|<Nn^{N+1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $r$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\Lambda_{r}e_{n} & =\intop_{-\pi}^{\pi}f\left(re^{i\theta}\right)e^{-in\theta}d\theta=\intop_{-\pi}^{\pi}\sum_{m=0}^{\infty}a_{m}r^{n}e^{im\theta}e^{-in\theta}d\theta\\
+ & =\sum_{m=0}^{\infty}a_{m}r^{n}\intop_{-\pi}^{\pi}e^{i\left(m-n\right)\theta}d\theta=2\pi a_{n}r^{n}
+\end{align*}
+
+\end_inset
+
+כאשר המעבר השלישי מתקבל מכך שהטור 
+\begin_inset Formula $\sum_{m=0}^{\infty}a_{m}z^{m}$
+\end_inset
+
+ מתכנס במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על תתי-קבוצות קומפקטיות של 
+\begin_inset Formula $U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $2\pi\left|a_{n}\right|r^{n}=\left|2\pi a_{n}r^{n}\right|=\left|\Lambda_{r}e_{n}\right|<Nn^{N+1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $r\in\left(0,1\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|a_{n}\right|<\left(2\pi\right)^{-1}Nn^{N+1}r^{-n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ניקח את הגבול 
+\begin_inset Formula $r\rightarrow1$
+\end_inset
+
+ בא
+\begin_inset Quotes erd
+\end_inset
+
+ש האחרון ונקבל שלכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|a_{n}\right|<\left(2\pi\right)^{-1}Nn^{N+1}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $D\phi$
+\end_inset
+
+ רציפה ובעלת תומך קומפקטי, נקבל שהיא רציפה במ
+\begin_inset Quotes erd
+\end_inset
+
+ש בכל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ אז קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $x,y\in R$
+\end_inset
+
+ מקיימים 
+\begin_inset Formula $\left|x-y\right|<\delta$
+\end_inset
+
+, אז 
+\begin_inset Formula $\left|D\phi\left(x\right)-D\phi\left(y\right)\right|<\varepsilon$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $h\in\left(0,\delta\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\left|\frac{\phi\left(x+h\right)-\phi\left(x\right)}{h}-\phi^{\prime}\left(x\right)\right| & =\left|\frac{1}{h}\intop_{x}^{x+h}\phi^{\prime}\left(t\right)dt-\phi^{\prime}\left(x\right)\right|\\
+ & =\left|\frac{1}{h}\intop_{x}^{x+h}\phi^{\prime}\left(t\right)-\phi^{\prime}\left(x\right)dt\right|\\
+ & \leq\frac{1}{h}\intop_{x}^{x+h}\left|\phi^{\prime}\left(t\right)-\phi^{\prime}\left(x\right)\right|dt\\
+ & <\frac{1}{h}\intop_{x}^{x+h}\varepsilon dt=\varepsilon
+\end{align*}
+
+\end_inset
+
+ובאופן דומה אם 
+\begin_inset Formula $h\in\left(-\delta,0\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula 
+\begin{align*}
+\left|\frac{\phi\left(x+h\right)-\phi\left(x\right)}{h}-\phi^{\prime}\left(x\right)\right| & =\left|\phi^{\prime}\left(x\right)-\frac{\phi\left(x\right)-\phi\left(x+h\right)}{h}\right|\\
+ & =\left|\frac{1}{h}\intop_{x+h}^{x}\phi^{\prime}\left(x\right)-\phi^{\prime}\left(t\right)dt\right|\\
+ & <-\frac{1}{h}\intop_{x+h}^{x}\varepsilon dt=\varepsilon
+\end{align*}
+
+\end_inset
+
+וזה מראה שלכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula 
+\[
+\frac{\tau_{-h}\phi-\phi}{h}-D\phi\xrightarrow[h\rightarrow0]{}0
+\]
+
+\end_inset
+
+במ
+\begin_inset Quotes erd
+\end_inset
+
+ש בכל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל אם 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+, אז גם 
+\begin_inset Formula $D^{\alpha}\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, ולכן נקבל
+\begin_inset Formula 
+\[
+\frac{\tau_{-h}D^{\alpha}\phi-D^{\alpha}\phi}{h}-D^{\alpha}\phi\xrightarrow[h\rightarrow0]{}0
+\]
+
+\end_inset
+
+במ
+\begin_inset Quotes erd
+\end_inset
+
+ש בכל 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכלל השרשרת, לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $h$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\tau_{-h}D^{\alpha}\phi=D^{\alpha}\tau_{-h}\phi$
+\end_inset
+
+ ולכן מלינאריות הנגזרת נקבל
+\begin_inset Formula 
+\[
+D^{\alpha}\left(\frac{\tau_{-h}\phi-\phi}{h}\right)-D^{\alpha}\phi\xrightarrow[h\rightarrow0]{}0
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נקבע 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+, ויהא 
+\begin_inset Formula $K$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $h$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|h\right|<1$
+\end_inset
+
+, התומך של 
+\begin_inset Formula $h^{-1}\left(\tau_{-h}\phi-\phi\right)$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $K+\left[-1,1\right]$
+\end_inset
+
+, וכפי שראינו מתקיים 
+\begin_inset Formula 
+\[
+D^{\alpha}\left(\frac{\tau_{-h}\phi-\phi}{h}\right)\xrightarrow[h\rightarrow0]{}D^{\alpha}\phi
+\]
+
+\end_inset
+
+במ
+\begin_inset Quotes erd
+\end_inset
+
+ש לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $h^{-1}\left(\tau_{-h}\phi-\phi\right)\xrightarrow[h\rightarrow0]{}D\phi$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathcal{D}\left(R\right)$
+\end_inset
+
+ ולכן מרציפות 
+\begin_inset Formula $u$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\left(\frac{u-\tau_{h}u}{h}\right)\left(\phi\right) & =\frac{u\left(\phi\right)-\tau_{h}u\left(\phi\right)}{h}=\frac{u\left(\phi\right)-u\left(\tau_{-h}\phi\right)}{h}\\
+ & =-u\left(\frac{\tau_{-h}\phi-\phi}{h}\right)\xrightarrow[h\rightarrow0]{}-u\left(D\phi\right)=\left(Du\right)\phi
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $h^{-1}\left(u-\tau_{h}u\right)\xrightarrow[h\rightarrow0]{}Du$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathcal{D}^{\prime}\left(R\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $i$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left(f_{i}\ast\rho\phi\right)\left(0\right)=\intop_{R^{n}}f_{i}\left(y\right)\rho\phi\left(-y\right)dy=\intop_{R^{n}}f_{i}\left(y\right)\phi\left(y\right)dy
+\]
+
+\end_inset
+
+ולכן הגבול 
+\begin_inset Formula $\lim_{i\rightarrow\infty}\intop_{R^{n}}f_{i}\left(y\right)\phi\left(y\right)dy$
+\end_inset
+
+ קיים לכל 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\left\{ f_{i}\right\} $
+\end_inset
+
+ מתכנסת ב-
+\begin_inset Formula $\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\Lambda=\lim_{i\rightarrow\infty}f_{i}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $E\subseteq\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ קבוצה חסומה כלשהי.
+\begin_inset Newline newline
+\end_inset
+
+אז יש 
+\begin_inset Formula $K\subseteq R^{n}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $E\subseteq\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{i}\rightarrow\Lambda$
+\end_inset
+
+ נקודתית בכל 
+\begin_inset Formula $\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ ובפרט על 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+.
+ אז בפרט 
+\begin_inset Formula $\left\{ f_{i}\right\} $
+\end_inset
+
+ חסומה נקודתית על 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+ הוא מרחב פרשה ולכן ממשפט בנך-שטיינהאוס נקבל ש-
+\begin_inset Formula $\left\{ f_{i}\right\} $
+\end_inset
+
+ רציפה במידה אחידה על 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $\left\{ f_{i}\right\} $
+\end_inset
+
+ רציפה במידה אחידה על 
+\begin_inset Formula $\mathcal{D}_{K}$
+\end_inset
+
+, יש 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathcal{D}\left(\Omega\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula 
+\[
+\left|\intop_{R^{n}}f_{i}\left(x\right)\phi\left(x\right)dx\right|<\varepsilon
+\]
+
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in V\cap\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $E$
+\end_inset
+
+ חסומה ב-
+\begin_inset Formula $\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ ומכך של-
+\begin_inset Formula $\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ יש תכונת היינה בורל, הרי ש-
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+ קומפקטית ולכן יש 
+\begin_inset Formula $\phi_{1},\ldots,\phi_{m}\in\overline{E}$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $E\subseteq\bigcup_{j=1}^{m}\left(\phi_{j}+V\right)$
+\end_inset
+
+.
+ מתקיים גם 
+\begin_inset Formula $\overline{E}\subseteq\mathcal{D}_{K}$
+\end_inset
+
+ כי 
+\begin_inset Formula $E\subseteq\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $1\leq j\leq m$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\intop_{R^{n}}f_{i}\left(x\right)\phi_{j}\left(x\right)dx\xrightarrow[i\rightarrow\infty]{}\Lambda\phi_{j}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן יש 
+\begin_inset Formula $N$
+\end_inset
+
+ גדול מספיק עבורו לכל 
+\begin_inset Formula $i\geq N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $1\leq j\leq m$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left|\intop_{R^{n}}f_{i}\left(x\right)\phi_{j}\left(x\right)dx-\Lambda\phi_{j}\right|<\varepsilon
+\]
+
+\end_inset
+
+עכשיו תהא 
+\begin_inset Formula $\psi\in E$
+\end_inset
+
+.
+ אז יש 
+\begin_inset Formula $\phi\in V$
+\end_inset
+
+ ויש 
+\begin_inset Formula $j$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\psi=\phi_{j}+\phi$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $\psi,\phi_{j}\in\mathcal{D}_{K}$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\phi\in V\cap\mathcal{D}_{K}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים גם 
+\begin_inset Formula $\intop_{R^{n}}f_{i}\left(x\right)\phi\left(x\right)dx\rightarrow\Lambda\phi$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $k$
+\end_inset
+
+ כלשהו עבורו 
+\begin_inset Formula 
+\[
+\left|\intop_{R^{n}}f_{k}\left(x\right)\phi\left(x\right)dx-\Lambda\phi\right|<\varepsilon
+\]
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $i\geq N$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{R^{n}}f_{i}\left(x\right)\psi\left(x\right)dx-\Lambda\psi\right| & =\left|\intop_{R^{n}}f_{i}\left(x\right)\phi_{j}\left(x\right)dx-\Lambda\phi_{j}+\intop_{R^{n}}f_{i}\left(x\right)\phi\left(x\right)dx-\Lambda\phi\right|\\
+ & \leq\left|\intop_{R^{n}}f_{i}\left(x\right)\phi_{j}\left(x\right)dx-\Lambda\phi_{j}\right|+\left|\intop_{R^{n}}f_{i}\left(x\right)\phi\left(x\right)dx\right|+\left|\intop_{R^{n}}f_{k}\left(x\right)\phi\left(x\right)dx\right|+\left|\intop_{R^{n}}f_{k}\left(x\right)\phi\left(x\right)dx-\Lambda\phi\right|\\
+ & <\varepsilon+\varepsilon+\varepsilon+\varepsilon=4\varepsilon
+\end{align*}
+
+\end_inset
+
+אז סך הכול הראינו שלכל 
+\begin_inset Formula $i\geq N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\psi\in E$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\intop_{R^{n}}f_{i}\left(x\right)\psi\left(x\right)dx-\Lambda\psi\right|<\varepsilon$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $f_{i}\rightarrow\Lambda$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+משרירותיות 
+\begin_inset Formula $E$
+\end_inset
+
+, נקבל 
+\begin_inset Formula $f_{i}\rightarrow\Lambda$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על תתי-קבוצות חסומות של 
+\begin_inset Formula $\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו נקבע 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $K\subseteq R^{n}$
+\end_inset
+
+ קומפקטית כלשהי, ונסמן 
+\begin_inset Formula $E=\left\{ \tau_{x}\rho\phi:x\in K\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $S$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ התומך של 
+\begin_inset Formula $\tau_{x}\rho\phi$
+\end_inset
+
+ הוא 
+\begin_inset Formula $x-S$
+\end_inset
+
+, ולכן נקבל 
+\begin_inset Formula $E\subseteq\mathcal{D}_{K-S}$
+\end_inset
+
+ )פה השתמשנו בכך ש-
+\begin_inset Formula $K-S$
+\end_inset
+
+ קומפקטית, כי סכום של קומפקטיות הוא קומפקטי ו-
+\begin_inset Formula $K,S$
+\end_inset
+
+ קומפקטיות(.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $D^{\alpha}\tau_{x}\rho\phi=\left(-1\right)^{\left|\alpha\right|}\tau_{x}\rho D^{\alpha}\phi$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x\in K,y\in R^{n}$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\left|D^{\alpha}\tau_{x}\rho\phi\left(x\right)\right|=\left|\tau_{x}\rho D^{\alpha}\phi\left(y\right)\right|=\left|D^{\alpha}\phi\left(x-y\right)\right|$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left\Vert \tau_{x}\rho\phi\right\Vert _{N}=\left\Vert \phi\right\Vert _{N}$
+\end_inset
+
+.
+ יחד זה ש-
+\begin_inset Formula $E\subseteq\mathcal{D}_{K-S}$
+\end_inset
+
+, זה מראה ש-
+\begin_inset Formula $E$
+\end_inset
+
+ היא קבוצה חסומה ב-
+\begin_inset Formula $\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממה שראינו קודם, נקבל 
+\begin_inset Formula $f_{i}\rightarrow\Lambda$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N$
+\end_inset
+
+, כך שלכל 
+\begin_inset Formula $i\geq N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left|\intop_{R^{n}}f_{i}\left(y\right)\tau_{x}\rho\phi\left(y\right)dy-\Lambda\left(\tau_{x}\rho\phi\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+אבל זה בדיוק אומר שלכל 
+\begin_inset Formula $i\geq N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\left(f_{i}\ast\phi\right)\left(x\right)-\left(\Lambda\ast\phi\right)\left(x\right)\right|<\varepsilon$
+\end_inset
+
+, וזה אומר ש-
+\begin_inset Formula $f_{i}\ast\phi\xrightarrow[i\rightarrow\infty]{}\Lambda\ast\phi$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז בסך הכול הראינו שלכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+, הסדרה 
+\begin_inset Formula $\left\{ f_{i}\ast\phi\right\} $
+\end_inset
+
+ מתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על קבוצות קומפקטיות.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $D^{\alpha}\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+, הסדרה 
+\begin_inset Formula $\left\{ f_{i}\ast D^{\alpha}\phi\right\} $
+\end_inset
+
+ מתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על קבוצות קומפקטיות.
+\begin_inset Newline newline
+\end_inset
+
+אבל לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+, ולכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $i$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $D^{\alpha}\left(f_{i}\ast\phi\right)=f_{i}\ast D^{\alpha}\phi$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+, הסדרה 
+\begin_inset Formula $\left\{ D^{\alpha}\left(f_{i}\ast\phi\right)\right\} $
+\end_inset
+
+ מתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש על תתי-קבוצות קומפקטיות כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left(H\ast\phi\right)\left(x\right)=\intop_{R}H\left(x-y\right)\phi\left(y\right)dy=\intop_{-\infty}^{x}\phi\left(y\right)dy
+\]
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+D\left(H\ast\phi\right)\left(x\right)=\left(H\ast D\phi\right)\left(x\right)=\intop_{-\infty}^{x}D\phi\left(y\right)dy=\phi\left(x\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $D\left(H\ast\phi\right)=\phi$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\left(\delta^{\prime}\ast\left(H\ast\phi\right)\right)\left(x\right) & =\delta^{\prime}\left(\tau_{x}\rho\left(H\ast\phi\right)\right)=-\delta\left(D\tau_{x}\rho\left(H\ast\phi\right)\right)\\
+ & =\delta\left(\tau_{x}\rho D\left(H\ast\phi\right)\right)=\delta\left(\tau_{x}\rho\phi\right)=\left(\delta\ast\phi\right)\left(x\right)
+\end{align*}
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\delta\ast\phi=\delta^{\prime}\ast\left(H\ast\phi\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל ההתפלגות היחידה 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ שמקיימת לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ את השוויון 
+\begin_inset Formula $\Lambda\ast\phi=\delta^{\prime}\ast\left(H\ast\phi\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $\delta^{\prime}\ast H$
+\end_inset
+
+, ולכן נקבל 
+\begin_inset Formula $\delta=\delta^{\prime}\ast H$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left(1\ast\left(\delta^{\prime}\ast\phi\right)\right)\left(x\right) & =\intop_{R}\tau_{x}\rho\left(\delta^{\prime}\ast\phi\right)\left(y\right)dy=\intop_{R}\left(\delta^{\prime}\ast\phi\right)\left(x-y\right)dy\\
+ & =\intop_{R}\delta^{\prime}\left(\tau_{x-y}\rho\phi\right)dy=-\intop_{R}\delta\left(D\tau_{x-y}\rho\phi\right)dy\\
+ & =\intop_{R}\delta\left(\tau_{x-y}\rho D\phi\right)dy=\intop_{R}\left(\tau_{x-y}\rho D\phi\right)\left(0\right)dy\\
+ & =\intop_{R}D\phi\left(x-y\right)dy=0
+\end{align*}
+
+\end_inset
+
+כאשר המעבר האחרון הוא כי 
+\begin_inset Formula $\phi$
+\end_inset
+
+ עם תומך קומפקטי.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left(1\ast\delta^{\prime}\right)\phi=\left(1\ast\delta^{\prime}\right)\left(\tau_{0}\rho\left(\rho\phi\right)\right)=\left(1\ast\delta^{\prime}\right)\ast\left(\rho\phi\right)=1\ast\left(\delta^{\prime}\ast\left(\rho\phi\right)\right)=0
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $1\ast\delta^{\prime}$
+\end_inset
+
+ היא התפלגות האפס כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left(1\ast\delta\right)\phi & =\left(1\ast\delta\right)\left(\tau_{0}\rho\left(\rho\phi\right)\right)=\left(\left(1\ast\delta\right)\ast\rho\phi\right)\left(0\right)=\left(1\ast\left(\delta\ast\rho\phi\right)\right)\left(0\right)\\
+ & =\intop_{R}\tau_{0}\rho\left(\delta\ast\rho\phi\right)\left(y\right)dy=\intop_{R}\left(\delta\ast\rho\phi\right)\left(-y\right)dy\\
+ & =\intop_{R}\delta\left(\tau_{-y}\rho\rho\phi\right)dy=\intop_{R}\left(\tau_{-y}\rho\rho\phi\right)\left(0\right)dy=\intop_{R}\phi\left(y\right)dy
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $1\ast\delta=1$
+\end_inset
+
+, ולכן נקבל 
+\begin_inset Formula $1\ast\left(\delta^{\prime}\ast H\right)=1\ast\delta=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left(0\ast H\right)\phi & =\left(0\ast H\right)\left(\tau_{0}\rho\rho\phi\right)=\left(\left(0\ast H\right)\ast\rho\phi\right)\left(0\right)\\
+ & =\intop_{R}0\cdot\left(\tau_{0}\rho\left(H\ast\rho\phi\right)\right)\left(y\right)dy=0
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $0\ast H=0$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left(1\ast\delta^{\prime}\right)\ast H=0\ast H=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מתקיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1\ast\left(\delta^{\prime}\ast H\right)\neq\left(1\ast\delta^{\prime}\right)\ast H$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ראשית הפונקציה 
+\begin_inset Formula $f\left(x\right)=\log\left|x\right|$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ היא אינטגרבילית מקומית ולכן 
+\begin_inset Formula $\Lambda\in\mathcal{D}^{\prime}\left(\Omega\right)$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R\right)$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $A>0$
+\end_inset
+
+ גדול מספיק עבורו התומך של 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מוכל ב-
+\begin_inset Formula $\left(-A,A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\log\left|x\right|$
+\end_inset
+
+ היא קדומה של 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $R\setminus\left\{ 0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\intop_{-\infty}^{-\delta}\phi\left(x\right)\frac{dx}{x} & =\intop_{A}^{-\delta}\phi\left(x\right)\frac{dx}{x}\\
+ & =\phi\left(-\delta\right)\log\left(\delta\right)-\intop_{A}^{-\delta}\phi^{\prime}\left(x\right)\log\left|x\right|dx\\
+\intop_{\delta}^{\infty}\phi\left(x\right)\frac{dx}{x} & =\intop_{\delta}^{A}\phi\left(x\right)\frac{dx}{x}\\
+ & =-\phi\left(\delta\right)\log\left(\delta\right)-\intop_{\delta}^{A}\phi^{\prime}\left(x\right)\log\left|x\right|dx
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left(\intop_{-\infty}^{-\delta}+\intop_{\delta}^{\infty}\right)\phi\left(x\right)\frac{dx}{x} & =\left(\phi\left(-\delta\right)-\phi\left(\delta\right)\right)\log\left(\delta\right)-\left(\intop_{A}^{-\delta}\phi^{\prime}\left(x\right)\log\left|x\right|dx+\intop_{\delta}^{A}\phi^{\prime}\left(x\right)\log\left|x\right|dx\right)
+\end{align*}
+
+\end_inset
+
+מתכונות רגילות של אינטגרל לבג ברור שמתקיים
+\begin_inset Formula 
+\[
+\intop_{A}^{-\delta}\phi^{\prime}\left(x\right)\log\left|x\right|dx+\intop_{\delta}^{A}\phi^{\prime}\left(x\right)\log\left|x\right|dx\xrightarrow[\delta\rightarrow0]{}\Lambda\left(\phi^{\prime}\right)
+\]
+
+\end_inset
+
+וכמו כן מכלל לופיטל נקבל
+\begin_inset Formula 
+\begin{align*}
+\lim_{\delta\rightarrow0}\left(\phi\left(-\delta\right)-\phi\left(\delta\right)\right)\log\left(\delta\right) & =\lim_{\delta\rightarrow0}\frac{\phi\left(-\delta\right)-\phi\left(\delta\right)}{\left(\log\delta\right)^{-1}}=\lim_{\delta\rightarrow0}\frac{-\phi^{\prime}\left(-\delta\right)-\phi^{\prime}\left(\delta\right)}{-\left(\log\delta\right)^{-2}\delta^{-1}}\\
+ & =\lim_{\delta\rightarrow0}\delta\left(\log\delta\right)^{2}\left(\phi^{\prime}\left(-\delta\right)+\phi^{\prime}\left(\delta\right)\right)
+\end{align*}
+
+\end_inset
+
+מכלל לופיטל שוב מתקיים
+\begin_inset Formula 
+\begin{align*}
+\lim_{\delta\rightarrow0}\delta\left(\log\delta\right)^{2} & =\lim_{\delta\rightarrow0}\frac{\left(\log\delta\right)^{2}}{\delta^{-1}}=\lim_{\delta\rightarrow0}\frac{2\left(\log\delta\right)\delta^{-1}}{-\delta^{-2}}=-2\lim_{\delta\rightarrow0}\frac{\left(\log\delta\right)}{\delta^{-1}}\\
+ & =-2\lim_{\delta\rightarrow0}\frac{\delta^{-1}}{-\delta^{-2}}=2\lim_{\delta\rightarrow0}\delta=0
+\end{align*}
+
+\end_inset
+
+וכמו כן 
+\begin_inset Formula $\phi^{\prime}\left(-\delta\right)+\phi^{\prime}\left(\delta\right)\xrightarrow[\delta\rightarrow0]{}2\phi^{\prime}\left(0\right)$
+\end_inset
+
+ ולכן קיבלנו
+\begin_inset Formula 
+\[
+\lim_{\delta\rightarrow0}\left(\phi\left(-\delta\right)-\phi\left(\delta\right)\right)\log\left(\delta\right)=\lim_{\delta\rightarrow0}\delta\left(\log\delta\right)^{2}\left(\phi^{\prime}\left(-\delta\right)+\phi^{\prime}\left(\delta\right)\right)=0
+\]
+
+\end_inset
+
+ולכן בסך הכול
+\begin_inset Formula 
+\[
+\left(\intop_{-\infty}^{-\delta}+\intop_{\delta}^{\infty}\right)\phi\left(x\right)\frac{dx}{x}\xrightarrow[\delta\rightarrow0]{}0-\Lambda\left(\phi^{\prime}\right)=\Lambda^{\prime}\phi
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\Lambda^{\prime}\phi=PV\intop_{-\infty}^{\infty}\phi\left(x\right)\frac{dx}{x}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $\phi$
+\end_inset
+
+ ו-
+\begin_inset Formula $A>0$
+\end_inset
+
+ כמו קודם.
+\begin_inset Newline newline
+\end_inset
+
+מאינטגרציה בחלקים, לכל 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{-A}^{-\delta}\frac{\phi\left(x\right)-\phi\left(0\right)}{x^{2}}dx & =\frac{\phi\left(-\delta\right)-\phi\left(0\right)}{\delta}+\frac{\phi\left(0\right)}{A}+\intop_{-A}^{-\delta}\frac{\phi^{\prime}\left(x\right)}{x}dx\\
+\intop_{\delta}^{A}\frac{\phi\left(x\right)-\phi\left(0\right)}{x^{2}}dx & =\frac{\phi\left(0\right)}{A}+\frac{\phi\left(\delta\right)-\phi\left(0\right)}{\delta}+\intop_{\delta}^{A}\frac{\phi^{\prime}\left(x\right)}{x}dx
+\end{align*}
+
+\end_inset
+
+כמו כן מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{-\infty}^{-A}\frac{\phi\left(x\right)-\phi\left(0\right)}{x^{2}}dx & =-\phi\left(0\right)\intop_{-\infty}^{-A}\frac{1}{x^{2}}dx=-\frac{\phi\left(0\right)}{A}\\
+\intop_{A}^{\infty}\frac{\phi\left(x\right)-\phi\left(0\right)}{x^{2}}dx & =-\phi\left(0\right)\intop_{A}^{\infty}\frac{1}{x^{2}}dx=-\frac{\phi\left(0\right)}{A}
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left(\intop_{-A}^{-\delta}+\intop_{\delta}^{A}\right)\frac{\phi\left(x\right)-\phi\left(0\right)}{x^{2}}dx=\frac{\phi\left(-\delta\right)-\phi\left(0\right)}{\delta}+\frac{\phi\left(\delta\right)-\phi\left(0\right)}{\delta}+\left(\intop_{-A}^{-\delta}+\intop_{\delta}^{A}\right)\frac{\phi^{\prime}\left(x\right)}{x}dx
+\]
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula 
+\[
+\frac{\phi\left(\delta\right)-\phi\left(0\right)}{\delta}\xrightarrow[\delta\rightarrow0]{}\phi^{\prime}\left(0\right)
+\]
+
+\end_inset
+
+וכמו כן אם נסמן 
+\begin_inset Formula $\psi\left(x\right)=\phi\left(-x\right)$
+\end_inset
+
+ אז מכלל השרשרת נקבל
+\begin_inset Formula 
+\[
+\frac{\phi\left(-\delta\right)-\phi\left(0\right)}{\delta}=\frac{\psi\left(\delta\right)-\psi\left(0\right)}{\delta}\xrightarrow[\delta\rightarrow0]{}\psi^{\prime}\left(0\right)=-\phi^{\prime}\left(0\right)
+\]
+
+\end_inset
+
+ולבסוף מהנוסחה שמצאנו עבור 
+\begin_inset Formula $\Lambda^{\prime}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left(\intop_{-A}^{-\delta}+\intop_{\delta}^{A}\right)\frac{\phi^{\prime}\left(x\right)}{x}dx\xrightarrow[\delta\rightarrow0]{}\Lambda^{\prime}\left(\phi^{\prime}\right)
+\]
+
+\end_inset
+
+ולכן נקבל
+\begin_inset Formula 
+\[
+\left(\intop_{-A}^{-\delta}+\intop_{\delta}^{A}\right)\frac{\phi\left(x\right)-\phi\left(0\right)}{x^{2}}dx\xrightarrow[\delta\rightarrow0]{}\Lambda^{\prime}\left(\phi^{\prime}\right)=-\Lambda^{\prime\prime}\phi
+\]
+
+\end_inset
+
+כלומר אכן 
+\begin_inset Formula $\Lambda^{\prime\prime}\phi=-PV\intop_{-\infty}^{\infty}x^{-2}\left(\phi\left(x\right)-\phi\left(0\right)\right)dx$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+ כלשהי עבורה 
+\begin_inset Formula $u\ast\phi$
+\end_inset
+
+ היא פונקציה קבועה לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יש סדרה 
+\begin_inset Formula $\left\{ \psi_{j}\right\} $
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $u\ast\psi_{j}\rightarrow u$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathcal{D}^{\prime}$
+\end_inset
+
+ )למשל, אפשר לקחת יחידה מקורבת(.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $c_{j}=\left(u\ast\psi_{j}\right)\left(0\right)$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+c_{j}\intop_{R^{n}}\phi\left(x\right)dx=\intop_{R^{n}}\left(u\ast h_{j}\right)\left(x\right)\phi\left(x\right)dx\rightarrow u\left(\phi\right)
+\]
+
+\end_inset
+
+נקבע 
+\begin_inset Formula $\psi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\intop_{R^{n}}\psi\left(x\right)dx=1$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $c=u\left(\psi\right)$
+\end_inset
+
+.
+ אז בפרט מתקיים 
+\begin_inset Formula $c_{j}\rightarrow c$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+c_{j}\intop_{R^{n}}\phi\left(x\right)dx\rightarrow c\intop_{R^{n}}\phi\left(x\right)dx
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+u\left(\phi\right)=c\intop_{R^{n}}\phi\left(x\right)dx
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $u$
+\end_inset
+
+ היא ההתפלגות שמתקבלת מהפונקציה הקבועה 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אם עברו 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+ כלשהי מתקיים ש-
+\begin_inset Formula $u\ast\phi$
+\end_inset
+
+ קבועה לכל 
+\begin_inset Formula $\phi$
+\end_inset
+
+, אז 
+\begin_inset Formula $u$
+\end_inset
+
+ היא למעשה פונקציה קבועה.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו אם 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\tau_{x}u=u$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in R^{n}$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left(u\ast\phi\right)\left(x\right)=\left(\tau_{-x}\left(u\ast\phi\right)\right)\left(0\right)=\left(\left(\tau_{-x}u\right)\ast\phi\right)\left(0\right)=\left(u\ast\phi\right)\left(0\right)
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $u\ast\phi$
+\end_inset
+
+ היא קבועה, וממה שראינו נקבל ש-
+\begin_inset Formula $u$
+\end_inset
+
+ פונקציה קבועה.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, ברור שכל התפלגות 
+\begin_inset Formula $u$
+\end_inset
+
+ שמתקבלת מפונקציה קבועה מקיימת 
+\begin_inset Formula $\tau_{x}u=u$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in R^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל שאוסף ה-
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+ שמקיימות 
+\begin_inset Formula $\tau_{x}u=u$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא בדיוק הפונקציות הקבועות.
+\begin_inset Newline newline
+\end_inset
+
+באופן דומה, אם 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $D^{\alpha}u=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|\alpha\right|=1$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|\alpha\right|=1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+D^{\alpha}\left(u\ast\phi\right)=\left(D^{\alpha}u\right)\ast\phi=0\ast\phi=0
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(R^{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $u\ast\phi$
+\end_inset
+
+ קבועה, וממה שראינו נקבל שוב ש-
+\begin_inset Formula $u$
+\end_inset
+
+ פונקציה קבועה.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני אם 
+\begin_inset Formula $u=c$
+\end_inset
+
+ פונקציה קבועה, אז היא גזירה ברציפות ולכן הנגזרות ההתפלגותיות שלה זהה לנגזרת
+ הרגילה שלה, ולכן 
+\begin_inset Formula $D^{\alpha}u=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|\alpha\right|=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז אוסף ה-
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(R^{n}\right)$
+\end_inset
+
+ שמקיימות 
+\begin_inset Formula $D^{\alpha}u=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|\alpha\right|=1$
+\end_inset
+
+ הוא בדיוק אוסף הפונקציות הקבועות שוב.
+\end_layout
+
 \end_body
 \end_document
