@@ -18,8 +18,8 @@ and so we got $hat(g) = abs(det A)^(-1) hat(f) compose (A^(-1))^*$.
 Put $Q(x) = 1 + abs(x)^2$, and for every $N$ put $p_N (f) = max_(|alpha| <= N) norm(Q^N D_alpha f)_oo$ and $V_N = {f in Sn : p_N (f) < N^(-1)}$.
 Then ${V_N}$ is a local base for the topology of $Sn$.
 
-Let $Phi : Sn -> Sn$ be the Fourier transform, and for every $N$ and every $f in Sn$ put $q_N (f) = sum_(j=0)^3 p_N (Phi^j f)$.
-Note that $q_N$ is a seminorm on $Sn$, and satisfies $q_N (f) = q_N (hat(f))$ for every $f in Sn$.
+Let $Phi : Sn -> Sn$ be the Fourier transform, and for every $N$ and every $f in Sn$ put $q_N (f) = sum_(j=0)^3 p_N (Phi^j f)$. // FIX: original has f ∈ S_N
+Note that $q_N$ is a seminorm on $Sn$, and satisfies $q_N (f) = q_N (hat(f))$ for every $f in Sn$. // FIX: original has f ∈ S_N
 Also, since the $p_N$ are continuous from $Sn$ to $RR$, and $Phi$ is continuous from $Sn$ to itself, we get that $q_N$ is continuous from $Sn$ to $RR$.
 
 For every $N$ put $W_N = {f in Sn : q_N (f) < N^(-1)}$. Then $W_N$ is open.
@@ -30,7 +30,7 @@ Also $q_N (0) = 0$, and so $W_N$ is a neighborhood of $0$ in $Sn$ for every $N$.
   In the first direction, from the definition of $q_N$ it is clear that $p_N (f) <= q_N (f)$ for every $f in Sn$, and so if $q_N (f) < N^(-1)$ then also $p_N (f) < N^(-1)$. Hence $W_N subset.eq V_N$ for every $N$.
 
   In the second direction, fix $N$; we need to show that there is some $k$ for which $V_k subset.eq W_N$.
-  For $0 <= j <= 3$, the function $p_N compose Phi^j$ is a continuous map from $Sn$ to $[0, oo)$.
+  For $0 <= j <= 3$, the function $p_N compose Phi^j$ is a continuous map from $Sn$ to $[0, oo)$. // FIX: original has (0, ∞)
   So for every $0 <= j <= 3$ there is a neighborhood $U_j$ of $0$ in $Sn$ such that $p_N (Phi^j f) < (4N)^(-1)$ for every $f in U_j$.
   There is some $k$ for which $V_k subset.eq inter.big_(j=0)^3 U_j$. Then for every $f in V_k$ and every $0 <= j <= 3$ we have $p_N (Phi^j f) < (4N)^(-1)$.
   So for every $f in V_k$ we have $q_N (f) = sum_(j=0)^3 p_N (Phi^j f) < N^(-1)$, that is, $f in W_N$.
@@ -43,7 +43,7 @@ So by @wn-local-base, ${q_N}$ induces the standard topology of $Sn$.
 
 Let ${c_N}$ be a sequence of positive numbers such that $c_N -> 0$ as $N -> oo$. Put
 $ d(f, g) = max_N (c_N q_N (f - g)) / (1 + q_N (f - g)). $
-Then $d$ is a metric on $Sn$ which induces the same topology as the family of seminorms ${q_N}$, and so it induces the standard topology of $Sn$.
+Then $d$ is a metric on $Sn$ which induces the same topology as the family of seminorms ${q_N}$, and so it induces the standard topology of $Sn$. // FIX: original says "norms"
 It is easy to see that $d$ is translation invariant. Also, for every $f, g$ we have
 $
   d(hat(f), hat(g)) &= max_N (c_N q_N (hat(f) - hat(g))) / (1 + q_N (hat(f) - hat(g)))
@@ -63,11 +63,11 @@ and so we found a metric $d$ on $Sn$ which induces the standard topology, is tra
   $
   There is $t_0 > 0$ such that $|P|$ is increasing on $(t_0, oo)$, and so for every $m > t_0$ we get
   $
-    norm(P dot D^alpha (e^(-m) (tau_m psi)))_oo <= e^(-m) norm(D^alpha psi)_oo max_(x in [m-1, m+1]) |P(x)| <= norm(D^alpha psi)_oo e^(-m) |P(m + 1)|
+    norm(P dot D^alpha (e^(-m) (tau_m psi)))_oo <= e^(-m) norm(D^alpha psi)_oo max_(x in [m-1, m+1]) |P(x)| <= norm(D^alpha psi)_oo e^(-m) |P(m + 1)| // FIX: original has = for the first relation, and P(m+1) without absolute value
   $
-  and of course $e^(-m) |P(m + 1)| stretch(->)_(m -> oo) 0$. Then $P dot D^alpha (e^(-m) (tau_m psi)) stretch(->)_(m -> oo) 0$ uniformly on $RR$, and so $e^(-m) tau_m psi stretch(->)_(m -> oo) 0$ in $Sn$.
+  and of course $e^(-m) |P(m + 1)| stretch(->)_(m -> oo) 0$. Then $P dot D^alpha (e^(-m) (tau_m psi)) stretch(->)_(m -> oo) 0$ uniformly on $RR$, and so $e^(-m) tau_m psi stretch(->)_(m -> oo) 0$ in $Sn$. // FIX: original has P(m+1) without absolute value
 
-  On the other hand, putting $psi_m = e^(-m) tau_m psi$, for every $m$ we have
+  On the other hand, putting $psi_m = e^(-m) tau_m psi$, for every $m$ we have // FIX: added; ψ_m is not defined in the original
   $
     integral_(-oo)^oo e^x psi_m (x) dif x = integral_(-oo)^oo e^(x - m) psi(x - m) dif x = integral_(-oo)^oo e^x psi(x) dif x >= integral_(-1\/2)^(1\/2) e^x dif x > 0
   $
@@ -88,17 +88,18 @@ The Hahn–Banach theorem states that if $X$ is a locally convex topological vec
 So the hypotheses of the theorem do not hold in the first place, and there is no problem with the conclusion failing.
 
 =
+// FIX: original has D(R) and "on all of R"
 + Let $psi in cal(D)(RR^n)$ such that $psi >= 0$ on all of $RR^n$, $psi = 0$ outside $overline(B(0, 1))$ and $psi > 1$ on $B(0, 1)$. // TODO: ψ > 1 on B(0,1) contradicts continuity with ψ = 0 outside the closed ball; probably ψ > 0?
   Put $psi_m = e^(-m) psi(x - m e_1)$. Then for every $m$, the support of $psi_m$ is $overline(B(m e_1, 1))$, and so there is no compact set which contains the support of $psi_m$ for every $m$.
   Hence ${psi_m}$ does not converge in $cal(D)(RR^n)$.
 
   Let $alpha$ be a multi-index and $P$ a polynomial. Then for every $m$
   $
-    norm(P dot D^alpha psi_m)_oo &= e^(-m) max_(x in B(m e_1, 1)) |P(x) D^alpha psi(x - m e_1)| \
+    norm(P dot D^alpha psi_m)_oo &= e^(-m) max_(x in B(m e_1, 1)) |P(x) D^alpha psi(x - m e_1)| \ // FIX: original has B(m, 1) here and in the next line
     &<= e^(-m) norm(D^alpha psi)_oo max_(x in B(m e_1, 1)) |P(x)| stretch(->)_(m -> oo) 0
   $
-  and so $P dot D^alpha psi_m stretch(->)_(m -> oo) 0$ uniformly on $RR^n$.
-  Since $alpha, P$ are arbitrary we get $psi_m stretch(->)_(m -> oo) 0$ in $Sn$, as required.
+  and so $P dot D^alpha psi_m stretch(->)_(m -> oo) 0$ uniformly on $RR^n$. // FIX: original has P·D^α(e^(-m)(τ_m ψ)) and "uniformly on R"
+  Since $alpha, P$ are arbitrary we get $psi_m stretch(->)_(m -> oo) 0$ in $Sn$, as required. // FIX: original has e^(-m) τ_m ψ instead of ψ_m
 
 + For every $m$ define $P_m (x) = sum_(j=1)^m (j!)^(-1) x^j$. Then $P_m stretch(->)_(m -> oo) exp$ uniformly on compact subsets of $RR$. // TODO: sum should start at j = 0 to converge to exp
   Then for every $phi in cal(D)(RR)$, if $K$ is the support of $phi$, we get
@@ -118,7 +119,7 @@ It is clear that the maps $u |-> D^alpha u$, $u |-> P u$, $u |-> g u$ are all li
 So in order to show that they are continuous, it suffices to show continuity at $0$.
 
 Let $V$ be a neighborhood of $0$ in $cal(S)'_n$. Then there are $f_1, ..., f_m in Sn$ and $epsilon > 0$ for which
-$ inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V $
+$ inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V $ // FIX: original writes S' (without n) in all the sets of this exercise
 Put
 $
   U_1 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(D^alpha f_j)| < epsilon} \
@@ -172,7 +173,7 @@ Let $f, g in Sn$.
   Then for every $k, j$ and every $alpha$ we get
   $
     norm(D^alpha (f * phi_k) - D^alpha (f * phi_j))_oo &<= sup_(x in RR^n) integral_(RR^n) |f(x - y)| |D^alpha phi_k (y) - D^alpha phi_j (y)| dif m_n (y) \
-    &<= norm(f)_1 norm(D^alpha phi_k - D^alpha phi_j)_oo
+    &<= norm(f)_1 norm(D^alpha phi_k - D^alpha phi_j)_oo // FIX: original has ‖D^α φ_k(y) − D^α φ_j(y)‖_∞
   $
   Since $f in Sn$ we have $norm(f)_1 < oo$, and so since ${D^alpha phi_k}$ is uniformly Cauchy on all of $RR^n$, we get that ${D^alpha (f * phi_k)}$ is a uniformly Cauchy sequence on all of $RR^n$.
   Then ${f * phi_k}$ is a Cauchy sequence in $C^oo (RR^n)$.
@@ -201,7 +202,7 @@ that is, for every $x, y in RR^n$ we got the equality
 $ (x + y)^beta e_(x + y) = sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma e_(x + y) $
 and if we evaluate both sides at $0$ we get the equality $(x + y)^beta = sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma$ for every $x, y in RR^n$.
 
-Then, using @conv-smooth, for every $x in RR^n$ we get
+Then, using @conv-smooth, for every $x in RR^n$ we get // FIX: original says "for every x ∈ R^n and every k"
 $
   abs(x^beta (D^alpha (f * g))(x)) &= abs(x^beta (f * D^alpha g)(x)) \
   &= abs(x^beta integral_(RR^n) f(x - y) (D^alpha g)(y) dif m_n (y)) \
@@ -217,7 +218,7 @@ Let $N$ be large enough that $integral_(RR^n) (1 + abs(y)^2)^(-2N) dif m_n (y) <
 Since $f, g in Sn$, the functions $y |-> y^gamma D^alpha g(y)$ and $y |-> y^(beta - gamma) f(y)$ are in $Sn$ for every $gamma <= beta$.
 Then there is $M$ for which $abs((1 + abs(y)^2)^N y^(beta - gamma) f(y)), abs((1 + abs(y)^2)^N y^gamma (D^alpha g)(y)) < M$ for every $y$.
 That is, for every $y$ we have $abs(y^gamma (D^alpha g)(y))^2 < M^2 (1 + abs(y)^2)^(-2N)$ and also $abs(y^(beta - gamma) f(y))^2 < M^2 (1 + abs(y)^2)^(-2N)$.
-Then for every $x in RR^n$ we get
+Then for every $x in RR^n$ we get // FIX: original says "for every x ∈ R^n and every k"
 $
   abs(x^beta (D^alpha (f * g))(x)) &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
   &quad dot (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
@@ -240,7 +241,7 @@ that is, $P dot D^alpha (f * g)$ is bounded for every $alpha$ and every $P$, and
   $ integral_(RR^n) integral_(RR^n) |phi(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi)_1 mu(RR^n) < oo $
   and so by Fubini's theorem
   $
-    integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif mu(t) dif m_n (x)
+    integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif mu(t) dif m_n (x) // FIX: original has an absolute value on the left-hand integrand
   $
   and so we get
   $
@@ -453,7 +454,7 @@ Then the boundary of $Omega_A$ is $[-A, A] union {A e^(i t) : 0 <= t <= pi}$.
 For $lambda in [-A, A]$ we have
 $
   |g_s (lambda)| &= |1 - i s lambda|^(-N-1) |e^(i r abs(y) lambda)| |f(x + lambda y)| \
-  &<= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1
+  &<= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1 // FIX: original exponent reads N+1/2
 $
 and also, for every $t in [0, pi]$ we have $sin t >= 0$, and so
 $
@@ -469,7 +470,7 @@ But
 $ (1 + abs(x) + abs(y) A)^N / (s A - 1)^(N+1) stretch(->)_(A -> oo) 0 $
 and so there is some $A_0 > max{s^(-1), 1}$ for which
 $ (1 + abs(x) + abs(y) A_0)^N / (s A_0 - 1)^(N+1) < 1 $
-and then we get $|g_s (A_0 e^(i t))| < 1$ for every $t in [0, pi]$.
+and then we get $|g_s (A_0 e^(i t))| < 1$ for every $t in [0, pi]$. // FIX: original has t ∈ [0, 2π]
 Then $|g_s| <= 1$ on the boundary of the domain $Omega_(A_0)$.
 $overline(Omega_(A_0))$ is compact, and so by the maximum principle $|g_s| <= 1$ in $Omega_(A_0)$.
 Since $A_0 > 1$, in particular $i in Omega_(A_0)$, and so $|g_s (i)| <= 1$. That is,
@@ -509,12 +510,12 @@ and so $mu$ is also invariant under rotations.
 
 #claim[For every Borel function $phi$ on $RR^3$ we have $integral_(RR^3) phi dif mu = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)$.] <sphere-integral>
 #proof[
-  If $E subset.eq S^2$ is a Borel set, then for every $s in B(0, 1)$
-  $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $
+  If $E subset.eq S^2$ is a Borel set, then for every $s in B(0, 1)$ // FIX: original has t ∈ B(0, 1)
+  $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $ // FIX: original has x ∈ T(E)
   and so
   $
     integral_(S^2) chi_E dif mu &= mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) \
-    &= C^(-1) integral_(B(0, 1)) chi_({t x : t in [0, 1], x in E}) dif m \
+    &= C^(-1) integral_(B(0, 1)) chi_({t x : t in [0, 1], x in E}) dif m \ // FIX: original has x ∈ T(E)
     &= C^(-1) integral_(B(0, 1)) chi_E (abs(t)^(-1) t) dif m(t)
   $
   Then by linearity, for every simple Borel function $phi$ supported on $S^2$
@@ -533,7 +534,7 @@ By @ex-10, $hat(mu) in C(RR^3)$, and for every $x$
 $ hat(mu)(x) = integral_(RR^n) e^(-i x dot t) dif mu(t) $
 Fix $x$. Then since $mu$ is invariant under rotations, and since the inner product is preserved under isometries (and in particular rotations), for every rotation $T : RR^3 -> RR^3$
 $
-  hat(mu)(T x) = integral_(RR^n) e^(-i T x dot t) dif mu(t) = integral_(RR^n) e^(-i T x dot T t) dif mu(t) = integral_(RR^n) e^(-i x dot t) dif mu(t) = hat(mu)(x)
+  hat(mu)(T x) = integral_(RR^n) e^(-i T x dot t) dif mu(t) = integral_(RR^n) e^(-i T x dot T t) dif mu(t) = integral_(RR^n) e^(-i x dot t) dif mu(t) = hat(mu)(x) // FIX: original repeats the middle step twice
 $
 that is, $hat(mu)$ is also invariant under rotations.
 Then in particular, for every $x$
@@ -556,7 +557,7 @@ and so for every $x != 0$ we got $hat(mu)(x) = abs(x)^(-1) sin abs(x)$.
 Also, $hat(mu)(0) = integral_(RR^n) dif mu(t) = 1 = lim_(x -> 0) abs(x)^(-1) sin abs(x)$.
 
 Put $u = D_1 mu$.
-Then if $P(x) = x_1$, we have $hat(u) = hat(D_1 mu) = P hat(mu)$.
+Then if $P(x) = x_1$, we have $hat(u) = hat(D_1 mu) = P hat(mu)$. // FIX: original has hat(D_1 u)
 But since $hat(mu) in C(RR^3)$, also $P hat(mu) in C(RR^3)$, and $(P hat(mu))(x) = x_1 hat(mu)(x)$.
 And so $hat(u) in C(RR^3)$, and
 $ |hat(u)(x)| = (abs(x_1) abs(sin abs(x))) / abs(x) <= abs(sin abs(x)) <= 1 $
@@ -620,7 +621,7 @@ For every $epsilon > 0$ define $h_epsilon (x) = epsilon^(-n) h(epsilon^(-1) x)$.
   $
   and by Plancherel's theorem we get $norm(hat(u * h_epsilon))_2^2 <= norm(hat(u))_oo^2 epsilon^(-n) norm(h)_2^2$.
   From the assumption that $hat(u)$ is a bounded function we get $norm(hat(u * h_epsilon))_2^2 < oo$, and so by Plancherel's theorem again we get $norm(hat(u * h_epsilon))_2^2 = norm(u * h_epsilon)_2^2$.
-  So altogether $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$.
+  So altogether $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$. // FIX: dropped an unfinished sentence that follows in the original ("For every ε > 0, if")
 ]
 
 #claim[For every $phi in cal(D)(RR^n)$ we have $|u(phi)| <= norm(hat(u))_oo norm(h)_2 liminf_(epsilon -> 0) (epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2)$.] <liminf-estimate>
@@ -636,7 +637,7 @@ For every $epsilon > 0$ define $h_epsilon (x) = epsilon^(-n) h(epsilon^(-1) x)$.
   $
   But $u * h_epsilon -> u$ in $cal(D)'(RR^n)$, and in particular for every $phi in cal(D)(RR^n)$
   $ u(phi) = lim_(epsilon -> 0) (u * h_epsilon)(phi) = liminf_(epsilon -> 0) (u * h_epsilon)(phi) $
-  and so we get the required inequality.
+  and so we get the required inequality. // FIX: the original's final inequality has liminf as ε → ∞
 ]
 
 All this holds for every $n$ we choose. Now we can prove the parts.
@@ -663,7 +664,7 @@ All this holds for every $n$ we choose. Now we can prove the parts.
 
 + Suppose $n = 2$, and $P$ is a real polynomial in two variables for which $P = 0$ on $K$.
   Then by the previous part, $P u = 0$.
-  Then also $hat(P u) = 0$, but $hat(P u) = P(-D) hat(u)$, and so we get that $hat(u)$ satisfies the partial differential equation $P(-D) hat(u) = 0$.
+  Then also $hat(P u) = 0$, but $hat(P u) = P(-D) hat(u)$, and so we get that $hat(u)$ satisfies the partial differential equation $P(-D) hat(u) = 0$. // FIX: original says u (not û) satisfies the equation
   Then for example, if we take $K$ to be the unit circle and take $P(x_1, x_2) = 1 - x_1^2 - x_2^2$, then $P$ indeed vanishes on $K$, and so in this case we get the equation
   $ hat(u) + partial^2 / (partial x_1^2) hat(u) + partial^2 / (partial x_2^2) hat(u) = 0 $
   that is, $hat(u) + Delta hat(u) = 0$.
@@ -671,8 +672,8 @@ All this holds for every $n$ we choose. Now we can prove the parts.
 + Put $P(x) = 1 - x_1^2 - x_2^2 - x_3^2$.
   Let $mu$ be the measure from @ex-16, that is, $mu$ is a Borel probability measure on $RR^3$ which is concentrated on $S^2$ and invariant under rotations.
   We saw in @ex-16 that in this case $hat(mu)(x) = abs(x)^(-1) sin abs(x)$ for every $x != 0$, and so $hat(mu)$ is bounded.
-  If, by contradiction, the previous part holds with $n = 3$, then we get $P(-D) hat(mu) = 0$, that is, $hat(mu) + Delta hat(mu) = 0$.
-  Put $f(x) = x^(-1) sin x$ for every $x in RR without {0}$.
+  If, by contradiction, the previous part holds with $n = 3$, then we get $P(-D) hat(mu) = 0$, that is, $hat(mu) + Delta hat(mu) = 0$. // FIX: original writes û for μ̂ here
+  Put $f(x) = x^(-1) sin x$ for every $x in RR without {0}$. // FIX: original has R \ (0)
   Then $f'(x) = x^(-1) cos x - x^(-2) sin x$.
   Also put $g(x) = abs(x)$ for every $x in RR^3$. Then for $x != 0$ we get
   $ partial / (partial x_j) g(x) = x_j / abs(x) $
@@ -685,7 +686,7 @@ All this holds for every $n$ we choose. Now we can prove the parts.
   But if we plug in $x = (1, 0, 0)$ we get the equality $cos(1) = 0$, which is certainly false.
   So the previous part cannot hold with $n = 3$.
 
-+ By @conv-estimate, for every $epsilon > 0$ we have $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-1\/2) norm(h)_2$, and the support of $u * h_epsilon$ is contained in $H_epsilon$.
++ By @conv-estimate, for every $epsilon > 0$ we have $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-1\/2) norm(h)_2$, and the support of $u * h_epsilon$ is contained in $H_epsilon$. // FIX: original says the support "is" H_ε
   In particular, $u * h_epsilon$ is a smooth function with compact support, and so $u * h_epsilon in L^1 (RR^n)$.
   So for every $epsilon > 0$ we get
   $
@@ -726,7 +727,7 @@ Fix a multi-index $alpha$ with $|alpha| <= r$.
 Let $omega$ be an open set whose closure $K$ is compact and contained in $Omega$.
 Take $psi in cal(D)(Omega)$ with $psi = 1$ on $K$, and define $F = psi f$ on $Omega$, and $F = 0$ outside $Omega$.
 In the proof of Sobolev's lemma, we saw that
-$ integral_(RR^n) (1 + abs(x))^(2r) abs(hat(F)(x))^2 dif m_n (x) < oo $
+$ integral_(RR^n) (1 + abs(x))^(2r) abs(hat(F)(x))^2 dif m_n (x) < oo $ // FIX: original has |F̂(x)| without the square
 and so we get
 $
   integral_(RR^n) abs(x^alpha hat(F)(x))^2 dif m_n &<= integral_(RR^n) abs(x)^(2|alpha|) abs(hat(F)(x))^2 dif m_n <= integral_(RR^n) (1 + abs(x))^(2|alpha|) abs(hat(F)(x))^2 dif m_n \
@@ -829,7 +830,7 @@ Then by Plancherel's theorem, $D_i^k f in L^2 (RR^2)$ for every $1 <= i <= 2$ an
 Then by Sobolev's lemma we get $f in C^((1)) (RR^2)$, as required.
 
 Now we show that $f in.not C^((2)) (RR^2)$.
-From the definition of $f$ we get $f = Phi^3 g = rho Phi g$, and so for almost every $x$
+From the definition of $f$ we get $f = Phi^3 g = rho Phi g$, and so for almost every $x$ // FIX: original has RΦg
 $ f(x) = Phi g(-x) = integral_(RR^2) e^(i x dot y) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) $
 For every $y in RR^2$ and $h in RR without {0}$ put $phi_h (y) = 2 h^(-2) (cos(h y_1) - 1)$.
 Then for every $h in RR without {0}$ we get
