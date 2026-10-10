@@ -20,7 +20,7 @@
 
 // Each level-1 heading is an exercise, numbered automatically
 #let exercise-headings(body) = {
-  set heading(numbering: "1")
+  set heading(numbering: "1", supplement: [Exercise])
   show heading.where(level: 1): it => {
     counter(figure.where(kind: "thm")).update(0)
     block(above: 2em, below: 1em, text(size: 14pt)[
