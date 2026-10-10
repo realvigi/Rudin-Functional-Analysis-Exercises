@@ -234,7 +234,7 @@ $
 $
 that is, $P dot D^alpha (f * g)$ is bounded for every $alpha$ and every $P$, and so $f * g in Sn$, as required.
 
-=
+= <ex-10>
 + We need to show that for every $phi in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi) dif mu = integral_(RR^n) hat(mu) phi dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
   We have
   $ integral_(RR^n) integral_(RR^n) |phi(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi)_1 mu(RR^n) < oo $
@@ -287,6 +287,7 @@ and so $Lambda phi = u * phi$ for every $phi in Sn$, as required.
   and so by the mean value theorem, there is $c in [0, 1]$ for which
   $ |phi(y) - phi(x)| = |g(1) - g(0)| = |g'(c)| <= C abs(y - x) $
   Since $x, y$ are arbitrary, we got that $|phi(y) - phi(x)| <= C abs(y - x)$ for every $x, y in RR^n$.
+  This shows that $norm(tau_y phi - phi)_oo <= C abs(y)$ for every $y in RR^n$.
 ]
 
 #claim[If ${h_j}$ is an approximate identity, then $h_j * phi -> phi$ in the topology of $Sn$ for every $phi in Sn$.] <approx-identity>
@@ -443,7 +444,7 @@ $
 $
 that is, $F$ is indeed a polynomial, as required.
 
-=
+= <ex-15>
 Fix $z = x + i y$.
 For every $s > 0$ and $lambda in CC$ define $g_s (lambda) = (1 - i s lambda)^(-N-1) e^(i r abs(y) lambda) f(x + lambda y)$. Then $g_s$ is entire in $CC$.
 Fix $s$.
@@ -479,3 +480,241 @@ and since $s$ is arbitrary, the last inequality holds for every $s > 0$. But
 $ (1 + s)^(N+1) e^(r abs(y)) stretch(->)_(s -> 0) e^(r abs(y)) $
 and so we get $|f(z)| <= e^(r abs(y))$.
 Since $z$ is arbitrary, we get $|f(z)| <= e^(r |op("Im") z|)$ for every $z in CC^n$.
+
+= <ex-16>
+Put $m = m_3$ and $C = m_3 (B(0, 1))$.
+For every Borel set $E subset.eq RR^3$ define
+$ mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) $
+If ${E_n}$ is a sequence of pairwise disjoint Borel sets in $RR^3$, then
+$
+  mu(union.big_(n in NN) E_n) &= C^(-1) m({t x : t in [0, 1], x in union.big_(n in NN) E_n inter S^2}) \
+  &= C^(-1) m(union.big_(n in NN) {t x : t in [0, 1], x in E_n inter S^2}) \
+  &= sum_(n in NN) C^(-1) m({t x : t in [0, 1], x in E_n inter S^2}) \
+  &= sum_(n in NN) mu(E_n)
+$
+and so $mu$ is a Borel measure.
+Clearly $mu(E) = 0$ if $E inter S^2 = emptyset$, and so $mu$ is concentrated on $S^2$.
+Also,
+$ mu(RR^3) = C^(-1) m({t x : t in [0, 1], x in S^2}) = C^(-1) m(B(0, 1)) = 1 $
+and so $mu$ is a probability measure.
+Lebesgue measure is invariant under rotations, and so if $T : RR^3 -> RR^3$ is a rotation, then
+$
+  mu(T(E)) &= C^(-1) m({t x : t in [0, 1], x in T(E)}) \
+  &= C^(-1) m({t T x : t in [0, 1], x in E}) \
+  &= C^(-1) m(T({t x : t in [0, 1], x in E})) \
+  &= C^(-1) m({t x : t in [0, 1], x in E}) \
+  &= mu(E)
+$
+and so $mu$ is also invariant under rotations.
+
+#claim[For every Borel function $phi$ on $RR^3$ we have $integral_(RR^3) phi dif mu = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)$.] <sphere-integral>
+#proof[
+  If $E subset.eq S^2$ is a Borel set, then for every $s in B(0, 1)$
+  $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $
+  and so
+  $
+    integral_(S^2) chi_E dif mu &= mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) \
+    &= C^(-1) integral_(B(0, 1)) chi_({t x : t in [0, 1], x in E}) dif m \
+    &= C^(-1) integral_(B(0, 1)) chi_E (abs(t)^(-1) t) dif m(t)
+  $
+  Then by linearity, for every simple Borel function $phi$ supported on $S^2$
+  $ integral_(S^2) phi dif mu = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t) $
+  But then by the monotone convergence theorem the last equality holds for every Borel function $phi >= 0$ supported on $S^2$, and by linearity again we get that this equality holds for any Borel function $phi$ supported on $S^2$.
+
+  Finally, if $phi$ is any Borel function on $RR^3$, then since $mu$ is concentrated on $S^2$ we get
+  $
+    integral_(RR^3) phi dif mu &= integral_(S^2) phi dif mu = integral_(S^2) chi_(S^2) phi dif mu \
+    &= C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi(abs(t)^(-1) t) dif m(t) \
+    &= C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)
+  $
+]
+
+By @ex-10, $hat(mu) in C(RR^3)$, and for every $x$
+$ hat(mu)(x) = integral_(RR^n) e^(-i x dot t) dif mu(t) $
+Fix $x$. Then since $mu$ is invariant under rotations, and since the inner product is preserved under isometries (and in particular rotations), for every rotation $T : RR^3 -> RR^3$
+$
+  hat(mu)(T x) = integral_(RR^n) e^(-i T x dot t) dif mu(t) = integral_(RR^n) e^(-i T x dot T t) dif mu(t) = integral_(RR^n) e^(-i x dot t) dif mu(t) = hat(mu)(x)
+$
+that is, $hat(mu)$ is also invariant under rotations.
+Then in particular, for every $x$
+$ hat(mu)(x) = hat(mu)(abs(x) e_3) = integral_(RR^n) e^(-i abs(x) t_3) dif mu(t) $
+and by @sphere-integral and passing to spherical coordinates, for every $x != 0$ we get
+$
+  hat(mu)(x) &= C^(-1) integral_(B(0, 1)) e^(-i abs(x) abs(t)^(-1) t_3) dif m(t) \
+  &= (2 pi)^(-3\/2) C^(-1) integral_0^1 integral_0^(2 pi) integral_0^pi r^2 sin(phi.alt) e^(-i abs(x) cos phi.alt) dif phi.alt dif theta dif r \
+  &= (2 pi)^(-1\/2) C^(-1) (integral_0^1 r^2 dif r) (integral_0^pi sin(phi.alt) e^(-i abs(x) cos phi.alt) dif phi.alt) \
+  &= 1/3 (2 pi)^(-1\/2) C^(-1) (e^(-i abs(x) cos pi) - e^(-i abs(x) cos 0)) / (i abs(x)) \
+  &= 2/3 (2 pi)^(-1\/2) C^(-1) abs(x)^(-1) (e^(i abs(x)) - e^(-i abs(x))) / (2 i) \
+  &= 2/3 (2 pi)^(-1\/2) C^(-1) (sin abs(x)) / abs(x)
+$
+But
+$
+  C &= integral_(B(0, 1)) dif m = (2 pi)^(-3\/2) integral_0^1 integral_0^(2 pi) integral_0^pi r^2 sin(phi.alt) dif phi.alt dif theta dif r = (2 pi)^(-1\/2) integral_0^1 r^2 dif r integral_0^pi sin(phi.alt) dif phi.alt \
+  &= 1/3 (2 pi)^(-1\/2) (-cos(pi) + cos(0)) = 2/3 (2 pi)^(-1\/2)
+$
+and so for every $x != 0$ we got $hat(mu)(x) = abs(x)^(-1) sin abs(x)$.
+Also, $hat(mu)(0) = integral_(RR^n) dif mu(t) = 1 = lim_(x -> 0) abs(x)^(-1) sin abs(x)$.
+
+Put $u = D_1 mu$.
+Then if $P(x) = x_1$, we have $hat(u) = hat(D_1 mu) = P hat(mu)$.
+But since $hat(mu) in C(RR^3)$, also $P hat(mu) in C(RR^3)$, and $(P hat(mu))(x) = x_1 hat(mu)(x)$.
+And so $hat(u) in C(RR^3)$, and
+$ |hat(u)(x)| = (abs(x_1) abs(sin abs(x))) / abs(x) <= abs(sin abs(x)) <= 1 $
+for every $x in RR^3$.
+For $phi in cal(D)(RR^3)$ whose support does not intersect $S^2$, we have
+$ u(phi) = - integral_(RR^3) D_1 phi dif mu = - integral_(S^2) D_1 phi dif mu = 0 $
+and so the support of $u$ is contained in $S^2$.
+So $u$ has compact support, and so we can put $f(z) = u(e_(-z))$ for every $z in CC^3$.
+Then by the Paley–Wiener theorem for distributions with compact support, $f$ is an entire function in $CC^3$, $hat(u)$ is the restriction of $f$ to $RR^n$, and in addition there is $gamma < oo$ for which $|f(z)| <= gamma (1 + abs(z))^N e^(r abs(op("Im") z))$ for every $z in CC^n$.
+Since $f = hat(u)$ on $RR^n$, we have $|f| <= 1$ on $RR^n$.
+Take $gamma_0 >= max{gamma, 1}$. Then $abs(gamma_0^(-1) f(z)) <= (1 + abs(z))^N e^(r abs(op("Im") z))$, and also $abs(gamma_0^(-1) f(x)) < |f(x)| <= 1$ for every $x in RR^n$.
+Then $gamma_0^(-1) f$ satisfies the conditions of the claim in @ex-15, and so it satisfies its conclusion, that is, $abs(gamma_0^(-1) f(z)) <= e^(r abs(op("Im") z))$ for every $z in CC^n$.
+Then $|f(z)| <= gamma_0 e^(r abs(op("Im") z))$ for every $z in CC^3$.
+So $f$ is entire and satisfies the inequality of the Paley–Wiener theorem with $N = 0$, and yet $f$ is not the Fourier transform of a distribution of order $0$ (since it is the Fourier transform of $u = D_1 mu$, which is a distribution of order $1$), as required.
+
+Now we find an explicit formula for $f$.
+For every $lambda_1, lambda_2 in CC without {0}$, if $lambda_1^2 = lambda_2^2$ and $lambda_1 != lambda_2$, then $lambda_1 = -lambda_2$, and then
+$ (sin lambda_1) / lambda_1 = (sin(-lambda_2)) / (-lambda_2) = (-sin(lambda_2)) / (-lambda_2) = (sin(lambda_2)) / lambda_2 $
+Also, the function $lambda |-> lambda^2$ from $CC without {0}$ is onto $CC without {0}$.
+So we can define a function $h : CC without {0} -> CC$ by $h(lambda^2) = lambda^(-1) sin lambda$, and we get that $h$ is well defined on all of $CC without {0}$.
+Fix $lambda in CC without {0}$ and take some $zeta$ for which $zeta^2 = lambda$. Then
+$
+  h(lambda) &= (sin zeta) / zeta = (e^(i zeta) - e^(-i zeta)) / (2 i zeta) = 1 / (2 i zeta) (sum_(n=0)^oo (i zeta)^n / n! - sum_(n=0)^oo (-i zeta)^n / n!) \
+  &= 1 / (2 i zeta) sum_(n=0)^oo ((i zeta)^n (1 - (-1)^n)) / n! = sum_(n=0)^oo (i zeta)^(2n) / (2n + 1)! \
+  &= sum_(n=0)^oo ((-1)^n lambda^n) / (2n + 1)!
+$
+and if we also define $h(0) = 1$, then the equality between the two extreme sides is preserved, and so we get that $h$ can be represented as a power series on all of $CC$, that is, $h$ is entire.
+Define $g : CC^3 -> CC$ by $g(z) = z_1^2 + z_2^2 + z_3^2$.
+Clearly $g$ is entire in $CC^3$, and so $h compose g$ is entire in $CC^3$.
+So $z |-> z_1 h(g(z))$ is also entire in $CC^3$.
+For every $x in RR^3$
+$
+  f(x) &= u(e_(-x)) = hat(u)(x) = hat(D_1 mu)(x) = x_1 hat(mu)(x) = (x_1 sin abs(x)) / abs(x) \
+  &= x_1 h(abs(x)^2) = x_1 h(x_1^2 + x_2^2 + x_3^2) = x_1 h(g(x))
+$
+and so, since $f$ is also entire, we get the equality $f(z) = z_1 h(g(z))$ for every $z in CC^3$.
+So an explicit formula for $f$ is
+$ f(z) = (z_1 sin(sqrt(z_1^2 + z_2^2 + z_3^2))) / sqrt(z_1^2 + z_2^2 + z_3^2) $
+where the square root in the expression means a choice of some square root of the expression; it does not matter which one we choose (but the choice must be the same for all occurrences in the formula), the formula will work.
+
+=
+Fix $n$.
+For every $epsilon > 0$ let $H_epsilon = K + overline(B(0, epsilon))$.
+Let $h in cal(D)(RR^n)$ with support in $overline(B(0, 1))$ and $integral_(RR^n) h dif m_n = 1$.
+For every $epsilon > 0$ define $h_epsilon (x) = epsilon^(-n) h(epsilon^(-1) x)$.
+
+#claim[For every $epsilon > 0$, the support of $u * h_epsilon$ is contained in $H_epsilon$, and $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$.] <conv-estimate>
+#proof[
+  The support of $h_epsilon$ is contained in $overline(B(0, epsilon))$, and so for every $x$ the support of $tau_x rho h_epsilon$ is contained in $overline(B(x, epsilon))$.
+  If for some $x$ we have $(u * h_epsilon)(x) != 0$, then $u(tau_x rho h_epsilon) != 0$, and so the support of $tau_x rho h_epsilon$ intersects $K$, and so there is $y in K$ for which $abs(x - y) <= epsilon$, that is, $x in H_epsilon$. This shows that the support of $u * h_epsilon$ is contained in $H_epsilon$ for every $epsilon > 0$.
+
+  Fix $epsilon > 0$.
+  Then $hat(u * h_epsilon) = hat(h_epsilon) hat(u)$, where the equality is in the distributional sense.
+  By the Paley–Wiener theorem, $hat(u) in C^oo (RR^n)$.
+  And so $hat(h_epsilon) hat(u) in C^oo (RR^n)$. Then $hat(u * h_epsilon) = hat(h_epsilon) hat(u)$ as functions.
+  We have $hat(h_epsilon) (t) = hat(h)(epsilon t)$, and so
+  $
+    norm(hat(u * h_epsilon))_2^2 &= norm(hat(h_epsilon) hat(u))_2^2 = integral_(RR^n) abs(hat(h_epsilon))^2 |hat(u)|^2 dif m_n \
+    &<= norm(hat(u))_oo^2 integral_(RR^n) abs(hat(h)(epsilon t))^2 dif m_n (t) \
+    &= norm(hat(u))_oo^2 epsilon^(-n) integral_(RR^n) abs(hat(h))^2 dif m_n = norm(hat(u))_oo^2 epsilon^(-n) norm(hat(h))_2^2
+  $
+  and by Plancherel's theorem we get $norm(hat(u * h_epsilon))_2^2 <= norm(hat(u))_oo^2 epsilon^(-n) norm(h)_2^2$.
+  From the assumption that $hat(u)$ is a bounded function we get $norm(hat(u * h_epsilon))_2^2 < oo$, and so by Plancherel's theorem again we get $norm(hat(u * h_epsilon))_2^2 = norm(u * h_epsilon)_2^2$.
+  So altogether $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$.
+]
+
+#claim[For every $phi in cal(D)(RR^n)$ we have $|u(phi)| <= norm(hat(u))_oo norm(h)_2 liminf_(epsilon -> 0) (epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2)$.] <liminf-estimate>
+#proof[
+  By @conv-estimate, for every $epsilon > 0$ and every $phi in cal(D)(RR^n)$ we get
+  $
+    |(u * h_epsilon)(phi)| &= abs(integral_(RR^n) (u * h_epsilon) phi dif m_n) = abs(integral_(H_epsilon) (u * h_epsilon) phi dif m_n) \
+    &<= (integral_(H_epsilon) |u * h_epsilon|^2 dif m_n)^(1\/2) (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
+    &= (integral_(RR^n) |u * h_epsilon|^2 dif m_n)^(1\/2) (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
+    &= norm(u * h_epsilon)_2 (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
+    &<= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2 (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
+    &= norm(hat(u))_oo norm(h)_2 (epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2)
+  $
+  But $u * h_epsilon -> u$ in $cal(D)'(RR^n)$, and in particular for every $phi in cal(D)(RR^n)$
+  $ u(phi) = lim_(epsilon -> 0) (u * h_epsilon)(phi) = liminf_(epsilon -> 0) (u * h_epsilon)(phi) $
+  and so we get the required inequality.
+]
+
+All this holds for every $n$ we choose. Now we can prove the parts.
+
++ Suppose $n = 1$ or $n = 2$. We need to prove that if $psi in C^oo (RR^n)$ and $psi = 0$ on $K$, then $psi u = 0$.
+  That is, we need to show that $u(psi phi) = 0$ for every $phi in cal(D)(RR^n)$.
+  So it suffices to show that $u(phi) = 0$ for every $phi in cal(D)(RR^n)$ for which $phi = 0$ on $K$.
+  Then by @liminf-estimate it suffices to show that for every such $phi$
+  $ epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n stretch(->)_(epsilon -> 0) 0 $
+  and this is what we will show.
+
+  Since all the partial derivatives of $phi$ are bounded, there is $C > 0$ for which $|phi(x) - phi(y)| <= C abs(x - y)$ for every $x, y in RR^n$.
+  Then for every $epsilon > 0$ and every $x in H_epsilon$ we have $|phi(x)| <= C epsilon$.
+  So for every $epsilon > 0$
+  $
+    epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n &= epsilon^(-n) integral_(H_epsilon without K) |phi|^2 dif m_n <= C^2 epsilon^(2-n) m_n (H_epsilon without K) \
+    &<= C^2 epsilon^(2-n) (m_n (H_epsilon) - m_n (K))
+  $
+  Since $n <= 2$ we get $2 - n >= 0$, and so the expression $C^2 epsilon^(2-n)$ is bounded when $epsilon in (0, 1)$.
+  On the other hand, if ${epsilon_k}$ is a decreasing sequence with $epsilon_k -> 0$, then ${H_(epsilon_k)}$ is a sequence decreasing by inclusion with $inter.big_k H_(epsilon_k) = K$, and so $m_n (H_(epsilon_k)) -> m_n (K)$.
+  So $m_n (H_epsilon) stretch(->)_(epsilon -> 0) m_n (K)$.
+  So $C^2 epsilon^(2-n) (m_n (H_epsilon) - m_n (K)) stretch(->)_(epsilon -> 0) 0$.
+  And so $epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n stretch(->)_(epsilon -> 0) 0$, as required.
+
++ Suppose $n = 2$, and $P$ is a real polynomial in two variables for which $P = 0$ on $K$.
+  Then by the previous part, $P u = 0$.
+  Then also $hat(P u) = 0$, but $hat(P u) = P(-D) hat(u)$, and so we get that $hat(u)$ satisfies the partial differential equation $P(-D) hat(u) = 0$.
+  Then for example, if we take $K$ to be the unit circle and take $P(x_1, x_2) = 1 - x_1^2 - x_2^2$, then $P$ indeed vanishes on $K$, and so in this case we get the equation
+  $ hat(u) + partial^2 / (partial x_1^2) hat(u) + partial^2 / (partial x_2^2) hat(u) = 0 $
+  that is, $hat(u) + Delta hat(u) = 0$.
+
++ Put $P(x) = 1 - x_1^2 - x_2^2 - x_3^2$.
+  Let $mu$ be the measure from @ex-16, that is, $mu$ is a Borel probability measure on $RR^3$ which is concentrated on $S^2$ and invariant under rotations.
+  We saw in @ex-16 that in this case $hat(mu)(x) = abs(x)^(-1) sin abs(x)$ for every $x != 0$, and so $hat(mu)$ is bounded.
+  If, by contradiction, the previous part holds with $n = 3$, then we get $P(-D) hat(mu) = 0$, that is, $hat(mu) + Delta hat(mu) = 0$.
+  Put $f(x) = x^(-1) sin x$ for every $x in RR without {0}$.
+  Then $f'(x) = x^(-1) cos x - x^(-2) sin x$.
+  Also put $g(x) = abs(x)$ for every $x in RR^3$. Then for $x != 0$ we get
+  $ partial / (partial x_j) g(x) = x_j / abs(x) $
+  and so by the chain rule we get
+  $ partial / (partial x_j) (f compose g)(x) = (abs(x) cos abs(x) - sin abs(x)) / abs(x)^3 x_j $
+  But $hat(mu) = f compose g$, and so for every $x in RR^3 without {0}$
+  $ Delta hat(mu)(x) = (abs(x) cos abs(x) - sin abs(x)) / abs(x)^3 (x_1 + x_2 + x_3) $ // TODO: this sums first derivatives; Δ is the sum of second derivatives
+  and so, since $hat(mu) + Delta hat(mu) = 0$, we get for every $x in RR^3 without {0}$ the equality
+  $ (sin abs(x)) / abs(x) + (abs(x) cos abs(x) - sin abs(x)) / abs(x)^3 (x_1 + x_2 + x_3) = 0 $
+  But if we plug in $x = (1, 0, 0)$ we get the equality $cos(1) = 0$, which is certainly false.
+  So the previous part cannot hold with $n = 3$.
+
++ By @conv-estimate, for every $epsilon > 0$ we have $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-1\/2) norm(h)_2$, and the support of $u * h_epsilon$ is contained in $H_epsilon$.
+  In particular, $u * h_epsilon$ is a smooth function with compact support, and so $u * h_epsilon in L^1 (RR^n)$.
+  So for every $epsilon > 0$ we get
+  $
+    abs(integral_RR f hat(u * h_epsilon) dif m_1) &= abs(integral_RR hat(f) dot (u * h_epsilon) dif m_1) = abs(integral_(H_epsilon) hat(f) dot (u * h_epsilon) dif m_1) \
+    &<= (integral_(H_epsilon) |u * h_epsilon|^2 dif m_1)^(1\/2) (integral_(H_epsilon) abs(hat(f))^2 dif m_1)^(1\/2) \
+    &= norm(u * h_epsilon)_2 (integral_(H_epsilon) abs(hat(f))^2 dif m_1)^(1\/2) \
+    &<= norm(hat(u))_oo norm(h)_2 (epsilon^(-1) integral_(H_epsilon without K) abs(hat(f))^2 dif m_1)^(1\/2)
+  $
+  Also, for every $x in H_epsilon$ there is $y in K$ for which $abs(x - y) <= epsilon$, and so $abs(hat(f)(x)) = abs(hat(f)(x) - hat(f)(y)) <= C abs(x - y)^(1\/2) <= C epsilon^(1\/2)$.
+  That is, for every $epsilon > 0$ we have $abs(hat(f))^2 <= C^2 epsilon$ on $H_epsilon$, and so
+  $
+    abs(integral_RR f hat(u * h_epsilon) dif m_1) &<= norm(hat(u))_oo norm(h)_2 (epsilon^(-1) C^2 epsilon m_1 (H_epsilon without K))^(1\/2) \
+    &= norm(hat(u))_oo norm(h)_2 C (m_1 (H_epsilon) - m_1 (K))^(1\/2)
+  $
+  and $m_1 (H_epsilon) stretch(->)_(epsilon -> 0) m_1 (K)$, and so we got $integral_RR f hat(u * h_epsilon) dif m_1 stretch(->)_(epsilon -> 0) 0$.
+
+  Note that for every $x$ we have $hat(h_epsilon) (x) = hat(h)(epsilon x) stretch(->)_(epsilon -> 0) hat(h)(0) = integral_RR h dif m_1 = 1$, and so
+  $
+    f(x) hat(u * h_epsilon) (x) = f(x) hat(h_epsilon) (x) hat(u)(x) = f(x) hat(h)(epsilon x) hat(u)(x) stretch(->)_(epsilon -> 0) f(x) hat(u)(x)
+  $
+  for every $x in RR$. Also,
+  $ abs(f(x) hat(u * h_epsilon) (x)) = abs(f(x) hat(h)(epsilon x) hat(u)(x)) <= |f(x)| norm(hat(u))_oo norm(hat(h))_oo $
+  and $norm(hat(u))_oo < oo$ by the assumption, and $norm(hat(h))_oo < oo$ as the Fourier transform of an $L^1 (RR)$ function.
+  Then since $f in L^1 (RR)$, by the dominated convergence theorem we get
+  $ integral_RR f hat(u * h_epsilon) dif m_1 stretch(->)_(epsilon -> 0) integral_RR f hat(u) dif m_1 $
+  and by the uniqueness of the limit we get $integral_RR f hat(u) dif m_1 = 0$, as required.
+
+=
+Replacing $F$ by the suggestion from the exercise will not work, since then we would get $D_i^r F = sum_(s=0)^r binom(r, s) (D_i^(r-s) chi_K) g_(i s)$ in $Omega$, and $D_i^(r-s) chi_K$ is necessarily a distribution which is not a function, and so $D_i^r F$ cannot be in $L^2 (Omega)$, and so also not in $L^2 (RR^n)$.
+
+One could hope that the proof still works, if we were able to show that $integral_(RR^n) y_i^(2r) abs(hat(F)(y))^2 dif m_n (y) < oo$, but this is impossible, since if that were the case then $hat(D_i^r F) in L^2 (RR^n)$, and then by Plancherel's theorem we would get $D_i^r F in L^2 (RR^n)$, in contradiction to what we just said.
+That is, $integral_(RR^n) y_i^(2r) abs(hat(F)(y))^2 dif m_n (y) = oo$, and this ruins the entire proof.
