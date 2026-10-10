@@ -111,3 +111,165 @@ So the hypotheses of the theorem do not hold in the first place, and there is no
   $ u(phi) = integral_RR e^x phi(x) dif m_n (x) $
   for every $phi in cal(D)(RR)$, and we already saw in @ex-3 that the distribution $phi |-> integral_RR e^x phi(x) dif m_n (x)$ cannot be extended to $cal(S)_1$, so we got a contradiction.
   Hence $P_m$ does not converge in $cal(S)'_1$, as required.
+
+=
+Let $alpha$ be a multi-index, $P$ a polynomial and $g in Sn$.
+It is clear that the maps $u |-> D^alpha u$, $u |-> P u$, $u |-> g u$ are all linear maps from $cal(S)'_n$ to itself.
+So in order to show that they are continuous, it suffices to show continuity at $0$.
+
+Let $V$ be a neighborhood of $0$ in $cal(S)'_n$. Then there are $f_1, ..., f_m in Sn$ and $epsilon > 0$ for which
+$ inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V $
+Put
+$
+  U_1 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(D^alpha f_j)| < epsilon} \
+  U_2 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(P f_j)| < epsilon} \
+  U_3 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(g f_j)| < epsilon}
+$
+Then $U_1, U_2, U_3$ are neighborhoods of $0$ in $cal(S)'_n$, and
+$
+  {D^alpha u : u in U_1} &subset.eq inter.big_(j=1)^m {D^alpha u : u in cal(S)'_n, |u(D^alpha f_j)| < epsilon} \
+  &= inter.big_(j=1)^m {D^alpha u : u in cal(S)'_n, |D^alpha u(f_j)| < epsilon} subset.eq V \
+  {P u : u in U_2} &= inter.big_(j=1)^m {P u : u in cal(S)'_n, |u(P f_j)| < epsilon} \
+  &= inter.big_(j=1)^m {P u : u in cal(S)'_n, |(P u)(f_j)| < epsilon} \
+  &subset.eq inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V \
+  {g u : u in U_3} &= inter.big_(j=1)^m {g u : u in cal(S)'_n, |u(g f_j)| < epsilon} \
+  &= inter.big_(j=1)^m {g u : u in cal(S)'_n, |(g u)(f_j)| < epsilon} \
+  &subset.eq inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V
+$
+which shows that the three maps above are indeed weak\*-continuous, as required.
+
+=
+Denote by $Phi$ the Fourier transform on $Sn$, and by $rho$ the reflection operator.
+Fix $x in RR^n$. Then for every $phi in Sn$
+$
+  hat(tau_x u)(phi) &= (tau_x u)(Phi phi) = u(tau_(-x) Phi phi) = u(Phi^4 (tau_(-x) Phi phi)) = u(Phi^3 (e_x Phi^2 phi)) \
+  &= u(Phi rho (e_x rho phi)) = u(Phi (e_(-x) phi)) = hat(u)(e_(-x) phi) = (e_(-x) u)(phi)
+$
+and so $hat(tau_x u) = e_(-x) u$, as required.
+
+Also, for every $phi in Sn$
+$
+  hat(e_x u)(phi) = (e_x u)(hat(phi)) = u(e_x hat(phi)) = u(hat(tau_(-x) phi)) = hat(u)(tau_(-x) phi) = (tau_x hat(u))(phi)
+$
+and so $hat(e_x u) = tau_x hat(u)$, as required.
+
+=
+Denote by $Phi$ the Fourier transform on $cal(S)'_n$.
+Since $f in L^1 (RR^n)$, $hat(f) = lambda f$, and $hat(f) = Phi f$ in the distributional sense, we get $Phi^k f in L^1 (RR^n)$ for every $k$, and also $Phi^k f = lambda^k f$ for every $k$.
+But $Phi^4$ is the identity, and so we get $f = lambda^4 f$, where the equality is in $cal(S)'_n$.
+Then for every $phi in cal(D)(RR^n)$
+$ integral_(RR^n) f phi dif m_n = lambda^4 integral_(RR^n) f phi dif m_n $
+Since $f != 0$, in particular there is $phi$ for which $integral_(RR^n) f phi dif m_n != 0$, and so we get $lambda^4 = 1$, that is, $lambda$ is a root of unity of order $4$.
+
+=
+Let $f, g in Sn$.
+
+#claim[$f * g in C^oo (RR^n)$, and $D^alpha (f * g) = f * D^alpha g$ for every multi-index $alpha$.] <conv-smooth>
+#proof[
+  There is a sequence ${phi_k}$ in $cal(D)(RR^n)$ for which $phi_k -> g$ in $Sn$.
+  In particular, for every $alpha$ we have $D^alpha phi_k -> D^alpha g$ uniformly on all of $RR^n$, and in particular ${D^alpha phi_k}$ is a uniformly Cauchy sequence on $RR^n$.
+  For every $k$ we have $f * phi_k in C^oo (RR^n)$, and for every $alpha$ we have $D^alpha (f * phi_k) = f * D^alpha phi_k$.
+  Then for every $k, j$ and every $alpha$ we get
+  $
+    norm(D^alpha (f * phi_k) - D^alpha (f * phi_j))_oo &<= sup_(x in RR^n) integral_(RR^n) |f(x - y)| |D^alpha phi_k (y) - D^alpha phi_j (y)| dif m_n (y) \
+    &<= norm(f)_1 norm(D^alpha phi_k - D^alpha phi_j)_oo
+  $
+  Since $f in Sn$ we have $norm(f)_1 < oo$, and so since ${D^alpha phi_k}$ is uniformly Cauchy on all of $RR^n$, we get that ${D^alpha (f * phi_k)}$ is a uniformly Cauchy sequence on all of $RR^n$.
+  Then ${f * phi_k}$ is a Cauchy sequence in $C^oo (RR^n)$.
+  But $C^oo (RR^n)$ is a complete space, and so there is $h in C^oo (RR^n)$ for which $f * phi_k stretch(->)_(k -> oo) h$ in $C^oo (RR^n)$.
+  Then in particular, for every $x$ and every $alpha$ we have $(f * D^alpha phi_k)(x) = D^alpha (f * phi_k)(x) stretch(->)_(k -> oo) D^alpha h(x)$.
+
+  On the other hand, for every $alpha$ we have $D^alpha phi_k -> D^alpha g$ uniformly on all of $RR^n$, and so for every $x$
+  $
+    |(f * D^alpha phi_k)(x) - (f * D^alpha g)(x)| &<= integral_(RR^n) |f(x - y)| |D^alpha phi_k (y) - D^alpha g(y)| dif m_n (y) \
+    &<= norm(f)_1 norm(D^alpha phi_k - D^alpha g)_oo stretch(->)_(k -> oo) 0
+  $
+  and so $(f * D^alpha phi_k)(x) -> (f * D^alpha g)(x)$ for every $x$.
+  Hence for every $alpha$ we have $f * D^alpha g = D^alpha h$.
+  In particular, for $alpha = 0$ we get $f * g = h in C^oo (RR^n)$, and for every $alpha$ we get $D^alpha (f * g) = f * D^alpha g$.
+]
+
+Fix two multi-indices $alpha, beta$. Then for every $x, y in RR^n$
+$
+  D^beta (e_x e_y) &= sum_(gamma <= beta) c_(beta gamma) (D^(beta - gamma) e_x) (D^gamma e_y) \
+  &= sum_(gamma <= beta) c_(beta gamma) (i^(|beta| - |gamma|) x^(beta - gamma) e_x) (i^(|gamma|) y^gamma e_y) \
+  &= i^(|beta|) sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma e_(x + y)
+$
+and on the other hand
+$ D^beta (e_x e_y) = D^beta e_(x + y) = i^(|beta|) (x + y)^beta e_(x + y) $
+that is, for every $x, y in RR^n$ we got the equality
+$ (x + y)^beta e_(x + y) = sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma e_(x + y) $
+and if we evaluate both sides at $0$ we get the equality $(x + y)^beta = sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma$ for every $x, y in RR^n$.
+
+Then, using @conv-smooth, for every $x in RR^n$ we get
+$
+  abs(x^beta (D^alpha (f * g))(x)) &= abs(x^beta (f * D^alpha g)(x)) \
+  &= abs(x^beta integral_(RR^n) f(x - y) (D^alpha g)(y) dif m_n (y)) \
+  &= abs(integral_(RR^n) (x - y + y)^beta f(x - y) (D^alpha g)(y) dif m_n (y)) \
+  &= abs(sum_(gamma <= beta) c_(beta gamma) integral_(RR^n) (x - y)^(beta - gamma) f(x - y) y^gamma (D^alpha g)(y) dif m_n (y)) \
+  &<= sum_(gamma <= beta) |c_(beta gamma)| integral_(RR^n) abs((x - y)^(beta - gamma) f(x - y)) abs(y^gamma (D^alpha g)(y)) dif m_n (y) \
+  &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs((x - y)^(beta - gamma) f(x - y))^2 dif m_n (y))^(1\/2) \
+  &quad dot (integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2) \
+  &= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs(y^(beta - gamma) f(y))^2 dif m_n (y))^(1\/2) \
+  &quad dot (integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2)
+$
+Let $N$ be large enough that $integral_(RR^n) (1 + |y|^2)^(-2N) dif m_n (y) < oo$.
+Since $f, g in Sn$, the functions $y |-> y^gamma D^alpha g(y)$ and $y |-> y^(beta - gamma) f(y)$ are in $Sn$ for every $gamma <= beta$.
+Then there is $M$ for which $abs((1 + |y|^2)^N y^(beta - gamma) f(y)), abs((1 + |y|^2)^N y^gamma (D^alpha g)(y)) < M$ for every $y$.
+That is, for every $y$ we have $abs(y^gamma (D^alpha g)(y))^2 < M^2 (1 + |y|^2)^(-2N)$ and also $abs(y^(beta - gamma) f(y))^2 < M^2 (1 + |y|^2)^(-2N)$.
+Then for every $x in RR^n$ we get
+$
+  abs(x^beta (D^alpha (f * g))(x)) &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) M^2 (1 + |y|^2)^(-2N) dif m_n (y))^(1\/2) \
+  &quad dot (integral_(RR^n) M^2 (1 + |y|^2)^(-2N) dif m_n (y))^(1\/2) \
+  &= sum_(gamma <= beta) |c_(beta gamma)| M^2 integral_(RR^n) (1 + |y|^2)^(-2N) dif m_n (y) < oo
+$
+This shows that for all multi-indices $alpha, beta$, the function $x |-> x^beta D^alpha (f * g)(x)$ is bounded.
+Now if $P(x) = sum_beta d_beta x^beta$ is any polynomial, then for every $beta$ there is $M_beta > 0$ for which
+$ sup_(x in RR^n) abs(x^beta D^alpha (f * g)(x)) <= M_beta $
+and so
+$
+  sup_(x in RR^n) |P(x) D^alpha (f * g)(x)| &= sup_(x in RR^n) abs(sum_beta d_beta x^beta D^alpha (f * g)(x)) \
+  &<= sum_beta |d_beta| sup_(x in RR^n) abs(x^beta D^alpha (f * g)(x)) \
+  &<= sum_beta |d_beta| M_beta < oo
+$
+that is, $P dot D^alpha (f * g)$ is bounded for every $alpha$ and every $P$, and so $f * g in Sn$, as required.
+
+=
++ We need to show that for every $phi in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi) dif mu = integral_(RR^n) hat(mu) phi dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
+  We have
+  $ integral_(RR^n) integral_(RR^n) |phi(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi)_1 mu(RR^n) < oo $
+  and so by Fubini's theorem
+  $
+    integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif mu(t) dif m_n (x)
+  $
+  and so we get
+  $
+    integral_(RR^n) hat(phi) dif mu &= integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) \
+    &= integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi(x) dif m_n (x) \
+    &= integral_(RR^n) hat(mu)(x) phi(x) dif m_n (x)
+  $
+  as required.
+
++ We show that $hat(mu)$ is bounded. Indeed, for every $x$
+  $ |hat(mu)(x)| <= integral_(RR^n) |e^(-i x dot t)| dif mu(t) = integral_(RR^n) dif mu(t) = mu(RR^n) < oo $
+  as required.
+
++ We show that $hat(mu)$ is uniformly continuous.
+  We have $e^(i x dot t) - 1 stretch(->)_(x -> 0) 0$, and also $|e^(i x dot t) - 1| <= 2$ for every $x, t in RR^n$, and $2 in L^1 (mu)$ since $mu(RR^n) < oo$.
+  Then by the dominated convergence theorem we get
+  $ integral_(RR^n) |e^(i x dot t) - 1| dif mu(t) stretch(->)_(x -> 0) 0 $
+  Now let $epsilon > 0$. By what we saw, there is $delta > 0$ such that if $|x| < delta$ then $integral_(RR^n) |e^(i x dot t) - 1| dif mu(t) < epsilon$.
+  Then for every $a, b in RR^n$, if $|a - b| < delta$ we get
+  $
+    |hat(mu)(a) - hat(mu)(b)| <= integral_(RR^n) |e^(-i a dot t) - e^(-i b dot t)| dif mu(t) = integral_(RR^n) |e^(i (b - a) dot t) - 1| dif mu(t) < epsilon
+  $
+  and this shows that $hat(mu)$ is uniformly continuous, as required.
+
+=
+For every $phi in Sn$ define $u(phi) = (Lambda rho phi)(0)$.
+$rho$ is a continuous linear operator on $Sn$, and evaluation at $0$ is a continuous linear functional on $C(RR^n)$, and so $u$ is a continuous linear functional on $Sn$, that is, $u in cal(S)'_n$.
+For every $phi in Sn$ and every $x in RR^n$
+$
+  (u * phi)(x) = u(tau_x rho phi) = (Lambda rho tau_x rho phi)(0) = (Lambda tau_(-x) rho rho phi)(0) = (tau_(-x) Lambda phi)(0) = (Lambda phi)(x)
+$
+and so $Lambda phi = u * phi$ for every $phi in Sn$, as required.
