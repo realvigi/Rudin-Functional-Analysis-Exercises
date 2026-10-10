@@ -7,9 +7,11 @@
 //   =                          // Exercise 1 (empty heading = skipped)
 //   =                          // Exercise 2
 //   #statement[...]            // optional copy of the exercise text
-//   + ...                      // parts: (a), (b), ... nested i., ii., ...
-//   #claim[...] <my-claim>     // Claim 2.1, referenced by @my-claim
-//   #proof[...]                // ends with ∎
+//   #solution[                 // ends with ∎
+//     + ...                    // parts: (a), (b), ... nested i., ii., ...
+//     #claim[...] <my-claim>   // Claim 2.1, referenced by @my-claim
+//     #proof[...]              // ends with ∎
+//   ]
 
 #let page-style(body) = {
   set page(paper: "a4", margin: 2.5cm, numbering: "1")
@@ -74,9 +76,30 @@
 #let claim = _thm[Claim]
 #let lemma = _thm[Lemma]
 
-#let proof(body) = block(width: 100%, below: 1.2em)[
-  _Proof._ #body #h(1fr) $square$
+// When the body ends with a list, the mark goes inside the last item,
+// so it does not land alone on a line (or page) after the list.
+#let _append-qed(body) = {
+  let mark = [#h(1fr) $qed$]
+  if body.func() != [].func() or not body.has("children") { return body + mark }
+  let kids = body.children
+  while kids.len() > 0 and (kids.last() == [ ] or kids.last().func() == parbreak) {
+    kids = kids.slice(0, -1)
+  }
+  if kids.len() > 0 and kids.last().func() == enum.item {
+    let item = kids.last()
+    kids.at(-1) = enum.item(..if item.has("number") { (item.number,) }, _append-qed(item.body))
+    kids.join()
+  } else {
+    kids.join() + mark
+  }
+}
+
+#let _ending-with-qed(name) = body => block(width: 100%, below: 1.2em)[
+  #emph[#name.] #_append-qed(body)
 ]
+
+#let proof = _ending-with-qed[Proof]
+#let solution = _ending-with-qed[Solution]
 
 #let statement(body) = block(inset: (left: 1.5em), below: 1.2em, emph(body))
 
