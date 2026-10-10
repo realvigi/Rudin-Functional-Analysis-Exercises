@@ -65,15 +65,10 @@
 ]
 
 = <ex-3>
-#problem[
-  Suppose $f(x) = e^x$, $g(x) = e^x cos(e^x)$, on the real line. show that $g$ is a tempered distribution but not $f$.
-]
-#asdf[wadap][
-  wadap2
-]
-#solution[
-  + We show that $f$ is not a tempered distribution.
-
++ #problem[
+    Suppose $f(x) = e^x$ on the real line. Show that $f$ is not a tempered distribution.
+  ]
+  #solution[
     Let $psi in cal(D)(RR)$ such that $psi >= 0$ on all of $RR$, $psi = 0$ outside $(-1, 1)$ and $psi = 1$ on $(-1\/2, 1\/2)$.
     Let $alpha$ be a multi-index and $P$ a polynomial. Then for every $m$
     $
@@ -82,26 +77,36 @@
     $
     There is $t_0 > 0$ such that $|P|$ is increasing on $(t_0, oo)$, and so for every $m > t_0$ we get
     $
-      norm(P dot D^alpha (e^(-m) (tau_m psi)))_oo <= e^(-m) norm(D^alpha psi)_oo max_(x in [m-1, m+1]) |P(x)| <= norm(D^alpha psi)_oo e^(-m) |P(m + 1)| // FIX: original has = for the first relation, and P(m+1) without absolute value
+      norm(P dot D^alpha (e^(-m) (tau_m psi)))_oo <= e^(-m) norm(D^alpha psi)_oo max_(x in [m-1, m+1]) |P(x)| <= norm(D^alpha psi)_oo e^(-m) |P(m + 1)|
     $
-    and of course $e^(-m) |P(m + 1)| stretch(->)_(m -> oo) 0$. Then $P dot D^alpha (e^(-m) (tau_m psi)) stretch(->)_(m -> oo) 0$ uniformly on $RR$, and so $e^(-m) tau_m psi stretch(->)_(m -> oo) 0$ in $Sn$. // FIX: original has P(m+1) without absolute value
+    and of course $e^(-m) |P(m + 1)| stretch(->)_(m -> oo) 0$. Then $P dot D^alpha (e^(-m) (tau_m psi)) stretch(->)_(m -> oo) 0$ uniformly on $RR$, and so $e^(-m) tau_m psi stretch(->)_(m -> oo) 0$ in $cal(S)_1$.
 
-    On the other hand, putting $psi_m = e^(-m) tau_m psi$, for every $m$ we have // FIX: added; ψ_m is not defined in the original
+    On the other hand, putting $psi_m = e^(-m) tau_m psi$, for every $m$ we have
     $
       integral_(-oo)^oo e^x psi_m (x) dif x = integral_(-oo)^oo e^(x - m) psi(x - m) dif x = integral_(-oo)^oo e^x psi(x) dif x >= integral_(-1\/2)^(1\/2) e^x dif x > 0
     $
     and in particular it is impossible that $integral_(-oo)^oo f psi_m dif m_n -> 0$ as $m -> oo$, and so $f$ cannot be extended to a continuous functional on $Sn$, that is, $f$ is not a tempered distribution, as required.
+  ]
 
-  + Put $h(x) = sin(e^x)$. Let $h'$ be the ordinary derivative of $h$, and $D h$ the distributional derivative of $h$.
++ #problem[
+    Suppose $g(x) = e^x cos(e^x)$ on the real line. Show that $g$ is a tempered distribution.
+  ]
+  #solution[
+
+    Put $h(x) = sin(e^x)$. Let $h'$ be the ordinary derivative of $h$, and $D h$ the distributional derivative of $h$.
     $h'$ is continuous, and so by integration by parts, for every $phi in cal(D)(RR)$ we have
     $ D h(phi) = - integral_RR h phi' dif m_n = integral_RR h' phi dif m_n $
     that is, $D h = h'$ as distributions.
     On the other hand, a simple computation shows that $g = h'$. Hence $g = D h$ as a distribution.
 
     $h$ is a bounded function, and so it is a tempered distribution. A derivative of a tempered distribution is itself a tempered distribution, and so $g$ is a tempered distribution, as required.
-]
+  ]
 
 =
+#problem[
+  By Exercise 3 there exist distributions in #Rn which are not tempered.
+  Such distributions are continuous linear functionals on $cal(D)(Rn)$, which have no continuous linear extension to #Sn. Explain why this does not contradict the Hahn-Banach theorem.
+]
 #solution[
   The Hahn–Banach theorem states that if $X$ is a locally convex topological vector space, $M subset.eq X$ is a subspace of $X$, and $f$ is a continuous linear functional on $M$ with respect to the subspace topology it inherits from $X$, then there is $Lambda in X^*$ which extends $f$.
 
@@ -110,47 +115,56 @@
 ]
 
 =
-#solution[
-  // FIX: original has D(R) and "on all of R"
-  + Let $psi in cal(D)(RR^n)$ such that $psi >= 0$ on all of $RR^n$, $psi = 0$ outside $overline(B(0, 1))$ and $psi > 1$ on $B(0, 1)$. // TODO: ψ > 1 on B(0,1) contradicts continuity with ψ = 0 outside the closed ball; probably ψ > 0?
++ #problem[
+    Contruct a sequence in $cal(D)(Rn)$ which converges to 0 in the topology of #Sn but not in that of $cal(D)(Rn)$
+  ]
+  #solution[
+    Let $psi in cal(D)(RR^n)$ such that $psi >= 0$ on all of $RR^n$, $psi = 0$ outside $overline(B(0, 1))$ and $psi > 0$ on $B(0, 1)$.
     Put $psi_m = e^(-m) psi(x - m e_1)$. Then for every $m$, the support of $psi_m$ is $overline(B(m e_1, 1))$, and so there is no compact set which contains the support of $psi_m$ for every $m$.
     Hence ${psi_m}$ does not converge in $cal(D)(RR^n)$.
 
     Let $alpha$ be a multi-index and $P$ a polynomial. Then for every $m$
     $
       norm(P dot D^alpha psi_m)_oo & = e^(-m) max_(x in B(m e_1, 1)) |P(x) D^alpha psi(x - m e_1)| \
-      // FIX: original has B(m, 1) here and in the next line
                                    & <= e^(-m) norm(D^alpha psi)_oo max_(x in B(m e_1, 1)) |P(x)| stretch(->)_(m -> oo) 0
     $
-    and so $P dot D^alpha psi_m stretch(->)_(m -> oo) 0$ uniformly on $RR^n$. // FIX: original has P·D^α(e^(-m)(τ_m ψ)) and "uniformly on R"
-    Since $alpha, P$ are arbitrary we get $psi_m stretch(->)_(m -> oo) 0$ in $Sn$, as required. // FIX: original has e^(-m) τ_m ψ instead of ψ_m
+    and so $P dot D^alpha psi_m stretch(->)_(m -> oo) 0$ uniformly on $RR^n$.
+    Since $alpha, P$ are arbitrary we get $psi_m stretch(->)_(m -> oo) 0$ in $Sn$, as required.
+  ]
 
-  + For every $m$ define $P_m (x) = sum_(j=1)^m (j!)^(-1) x^j$. Then $P_m stretch(->)_(m -> oo) exp$ uniformly on compact subsets of $RR$. // TODO: sum should start at j = 0 to converge to exp
++ #problem[
+    Contruct a sequence of polynomials which converges in the topology of $cal(D)'(RR)$ but not in that of $cal(S)'_1$
+  ]
+  #solution[
+    For every $m$ define $P_m (x) = sum_(j=0)^m (j!)^(-1) x^j$. Then $P_m stretch(->)_(m -> oo) exp$ uniformly on compact subsets of $RR$.
     Then for every $phi in cal(D)(RR)$, if $K$ is the support of $phi$, we get
     $
-      integral_RR P_m phi dif m_n = integral_K P_m phi dif m_n stretch(->)_(m -> oo) integral_K e^x phi(x) dif m_n (x) = integral_RR e^x phi(x) dif m_n (x)
+      integral_RR P_m phi dif m_1 = integral_K P_m phi dif m_1 stretch(->)_(m -> oo) integral_K e^x phi(x) dif m_1 (x) = integral_RR e^x phi(x) dif m_1 (x)
     $
     and so $P_m -> exp$ in $cal(D)'(RR)$, as required.
 
-    On the other hand, if by contradiction there is $u in cal(S)'_1$ such that $P_m -> u$ in $cal(S)'_1$, then in particular for every $phi in cal(D)(RR)$ we have $integral_RR P_m phi dif m_n -> u(phi)$, but then by what we saw we get
-    $ u(phi) = integral_RR e^x phi(x) dif m_n (x) $
-    for every $phi in cal(D)(RR)$, and we already saw in @ex-3 that the distribution $phi |-> integral_RR e^x phi(x) dif m_n (x)$ cannot be extended to $cal(S)_1$, so we got a contradiction.
+    On the other hand, if there is $u in cal(S)'_1$ such that $P_m -> u$ in $cal(S)'_1$, then in particular for every $phi in cal(D)(RR)$ we have $integral_RR P_m phi dif m_1 -> u(phi)$, but then by what we saw we get
+    $ u(phi) = integral_RR e^x phi(x) dif m_1 (x) $
+    for every $phi in cal(D)(RR)$, and we already saw in @ex-3 that the distribution $phi |-> integral_RR e^x phi(x) dif m_1 (x)$ cannot be extended to $cal(S)_1$, so we got a contradiction.
     Hence $P_m$ does not converge in $cal(S)'_1$, as required.
-]
+  ]
 
 =
+#problem[
+  Prove taht the operations listed in Theorem 7.13 are _continuous_ mapping of $Sn'$ into $Sn'$.
+]
 #solution[
   Let $alpha$ be a multi-index, $P$ a polynomial and $g in Sn$.
   It is clear that the maps $u |-> D^alpha u$, $u |-> P u$, $u |-> g u$ are all linear maps from $cal(S)'_n$ to itself.
   So in order to show that they are continuous, it suffices to show continuity at $0$.
 
   Let $V$ be a neighborhood of $0$ in $cal(S)'_n$. Then there are $f_1, ..., f_m in Sn$ and $epsilon > 0$ for which
-  $ inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V $ // FIX: original writes S' (without n) in all the sets of this exercise
+  $ inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V. $
   Put
   $
     U_1 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(D^alpha f_j)| < epsilon} \
     U_2 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(P f_j)| < epsilon} \
-    U_3 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(g f_j)| < epsilon}
+    U_3 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(g f_j)| < epsilon}.
   $
   Then $U_1, U_2, U_3$ are neighborhoods of $0$ in $cal(S)'_n$, and
   $
@@ -167,6 +181,10 @@
 ]
 
 =
+#problem[
+  if $u in Sn'$, prove that
+  $ hat(tau_x u) = e_(-x) hat(u) "  and  " hat(e_x u) = tau_x hat(u) $
+]
 #solution[
   Denote by $Phi$ the Fourier transform on $Sn$, and by $rho$ the reflection operator.
   Fix $x in RR^n$. Then for every $phi in Sn$
@@ -184,6 +202,9 @@
 ]
 
 =
+#problem[
+  Suppose $f in L^1(Rn)$, $f != 0$, $lambda$ is a complex number, and $hat(f) = lambda f$. What can you say about $lambda$?
+]
 #solution[
   Denote by $Phi$ the Fourier transform on $cal(S)'_n$.
   Since $f in L^1 (RR^n)$, $hat(f) = lambda f$, and $hat(f) = Phi f$ in the distributional sense, we get $Phi^k f in L^1 (RR^n)$ for every $k$, and also $Phi^k f = lambda^k f$ for every $k$.
@@ -194,6 +215,9 @@
 ]
 
 =
+#problem[
+  Prove (a) of Theorem 7.8 directly (without using Fourier transform).
+]
 #solution[
   Let $f, g in Sn$.
 
@@ -205,7 +229,7 @@
     Then for every $k, j$ and every $alpha$ we get
     $
       norm(D^alpha (f * phi_k) - D^alpha (f * phi_j))_oo &<= sup_(x in RR^n) integral_(RR^n) |f(x - y)| |D^alpha phi_k (y) - D^alpha phi_j (y)| dif m_n (y) \
-      &<= norm(f)_1 norm(D^alpha phi_k - D^alpha phi_j)_oo // FIX: original has ‖D^α φ_k(y) − D^α φ_j(y)‖_∞
+      &<= norm(f)_1 norm(D^alpha phi_k - D^alpha phi_j)_oo.
     $
     Since $f in Sn$ we have $norm(f)_1 < oo$, and so since ${D^alpha phi_k}$ is uniformly Cauchy on all of $RR^n$, we get that ${D^alpha (f * phi_k)}$ is a uniformly Cauchy sequence on all of $RR^n$.
     Then ${f * phi_k}$ is a Cauchy sequence in $C^oo (RR^n)$.
@@ -234,26 +258,23 @@
   $ (x + y)^beta e_(x + y) = sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma e_(x + y) $
   and if we evaluate both sides at $0$ we get the equality $(x + y)^beta = sum_(gamma <= beta) c_(beta gamma) x^(beta - gamma) y^gamma$ for every $x, y in RR^n$.
 
-  Then, using @conv-smooth, for every $x in RR^n$ we get // FIX: original says "for every x ∈ R^n and every k"
+  Then, using @conv-smooth, for every $x in RR^n$ we get
   $
     abs(x^beta (D^alpha (f * g))(x)) &= abs(x^beta (f * D^alpha g)(x)) \
     &= abs(x^beta integral_(RR^n) f(x - y) (D^alpha g)(y) dif m_n (y)) \
     &= abs(integral_(RR^n) (x - y + y)^beta f(x - y) (D^alpha g)(y) dif m_n (y)) \
     &= abs(sum_(gamma <= beta) c_(beta gamma) integral_(RR^n) (x - y)^(beta - gamma) f(x - y) y^gamma (D^alpha g)(y) dif m_n (y)) \
     &<= sum_(gamma <= beta) |c_(beta gamma)| integral_(RR^n) abs((x - y)^(beta - gamma) f(x - y)) abs(y^gamma (D^alpha g)(y)) dif m_n (y) \
-    &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs((x - y)^(beta - gamma) f(x - y))^2 dif m_n (y))^(1\/2) \
-    &quad dot (integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2) \
-    &= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs(y^(beta - gamma) f(y))^2 dif m_n (y))^(1\/2) \
-    &quad dot (integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2)
+    &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs((x - y)^(beta - gamma) f(x - y))^2 dif m_n (y))^(1\/2)(integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2) \
+    &= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs(y^(beta - gamma) f(y))^2 dif m_n (y))^(1\/2)(integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2)
   $
   Let $N$ be large enough that $integral_(RR^n) (1 + abs(y)^2)^(-2N) dif m_n (y) < oo$.
   Since $f, g in Sn$, the functions $y |-> y^gamma D^alpha g(y)$ and $y |-> y^(beta - gamma) f(y)$ are in $Sn$ for every $gamma <= beta$.
   Then there is $M$ for which $abs((1 + abs(y)^2)^N y^(beta - gamma) f(y)), abs((1 + abs(y)^2)^N y^gamma (D^alpha g)(y)) < M$ for every $y$.
   That is, for every $y$ we have $abs(y^gamma (D^alpha g)(y))^2 < M^2 (1 + abs(y)^2)^(-2N)$ and also $abs(y^(beta - gamma) f(y))^2 < M^2 (1 + abs(y)^2)^(-2N)$.
-  Then for every $x in RR^n$ we get // FIX: original says "for every x ∈ R^n and every k"
+  Then for every $x in RR^n$ we get
   $
-    abs(x^beta (D^alpha (f * g))(x)) &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
-    &quad dot (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
+    abs(x^beta (D^alpha (f * g))(x)) &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2)(integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
     &= sum_(gamma <= beta) |c_(beta gamma)| M^2 integral_(RR^n) (1 + abs(y)^2)^(-2N) dif m_n (y) < oo
   $
   This shows that for all multi-indices $alpha, beta$, the function $x |-> x^beta D^alpha (f * g)(x)$ is bounded.
@@ -269,13 +290,19 @@
 ]
 
 = <ex-10>
-#solution[
-  + We need to show that for every $phi in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi) dif mu = integral_(RR^n) hat(mu) phi dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
+The Fourier transform of a complex Borel measure $mu$ on #Rn is customarily defined to be the function $hat(mu)$ given by
+$ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
++ #problem[
+    Of course, $mu$ is also tempered distribution, and as such its Fourier transform was defined in section 7.14.
+    Show that these two definitions are consistent.
+  ]
+  #solution[
+    We need to show that for every $phi in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi) dif mu = integral_(RR^n) hat(mu) phi dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
     We have
     $ integral_(RR^n) integral_(RR^n) |phi(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi)_1 mu(RR^n) < oo $
     and so by Fubini's theorem
     $
-      integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif mu(t) dif m_n (x) // FIX: original has an absolute value on the left-hand integrand
+      integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif mu(t) dif m_n (x)
     $
     and so we get
     $
@@ -284,12 +311,22 @@
                                       & = integral_(RR^n) hat(mu)(x) phi(x) dif m_n (x)
     $
     as required.
+  ]
 
-  + We show that $hat(mu)$ is bounded. Indeed, for every $x$
++ #problem[
+    Prove that each $hat(mu)$ is bounded.
+  ]
+  #solution[
+    We show that $hat(mu)$ is bounded. Indeed, for every $x$
     $ |hat(mu)(x)| <= integral_(RR^n) |e^(-i x dot t)| dif mu(t) = integral_(RR^n) dif mu(t) = mu(RR^n) < oo $
     as required.
+  ]
 
-  + We show that $hat(mu)$ is uniformly continuous.
++ #problem[
+    Prove that each $hat(mu)$ is uniformly continuous.
+  ]
+  #solution[
+    We show that $hat(mu)$ is uniformly continuous.
     We have $e^(i x dot t) - 1 stretch(->)_(x -> 0) 0$, and also $|e^(i x dot t) - 1| <= 2$ for every $x, t in RR^n$, and $2 in L^1 (mu)$ since $mu(RR^n) < oo$.
     Then by the dominated convergence theorem we get
     $ integral_(RR^n) |e^(i x dot t) - 1| dif mu(t) stretch(->)_(x -> 0) 0 $
@@ -299,9 +336,15 @@
       |hat(mu)(a) - hat(mu)(b)| <= integral_(RR^n) |e^(-i a dot t) - e^(-i b dot t)| dif mu(t) = integral_(RR^n) |e^(i (b - a) dot t) - 1| dif mu(t) < epsilon
     $
     and this shows that $hat(mu)$ is uniformly continuous, as required.
-]
+  ]
 
 =
+#problem[
+  Suppose $Lambda: Sn -> C(Rn)$ is continuous, linear, and $tau_x Lambda = Lambda tau_x$ for every $x in Rn$.
+  Does it follow that there exists $u in Sn'$ such that
+  $ Lambda phi.alt = u * phi.alt $
+  for every $phi.alt in Sn$?
+]
 #solution[
   For every $phi in Sn$ define $u(phi) = (Lambda rho phi)(0)$.
   $rho$ is a continuous linear operator on $Sn$, and evaluation at $0$ is a continuous linear functional on $C(RR^n)$, and so $u$ is a continuous linear functional on $Sn$, that is, $u in cal(S)'_n$.
