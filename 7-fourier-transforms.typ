@@ -718,3 +718,170 @@ Replacing $F$ by the suggestion from the exercise will not work, since then we w
 
 One could hope that the proof still works, if we were able to show that $integral_(RR^n) y_i^(2r) abs(hat(F)(y))^2 dif m_n (y) < oo$, but this is impossible, since if that were the case then $hat(D_i^r F) in L^2 (RR^n)$, and then by Plancherel's theorem we would get $D_i^r F in L^2 (RR^n)$, in contradiction to what we just said.
 That is, $integral_(RR^n) y_i^(2r) abs(hat(F)(y))^2 dif m_n (y) = oo$, and this ruins the entire proof.
+
+=
+Let $r >= 0$ be an integer.
+Let $f$ be a function on an open set $Omega subset.eq RR^n$ such that for every $1 <= i <= n$ and $0 <= k <= r$, the distributional derivative $D_i^k f$ is a locally $L^2$ function in $Omega$.
+Fix a multi-index $alpha$ with $|alpha| <= r$.
+Let $omega$ be an open set whose closure $K$ is compact and contained in $Omega$.
+Take $psi in cal(D)(Omega)$ with $psi = 1$ on $K$, and define $F = psi f$ on $Omega$, and $F = 0$ outside $Omega$.
+In the proof of Sobolev's lemma, we saw that
+$ integral_(RR^n) (1 + abs(x))^(2r) abs(hat(F)(x))^2 dif m_n (x) < oo $
+and so we get
+$
+  integral_(RR^n) abs(x^alpha hat(F)(x))^2 dif m_n &<= integral_(RR^n) abs(x)^(2|alpha|) abs(hat(F)(x))^2 dif m_n <= integral_(RR^n) (1 + abs(x))^(2|alpha|) abs(hat(F)(x))^2 dif m_n \
+  &<= integral_(RR^n) (1 + abs(x))^(2r) abs(hat(F)(x))^2 dif m_n < oo
+$
+That is, if we put $P(x) = x^alpha$, then we proved that $P hat(F) in L^2 (RR^n)$.
+But $P hat(F) = hat(P(D) F)$, and so $hat(D_alpha F) in L^2 (RR^n)$, and so $hat(D^alpha F) in L^2 (RR^n)$.
+By Plancherel's theorem we now get $D^alpha F in L^2 (RR^n)$.
+Since $F = f$ on $omega$, we have $D^alpha F = D^alpha f$ on $omega$ in the distributional sense (that is, $D^alpha F(phi) = D^alpha f(phi)$ for every $phi in cal(D)(omega)$).
+So in fact we showed that for every open $omega$ for which $overline(omega)$ is compact and $overline(omega) subset.eq Omega$, there is a function $g_omega in L^2 (RR^n)$ for which $g_omega = D^alpha f$ on $omega$.
+
+Suppose $omega, omega'$ are two such sets with $omega inter omega' != emptyset$. Then for every $phi in cal(D)(omega inter omega')$
+$ g_omega (phi) = D^alpha f(phi) = g_(omega') (phi) $
+that is, for every $phi in cal(D)(omega inter omega')$
+$ integral_(RR^n) g_omega phi dif m_n = integral_(RR^n) g_(omega') phi dif m_n $
+and so $g_omega = g_(omega')$ on $omega inter omega'$.
+
+Now for every $x in Omega$ fix some $r_x > 0$ for which $overline(B(x, r_x)) subset.eq Omega$, and put $omega_x = B(x, r_x)$.
+Define $g(x) = g_(omega_x) (x)$.
+For every $x in Omega$ and every $y in omega_x$ we have $y in omega_y inter omega_x$, and so $g_(omega_x) (y) = g_(omega_y) (y) = g(y)$.
+This proves that $g = g_(omega_x)$ on $omega_x$ for every $x in Omega$.
+Let $K subset.eq Omega$ be any compact set. By compactness, there is a finite set $F subset.eq K$ for which $K subset.eq union.big_(x in F) omega_x$. Then we get
+$
+  integral_K |g|^2 dif m_n <= sum_(x in F) integral_(omega_x) |g|^2 dif m_n <= sum_(x in F) integral_(RR^n) abs(g_(omega_x))^2 dif m_n < oo
+$
+where in the last step we used the finiteness of $F$ and the fact that $g_(omega_x) in L^2 (RR^n)$ for every $x in Omega$.
+This shows that $g$ is locally $L^2$ in $Omega$.
+
+It remains to show that $g = D^alpha f$.
+Let $phi in cal(D)(Omega)$. Let $K$ be the support of $phi$, and as before take a finite $F subset.eq K$ for which $K subset.eq union.big_(x in F) omega_x$.
+Then ${omega_x : x in F} union {RR^n without K}$ is an open cover of $RR^n$.
+Let ${psi_m}$ be a locally finite partition of unity subordinate to the above cover.
+Fix $m$ for a moment. If the support of $psi_m$ is contained in $RR^n without K$, then $psi_m phi = 0$, and so
+$ integral_(RR^n) g psi_m phi dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n $
+Otherwise, there is $x in F$ for which the support of $psi_m$ is contained in $omega_x$, and since $D^alpha f = g_(omega_x)$ on $omega_x$ in the distributional sense, and $g = g_(omega_x)$ on $omega_x$, we get
+$
+  integral_(RR^n) g psi_m phi dif m_n &= integral_(omega_x) g psi_m phi dif m_n = integral_(omega_x) g_(omega_x) psi_m phi dif m_n = (-1)^(|alpha|) integral_(omega_x) f D^alpha (psi_m phi) dif m_n \
+  &= (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n
+$
+That is, in any case
+$ integral_(RR^n) g psi_m phi dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n $
+for every $m$, and so we get
+$
+  integral_(RR^n) g phi dif m_n &= sum_m integral_(RR^n) g psi_m phi dif m_n = sum_m (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n \
+  &= (-1)^(|alpha|) integral_(RR^n) f D^alpha (sum_m psi_m phi) dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha phi dif m_n
+$
+So we got that for every $phi in cal(D)(Omega)$
+$ integral_(RR^n) g phi dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha phi dif m_n $
+and so $g = D^alpha f$, as required.
+
+=
+Put $g(y) = (1 + abs(y))^(-4) (log(2 + abs(y)))^(-1)$. Then
+$
+  integral_(RR^2) |g|^2 dif m_n &= integral_(RR^2) (1 / ((1 + abs(y))^4 log(2 + abs(y))))^2 dif m_n (y) \
+  &<= (1 / (log 2))^2 integral_(RR^2) 1 / (1 + abs(y))^8 dif m_n (y) \
+  &= 1 / (2 pi) (1 / (log 2))^2 integral_0^oo integral_0^(2 pi) r / (1 + r)^8 dif theta dif r \
+  &<= (1 / (log 2))^2 integral_0^oo r / (1 + r)^8 dif r < oo
+$
+and so $g in L^2 (RR^2)$. So $Phi^4 g = g$ (where $Phi$ is the Fourier transform).
+On the other hand
+$
+  integral_(RR^2) |g| dif m_n &= integral_(RR^2) 1 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+  &<= 1 / (log(2)) integral_(RR^2) 1 / (1 + abs(y))^4 dif m_n (y) \
+  &= 1 / (2 pi) 1 / (log 2) integral_0^oo integral_0^(2 pi) r / (1 + r)^4 dif theta dif r \
+  &= 1 / (log 2) integral_0^oo r / (1 + r)^4 dif r < oo
+$
+and so $g in L^1 (RR^2)$, and so also $rho g in L^1 (RR^2)$.
+But $Phi^3 g = Phi rho g$, and the Fourier transform of a function in $L^1 (RR^2)$ is always continuous, and so we get that $Phi^3 g$ is continuous.
+Put $f = Phi^3 g$. Then $hat(f) = hat(Phi^3 g) = Phi^4 g = g$. Also, by what we saw, $f in L^2 (RR^2)$ and $f$ is continuous.
+We have
+$
+  integral_(RR^2) abs(abs(y)^3 hat(f)(y))^2 dif m_n (y) &= integral_(RR^2) abs(y)^6 (1 / ((1 + abs(y))^4 log(2 + abs(y))))^2 dif m_n (y) \
+  &= integral_(RR^2) abs(y)^6 / ((1 + abs(y))^8 log^2 (2 + abs(y))) dif m_n (y) \
+  &= 1 / (2 pi) integral_0^(2 pi) integral_0^oo r r^6 / ((1 + r)^8 log^2 (2 + r)) dif r dif theta \
+  &= integral_0^oo r^7 / ((1 + r)^8 log^2 (2 + r)) dif r \
+  &<= integral_0^1 r^7 / ((1 + r)^8 log^2 (2 + r)) dif r + integral_1^oo 1 / (r log^2 (2 + r)) dif r
+$
+and
+$ integral_0^1 r^7 / ((1 + r)^8 log^2 (2 + r)) dif r < oo $
+since the integrand is continuous on $[0, 1]$.
+Also, by the change of variables $s = log(2 + r)$ we get
+$
+  integral_1^oo 1 / (r log^2 (2 + r)) dif r &= integral_1^oo (2 + r) / (r log^2 (2 + r)) (dif r) / (2 + r) = integral_(log 3)^oo e^s / ((e^s - 2) s^2) dif s \
+  &= integral_(log 3)^oo 1 / s^2 + 2 / ((e^s - 2) s^2) dif s <= integral_(log 3)^oo 3 / s^2 dif s < oo
+$
+and so altogether $integral_(RR^2) abs(abs(y)^3 hat(f)(y))^2 dif m_n (y) < oo$, that is, $y |-> abs(y)^3 hat(f)(y)$ is in $L^2 (RR^2)$.
+
+For $j = 1, 2$ put $P_j (y) = y_j$.
+For every $k, j$ we have the distributional equality $hat(D_j^k f) = i P_j^k hat(f)$.
+But $hat(f)$ is a function, and so $hat(D_i^k f)$ is also a function.
+Then for every $0 <= k <= 3$ and $1 <= i <= 2$
+$
+  integral_(RR^2) abs(hat(D_i^k f))^2 dif m_n &= integral_(RR^2) |P_i|^(2k) abs(hat(f))^2 dif m_n \
+  &<= integral_(B(0, 1)) |P_i|^(2k) abs(hat(f))^2 dif m_n + integral_(RR^2 without B(0, 1)) abs(y)^6 abs(hat(f)(y))^2 dif m_n (y) \
+  &<= integral_(B(0, 1)) |P_i|^(2k) abs(hat(f))^2 dif m_n + integral_(RR^2 without B(0, 1)) abs(abs(y)^3 hat(f)(y))^2 dif m_n (y) \
+  &< oo
+$
+That is, $hat(D_i^k f) in L^2 (RR^2)$ for every $1 <= i <= 2$ and $0 <= k <= 3$.
+Then by Plancherel's theorem, $D_i^k f in L^2 (RR^2)$ for every $1 <= i <= 2$ and $0 <= k <= 3$.
+Then by Sobolev's lemma we get $f in C^((1)) (RR^2)$, as required.
+
+Now we show that $f in.not C^((2)) (RR^2)$.
+From the definition of $f$ we get $f = Phi^3 g = rho Phi g$, and so for almost every $x$
+$ f(x) = Phi g(-x) = integral_(RR^2) e^(i x dot y) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) $
+For every $y in RR^2$ and $h in RR without {0}$ put $phi_h (y) = 2 h^(-2) (cos(h y_1) - 1)$.
+Then for every $h in RR without {0}$ we get
+$
+  (f(h, 0) + f(-h, 0) - 2 f(0, 0)) / h^2 &= integral_(RR^2) (e^(i h y_1) + e^(-i h y_1) - 2) / (h^2 (1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+  &= integral_(RR^2) (phi_h (y)) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y)
+$
+Also, by L'Hôpital's rule we get
+$
+  lim_(h -> 0) phi_h (y) = lim_(h -> 0) (-y_1 sin(h y_1)) / h = lim_(h -> 0) (-y_1^2 cos(h y_1)) = -y_1^2
+$
+for every $y in RR^2$.
+Also, for every $y in RR^2$ and $h in RR without {0}$ we have $cos(h y_1) - 1 <= 0$ and $h^2 > 0$, and so
+$ phi_h (y) = (2 (cos(h y_1) - 1)) / h^2 <= 0 $
+that is, $-phi_h >= 0$. Then by Fatou's lemma we get
+$
+  liminf_(h -> 0) integral_(RR^2) (-phi_h (y)) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) &>= integral_(RR^2) (liminf_(h -> 0) (-phi_h (y))) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+  &= integral_(RR^2) (lim_(h -> 0) (-phi_h (y))) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+  &= integral_(RR^2) y_1^2 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y)
+$
+By symmetry considerations (or by a simple change of variables)
+$
+  integral_(RR^2) y_1^2 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) = integral_(RR^2) y_2^2 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y)
+$
+and so
+$
+  integral_(RR^2) y_1^2 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) &= 1/2 integral_(RR^2) (y_1^2 + y_2^2) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+  &= 1/2 integral_(RR^2) abs(y)^2 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+  &= 1/2 dot 1 / (2 pi) integral_0^(2 pi) integral_0^oo r r^2 / ((1 + r)^4 log(2 + r)) dif r dif theta \
+  &= 1/2 integral_0^oo r^3 / ((1 + r)^4 log(2 + r)) dif r \
+  &>= 1/2 integral_1^oo 1 / (r log(2 + r)) dif r \
+  &= 1/2 integral_(log 3)^oo e^s / ((e^s - 2) s) dif s \
+  &= 1/2 (integral_(log 3)^oo 1 / s dif s + integral_(log 3)^oo 2 / ((e^s - 2) s) dif s) \
+  &>= 1/2 integral_(log 3)^oo 1 / s dif s = oo
+$
+and so altogether we got
+$
+  liminf_(h -> 0) integral_(RR^2) (-phi_h (y)) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) >= integral_(RR^2) y_1^2 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) = oo
+$
+and so
+$ integral_(RR^2) (-phi_h (y)) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) stretch(->)_(h -> 0) oo $
+and so
+$
+  (f(h, 0) + f(-h, 0) - 2 f(0, 0)) / h^2 = integral_(RR^2) (phi_h (y)) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) stretch(->)_(h -> 0) -oo
+$
+as required.
+
+Now if, by contradiction, $f in C^((2)) (RR^2)$, then L'Hôpital's rule gives
+$
+  lim_(h -> 0) (f(h, 0) + f(-h, 0) - 2 f(0, 0)) / h^2 &= lim_(h -> 0) (D_1 f(h, 0) + D_1 f(-h, 0) - 2 D_1 f(0, 0)) / (2 h) \
+  &= lim_(h -> 0) (D_1^2 f(h, 0) + D_1^2 f(-h, 0) - 2 D_1^2 f(0, 0)) / 2 \
+  &= (D_1^2 f(0, 0) + D_1^2 f(0, 0) - 2 D_1^2 f(0, 0)) / 2 = 0
+$
+in contradiction to what we just saw.
+So indeed $f in.not C^((2)) (RR^2)$, as required.
