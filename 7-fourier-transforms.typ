@@ -15,7 +15,7 @@ $
 and so we got $hat(g) = abs(det A)^(-1) hat(f) compose (A^(-1))^*$.
 
 =
-Put $Q(x) = 1 + |x|^2$, and for every $N$ put $p_N (f) = max_(|alpha| <= N) norm(Q^N D_alpha f)_oo$ and $V_N = {f in Sn : p_N (f) < N^(-1)}$.
+Put $Q(x) = 1 + abs(x)^2$, and for every $N$ put $p_N (f) = max_(|alpha| <= N) norm(Q^N D_alpha f)_oo$ and $V_N = {f in Sn : p_N (f) < N^(-1)}$.
 Then ${V_N}$ is a local base for the topology of $Sn$.
 
 Let $Phi : Sn -> Sn$ be the Fourier transform, and for every $N$ and every $f in Sn$ put $q_N (f) = sum_(j=0)^3 p_N (Phi^j f)$.
@@ -213,15 +213,15 @@ $
   &= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) abs(y^(beta - gamma) f(y))^2 dif m_n (y))^(1\/2) \
   &quad dot (integral_(RR^n) abs(y^gamma (D^alpha g)(y))^2 dif m_n (y))^(1\/2)
 $
-Let $N$ be large enough that $integral_(RR^n) (1 + |y|^2)^(-2N) dif m_n (y) < oo$.
+Let $N$ be large enough that $integral_(RR^n) (1 + abs(y)^2)^(-2N) dif m_n (y) < oo$.
 Since $f, g in Sn$, the functions $y |-> y^gamma D^alpha g(y)$ and $y |-> y^(beta - gamma) f(y)$ are in $Sn$ for every $gamma <= beta$.
-Then there is $M$ for which $abs((1 + |y|^2)^N y^(beta - gamma) f(y)), abs((1 + |y|^2)^N y^gamma (D^alpha g)(y)) < M$ for every $y$.
-That is, for every $y$ we have $abs(y^gamma (D^alpha g)(y))^2 < M^2 (1 + |y|^2)^(-2N)$ and also $abs(y^(beta - gamma) f(y))^2 < M^2 (1 + |y|^2)^(-2N)$.
+Then there is $M$ for which $abs((1 + abs(y)^2)^N y^(beta - gamma) f(y)), abs((1 + abs(y)^2)^N y^gamma (D^alpha g)(y)) < M$ for every $y$.
+That is, for every $y$ we have $abs(y^gamma (D^alpha g)(y))^2 < M^2 (1 + abs(y)^2)^(-2N)$ and also $abs(y^(beta - gamma) f(y))^2 < M^2 (1 + abs(y)^2)^(-2N)$.
 Then for every $x in RR^n$ we get
 $
-  abs(x^beta (D^alpha (f * g))(x)) &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) M^2 (1 + |y|^2)^(-2N) dif m_n (y))^(1\/2) \
-  &quad dot (integral_(RR^n) M^2 (1 + |y|^2)^(-2N) dif m_n (y))^(1\/2) \
-  &= sum_(gamma <= beta) |c_(beta gamma)| M^2 integral_(RR^n) (1 + |y|^2)^(-2N) dif m_n (y) < oo
+  abs(x^beta (D^alpha (f * g))(x)) &<= sum_(gamma <= beta) |c_(beta gamma)| (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
+  &quad dot (integral_(RR^n) M^2 (1 + abs(y)^2)^(-2N) dif m_n (y))^(1\/2) \
+  &= sum_(gamma <= beta) |c_(beta gamma)| M^2 integral_(RR^n) (1 + abs(y)^2)^(-2N) dif m_n (y) < oo
 $
 This shows that for all multi-indices $alpha, beta$, the function $x |-> x^beta D^alpha (f * g)(x)$ is bounded.
 Now if $P(x) = sum_beta d_beta x^beta$ is any polynomial, then for every $beta$ there is $M_beta > 0$ for which
@@ -258,8 +258,8 @@ that is, $P dot D^alpha (f * g)$ is bounded for every $alpha$ and every $P$, and
   We have $e^(i x dot t) - 1 stretch(->)_(x -> 0) 0$, and also $|e^(i x dot t) - 1| <= 2$ for every $x, t in RR^n$, and $2 in L^1 (mu)$ since $mu(RR^n) < oo$.
   Then by the dominated convergence theorem we get
   $ integral_(RR^n) |e^(i x dot t) - 1| dif mu(t) stretch(->)_(x -> 0) 0 $
-  Now let $epsilon > 0$. By what we saw, there is $delta > 0$ such that if $|x| < delta$ then $integral_(RR^n) |e^(i x dot t) - 1| dif mu(t) < epsilon$.
-  Then for every $a, b in RR^n$, if $|a - b| < delta$ we get
+  Now let $epsilon > 0$. By what we saw, there is $delta > 0$ such that if $abs(x) < delta$ then $integral_(RR^n) |e^(i x dot t) - 1| dif mu(t) < epsilon$.
+  Then for every $a, b in RR^n$, if $abs(a - b) < delta$ we get
   $
     |hat(mu)(a) - hat(mu)(b)| <= integral_(RR^n) |e^(-i a dot t) - e^(-i b dot t)| dif mu(t) = integral_(RR^n) |e^(i (b - a) dot t) - 1| dif mu(t) < epsilon
   $
@@ -273,3 +273,209 @@ $
   (u * phi)(x) = u(tau_x rho phi) = (Lambda rho tau_x rho phi)(0) = (Lambda tau_(-x) rho rho phi)(0) = (tau_(-x) Lambda phi)(0) = (Lambda phi)(x)
 $
 and so $Lambda phi = u * phi$ for every $phi in Sn$, as required.
+
+=
+#claim[For every $phi in Sn$ there is $C_phi > 0$ such that $norm(tau_y phi - phi)_oo <= C_phi abs(y)$ for every $y in RR^n$.] <lipschitz>
+#proof[
+  Let $phi in Sn$. Put $C = (sum_(i=1)^n norm(D^(e_i) phi)_oo^2)^(1\/2)$.
+  Fix $x, y in RR^n$. Put $g(t) = phi(x + t(y - x))$.
+  Then $g$ is continuously differentiable, and for every $t$
+  $
+    |g'(t)| &= |(y - x) dot nabla phi(t)| <= abs(y - x) |nabla phi(t)| = abs(y - x) (sum_(i=1)^n (D^(e_i) phi(t))^2)^(1\/2) \
+    &<= abs(y - x) (sum_(i=1)^n norm(D^(e_i) phi)_oo^2)^(1\/2) = C abs(y - x)
+  $
+  and so by the mean value theorem, there is $c in [0, 1]$ for which
+  $ |phi(y) - phi(x)| = |g(1) - g(0)| = |g'(c)| <= C abs(y - x) $
+  Since $x, y$ are arbitrary, we got that $|phi(y) - phi(x)| <= C abs(y - x)$ for every $x, y in RR^n$.
+]
+
+#claim[If ${h_j}$ is an approximate identity, then $h_j * phi -> phi$ in the topology of $Sn$ for every $phi in Sn$.] <approx-identity>
+#proof[
+  Let $phi in Sn$, and let $alpha, beta$ be multi-indices. For every $gamma$ put $Q_gamma (x) = x^gamma$.
+  For every $gamma <= beta$ and every $j$ put
+  $ f_(j, gamma) (x) = integral_(RR^n) y^(beta - gamma) h_j (y) (x - y)^gamma D^alpha phi(x - y) dif m_n (y) $
+  Then for every $j$ and every $x$
+  $
+    x^beta D^alpha (h_j * phi)(x) - x^beta D^alpha phi(x) &= integral_(RR^n) (y + x - y)^beta h_j (y) D^alpha phi(x - y) dif m_n (y) - x^beta D^alpha phi(x) \
+    &= sum_(gamma <= beta) c_(beta gamma) integral_(RR^n) y^(beta - gamma) h_j (y) (x - y)^gamma D^alpha phi(x - y) dif m_n (y) - x^beta D^alpha phi(x) \
+    &= (sum_(gamma <= beta) c_(beta gamma) f_(j, gamma) (x)) - x^beta D^alpha phi(x)
+  $
+  and since $c_(beta beta) = 1$, for every $j$ we got the equality
+  $
+    Q_beta D^alpha (h_j * phi) - Q_beta D^alpha phi = (f_(j, beta) - x^beta D^alpha phi) + (sum_(gamma < beta) c_(beta gamma) f_(j, gamma))
+  $
+  Since $Q_beta D^alpha phi in Sn$, by @lipschitz we get
+  $
+    norm(f_(j, beta) - x^beta D^alpha phi)_oo &= sup_(x in RR^n) abs(integral_(RR^n) h_j (y) ((x - y)^beta D^alpha phi(x - y) - x^beta D^alpha phi(x)) dif m_n (y)) \
+    &<= sup_(x in RR^n) integral_(RR^n) h_j (y) |(tau_y (Q_beta D^alpha phi))(x) - (Q_beta D^alpha phi)(x)| dif m_n (y) \
+    &<= sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) norm(tau_y (Q_beta D^alpha phi) - Q_beta D^alpha phi)_oo dif m_n (y) \
+    &<= sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) C_(Q_beta D^alpha phi) abs(y) dif m_n (y) \
+    &<= C_(Q_beta D^alpha phi) j^(-1) sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) dif m_n (y) = C_(Q_beta D^alpha phi) j^(-1) stretch(->)_(j -> oo) 0
+  $
+  and so $f_(j, beta) - x^beta D^alpha phi -> 0$ uniformly on $RR^n$.
+
+  Also, for every $gamma < beta$ we have $|beta - gamma| >= 1$, and so
+  $
+    norm(f_(j, gamma))_oo &<= sup_(x in RR^n) integral_(RR^n) |y^(beta - gamma)| h_j (y) |(x - y)^gamma D^alpha phi(x - y)| dif m_n (y) \
+    &<= norm(Q_gamma D^alpha phi)_oo integral_(B(0, j^(-1))) |y^(beta - gamma)| h_j (y) dif m_n (y) \
+    &<= norm(Q_gamma D^alpha phi)_oo integral_(B(0, j^(-1))) abs(y)^(|beta - gamma|) h_j (y) dif m_n (y) \
+    &<= norm(Q_gamma D^alpha phi)_oo j^(-|beta - gamma|) integral_(B(0, j^(-1))) h_j (y) dif m_n (y) \
+    &= norm(Q_gamma D^alpha phi)_oo j^(-|beta - gamma|) stretch(->)_(j -> oo) 0
+  $
+  and so $f_(j, gamma) -> 0$ uniformly on all of $RR^n$.
+
+  This shows that $Q_beta D^alpha (h_j * phi) - Q_beta D^alpha phi -> 0$ uniformly on $RR^n$, that is, $Q_beta D^alpha (h_j * phi) -> Q_beta D^alpha phi$ uniformly on $RR^n$, for all multi-indices $alpha, beta$ and every $phi in Sn$.
+  This shows that for every $phi in Sn$, every multi-index $alpha$ and every polynomial $P$ we have $P D^alpha (h_j * phi) -> P D^alpha phi$ uniformly on $RR^n$.
+]
+
+But if ${h_j}$ is an approximate identity, then ${rho h_j}$ is also an approximate identity, and so by @approx-identity, for every $u in cal(S)'_n$ and every $phi in Sn$ we get
+$
+  (u * h_j)(phi) &= ((u * h_j) * rho phi)(0) = (u * (h_j * rho phi))(0) = u(rho (h_j * rho phi)) \
+  &= u((rho h_j) * phi) stretch(->)_(j -> oo) u(phi)
+$
+that is, $u * h_j -> u$ in the weak\* topology of $cal(S)'_n$, as required.
+
+=
+// TODO: in the first part, sequences and points are taken in X, but f is only defined on A; probably A was meant
++ Let ${x_n}$ be a Cauchy sequence in $X$.
+  Let $epsilon > 0$. Then there is $delta > 0$ such that for every $a, b in X$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
+  Since ${x_n}$ is a Cauchy sequence, there is $N$ such that $d(x_m, x_n) < delta$ for every $m, n >= N$.
+  Then $d(f(x_m), f(x_n)) < epsilon$ for every $m, n >= N$.
+  This shows that ${f(x_n)}$ is a Cauchy sequence in $Y$.
+  That is, we showed that the image of every Cauchy sequence in $X$ is a Cauchy sequence in $Y$. Since $Y$ is complete, we get that the image of a convergent sequence in $X$ is a convergent sequence in $Y$.
+
+  Now suppose ${a_n}, {b_n}$ are two sequences in $X$ which both converge to $x_0 in X$.
+  By what we saw, there are $y_1, y_2 in Y$ for which $f(a_n) -> y_1$ and $f(b_n) -> y_2$ in $Y$.
+  Let $epsilon > 0$. Then there is $N$ such that $d(y_1, f(a_n)), d(f(b_n), y_2) < epsilon$ for every $n > N$.
+  Also, there is $delta > 0$ such that for every $a, b in X$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
+  Since $a_n -> x_0$ and also $b_n -> x_0$, we have $d(a_n, b_n) -> 0$.
+  Then there is some $m > N$ for which $d(a_m, b_m) < delta$. Then we get
+  $
+    d(y_1, y_2) &<= d(y_1, f(a_m)) + d(f(a_m), f(b_m)) + d(f(b_m), y_2) \
+    &< epsilon + epsilon + epsilon = 3 epsilon
+  $
+  and since $epsilon$ is arbitrary we get $d(y_1, y_2) = 0$, that is, $y_1 = y_2$.
+  This shows that if two sequences converge to the same limit in $X$, then their images in $Y$ also converge to the same limit.
+
+  Now for $x in X$, take a sequence ${a_n}$ in $A$ for which $a_n -> x$, and define $F(x) = lim_(n -> oo) f(a_n)$.
+  By what we saw, the limit always exists, and it does not depend on the specific sequence we chose, but only on its limit, that is, only on $x$.
+  So $F(x)$ is well defined.
+  If $a in A$, then the constant sequence $a_n = a$ satisfies $a_n -> a$, and so we get $F(a) = lim_(n -> oo) f(a_n) = f(a)$. That is, $F$ extends $f$, as required.
+
+  Let $x_0 in X$ and $epsilon > 0$. Let $delta > 0$ such that if $d(a, b) < 3 delta$ then $d(f(a), f(b)) < epsilon$, for every $a, b in A$.
+  There is a sequence ${a_n}$ in $A$ for which $a_n -> x_0$ and $f(a_n) -> F(x_0)$.
+  In particular, there is $a_0 in A$ for which $d(F(x_0), f(a_0)) < epsilon$ and also $d(x_0, a_0) < delta$.
+  Let $x in X$ such that $d(x_0, x) < delta$.
+  Then again by the same argument, there is $a in A$ for which $d(x, a) < delta$ and $d(F(x), f(a)) < epsilon$.
+  Then
+  $ d(a_0, a) <= d(a_0, x_0) + d(x_0, x) + d(x, a) < 3 delta $
+  and so $d(f(a_0), f(a)) < epsilon$. Then
+  $
+    d(F(x_0), F(x)) &<= d(F(x_0), f(a_0)) + d(f(a_0), f(a)) + d(f(a), F(x)) \
+    &< 3 epsilon
+  $
+  That is, $F(x) in B_(3 epsilon) (F(x_0))$ for every $x in B_delta (x_0)$.
+  This completes the proof that $F$ is continuous.
+
+  Finally, we need to show that $F$ is the unique continuous extension of $f$ to all of $X$.
+  Let $G : X -> Y$ be continuous, with $G(a) = f(a)$ for every $a in A$. Let $x in X$. Then there is a sequence ${a_n}$ in $A$ for which $a_n -> x$.
+  By the continuity of $G$ we get $f(a_n) = G(a_n) -> G(x)$, but on the other hand $f(a_n) -> F(x)$ directly from the definition.
+  Then by the uniqueness of the limit in a metric space we get $F(x) = G(x)$.
+  So indeed $F = G$, as required.
+
++ Suppose $f : A -> Y$ is an isometry, and $F$ is the unique continuous extension of $f$ to $X$.
+
+  #claim[$d(F(x_1), F(x_2)) <= d(x_1, x_2)$ for every $x_1, x_2 in X$.] <extension-contraction>
+  #proof[
+    Let $x_1, x_2 in X$. Let $epsilon > 0$. By the continuity of $F$, there is $delta > 0$ for which $F(B_delta (x_i)) subset.eq B_epsilon (F(x_i))$ for $i = 1, 2$.
+    By the density of $A$, for $i = 1, 2$ there is $a_i in B_delta (x_i) inter B_epsilon (x_i)$.
+    Then $f(a_i) = F(a_i) in B_epsilon (F(x_i))$ for $i = 1, 2$. Also
+    $
+      d(a_1, a_2) &<= d(a_1, x_1) + d(x_1, x_2) + d(x_2, a_2) \
+      &< d(x_1, x_2) + 2 epsilon
+    $
+    Then we get
+    $
+      d(F(x_1), F(x_2)) &<= d(F(x_1), f(a_1)) + d(f(a_1), f(a_2)) + d(f(a_2), F(x_2)) \
+      &<= d(F(x_1), f(a_1)) + d(a_1, a_2) + d(f(a_2), F(x_2)) \
+      &< epsilon + d(x_1, x_2) + 2 epsilon + epsilon = d(x_1, x_2) + 4 epsilon
+    $
+    Since $epsilon$ is arbitrary, we get $d(F(x_1), F(x_2)) <= d(x_1, x_2)$.
+  ]
+
+  By the continuity of $F$ and the density of $A$ in $X$, $f(A)$ is dense in $F(X)$.
+  Also, $f^(-1)$ is an isometry from $f(A)$ to $X$.
+  Then there exists a unique continuous function $G : F(X) -> X$ for which $G(y) = f^(-1) (y)$ for every $y in f(A)$.
+  Let $x in X$ be arbitrary, and take a sequence ${a_n}$ in $A$ for which $a_n -> x$.
+  Then $F(a_n) -> F(x)$, and so
+  $ G(F(a_n)) -> G(F(x)) $
+  but on the other hand, for every $n$
+  $ G(F(a_n)) = G(f(a_n)) = f^(-1) (f(a_n)) = a_n $
+  and so $a_n -> G(F(x))$, and by the uniqueness of the limit we got $G(F(x)) = x$.
+  That is, $G compose F$ is the identity function.
+
+  Exactly the same argument as in the proof of @extension-contraction, applied to $f^(-1)$ and $G$, shows that $d(G(y_1), G(y_2)) <= d(y_1, y_2)$ for every $y_1, y_2 in F(X)$.
+  That is, for every $x_1, x_2 in X$
+  $ d(x_1, x_2) = d(G(F(x_1)), G(F(x_2))) <= d(F(x_1), F(x_2)) $
+  and so, together with @extension-contraction, for every $x_1, x_2 in X$
+  $ d(x_1, x_2) = d(F(x_1), F(x_2)) $
+  that is, $F$ is an isometry, as required.
+
+  Since $F : X -> F(X)$ is an isometry and $X$ is complete, $F(X)$ is also a complete metric space.
+  Then if ${y_n}$ is a sequence in $F(X)$ which converges to some $y in Y$, then in particular ${y_n}$ is a Cauchy sequence, and so it must converge in $F(X)$, that is, there is $y' in F(X)$ for which $y_n -> y'$ in $F(X)$, and so $y_n -> y'$ in $Y$, and so by the uniqueness of the limit $y = y' in F(X)$.
+  This shows that $F(X)$ is closed, as required.
+
+=
+Let $B$ be the closed unit ball in $RR^n$.
+By the Paley–Wiener theorem for distributions with compact support, we get that for every $epsilon > 0$ there is $u_epsilon in cal(D)'(RR^n)$ with compact support, whose support is contained in $epsilon B$, and such that $F(z) = u_epsilon (e_(-z))$ for every $z$.
+Then by the other direction of the same theorem, for every $epsilon > 0$ the restriction of $F$ to $RR^n$ is the Fourier transform of $u_epsilon$.
+Then in particular $hat(u_epsilon) = hat(u_(epsilon'))$ for every $epsilon, epsilon' > 0$, and since the Fourier transform is injective, $u_epsilon = u_(epsilon')$ for every $epsilon, epsilon' > 0$.
+Then there is $u in cal(D)'(RR^n)$ for which $u = u_epsilon$ for every $epsilon > 0$.
+Then the support of $u$ is contained in $epsilon B$ for every $epsilon > 0$, and so the support of $u$ is contained in ${0}$.
+Then there are a multi-index $alpha$ and scalars $c_beta$ for every $beta <= alpha$ such that $u = sum_(beta <= alpha) c_beta D^beta delta$.
+Also, we get $F(z) = u_1 (e_(-z)) = u(e_(-z))$ for every $z in CC^n$.
+Then for every $z in CC^n$
+$
+  F(z) &= sum_(beta <= alpha) c_beta D^beta delta(e_(-z)) = sum_(beta <= alpha) c_beta (-1)^(|beta|) delta(D^beta e_(-z)) \
+  &= sum_(beta <= alpha) c_beta (-1)^(|beta|) delta((-i)^(|beta|) z^beta e_(-z)) \
+  &= sum_(beta <= alpha) c_beta (-1)^(|beta|) (-i)^(|beta|) z^beta delta(e_(-z)) \
+  &= sum_(beta <= alpha) c_beta i^(|beta|) z^beta e_(-z) (0) = sum_(beta <= alpha) c_beta i^(|beta|) z^beta
+$
+that is, $F$ is indeed a polynomial, as required.
+
+=
+Fix $z = x + i y$.
+For every $s > 0$ and $lambda in CC$ define $g_s (lambda) = (1 - i s lambda)^(-N-1) e^(i r abs(y) lambda) f(x + lambda y)$. Then $g_s$ is entire in $CC$.
+Fix $s$.
+For every $A > 0$, let $Omega_A$ be the intersection of the open disc of radius $A$ in $CC$ with the upper half-plane.
+Then the boundary of $Omega_A$ is $[-A, A] union {A e^(i t) : 0 <= t <= pi}$.
+For $lambda in [-A, A]$ we have
+$
+  |g_s (lambda)| &= |1 - i s lambda|^(-N-1) |e^(i r abs(y) lambda)| |f(x + lambda y)| \
+  &<= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1
+$
+and also, for every $t in [0, pi]$ we have $sin t >= 0$, and so
+$
+  |exp(i r abs(y) A e^(i t))| |f(x + A e^(i t) y)| &<= e^(-r A abs(y) sin t) (1 + |x + A e^(i t) y|)^N e^(r A abs(y) abs(sin t)) \
+  &= (1 + |x + A e^(i t) y|)^N
+$
+and so for every $A$ for which $s A > 1$, and every $t in [0, pi]$
+$
+  |g_s (A e^(i t))| &= |1 - i s A e^(i t)|^(-N-1) |exp(i r abs(y) A e^(i t))| |f(x + A e^(i t) y)| \
+  &<= (1 + |x + A e^(i t) y|)^N / (|1 - i s A e^(i t)|^(N+1)) <= (1 + abs(x) + abs(y) A)^N / (s A - 1)^(N+1)
+$
+But
+$ (1 + abs(x) + abs(y) A)^N / (s A - 1)^(N+1) stretch(->)_(A -> oo) 0 $
+and so there is some $A_0 > max{s^(-1), 1}$ for which
+$ (1 + abs(x) + abs(y) A_0)^N / (s A_0 - 1)^(N+1) < 1 $
+and then we get $|g_s (A_0 e^(i t))| < 1$ for every $t in [0, pi]$.
+Then $|g_s| <= 1$ on the boundary of the domain $Omega_(A_0)$.
+$overline(Omega_(A_0))$ is compact, and so by the maximum principle $|g_s| <= 1$ in $Omega_(A_0)$.
+Since $A_0 > 1$, in particular $i in Omega_(A_0)$, and so $|g_s (i)| <= 1$. That is,
+$ |(1 + s)^(-N-1) e^(-r abs(y)) f(x + i y)| <= 1 $
+that is,
+$ |f(z)| <= (1 + s)^(N+1) e^(r abs(y)) $
+and since $s$ is arbitrary, the last inequality holds for every $s > 0$. But
+$ (1 + s)^(N+1) e^(r abs(y)) stretch(->)_(s -> 0) e^(r abs(y)) $
+and so we get $|f(z)| <= e^(r abs(y))$.
+Since $z$ is arbitrary, we get $|f(z)| <= e^(r |op("Im") z|)$ for every $z in CC^n$.
