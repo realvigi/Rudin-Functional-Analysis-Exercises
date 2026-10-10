@@ -2,27 +2,35 @@
 #show: pset.with(title: "Chapter 7 — Fourier Transforms")
 
 #let Sn = $cal(S)_n$
+#let Rn = $RR^n$
 
 =
+#problem[
+  Suppose $A$ is an invertible linear operator on #Rn, $f in L^1(Rn)$, and $g(x) = f(A x)$.
+  Express $hat(g)$ in terms of $hat(f)$. This generalized (d) of Theorem 7.2.
+]
 #solution[
   Using a change of variables we get
   $
-    hat(g)(t) &= integral_(RR^n) g e_(-t) dif m_n = integral_(RR^n) (f compose A) e_(-t) dif m_n \
-    &= abs(det A)^(-1) integral_(RR^n) f dot (e_(-t) compose A^(-1)) dif m_n \
-    &= abs(det A)^(-1) integral_(RR^n) f(x) e^(-i(t dot A^(-1) x)) dif m_n (x) \
-    &= abs(det A)^(-1) integral_(RR^n) f(x) e^(-i((A^(-1))^* t) dot x) dif m_n (x) \
-    &= abs(det A)^(-1) hat(f)((A^(-1))^* t)
+    hat(g)(t) & = integral_(RR^n) g e_(-t) dif m_n = integral_(RR^n) (f compose A) e_(-t) dif m_n \
+              & = 1/abs(det A) integral_(RR^n) f dot (e_(-t) compose A^(-1)) dif m_n \
+              & = 1/abs(det A) integral_(RR^n) f(x) e^(-i(t dot A^(-1) x)) dif m_n (x) \
+              & = 1/abs(det A) integral_(RR^n) f(x) e^(-i((A^(-1))^* t) dot x) dif m_n (x) \
+              & = 1/abs(det A) hat(f)((A^(-1))^* t)
   $
   and so we got $hat(g) = abs(det A)^(-1) hat(f) compose (A^(-1))^*$.
 ]
 
 =
+#problem[
+  Is the topology of #Sn induced by some invariant metric which turns the Fourier transform into an isometry of #Sn onto #Sn?
+]
 #solution[
   Put $Q(x) = 1 + abs(x)^2$, and for every $N$ put $p_N (f) = max_(|alpha| <= N) norm(Q^N D_alpha f)_oo$ and $V_N = {f in Sn : p_N (f) < N^(-1)}$.
   Then ${V_N}$ is a local base for the topology of $Sn$.
 
-  Let $Phi : Sn -> Sn$ be the Fourier transform, and for every $N$ and every $f in Sn$ put $q_N (f) = sum_(j=0)^3 p_N (Phi^j f)$. // FIX: original has f ∈ S_N
-  Note that $q_N$ is a seminorm on $Sn$, and satisfies $q_N (f) = q_N (hat(f))$ for every $f in Sn$. // FIX: original has f ∈ S_N
+  Let $Phi : Sn -> Sn$ be the Fourier transform, and for every $N$ and every $f in Sn$ put $q_N (f) = sum_(j=0)^3 p_N (Phi^j f)$.
+  Note that $q_N$ is a seminorm on $Sn$, and satisfies $q_N (f) = q_N (hat(f))$ for every $f in Sn$.
   Also, since the $p_N$ are continuous from $Sn$ to $RR$, and $Phi$ is continuous from $Sn$ to itself, we get that $q_N$ is continuous from $Sn$ to $RR$.
 
   For every $N$ put $W_N = {f in Sn : q_N (f) < N^(-1)}$. Then $W_N$ is open.
@@ -46,17 +54,23 @@
 
   Let ${c_N}$ be a sequence of positive numbers such that $c_N -> 0$ as $N -> oo$. Put
   $ d(f, g) = max_N (c_N q_N (f - g)) / (1 + q_N (f - g)). $
-  Then $d$ is a metric on $Sn$ which induces the same topology as the family of seminorms ${q_N}$, and so it induces the standard topology of $Sn$. // FIX: original says "norms"
+  Then $d$ is a metric on $Sn$ which induces the same topology as the family of seminorms ${q_N}$, and so it induces the standard topology of $Sn$.
   It is easy to see that $d$ is translation invariant. Also, for every $f, g$ we have
   $
-    d(hat(f), hat(g)) &= max_N (c_N q_N (hat(f) - hat(g))) / (1 + q_N (hat(f) - hat(g)))
-    = max_N (c_N q_N (hat(f - g))) / (1 + q_N (hat(f - g))) \
-    &= max_N (c_N q_N (f - g)) / (1 + q_N (f - g)) = d(f, g)
+    d(hat(f), hat(g)) & = max_N (c_N q_N (hat(f) - hat(g))) / (1 + q_N (hat(f) - hat(g)))
+                        = max_N (c_N q_N (hat(f - g))) / (1 + q_N (hat(f - g))) \
+                      & = max_N (c_N q_N (f - g)) / (1 + q_N (f - g)) = d(f, g)
   $
   and so we found a metric $d$ on $Sn$ which induces the standard topology, is translation invariant, and with respect to which the Fourier transform is an isometry, as required.
 ]
 
 = <ex-3>
+#problem[
+  Suppose $f(x) = e^x$, $g(x) = e^x cos(e^x)$, on the real line. show that $g$ is a tempered distribution but not $f$.
+]
+#asdf[wadap][
+  wadap2
+]
 #solution[
   + We show that $f$ is not a tempered distribution.
 
@@ -104,8 +118,9 @@
 
     Let $alpha$ be a multi-index and $P$ a polynomial. Then for every $m$
     $
-      norm(P dot D^alpha psi_m)_oo &= e^(-m) max_(x in B(m e_1, 1)) |P(x) D^alpha psi(x - m e_1)| \ // FIX: original has B(m, 1) here and in the next line
-      &<= e^(-m) norm(D^alpha psi)_oo max_(x in B(m e_1, 1)) |P(x)| stretch(->)_(m -> oo) 0
+      norm(P dot D^alpha psi_m)_oo & = e^(-m) max_(x in B(m e_1, 1)) |P(x) D^alpha psi(x - m e_1)| \
+      // FIX: original has B(m, 1) here and in the next line
+                                   & <= e^(-m) norm(D^alpha psi)_oo max_(x in B(m e_1, 1)) |P(x)| stretch(->)_(m -> oo) 0
     $
     and so $P dot D^alpha psi_m stretch(->)_(m -> oo) 0$ uniformly on $RR^n$. // FIX: original has P·D^α(e^(-m)(τ_m ψ)) and "uniformly on R"
     Since $alpha, P$ are arbitrary we get $psi_m stretch(->)_(m -> oo) 0$ in $Sn$, as required. // FIX: original has e^(-m) τ_m ψ instead of ψ_m
@@ -133,20 +148,20 @@
   $ inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V $ // FIX: original writes S' (without n) in all the sets of this exercise
   Put
   $
-    U_1 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(D^alpha f_j)| < epsilon} \
-    U_2 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(P f_j)| < epsilon} \
-    U_3 &= inter.big_(j=1)^m {u in cal(S)'_n : |u(g f_j)| < epsilon}
+    U_1 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(D^alpha f_j)| < epsilon} \
+    U_2 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(P f_j)| < epsilon} \
+    U_3 & = inter.big_(j=1)^m {u in cal(S)'_n : |u(g f_j)| < epsilon}
   $
   Then $U_1, U_2, U_3$ are neighborhoods of $0$ in $cal(S)'_n$, and
   $
-    {D^alpha u : u in U_1} &subset.eq inter.big_(j=1)^m {D^alpha u : u in cal(S)'_n, |u(D^alpha f_j)| < epsilon} \
-    &= inter.big_(j=1)^m {D^alpha u : u in cal(S)'_n, |D^alpha u(f_j)| < epsilon} subset.eq V \
-    {P u : u in U_2} &= inter.big_(j=1)^m {P u : u in cal(S)'_n, |u(P f_j)| < epsilon} \
-    &= inter.big_(j=1)^m {P u : u in cal(S)'_n, |(P u)(f_j)| < epsilon} \
-    &subset.eq inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V \
-    {g u : u in U_3} &= inter.big_(j=1)^m {g u : u in cal(S)'_n, |u(g f_j)| < epsilon} \
-    &= inter.big_(j=1)^m {g u : u in cal(S)'_n, |(g u)(f_j)| < epsilon} \
-    &subset.eq inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V
+    {D^alpha u : u in U_1} & subset.eq inter.big_(j=1)^m {D^alpha u : u in cal(S)'_n, |u(D^alpha f_j)| < epsilon} \
+                           & = inter.big_(j=1)^m {D^alpha u : u in cal(S)'_n, |D^alpha u(f_j)| < epsilon} subset.eq V \
+          {P u : u in U_2} & = inter.big_(j=1)^m {P u : u in cal(S)'_n, |u(P f_j)| < epsilon} \
+                           & = inter.big_(j=1)^m {P u : u in cal(S)'_n, |(P u)(f_j)| < epsilon} \
+                           & subset.eq inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V \
+          {g u : u in U_3} & = inter.big_(j=1)^m {g u : u in cal(S)'_n, |u(g f_j)| < epsilon} \
+                           & = inter.big_(j=1)^m {g u : u in cal(S)'_n, |(g u)(f_j)| < epsilon} \
+                           & subset.eq inter.big_(j=1)^m {u in cal(S)'_n : |u(f_j)| < epsilon} subset.eq V
   $
   which shows that the three maps above are indeed weak\*-continuous, as required.
 ]
@@ -156,8 +171,8 @@
   Denote by $Phi$ the Fourier transform on $Sn$, and by $rho$ the reflection operator.
   Fix $x in RR^n$. Then for every $phi in Sn$
   $
-    hat(tau_x u)(phi) &= (tau_x u)(Phi phi) = u(tau_(-x) Phi phi) = u(Phi^4 (tau_(-x) Phi phi)) = u(Phi^3 (e_x Phi^2 phi)) \
-    &= u(Phi rho (e_x rho phi)) = u(Phi (e_(-x) phi)) = hat(u)(e_(-x) phi) = (e_(-x) u)(phi)
+    hat(tau_x u)(phi) & = (tau_x u)(Phi phi) = u(tau_(-x) Phi phi) = u(Phi^4 (tau_(-x) Phi phi)) = u(Phi^3 (e_x Phi^2 phi)) \
+                      & = u(Phi rho (e_x rho phi)) = u(Phi (e_(-x) phi)) = hat(u)(e_(-x) phi) = (e_(-x) u)(phi)
   $
   and so $hat(tau_x u) = e_(-x) u$, as required.
 
@@ -246,9 +261,9 @@
   $ sup_(x in RR^n) abs(x^beta D^alpha (f * g)(x)) <= M_beta $
   and so
   $
-    sup_(x in RR^n) |P(x) D^alpha (f * g)(x)| &= sup_(x in RR^n) abs(sum_beta d_beta x^beta D^alpha (f * g)(x)) \
-    &<= sum_beta |d_beta| sup_(x in RR^n) abs(x^beta D^alpha (f * g)(x)) \
-    &<= sum_beta |d_beta| M_beta < oo
+    sup_(x in RR^n) |P(x) D^alpha (f * g)(x)| & = sup_(x in RR^n) abs(sum_beta d_beta x^beta D^alpha (f * g)(x)) \
+                                              & <= sum_beta |d_beta| sup_(x in RR^n) abs(x^beta D^alpha (f * g)(x)) \
+                                              & <= sum_beta |d_beta| M_beta < oo
   $
   that is, $P dot D^alpha (f * g)$ is bounded for every $alpha$ and every $P$, and so $f * g in Sn$, as required.
 ]
@@ -264,9 +279,9 @@
     $
     and so we get
     $
-      integral_(RR^n) hat(phi) dif mu &= integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) \
-      &= integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi(x) dif m_n (x) \
-      &= integral_(RR^n) hat(mu)(x) phi(x) dif m_n (x)
+      integral_(RR^n) hat(phi) dif mu & = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) \
+                                      & = integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi(x) dif m_n (x) \
+                                      & = integral_(RR^n) hat(mu)(x) phi(x) dif m_n (x)
     $
     as required.
 
@@ -355,8 +370,8 @@
 
   But if ${h_j}$ is an approximate identity, then ${rho h_j}$ is also an approximate identity, and so by @approx-identity, for every $u in cal(S)'_n$ and every $phi in Sn$ we get
   $
-    (u * h_j)(phi) &= ((u * h_j) * rho phi)(0) = (u * (h_j * rho phi))(0) = u(rho (h_j * rho phi)) \
-    &= u((rho h_j) * phi) stretch(->)_(j -> oo) u(phi)
+    (u * h_j)(phi) & = ((u * h_j) * rho phi)(0) = (u * (h_j * rho phi))(0) = u(rho (h_j * rho phi)) \
+                   & = u((rho h_j) * phi) stretch(->)_(j -> oo) u(phi)
   $
   that is, $u * h_j -> u$ in the weak\* topology of $cal(S)'_n$, as required.
 ]
@@ -378,8 +393,8 @@
     Since $a_n -> x_0$ and also $b_n -> x_0$, we have $d(a_n, b_n) -> 0$.
     Then there is some $m > N$ for which $d(a_m, b_m) < delta$. Then we get
     $
-      d(y_1, y_2) &<= d(y_1, f(a_m)) + d(f(a_m), f(b_m)) + d(f(b_m), y_2) \
-      &< epsilon + epsilon + epsilon = 3 epsilon
+      d(y_1, y_2) & <= d(y_1, f(a_m)) + d(f(a_m), f(b_m)) + d(f(b_m), y_2) \
+                  & < epsilon + epsilon + epsilon = 3 epsilon
     $
     and since $epsilon$ is arbitrary we get $d(y_1, y_2) = 0$, that is, $y_1 = y_2$.
     This shows that if two sequences converge to the same limit in $X$, then their images in $Y$ also converge to the same limit.
@@ -398,8 +413,8 @@
     $ d(a_0, a) <= d(a_0, x_0) + d(x_0, x) + d(x, a) < 3 delta $
     and so $d(f(a_0), f(a)) < epsilon$. Then
     $
-      d(F(x_0), F(x)) &<= d(F(x_0), f(a_0)) + d(f(a_0), f(a)) + d(f(a), F(x)) \
-      &< 3 epsilon
+      d(F(x_0), F(x)) & <= d(F(x_0), f(a_0)) + d(f(a_0), f(a)) + d(f(a), F(x)) \
+                      & < 3 epsilon
     $
     That is, $F(x) in B_(3 epsilon) (F(x_0))$ for every $x in B_delta (x_0)$.
     This completes the proof that $F$ is continuous.
@@ -418,14 +433,14 @@
       By the density of $A$, for $i = 1, 2$ there is $a_i in B_delta (x_i) inter B_epsilon (x_i)$.
       Then $f(a_i) = F(a_i) in B_epsilon (F(x_i))$ for $i = 1, 2$. Also
       $
-        d(a_1, a_2) &<= d(a_1, x_1) + d(x_1, x_2) + d(x_2, a_2) \
-        &< d(x_1, x_2) + 2 epsilon
+        d(a_1, a_2) & <= d(a_1, x_1) + d(x_1, x_2) + d(x_2, a_2) \
+                    & < d(x_1, x_2) + 2 epsilon
       $
       Then we get
       $
-        d(F(x_1), F(x_2)) &<= d(F(x_1), f(a_1)) + d(f(a_1), f(a_2)) + d(f(a_2), F(x_2)) \
-        &<= d(F(x_1), f(a_1)) + d(a_1, a_2) + d(f(a_2), F(x_2)) \
-        &< epsilon + d(x_1, x_2) + 2 epsilon + epsilon = d(x_1, x_2) + 4 epsilon
+        d(F(x_1), F(x_2)) & <= d(F(x_1), f(a_1)) + d(f(a_1), f(a_2)) + d(f(a_2), F(x_2)) \
+                          & <= d(F(x_1), f(a_1)) + d(a_1, a_2) + d(f(a_2), F(x_2)) \
+                          & < epsilon + d(x_1, x_2) + 2 epsilon + epsilon = d(x_1, x_2) + 4 epsilon
       $
       Since $epsilon$ is arbitrary, we get $d(F(x_1), F(x_2)) <= d(x_1, x_2)$.
     ]
@@ -482,8 +497,8 @@
   Then the boundary of $Omega_A$ is $[-A, A] union {A e^(i t) : 0 <= t <= pi}$.
   For $lambda in [-A, A]$ we have
   $
-    |g_s (lambda)| &= |1 - i s lambda|^(-N-1) |e^(i r abs(y) lambda)| |f(x + lambda y)| \
-    &<= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1 // FIX: original exponent reads N+1/2
+    |g_s (lambda)| & = |1 - i s lambda|^(-N-1) |e^(i r abs(y) lambda)| |f(x + lambda y)| \
+                   & <= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1 // FIX: original exponent reads N+1/2
   $
   and also, for every $t in [0, pi]$ we have $sin t >= 0$, and so
   $
@@ -519,10 +534,10 @@
   $ mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) $
   If ${E_n}$ is a sequence of pairwise disjoint Borel sets in $RR^3$, then
   $
-    mu(union.big_(n in NN) E_n) &= C^(-1) m({t x : t in [0, 1], x in union.big_(n in NN) E_n inter S^2}) \
-    &= C^(-1) m(union.big_(n in NN) {t x : t in [0, 1], x in E_n inter S^2}) \
-    &= sum_(n in NN) C^(-1) m({t x : t in [0, 1], x in E_n inter S^2}) \
-    &= sum_(n in NN) mu(E_n)
+    mu(union.big_(n in NN) E_n) & = C^(-1) m({t x : t in [0, 1], x in union.big_(n in NN) E_n inter S^2}) \
+                                & = C^(-1) m(union.big_(n in NN) {t x : t in [0, 1], x in E_n inter S^2}) \
+                                & = sum_(n in NN) C^(-1) m({t x : t in [0, 1], x in E_n inter S^2}) \
+                                & = sum_(n in NN) mu(E_n)
   $
   and so $mu$ is a Borel measure.
   Clearly $mu(E) = 0$ if $E inter S^2 = emptyset$, and so $mu$ is concentrated on $S^2$.
@@ -531,11 +546,11 @@
   and so $mu$ is a probability measure.
   Lebesgue measure is invariant under rotations, and so if $T : RR^3 -> RR^3$ is a rotation, then
   $
-    mu(T(E)) &= C^(-1) m({t x : t in [0, 1], x in T(E)}) \
-    &= C^(-1) m({t T x : t in [0, 1], x in E}) \
-    &= C^(-1) m(T({t x : t in [0, 1], x in E})) \
-    &= C^(-1) m({t x : t in [0, 1], x in E}) \
-    &= mu(E)
+    mu(T(E)) & = C^(-1) m({t x : t in [0, 1], x in T(E)}) \
+             & = C^(-1) m({t T x : t in [0, 1], x in E}) \
+             & = C^(-1) m(T({t x : t in [0, 1], x in E})) \
+             & = C^(-1) m({t x : t in [0, 1], x in E}) \
+             & = mu(E)
   $
   and so $mu$ is also invariant under rotations.
 
@@ -545,9 +560,10 @@
     $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $ // FIX: original has x ∈ T(E)
     and so
     $
-      integral_(S^2) chi_E dif mu &= mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) \
-      &= C^(-1) integral_(B(0, 1)) chi_({t x : t in [0, 1], x in E}) dif m \ // FIX: original has x ∈ T(E)
-      &= C^(-1) integral_(B(0, 1)) chi_E (abs(t)^(-1) t) dif m(t)
+      integral_(S^2) chi_E dif mu & = mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) \
+                                  & = C^(-1) integral_(B(0, 1)) chi_({t x : t in [0, 1], x in E}) dif m \
+      // FIX: original has x ∈ T(E)
+                                  & = C^(-1) integral_(B(0, 1)) chi_E (abs(t)^(-1) t) dif m(t)
     $
     Then by linearity, for every simple Borel function $phi$ supported on $S^2$
     $ integral_(S^2) phi dif mu = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t) $
@@ -555,9 +571,9 @@
 
     Finally, if $phi$ is any Borel function on $RR^3$, then since $mu$ is concentrated on $S^2$ we get
     $
-      integral_(RR^3) phi dif mu &= integral_(S^2) phi dif mu = integral_(S^2) chi_(S^2) phi dif mu \
-      &= C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi(abs(t)^(-1) t) dif m(t) \
-      &= C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)
+      integral_(RR^3) phi dif mu & = integral_(S^2) phi dif mu = integral_(S^2) chi_(S^2) phi dif mu \
+                                 & = C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi(abs(t)^(-1) t) dif m(t) \
+                                 & = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)
     $
   ]
 
@@ -606,7 +622,9 @@
 
   Now we find an explicit formula for $f$.
   For every $lambda_1, lambda_2 in CC without {0}$, if $lambda_1^2 = lambda_2^2$ and $lambda_1 != lambda_2$, then $lambda_1 = -lambda_2$, and then
-  $ (sin lambda_1) / lambda_1 = (sin(-lambda_2)) / (-lambda_2) = (-sin(lambda_2)) / (-lambda_2) = (sin(lambda_2)) / lambda_2 $
+  $
+    (sin lambda_1) / lambda_1 = (sin(-lambda_2)) / (-lambda_2) = (-sin(lambda_2)) / (-lambda_2) = (sin(lambda_2)) / lambda_2
+  $
   Also, the function $lambda |-> lambda^2$ from $CC without {0}$ is onto $CC without {0}$.
   So we can define a function $h : CC without {0} -> CC$ by $h(lambda^2) = lambda^(-1) sin lambda$, and we get that $h$ is well defined on all of $CC without {0}$.
   Fix $lambda in CC without {0}$ and take some $zeta$ for which $zeta^2 = lambda$. Then
@@ -621,8 +639,8 @@
   So $z |-> z_1 h(g(z))$ is also entire in $CC^3$.
   For every $x in RR^3$
   $
-    f(x) &= u(e_(-x)) = hat(u)(x) = hat(D_1 mu)(x) = x_1 hat(mu)(x) = (x_1 sin abs(x)) / abs(x) \
-    &= x_1 h(abs(x)^2) = x_1 h(x_1^2 + x_2^2 + x_3^2) = x_1 h(g(x))
+    f(x) & = u(e_(-x)) = hat(u)(x) = hat(D_1 mu)(x) = x_1 hat(mu)(x) = (x_1 sin abs(x)) / abs(x) \
+         & = x_1 h(abs(x)^2) = x_1 h(x_1^2 + x_2^2 + x_3^2) = x_1 h(g(x))
   $
   and so, since $f$ is also entire, we get the equality $f(z) = z_1 h(g(z))$ for every $z in CC^3$.
   So an explicit formula for $f$ is
@@ -741,7 +759,9 @@
       f(x) hat(u * h_epsilon) (x) = f(x) hat(h_epsilon) (x) hat(u)(x) = f(x) hat(h)(epsilon x) hat(u)(x) stretch(->)_(epsilon -> 0) f(x) hat(u)(x)
     $
     for every $x in RR$. Also,
-    $ abs(f(x) hat(u * h_epsilon) (x)) = abs(f(x) hat(h)(epsilon x) hat(u)(x)) <= |f(x)| norm(hat(u))_oo norm(hat(h))_oo $
+    $
+      abs(f(x) hat(u * h_epsilon) (x)) = abs(f(x) hat(h)(epsilon x) hat(u)(x)) <= |f(x)| norm(hat(u))_oo norm(hat(h))_oo
+    $
     and $norm(hat(u))_oo < oo$ by the assumption, and $norm(hat(h))_oo < oo$ as the Fourier transform of an $L^1 (RR)$ function.
     Then since $f in L^1 (RR)$, by the dominated convergence theorem we get
     $ integral_RR f hat(u * h_epsilon) dif m_1 stretch(->)_(epsilon -> 0) integral_RR f hat(u) dif m_1 $
@@ -828,10 +848,10 @@
   and so $g in L^2 (RR^2)$. So $Phi^4 g = g$ (where $Phi$ is the Fourier transform).
   On the other hand
   $
-    integral_(RR^2) |g| dif m_n &= integral_(RR^2) 1 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
-    &<= 1 / (log(2)) integral_(RR^2) 1 / (1 + abs(y))^4 dif m_n (y) \
-    &= 1 / (2 pi) 1 / (log 2) integral_0^oo integral_0^(2 pi) r / (1 + r)^4 dif theta dif r \
-    &= 1 / (log 2) integral_0^oo r / (1 + r)^4 dif r < oo
+    integral_(RR^2) |g| dif m_n & = integral_(RR^2) 1 / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) \
+                                & <= 1 / (log(2)) integral_(RR^2) 1 / (1 + abs(y))^4 dif m_n (y) \
+                                & = 1 / (2 pi) 1 / (log 2) integral_0^oo integral_0^(2 pi) r / (1 + r)^4 dif theta dif r \
+                                & = 1 / (log 2) integral_0^oo r / (1 + r)^4 dif r < oo
   $
   and so $g in L^1 (RR^2)$, and so also $rho g in L^1 (RR^2)$.
   But $Phi^3 g = Phi rho g$, and the Fourier transform of a function in $L^1 (RR^2)$ is always continuous, and so we get that $Phi^3 g$ is continuous.

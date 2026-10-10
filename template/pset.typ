@@ -7,6 +7,7 @@
 //   =                          // Exercise 1 (empty heading = skipped)
 //   =                          // Exercise 2
 //   #statement[...]            // optional copy of the exercise text
+//   #problem[...]              // like solution, but without ∎
 //   #solution[                 // ends with ∎
 //     + ...                    // parts: (a), (b), ... nested i., ii., ...
 //     #claim[...] <my-claim>   // Claim 2.1, referenced by @my-claim
@@ -94,10 +95,13 @@
   }
 }
 
-#let _ending-with-qed(name) = body => block(width: 100%, below: 1.2em)[
-  #emph[#name.] #_append-qed(body)
+#let _labeled(name) = body => block(width: 100%, below: 1.2em)[
+  #emph[#name.] #body
 ]
 
+#let _ending-with-qed(name) = body => _labeled(name)(_append-qed(body))
+
+#let problem = _labeled[Problem]
 #let proof = _ending-with-qed[Proof]
 #let solution = _ending-with-qed[Solution]
 
