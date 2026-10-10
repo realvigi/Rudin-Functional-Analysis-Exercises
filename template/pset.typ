@@ -79,3 +79,6 @@
 ]
 
 #let statement(body) = block(inset: (left: 1.5em), below: 1.2em, emph(body))
+
+// Notation
+#let ip(x, y) = $lr(chevron.l #x, #y chevron.r)$
