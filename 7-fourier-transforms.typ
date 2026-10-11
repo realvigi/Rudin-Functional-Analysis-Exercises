@@ -356,6 +356,9 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
 ]
 
 =
+#problem[
+  if $(h_j)_(j=1)^oo$ is an approximate identity, as in Definition 6.31, and $u in Sn'$, does it follow that $u * h_j -> u$ as $j -> oo$, in the weak\*-topology of $Sn'$?
+]
 #solution[
   #claim[For every $phi.alt in Sn$ there is $C_phi.alt > 0$ such that $norm(tau_y phi.alt - phi.alt)_oo <= C_phi.alt abs(y)$ for every $y in RR^n$.] <lipschitz>
   #proof[
