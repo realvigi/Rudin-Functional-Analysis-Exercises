@@ -94,8 +94,8 @@
   #solution[
 
     Put $h(x) = sin(e^x)$. Let $h'$ be the ordinary derivative of $h$, and $D h$ the distributional derivative of $h$.
-    $h'$ is continuous, and so by integration by parts, for every $phi in cal(D)(RR)$ we have
-    $ D h(phi) = - integral_RR h phi' dif m_n = integral_RR h' phi dif m_n $
+    $h'$ is continuous, and so by integration by parts, for every $phi.alt in cal(D)(RR)$ we have
+    $ D h(phi.alt) = - integral_RR h phi.alt' dif m_n = integral_RR h' phi.alt dif m_n $
     that is, $D h = h'$ as distributions.
     On the other hand, a simple computation shows that $g = h'$. Hence $g = D h$ as a distribution.
 
@@ -137,15 +137,15 @@
   ]
   #solution[
     For every $m$ define $P_m (x) = sum_(j=0)^m (j!)^(-1) x^j$. Then $P_m stretch(->)_(m -> oo) exp$ uniformly on compact subsets of $RR$.
-    Then for every $phi in cal(D)(RR)$, if $K$ is the support of $phi$, we get
+    Then for every $phi.alt in cal(D)(RR)$, if $K$ is the support of $phi.alt$, we get
     $
-      integral_RR P_m phi dif m_1 = integral_K P_m phi dif m_1 stretch(->)_(m -> oo) integral_K e^x phi(x) dif m_1 (x) = integral_RR e^x phi(x) dif m_1 (x)
+      integral_RR P_m phi.alt dif m_1 = integral_K P_m phi.alt dif m_1 stretch(->)_(m -> oo) integral_K e^x phi.alt(x) dif m_1 (x) = integral_RR e^x phi.alt(x) dif m_1 (x)
     $
     and so $P_m -> exp$ in $cal(D)'(RR)$, as required.
 
-    On the other hand, if there is $u in cal(S)'_1$ such that $P_m -> u$ in $cal(S)'_1$, then in particular for every $phi in cal(D)(RR)$ we have $integral_RR P_m phi dif m_1 -> u(phi)$, but then by what we saw we get
-    $ u(phi) = integral_RR e^x phi(x) dif m_1 (x) $
-    for every $phi in cal(D)(RR)$, and we already saw in @ex-3 that the distribution $phi |-> integral_RR e^x phi(x) dif m_1 (x)$ cannot be extended to $cal(S)_1$, so we got a contradiction.
+    On the other hand, if there is $u in cal(S)'_1$ such that $P_m -> u$ in $cal(S)'_1$, then in particular for every $phi.alt in cal(D)(RR)$ we have $integral_RR P_m phi.alt dif m_1 -> u(phi.alt)$, but then by what we saw we get
+    $ u(phi.alt) = integral_RR e^x phi.alt(x) dif m_1 (x) $
+    for every $phi.alt in cal(D)(RR)$, and we already saw in @ex-3 that the distribution $phi.alt |-> integral_RR e^x phi.alt(x) dif m_1 (x)$ cannot be extended to $cal(S)_1$, so we got a contradiction.
     Hence $P_m$ does not converge in $cal(S)'_1$, as required.
   ]
 
@@ -187,16 +187,16 @@
 ]
 #solution[
   Denote by $Phi$ the Fourier transform on $Sn$, and by $rho$ the reflection operator.
-  Fix $x in RR^n$. Then for every $phi in Sn$
+  Fix $x in RR^n$. Then for every $phi.alt in Sn$
   $
-    hat(tau_x u)(phi) & = (tau_x u)(Phi phi) = u(tau_(-x) Phi phi) = u(Phi^4 (tau_(-x) Phi phi)) = u(Phi^3 (e_x Phi^2 phi)) \
-                      & = u(Phi rho (e_x rho phi)) = u(Phi (e_(-x) phi)) = hat(u)(e_(-x) phi) = (e_(-x) u)(phi)
+    hat(tau_x u)(phi.alt) & = (tau_x u)(Phi phi.alt) = u(tau_(-x) Phi phi.alt) = u(Phi^4 (tau_(-x) Phi phi.alt)) = u(Phi^3 (e_x Phi^2 phi.alt)) \
+                      & = u(Phi rho (e_x rho phi.alt)) = u(Phi (e_(-x) phi.alt)) = hat(u)(e_(-x) phi.alt) = (e_(-x) u)(phi.alt)
   $
   and so $hat(tau_x u) = e_(-x) u$, as required.
 
-  Also, for every $phi in Sn$
+  Also, for every $phi.alt in Sn$
   $
-    hat(e_x u)(phi) = (e_x u)(hat(phi)) = u(e_x hat(phi)) = u(hat(tau_(-x) phi)) = hat(u)(tau_(-x) phi) = (tau_x hat(u))(phi)
+    hat(e_x u)(phi.alt) = (e_x u)(hat(phi.alt)) = u(e_x hat(phi.alt)) = u(hat(tau_(-x) phi.alt)) = hat(u)(tau_(-x) phi.alt) = (tau_x hat(u))(phi.alt)
   $
   and so $hat(e_x u) = tau_x hat(u)$, as required.
 ]
@@ -209,9 +209,9 @@
   Denote by $Phi$ the Fourier transform on $cal(S)'_n$.
   Since $f in L^1 (RR^n)$, $hat(f) = lambda f$, and $hat(f) = Phi f$ in the distributional sense, we get $Phi^k f in L^1 (RR^n)$ for every $k$, and also $Phi^k f = lambda^k f$ for every $k$.
   But $Phi^4$ is the identity, and so we get $f = lambda^4 f$, where the equality is in $cal(S)'_n$.
-  Then for every $phi in cal(D)(RR^n)$
-  $ integral_(RR^n) f phi dif m_n = lambda^4 integral_(RR^n) f phi dif m_n $
-  Since $f != 0$, in particular there is $phi$ for which $integral_(RR^n) f phi dif m_n != 0$, and so we get $lambda^4 = 1$, that is, $lambda$ is a root of unity of order $4$.
+  Then for every $phi.alt in cal(D)(RR^n)$
+  $ integral_(RR^n) f phi.alt dif m_n = lambda^4 integral_(RR^n) f phi.alt dif m_n $
+  Since $f != 0$, in particular there is $phi.alt$ for which $integral_(RR^n) f phi.alt dif m_n != 0$, and so we get $lambda^4 = 1$, that is, $lambda$ is a root of unity of order $4$.
 ]
 
 =
@@ -223,25 +223,25 @@
 
   #claim[$f * g in C^oo (RR^n)$, and $D^alpha (f * g) = f * D^alpha g$ for every multi-index $alpha$.] <conv-smooth>
   #proof[
-    There is a sequence ${phi_k}$ in $cal(D)(RR^n)$ for which $phi_k -> g$ in $Sn$.
-    In particular, for every $alpha$ we have $D^alpha phi_k -> D^alpha g$ uniformly on all of $RR^n$, and in particular ${D^alpha phi_k}$ is a uniformly Cauchy sequence on $RR^n$.
-    For every $k$ we have $f * phi_k in C^oo (RR^n)$, and for every $alpha$ we have $D^alpha (f * phi_k) = f * D^alpha phi_k$.
+    There is a sequence ${phi.alt_k}$ in $cal(D)(RR^n)$ for which $phi.alt_k -> g$ in $Sn$.
+    In particular, for every $alpha$ we have $D^alpha phi.alt_k -> D^alpha g$ uniformly on all of $RR^n$, and in particular ${D^alpha phi.alt_k}$ is a uniformly Cauchy sequence on $RR^n$.
+    For every $k$ we have $f * phi.alt_k in C^oo (RR^n)$, and for every $alpha$ we have $D^alpha (f * phi.alt_k) = f * D^alpha phi.alt_k$.
     Then for every $k, j$ and every $alpha$ we get
     $
-      norm(D^alpha (f * phi_k) - D^alpha (f * phi_j))_oo &<= sup_(x in RR^n) integral_(RR^n) |f(x - y)| |D^alpha phi_k (y) - D^alpha phi_j (y)| dif m_n (y) \
-      &<= norm(f)_1 norm(D^alpha phi_k - D^alpha phi_j)_oo.
+      norm(D^alpha (f * phi.alt_k) - D^alpha (f * phi.alt_j))_oo &<= sup_(x in RR^n) integral_(RR^n) |f(x - y)| |D^alpha phi.alt_k (y) - D^alpha phi.alt_j (y)| dif m_n (y) \
+      &<= norm(f)_1 norm(D^alpha phi.alt_k - D^alpha phi.alt_j)_oo.
     $
-    Since $f in Sn$ we have $norm(f)_1 < oo$, and so since ${D^alpha phi_k}$ is uniformly Cauchy on all of $RR^n$, we get that ${D^alpha (f * phi_k)}$ is a uniformly Cauchy sequence on all of $RR^n$.
-    Then ${f * phi_k}$ is a Cauchy sequence in $C^oo (RR^n)$.
-    But $C^oo (RR^n)$ is a complete space, and so there is $h in C^oo (RR^n)$ for which $f * phi_k stretch(->)_(k -> oo) h$ in $C^oo (RR^n)$.
-    Then in particular, for every $x$ and every $alpha$ we have $(f * D^alpha phi_k)(x) = D^alpha (f * phi_k)(x) stretch(->)_(k -> oo) D^alpha h(x)$.
+    Since $f in Sn$ we have $norm(f)_1 < oo$, and so since ${D^alpha phi.alt_k}$ is uniformly Cauchy on all of $RR^n$, we get that ${D^alpha (f * phi.alt_k)}$ is a uniformly Cauchy sequence on all of $RR^n$.
+    Then ${f * phi.alt_k}$ is a Cauchy sequence in $C^oo (RR^n)$.
+    But $C^oo (RR^n)$ is a complete space, and so there is $h in C^oo (RR^n)$ for which $f * phi.alt_k stretch(->)_(k -> oo) h$ in $C^oo (RR^n)$.
+    Then in particular, for every $x$ and every $alpha$ we have $(f * D^alpha phi.alt_k)(x) = D^alpha (f * phi.alt_k)(x) stretch(->)_(k -> oo) D^alpha h(x)$.
 
-    On the other hand, for every $alpha$ we have $D^alpha phi_k -> D^alpha g$ uniformly on all of $RR^n$, and so for every $x$
+    On the other hand, for every $alpha$ we have $D^alpha phi.alt_k -> D^alpha g$ uniformly on all of $RR^n$, and so for every $x$
     $
-      |(f * D^alpha phi_k)(x) - (f * D^alpha g)(x)| &<= integral_(RR^n) |f(x - y)| |D^alpha phi_k (y) - D^alpha g(y)| dif m_n (y) \
-      &<= norm(f)_1 norm(D^alpha phi_k - D^alpha g)_oo stretch(->)_(k -> oo) 0
+      |(f * D^alpha phi.alt_k)(x) - (f * D^alpha g)(x)| &<= integral_(RR^n) |f(x - y)| |D^alpha phi.alt_k (y) - D^alpha g(y)| dif m_n (y) \
+      &<= norm(f)_1 norm(D^alpha phi.alt_k - D^alpha g)_oo stretch(->)_(k -> oo) 0
     $
-    and so $(f * D^alpha phi_k)(x) -> (f * D^alpha g)(x)$ for every $x$.
+    and so $(f * D^alpha phi.alt_k)(x) -> (f * D^alpha g)(x)$ for every $x$.
     Hence for every $alpha$ we have $f * D^alpha g = D^alpha h$.
     In particular, for $alpha = 0$ we get $f * g = h in C^oo (RR^n)$, and for every $alpha$ we get $D^alpha (f * g) = f * D^alpha g$.
   ]
@@ -297,18 +297,18 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     Show that these two definitions are consistent.
   ]
   #solution[
-    We need to show that for every $phi in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi) dif mu = integral_(RR^n) hat(mu) phi dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
+    We need to show that for every $phi.alt in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi.alt) dif mu = integral_(RR^n) hat(mu) phi.alt dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
     We have
-    $ integral_(RR^n) integral_(RR^n) |phi(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi)_1 mu(RR^n) < oo $
+    $ integral_(RR^n) integral_(RR^n) |phi.alt(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi.alt)_1 mu(RR^n) < oo $
     and so by Fubini's theorem
     $
-      integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif mu(t) dif m_n (x)
+      integral_(RR^n) integral_(RR^n) phi.alt(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi.alt(x) e^(-i t dot x) dif mu(t) dif m_n (x)
     $
     and so we get
     $
-      integral_(RR^n) hat(phi) dif mu & = integral_(RR^n) integral_(RR^n) phi(x) e^(-i t dot x) dif m_n (x) dif mu(t) \
-                                      & = integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi(x) dif m_n (x) \
-                                      & = integral_(RR^n) hat(mu)(x) phi(x) dif m_n (x)
+      integral_(RR^n) hat(phi.alt) dif mu & = integral_(RR^n) integral_(RR^n) phi.alt(x) e^(-i t dot x) dif m_n (x) dif mu(t) \
+                                      & = integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi.alt(x) dif m_n (x) \
+                                      & = integral_(RR^n) hat(mu)(x) phi.alt(x) dif m_n (x)
     $
     as required.
   ]
@@ -346,75 +346,75 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   for every $phi.alt in Sn$?
 ]
 #solution[
-  For every $phi in Sn$ define $u(phi) = (Lambda rho phi)(0)$.
+  For every $phi.alt in Sn$ define $u(phi.alt) = (Lambda rho phi.alt)(0)$.
   $rho$ is a continuous linear operator on $Sn$, and evaluation at $0$ is a continuous linear functional on $C(RR^n)$, and so $u$ is a continuous linear functional on $Sn$, that is, $u in cal(S)'_n$.
-  For every $phi in Sn$ and every $x in RR^n$
+  For every $phi.alt in Sn$ and every $x in RR^n$
   $
-    (u * phi)(x) = u(tau_x rho phi) = (Lambda rho tau_x rho phi)(0) = (Lambda tau_(-x) rho rho phi)(0) = (tau_(-x) Lambda phi)(0) = (Lambda phi)(x)
+    (u * phi.alt)(x) = u(tau_x rho phi.alt) = (Lambda rho tau_x rho phi.alt)(0) = (Lambda tau_(-x) rho rho phi.alt)(0) = (tau_(-x) Lambda phi.alt)(0) = (Lambda phi.alt)(x)
   $
-  and so $Lambda phi = u * phi$ for every $phi in Sn$, as required.
+  and so $Lambda phi.alt = u * phi.alt$ for every $phi.alt in Sn$, as required.
 ]
 
 =
 #solution[
-  #claim[For every $phi in Sn$ there is $C_phi > 0$ such that $norm(tau_y phi - phi)_oo <= C_phi abs(y)$ for every $y in RR^n$.] <lipschitz>
+  #claim[For every $phi.alt in Sn$ there is $C_phi.alt > 0$ such that $norm(tau_y phi.alt - phi.alt)_oo <= C_phi.alt abs(y)$ for every $y in RR^n$.] <lipschitz>
   #proof[
-    Let $phi in Sn$. Put $C = (sum_(i=1)^n norm(D^(e_i) phi)_oo^2)^(1\/2)$.
-    Fix $x, y in RR^n$. Put $g(t) = phi(x + t(y - x))$.
+    Let $phi.alt in Sn$. Put $C = (sum_(i=1)^n norm(D^(e_i) phi.alt)_oo^2)^(1\/2)$.
+    Fix $x, y in RR^n$. Put $g(t) = phi.alt(x + t(y - x))$.
     Then $g$ is continuously differentiable, and for every $t$
     $
-      |g'(t)| &= |(y - x) dot nabla phi(t)| <= abs(y - x) |nabla phi(t)| = abs(y - x) (sum_(i=1)^n (D^(e_i) phi(t))^2)^(1\/2) \
-      &<= abs(y - x) (sum_(i=1)^n norm(D^(e_i) phi)_oo^2)^(1\/2) = C abs(y - x)
+      |g'(t)| &= |(y - x) dot nabla phi.alt(t)| <= abs(y - x) |nabla phi.alt(t)| = abs(y - x) (sum_(i=1)^n (D^(e_i) phi.alt(t))^2)^(1\/2) \
+      &<= abs(y - x) (sum_(i=1)^n norm(D^(e_i) phi.alt)_oo^2)^(1\/2) = C abs(y - x)
     $
     and so by the mean value theorem, there is $c in [0, 1]$ for which
-    $ |phi(y) - phi(x)| = |g(1) - g(0)| = |g'(c)| <= C abs(y - x) $
-    Since $x, y$ are arbitrary, we got that $|phi(y) - phi(x)| <= C abs(y - x)$ for every $x, y in RR^n$.
-    This shows that $norm(tau_y phi - phi)_oo <= C abs(y)$ for every $y in RR^n$.
+    $ |phi.alt(y) - phi.alt(x)| = |g(1) - g(0)| = |g'(c)| <= C abs(y - x) $
+    Since $x, y$ are arbitrary, we got that $|phi.alt(y) - phi.alt(x)| <= C abs(y - x)$ for every $x, y in RR^n$.
+    This shows that $norm(tau_y phi.alt - phi.alt)_oo <= C abs(y)$ for every $y in RR^n$.
   ]
 
-  #claim[If ${h_j}$ is an approximate identity, then $h_j * phi -> phi$ in the topology of $Sn$ for every $phi in Sn$.] <approx-identity>
+  #claim[If ${h_j}$ is an approximate identity, then $h_j * phi.alt -> phi.alt$ in the topology of $Sn$ for every $phi.alt in Sn$.] <approx-identity>
   #proof[
-    Let $phi in Sn$, and let $alpha, beta$ be multi-indices. For every $gamma$ put $Q_gamma (x) = x^gamma$.
+    Let $phi.alt in Sn$, and let $alpha, beta$ be multi-indices. For every $gamma$ put $Q_gamma (x) = x^gamma$.
     For every $gamma <= beta$ and every $j$ put
-    $ f_(j, gamma) (x) = integral_(RR^n) y^(beta - gamma) h_j (y) (x - y)^gamma D^alpha phi(x - y) dif m_n (y) $
+    $ f_(j, gamma) (x) = integral_(RR^n) y^(beta - gamma) h_j (y) (x - y)^gamma D^alpha phi.alt(x - y) dif m_n (y) $
     Then for every $j$ and every $x$
     $
-      x^beta D^alpha (h_j * phi)(x) - x^beta D^alpha phi(x) &= integral_(RR^n) (y + x - y)^beta h_j (y) D^alpha phi(x - y) dif m_n (y) - x^beta D^alpha phi(x) \
-      &= sum_(gamma <= beta) c_(beta gamma) integral_(RR^n) y^(beta - gamma) h_j (y) (x - y)^gamma D^alpha phi(x - y) dif m_n (y) - x^beta D^alpha phi(x) \
-      &= (sum_(gamma <= beta) c_(beta gamma) f_(j, gamma) (x)) - x^beta D^alpha phi(x)
+      x^beta D^alpha (h_j * phi.alt)(x) - x^beta D^alpha phi.alt(x) &= integral_(RR^n) (y + x - y)^beta h_j (y) D^alpha phi.alt(x - y) dif m_n (y) - x^beta D^alpha phi.alt(x) \
+      &= sum_(gamma <= beta) c_(beta gamma) integral_(RR^n) y^(beta - gamma) h_j (y) (x - y)^gamma D^alpha phi.alt(x - y) dif m_n (y) - x^beta D^alpha phi.alt(x) \
+      &= (sum_(gamma <= beta) c_(beta gamma) f_(j, gamma) (x)) - x^beta D^alpha phi.alt(x)
     $
     and since $c_(beta beta) = 1$, for every $j$ we got the equality
     $
-      Q_beta D^alpha (h_j * phi) - Q_beta D^alpha phi = (f_(j, beta) - x^beta D^alpha phi) + (sum_(gamma < beta) c_(beta gamma) f_(j, gamma))
+      Q_beta D^alpha (h_j * phi.alt) - Q_beta D^alpha phi.alt = (f_(j, beta) - x^beta D^alpha phi.alt) + (sum_(gamma < beta) c_(beta gamma) f_(j, gamma))
     $
-    Since $Q_beta D^alpha phi in Sn$, by @lipschitz we get
+    Since $Q_beta D^alpha phi.alt in Sn$, by @lipschitz we get
     $
-      norm(f_(j, beta) - x^beta D^alpha phi)_oo &= sup_(x in RR^n) abs(integral_(RR^n) h_j (y) ((x - y)^beta D^alpha phi(x - y) - x^beta D^alpha phi(x)) dif m_n (y)) \
-      &<= sup_(x in RR^n) integral_(RR^n) h_j (y) |(tau_y (Q_beta D^alpha phi))(x) - (Q_beta D^alpha phi)(x)| dif m_n (y) \
-      &<= sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) norm(tau_y (Q_beta D^alpha phi) - Q_beta D^alpha phi)_oo dif m_n (y) \
-      &<= sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) C_(Q_beta D^alpha phi) abs(y) dif m_n (y) \
-      &<= C_(Q_beta D^alpha phi) j^(-1) sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) dif m_n (y) = C_(Q_beta D^alpha phi) j^(-1) stretch(->)_(j -> oo) 0
+      norm(f_(j, beta) - x^beta D^alpha phi.alt)_oo &= sup_(x in RR^n) abs(integral_(RR^n) h_j (y) ((x - y)^beta D^alpha phi.alt(x - y) - x^beta D^alpha phi.alt(x)) dif m_n (y)) \
+      &<= sup_(x in RR^n) integral_(RR^n) h_j (y) |(tau_y (Q_beta D^alpha phi.alt))(x) - (Q_beta D^alpha phi.alt)(x)| dif m_n (y) \
+      &<= sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) norm(tau_y (Q_beta D^alpha phi.alt) - Q_beta D^alpha phi.alt)_oo dif m_n (y) \
+      &<= sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) C_(Q_beta D^alpha phi.alt) abs(y) dif m_n (y) \
+      &<= C_(Q_beta D^alpha phi.alt) j^(-1) sup_(x in RR^n) integral_(B(0, j^(-1))) h_j (y) dif m_n (y) = C_(Q_beta D^alpha phi.alt) j^(-1) stretch(->)_(j -> oo) 0
     $
-    and so $f_(j, beta) - x^beta D^alpha phi -> 0$ uniformly on $RR^n$.
+    and so $f_(j, beta) - x^beta D^alpha phi.alt -> 0$ uniformly on $RR^n$.
 
     Also, for every $gamma < beta$ we have $|beta - gamma| >= 1$, and so
     $
-      norm(f_(j, gamma))_oo &<= sup_(x in RR^n) integral_(RR^n) |y^(beta - gamma)| h_j (y) |(x - y)^gamma D^alpha phi(x - y)| dif m_n (y) \
-      &<= norm(Q_gamma D^alpha phi)_oo integral_(B(0, j^(-1))) |y^(beta - gamma)| h_j (y) dif m_n (y) \
-      &<= norm(Q_gamma D^alpha phi)_oo integral_(B(0, j^(-1))) abs(y)^(|beta - gamma|) h_j (y) dif m_n (y) \
-      &<= norm(Q_gamma D^alpha phi)_oo j^(-|beta - gamma|) integral_(B(0, j^(-1))) h_j (y) dif m_n (y) \
-      &= norm(Q_gamma D^alpha phi)_oo j^(-|beta - gamma|) stretch(->)_(j -> oo) 0
+      norm(f_(j, gamma))_oo &<= sup_(x in RR^n) integral_(RR^n) |y^(beta - gamma)| h_j (y) |(x - y)^gamma D^alpha phi.alt(x - y)| dif m_n (y) \
+      &<= norm(Q_gamma D^alpha phi.alt)_oo integral_(B(0, j^(-1))) |y^(beta - gamma)| h_j (y) dif m_n (y) \
+      &<= norm(Q_gamma D^alpha phi.alt)_oo integral_(B(0, j^(-1))) abs(y)^(|beta - gamma|) h_j (y) dif m_n (y) \
+      &<= norm(Q_gamma D^alpha phi.alt)_oo j^(-|beta - gamma|) integral_(B(0, j^(-1))) h_j (y) dif m_n (y) \
+      &= norm(Q_gamma D^alpha phi.alt)_oo j^(-|beta - gamma|) stretch(->)_(j -> oo) 0
     $
     and so $f_(j, gamma) -> 0$ uniformly on all of $RR^n$.
 
-    This shows that $Q_beta D^alpha (h_j * phi) - Q_beta D^alpha phi -> 0$ uniformly on $RR^n$, that is, $Q_beta D^alpha (h_j * phi) -> Q_beta D^alpha phi$ uniformly on $RR^n$, for all multi-indices $alpha, beta$ and every $phi in Sn$.
-    This shows that for every $phi in Sn$, every multi-index $alpha$ and every polynomial $P$ we have $P D^alpha (h_j * phi) -> P D^alpha phi$ uniformly on $RR^n$.
+    This shows that $Q_beta D^alpha (h_j * phi.alt) - Q_beta D^alpha phi.alt -> 0$ uniformly on $RR^n$, that is, $Q_beta D^alpha (h_j * phi.alt) -> Q_beta D^alpha phi.alt$ uniformly on $RR^n$, for all multi-indices $alpha, beta$ and every $phi.alt in Sn$.
+    This shows that for every $phi.alt in Sn$, every multi-index $alpha$ and every polynomial $P$ we have $P D^alpha (h_j * phi.alt) -> P D^alpha phi.alt$ uniformly on $RR^n$.
   ]
 
-  But if ${h_j}$ is an approximate identity, then ${rho h_j}$ is also an approximate identity, and so by @approx-identity, for every $u in cal(S)'_n$ and every $phi in Sn$ we get
+  But if ${h_j}$ is an approximate identity, then ${rho h_j}$ is also an approximate identity, and so by @approx-identity, for every $u in cal(S)'_n$ and every $phi.alt in Sn$ we get
   $
-    (u * h_j)(phi) & = ((u * h_j) * rho phi)(0) = (u * (h_j * rho phi))(0) = u(rho (h_j * rho phi)) \
-                   & = u((rho h_j) * phi) stretch(->)_(j -> oo) u(phi)
+    (u * h_j)(phi.alt) & = ((u * h_j) * rho phi.alt)(0) = (u * (h_j * rho phi.alt))(0) = u(rho (h_j * rho phi.alt)) \
+                   & = u((rho h_j) * phi.alt) stretch(->)_(j -> oo) u(phi.alt)
   $
   that is, $u * h_j -> u$ in the weak\* topology of $cal(S)'_n$, as required.
 ]
@@ -597,7 +597,7 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   $
   and so $mu$ is also invariant under rotations.
 
-  #claim[For every Borel function $phi$ on $RR^3$ we have $integral_(RR^3) phi dif mu = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)$.] <sphere-integral>
+  #claim[For every Borel function $phi.alt$ on $RR^3$ we have $integral_(RR^3) phi.alt dif mu = C^(-1) integral_(B(0, 1)) phi.alt(abs(t)^(-1) t) dif m(t)$.] <sphere-integral>
   #proof[
     If $E subset.eq S^2$ is a Borel set, then for every $s in B(0, 1)$ // FIX: original has t ∈ B(0, 1)
     $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $ // FIX: original has x ∈ T(E)
@@ -608,15 +608,15 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
       // FIX: original has x ∈ T(E)
                                   & = C^(-1) integral_(B(0, 1)) chi_E (abs(t)^(-1) t) dif m(t)
     $
-    Then by linearity, for every simple Borel function $phi$ supported on $S^2$
-    $ integral_(S^2) phi dif mu = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t) $
-    But then by the monotone convergence theorem the last equality holds for every Borel function $phi >= 0$ supported on $S^2$, and by linearity again we get that this equality holds for any Borel function $phi$ supported on $S^2$.
+    Then by linearity, for every simple Borel function $phi.alt$ supported on $S^2$
+    $ integral_(S^2) phi.alt dif mu = C^(-1) integral_(B(0, 1)) phi.alt(abs(t)^(-1) t) dif m(t) $
+    But then by the monotone convergence theorem the last equality holds for every Borel function $phi.alt >= 0$ supported on $S^2$, and by linearity again we get that this equality holds for any Borel function $phi.alt$ supported on $S^2$.
 
-    Finally, if $phi$ is any Borel function on $RR^3$, then since $mu$ is concentrated on $S^2$ we get
+    Finally, if $phi.alt$ is any Borel function on $RR^3$, then since $mu$ is concentrated on $S^2$ we get
     $
-      integral_(RR^3) phi dif mu & = integral_(S^2) phi dif mu = integral_(S^2) chi_(S^2) phi dif mu \
-                                 & = C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi(abs(t)^(-1) t) dif m(t) \
-                                 & = C^(-1) integral_(B(0, 1)) phi(abs(t)^(-1) t) dif m(t)
+      integral_(RR^3) phi.alt dif mu & = integral_(S^2) phi.alt dif mu = integral_(S^2) chi_(S^2) phi.alt dif mu \
+                                 & = C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi.alt(abs(t)^(-1) t) dif m(t) \
+                                 & = C^(-1) integral_(B(0, 1)) phi.alt(abs(t)^(-1) t) dif m(t)
     $
   ]
 
@@ -632,15 +632,15 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   and by @sphere-integral and passing to spherical coordinates, for every $x != 0$ we get
   $
     hat(mu)(x) &= C^(-1) integral_(B(0, 1)) e^(-i abs(x) abs(t)^(-1) t_3) dif m(t) \
-    &= (2 pi)^(-3\/2) C^(-1) integral_0^1 integral_0^(2 pi) integral_0^pi r^2 sin(phi.alt) e^(-i abs(x) cos phi.alt) dif phi.alt dif theta dif r \
-    &= (2 pi)^(-1\/2) C^(-1) (integral_0^1 r^2 dif r) (integral_0^pi sin(phi.alt) e^(-i abs(x) cos phi.alt) dif phi.alt) \
+    &= (2 pi)^(-3\/2) C^(-1) integral_0^1 integral_0^(2 pi) integral_0^pi r^2 sin(phi) e^(-i abs(x) cos phi) dif phi dif theta dif r \
+    &= (2 pi)^(-1\/2) C^(-1) (integral_0^1 r^2 dif r) (integral_0^pi sin(phi) e^(-i abs(x) cos phi) dif phi) \
     &= 1/3 (2 pi)^(-1\/2) C^(-1) (e^(-i abs(x) cos pi) - e^(-i abs(x) cos 0)) / (i abs(x)) \
     &= 2/3 (2 pi)^(-1\/2) C^(-1) abs(x)^(-1) (e^(i abs(x)) - e^(-i abs(x))) / (2 i) \
     &= 2/3 (2 pi)^(-1\/2) C^(-1) (sin abs(x)) / abs(x)
   $
   But
   $
-    C &= integral_(B(0, 1)) dif m = (2 pi)^(-3\/2) integral_0^1 integral_0^(2 pi) integral_0^pi r^2 sin(phi.alt) dif phi.alt dif theta dif r = (2 pi)^(-1\/2) integral_0^1 r^2 dif r integral_0^pi sin(phi.alt) dif phi.alt \
+    C &= integral_(B(0, 1)) dif m = (2 pi)^(-3\/2) integral_0^1 integral_0^(2 pi) integral_0^pi r^2 sin(phi) dif phi dif theta dif r = (2 pi)^(-1\/2) integral_0^1 r^2 dif r integral_0^pi sin(phi) dif phi \
     &= 1/3 (2 pi)^(-1\/2) (-cos(pi) + cos(0)) = 2/3 (2 pi)^(-1\/2)
   $
   and so for every $x != 0$ we got $hat(mu)(x) = abs(x)^(-1) sin abs(x)$.
@@ -652,8 +652,8 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   And so $hat(u) in C(RR^3)$, and
   $ |hat(u)(x)| = (abs(x_1) abs(sin abs(x))) / abs(x) <= abs(sin abs(x)) <= 1 $
   for every $x in RR^3$.
-  For $phi in cal(D)(RR^3)$ whose support does not intersect $S^2$, we have
-  $ u(phi) = - integral_(RR^3) D_1 phi dif mu = - integral_(S^2) D_1 phi dif mu = 0 $
+  For $phi.alt in cal(D)(RR^3)$ whose support does not intersect $S^2$, we have
+  $ u(phi.alt) = - integral_(RR^3) D_1 phi.alt dif mu = - integral_(S^2) D_1 phi.alt dif mu = 0 $
   and so the support of $u$ is contained in $S^2$.
   So $u$ has compact support, and so we can put $f(z) = u(e_(-z))$ for every $z in CC^3$.
   Then by the Paley–Wiener theorem for distributions with compact support, $f$ is an entire function in $CC^3$, $hat(u)$ is the restriction of $f$ to $RR^n$, and in addition there is $gamma < oo$ for which $|f(z)| <= gamma (1 + abs(z))^N e^(r abs(op("Im") z))$ for every $z in CC^n$.
@@ -718,43 +718,43 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     So altogether $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$. // FIX: dropped an unfinished sentence that follows in the original ("For every ε > 0, if")
   ]
 
-  #claim[For every $phi in cal(D)(RR^n)$ we have $|u(phi)| <= norm(hat(u))_oo norm(h)_2 liminf_(epsilon -> 0) (epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2)$.] <liminf-estimate>
+  #claim[For every $phi.alt in cal(D)(RR^n)$ we have $|u(phi.alt)| <= norm(hat(u))_oo norm(h)_2 liminf_(epsilon -> 0) (epsilon^(-n) integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2)$.] <liminf-estimate>
   #proof[
-    By @conv-estimate, for every $epsilon > 0$ and every $phi in cal(D)(RR^n)$ we get
+    By @conv-estimate, for every $epsilon > 0$ and every $phi.alt in cal(D)(RR^n)$ we get
     $
-      |(u * h_epsilon)(phi)| &= abs(integral_(RR^n) (u * h_epsilon) phi dif m_n) = abs(integral_(H_epsilon) (u * h_epsilon) phi dif m_n) \
-      &<= (integral_(H_epsilon) |u * h_epsilon|^2 dif m_n)^(1\/2) (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
-      &= (integral_(RR^n) |u * h_epsilon|^2 dif m_n)^(1\/2) (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
-      &= norm(u * h_epsilon)_2 (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
-      &<= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2 (integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2) \
-      &= norm(hat(u))_oo norm(h)_2 (epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n)^(1\/2)
+      |(u * h_epsilon)(phi.alt)| &= abs(integral_(RR^n) (u * h_epsilon) phi.alt dif m_n) = abs(integral_(H_epsilon) (u * h_epsilon) phi.alt dif m_n) \
+      &<= (integral_(H_epsilon) |u * h_epsilon|^2 dif m_n)^(1\/2) (integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2) \
+      &= (integral_(RR^n) |u * h_epsilon|^2 dif m_n)^(1\/2) (integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2) \
+      &= norm(u * h_epsilon)_2 (integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2) \
+      &<= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2 (integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2) \
+      &= norm(hat(u))_oo norm(h)_2 (epsilon^(-n) integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2)
     $
-    But $u * h_epsilon -> u$ in $cal(D)'(RR^n)$, and in particular for every $phi in cal(D)(RR^n)$
-    $ u(phi) = lim_(epsilon -> 0) (u * h_epsilon)(phi) = liminf_(epsilon -> 0) (u * h_epsilon)(phi) $
+    But $u * h_epsilon -> u$ in $cal(D)'(RR^n)$, and in particular for every $phi.alt in cal(D)(RR^n)$
+    $ u(phi.alt) = lim_(epsilon -> 0) (u * h_epsilon)(phi.alt) = liminf_(epsilon -> 0) (u * h_epsilon)(phi.alt) $
     and so we get the required inequality. // FIX: the original's final inequality has liminf as ε → ∞
   ]
 
   All this holds for every $n$ we choose. Now we can prove the parts.
 
   + Suppose $n = 1$ or $n = 2$. We need to prove that if $psi in C^oo (RR^n)$ and $psi = 0$ on $K$, then $psi u = 0$.
-    That is, we need to show that $u(psi phi) = 0$ for every $phi in cal(D)(RR^n)$.
-    So it suffices to show that $u(phi) = 0$ for every $phi in cal(D)(RR^n)$ for which $phi = 0$ on $K$.
-    Then by @liminf-estimate it suffices to show that for every such $phi$
-    $ epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n stretch(->)_(epsilon -> 0) 0 $
+    That is, we need to show that $u(psi phi.alt) = 0$ for every $phi.alt in cal(D)(RR^n)$.
+    So it suffices to show that $u(phi.alt) = 0$ for every $phi.alt in cal(D)(RR^n)$ for which $phi.alt = 0$ on $K$.
+    Then by @liminf-estimate it suffices to show that for every such $phi.alt$
+    $ epsilon^(-n) integral_(H_epsilon) |phi.alt|^2 dif m_n stretch(->)_(epsilon -> 0) 0 $
     and this is what we will show.
 
-    Since all the partial derivatives of $phi$ are bounded, there is $C > 0$ for which $|phi(x) - phi(y)| <= C abs(x - y)$ for every $x, y in RR^n$.
-    Then for every $epsilon > 0$ and every $x in H_epsilon$ we have $|phi(x)| <= C epsilon$.
+    Since all the partial derivatives of $phi.alt$ are bounded, there is $C > 0$ for which $|phi.alt(x) - phi.alt(y)| <= C abs(x - y)$ for every $x, y in RR^n$.
+    Then for every $epsilon > 0$ and every $x in H_epsilon$ we have $|phi.alt(x)| <= C epsilon$.
     So for every $epsilon > 0$
     $
-      epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n &= epsilon^(-n) integral_(H_epsilon without K) |phi|^2 dif m_n <= C^2 epsilon^(2-n) m_n (H_epsilon without K) \
+      epsilon^(-n) integral_(H_epsilon) |phi.alt|^2 dif m_n &= epsilon^(-n) integral_(H_epsilon without K) |phi.alt|^2 dif m_n <= C^2 epsilon^(2-n) m_n (H_epsilon without K) \
       &<= C^2 epsilon^(2-n) (m_n (H_epsilon) - m_n (K))
     $
     Since $n <= 2$ we get $2 - n >= 0$, and so the expression $C^2 epsilon^(2-n)$ is bounded when $epsilon in (0, 1)$.
     On the other hand, if ${epsilon_k}$ is a decreasing sequence with $epsilon_k -> 0$, then ${H_(epsilon_k)}$ is a sequence decreasing by inclusion with $inter.big_k H_(epsilon_k) = K$, and so $m_n (H_(epsilon_k)) -> m_n (K)$.
     So $m_n (H_epsilon) stretch(->)_(epsilon -> 0) m_n (K)$.
     So $C^2 epsilon^(2-n) (m_n (H_epsilon) - m_n (K)) stretch(->)_(epsilon -> 0) 0$.
-    And so $epsilon^(-n) integral_(H_epsilon) |phi|^2 dif m_n stretch(->)_(epsilon -> 0) 0$, as required.
+    And so $epsilon^(-n) integral_(H_epsilon) |phi.alt|^2 dif m_n stretch(->)_(epsilon -> 0) 0$, as required.
 
   + Suppose $n = 2$, and $P$ is a real polynomial in two variables for which $P = 0$ on $K$.
     Then by the previous part, $P u = 0$.
@@ -836,13 +836,13 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   That is, if we put $P(x) = x^alpha$, then we proved that $P hat(F) in L^2 (RR^n)$.
   But $P hat(F) = hat(P(D) F)$, and so $hat(D_alpha F) in L^2 (RR^n)$, and so $hat(D^alpha F) in L^2 (RR^n)$.
   By Plancherel's theorem we now get $D^alpha F in L^2 (RR^n)$.
-  Since $F = f$ on $omega$, we have $D^alpha F = D^alpha f$ on $omega$ in the distributional sense (that is, $D^alpha F(phi) = D^alpha f(phi)$ for every $phi in cal(D)(omega)$).
+  Since $F = f$ on $omega$, we have $D^alpha F = D^alpha f$ on $omega$ in the distributional sense (that is, $D^alpha F(phi.alt) = D^alpha f(phi.alt)$ for every $phi.alt in cal(D)(omega)$).
   So in fact we showed that for every open $omega$ for which $overline(omega)$ is compact and $overline(omega) subset.eq Omega$, there is a function $g_omega in L^2 (RR^n)$ for which $g_omega = D^alpha f$ on $omega$.
 
-  Suppose $omega, omega'$ are two such sets with $omega inter omega' != emptyset$. Then for every $phi in cal(D)(omega inter omega')$
-  $ g_omega (phi) = D^alpha f(phi) = g_(omega') (phi) $
-  that is, for every $phi in cal(D)(omega inter omega')$
-  $ integral_(RR^n) g_omega phi dif m_n = integral_(RR^n) g_(omega') phi dif m_n $
+  Suppose $omega, omega'$ are two such sets with $omega inter omega' != emptyset$. Then for every $phi.alt in cal(D)(omega inter omega')$
+  $ g_omega (phi.alt) = D^alpha f(phi.alt) = g_(omega') (phi.alt) $
+  that is, for every $phi.alt in cal(D)(omega inter omega')$
+  $ integral_(RR^n) g_omega phi.alt dif m_n = integral_(RR^n) g_(omega') phi.alt dif m_n $
   and so $g_omega = g_(omega')$ on $omega inter omega'$.
 
   Now for every $x in Omega$ fix some $r_x > 0$ for which $overline(B(x, r_x)) subset.eq Omega$, and put $omega_x = B(x, r_x)$.
@@ -857,25 +857,25 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   This shows that $g$ is locally $L^2$ in $Omega$.
 
   It remains to show that $g = D^alpha f$.
-  Let $phi in cal(D)(Omega)$. Let $K$ be the support of $phi$, and as before take a finite $F subset.eq K$ for which $K subset.eq union.big_(x in F) omega_x$.
+  Let $phi.alt in cal(D)(Omega)$. Let $K$ be the support of $phi.alt$, and as before take a finite $F subset.eq K$ for which $K subset.eq union.big_(x in F) omega_x$.
   Then ${omega_x : x in F} union {RR^n without K}$ is an open cover of $RR^n$.
   Let ${psi_m}$ be a locally finite partition of unity subordinate to the above cover.
-  Fix $m$ for a moment. If the support of $psi_m$ is contained in $RR^n without K$, then $psi_m phi = 0$, and so
-  $ integral_(RR^n) g psi_m phi dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n $
+  Fix $m$ for a moment. If the support of $psi_m$ is contained in $RR^n without K$, then $psi_m phi.alt = 0$, and so
+  $ integral_(RR^n) g psi_m phi.alt dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi.alt) dif m_n $
   Otherwise, there is $x in F$ for which the support of $psi_m$ is contained in $omega_x$, and since $D^alpha f = g_(omega_x)$ on $omega_x$ in the distributional sense, and $g = g_(omega_x)$ on $omega_x$, we get
   $
-    integral_(RR^n) g psi_m phi dif m_n &= integral_(omega_x) g psi_m phi dif m_n = integral_(omega_x) g_(omega_x) psi_m phi dif m_n = (-1)^(|alpha|) integral_(omega_x) f D^alpha (psi_m phi) dif m_n \
-    &= (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n
+    integral_(RR^n) g psi_m phi.alt dif m_n &= integral_(omega_x) g psi_m phi.alt dif m_n = integral_(omega_x) g_(omega_x) psi_m phi.alt dif m_n = (-1)^(|alpha|) integral_(omega_x) f D^alpha (psi_m phi.alt) dif m_n \
+    &= (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi.alt) dif m_n
   $
   That is, in any case
-  $ integral_(RR^n) g psi_m phi dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n $
+  $ integral_(RR^n) g psi_m phi.alt dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi.alt) dif m_n $
   for every $m$, and so we get
   $
-    integral_(RR^n) g phi dif m_n &= sum_m integral_(RR^n) g psi_m phi dif m_n = sum_m (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi) dif m_n \
-    &= (-1)^(|alpha|) integral_(RR^n) f D^alpha (sum_m psi_m phi) dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha phi dif m_n
+    integral_(RR^n) g phi.alt dif m_n &= sum_m integral_(RR^n) g psi_m phi.alt dif m_n = sum_m (-1)^(|alpha|) integral_(RR^n) f D^alpha (psi_m phi.alt) dif m_n \
+    &= (-1)^(|alpha|) integral_(RR^n) f D^alpha (sum_m psi_m phi.alt) dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha phi.alt dif m_n
   $
-  So we got that for every $phi in cal(D)(Omega)$
-  $ integral_(RR^n) g phi dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha phi dif m_n $
+  So we got that for every $phi.alt in cal(D)(Omega)$
+  $ integral_(RR^n) g phi.alt dif m_n = (-1)^(|alpha|) integral_(RR^n) f D^alpha phi.alt dif m_n $
   and so $g = D^alpha f$, as required.
 ]
 
