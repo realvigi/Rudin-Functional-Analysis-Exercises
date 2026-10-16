@@ -3,6 +3,7 @@
 
 #let Sn = $cal(S)_n$
 #let Rn = $RR^n$
+#let Cn = $CC^n$
 
 =
 #problem[
@@ -529,6 +530,11 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
   ]
 
 =
+#problem  [
+Suppose $F$ is an entire function in $CC^n$, and suppose that to each $epsilon > 0$ there correspond an integer $N(epsilon)$ and a constant $gamma(epsilon)<oo$ such that
+$ |F(z)| <= gamma(epsilon)(1+|z|)^(N(epsilon)) e^(epsilon|Im(z)|) & quad(x in CC^n). $
+Prove that $F$ is a polynomial.
+]
 #solution[
   Let $B$ be the closed unit ball in $RR^n$.
   By the Paley–Wiener theorem for distributions with compact support, we get that for every $epsilon > 0$ there is $u_epsilon in cal(D)'(RR^n)$ with compact support, whose support is contained in $epsilon B$, and such that $F(z) = u_epsilon (e_(-z))$ for every $z$.
@@ -549,6 +555,15 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
 ]
 
 = <ex-15>
+#problem[
+  Suppose $f$ is an entire function in #Cn, $N$ is a positive integer, $r>=0$ and
+  $
+    |f(z)| & <=(1+|z|)^N e^(r|Im z|) & quad "for all" z in Cn. \
+    |f(x)| & <=1                     & quad "for all" x in Rn.
+  $
+  Prove that then
+  $ |f(z)|<=e^(r|Im z|) quad "for all" z in Cn. $
+]
 #solution[
   Fix $z = x + i y$.
   For every $s > 0$ and $lambda in CC$ define $g_s (lambda) = (1 - i s lambda)^(-N-1) e^(i r abs(y) lambda) f(x + lambda y)$. Then $g_s$ is entire in $CC$.
@@ -558,7 +573,7 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
   For $lambda in [-A, A]$ we have
   $
     |g_s (lambda)| & = |1 - i s lambda|^(-N-1) |e^(i r abs(y) lambda)| |f(x + lambda y)| \
-                   & <= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1 // FIX: original exponent reads N+1/2
+                   & <= |1 - i s lambda|^(-N-1) = 1 / (1 + s^2 lambda^2)^((N+1)\/2) <= 1
   $
   and also, for every $t in [0, pi]$ we have $sin t >= 0$, and so
   $
@@ -574,7 +589,7 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
   $ (1 + abs(x) + abs(y) A)^N / (s A - 1)^(N+1) stretch(->)_(A -> oo) 0 $
   and so there is some $A_0 > max{s^(-1), 1}$ for which
   $ (1 + abs(x) + abs(y) A_0)^N / (s A_0 - 1)^(N+1) < 1 $
-  and then we get $|g_s (A_0 e^(i t))| < 1$ for every $t in [0, pi]$. // FIX: original has t ∈ [0, 2π]
+  and then we get $|g_s (A_0 e^(i t))| < 1$ for every $t in [0, pi]$.
   Then $|g_s| <= 1$ on the boundary of the domain $Omega_(A_0)$.
   $overline(Omega_(A_0))$ is compact, and so by the maximum principle $|g_s| <= 1$ in $Omega_(A_0)$.
   Since $A_0 > 1$, in particular $i in Omega_(A_0)$, and so $|g_s (i)| <= 1$. That is,
@@ -584,10 +599,20 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
   and since $s$ is arbitrary, the last inequality holds for every $s > 0$. But
   $ (1 + s)^(N+1) e^(r abs(y)) stretch(->)_(s -> 0) e^(r abs(y)) $
   and so we get $|f(z)| <= e^(r abs(y))$.
-  Since $z$ is arbitrary, we get $|f(z)| <= e^(r |op("Im") z|)$ for every $z in CC^n$.
+  Since $z$ is arbitrary, we get $|f(z)| <= e^(r |Im z|)$ for every $z in Cn$.
 ]
 
 = <ex-16>
+#problem[
+  In (b) of Theorem 7.23 it is not asserted that $u$ has order $N$. The following example shows that this is not always true.\
+  Let $mu$ be the Borel probability measure on $RR^3$ which is concentrated on the unit sphere $S^2$ and which is invariant under all rotations of $S^2$. Compute (by using spherical coordinates that
+  $ hat(mu)(x) = (sin|x|)/(|x|) quad (x in RR^3). $
+  Put $u = D_1 mu$. Then
+  $ |hat(u)(x)| = |x_1 hat(mu)(x)| <=1 quad (x in RR^3). $
+  Deduce from Exercise 15 that
+  $ |u(e_(-z))| <= gamma e^abs(Im z) quad (z in CC^3) $
+  although $u$ is not a distribution of order $0$. Find an explicit formula for the entire function $u(e_(-z))$, $z in CC^3$.
+]
 #solution[
   Put $m = m_3$ and $C = m_3 (B(0, 1))$.
   For every Borel set $E subset.eq RR^3$ define
@@ -616,13 +641,12 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
 
   #claim[For every Borel function $phi.alt$ on $RR^3$ we have $integral_(RR^3) phi.alt dif mu = C^(-1) integral_(B(0, 1)) phi.alt(abs(t)^(-1) t) dif m(t)$.] <sphere-integral>
   #proof[
-    If $E subset.eq S^2$ is a Borel set, then for every $s in B(0, 1)$ // FIX: original has t ∈ B(0, 1)
-    $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $ // FIX: original has x ∈ T(E)
+    If $E subset.eq S^2$ is a Borel set, then for every $s in B(0, 1)$
+    $ chi_E (abs(s)^(-1) s) = chi_({t x : t in [0, 1], x in E}) (s) $
     and so
     $
       integral_(S^2) chi_E dif mu & = mu(E) = C^(-1) m({t x : t in [0, 1], x in E inter S^2}) \
                                   & = C^(-1) integral_(B(0, 1)) chi_({t x : t in [0, 1], x in E}) dif m \
-      // FIX: original has x ∈ T(E)
                                   & = C^(-1) integral_(B(0, 1)) chi_E (abs(t)^(-1) t) dif m(t)
     $
     Then by linearity, for every simple Borel function $phi.alt$ supported on $S^2$
@@ -638,10 +662,10 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
   ]
 
   By @ex-10, $hat(mu) in C(RR^3)$, and for every $x$
-  $ hat(mu)(x) = integral_(RR^n) e^(-i x dot t) dif mu(t) $
+  $ hat(mu)(x) = integral_(RR^n) e^(-i x dot t) dif mu(t). $
   Fix $x$. Then since $mu$ is invariant under rotations, and since the inner product is preserved under isometries (and in particular rotations), for every rotation $T : RR^3 -> RR^3$
   $
-    hat(mu)(T x) = integral_(RR^n) e^(-i T x dot t) dif mu(t) = integral_(RR^n) e^(-i T x dot T t) dif mu(t) = integral_(RR^n) e^(-i x dot t) dif mu(t) = hat(mu)(x) // FIX: original repeats the middle step twice
+    hat(mu)(T x) = integral_(RR^n) e^(-i T x dot t) dif mu(t) = integral_(RR^n) e^(-i T x dot T t) dif mu(t) = integral_(RR^n) e^(-i x dot t) dif mu(t) = hat(mu)(x)
   $
   that is, $hat(mu)$ is also invariant under rotations.
   Then in particular, for every $x$
@@ -664,7 +688,7 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
   Also, $hat(mu)(0) = integral_(RR^n) dif mu(t) = 1 = lim_(x -> 0) abs(x)^(-1) sin abs(x)$.
 
   Put $u = D_1 mu$.
-  Then if $P(x) = x_1$, we have $hat(u) = hat(D_1 mu) = P hat(mu)$. // FIX: original has hat(D_1 u)
+  Then if $P(x) = x_1$, we have $hat(u) = hat(D_1 mu) = P hat(mu)$.
   But since $hat(mu) in C(RR^3)$, also $P hat(mu) in C(RR^3)$, and $(P hat(mu))(x) = x_1 hat(mu)(x)$.
   And so $hat(u) in C(RR^3)$, and
   $ |hat(u)(x)| = (abs(x_1) abs(sin abs(x))) / abs(x) <= abs(sin abs(x)) <= 1 $
@@ -709,6 +733,17 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
 ]
 
 =
+#problem[
+  Suppose $u$ is a distribution in #Rn, with compact support $K$, whose Fourier transform $hat(u)$ is a _bounded_ function on $Rn$.
+  + Assume $n=1$ or $n=2$, and prove that $psi u=0$ for every $psi in C^oo (Rn)$ that vanishes on $K$.
+  + Assume $n=2$, and assume that there is a real plynomial $P$, in two variables, that vanishes on $K$. Prove that $P u = 0$ and that $hat(u)$ therefore satisfies the partial differential equation $P(-D)hat(u)=0$. For example, when $K$ is the unit circle, then
+    $ hat(u) + Delta hat(u) = 0, $
+    where $Delta = partial^2/(partial x_1^2) + partial^2/(partial x_2^2)$ is the Laplacian.
+  + Show, with the aid or Exercise 16 and the polynomial $1 - x_1^2 - x_2^2 - x_3^2$, that (b), hence also (a), becomes false with $n=3$ in place of $n=2$.
+  + Assume $n=1, f in L^1(RR)$, $hat(f)=0$ on $K$, and $hat(f)$ satisfies a Lipschitz condition of order $1/2$, that is, $|hat(f)(t)-hat(f)(s)| <= C|t-s|^(1/2)$. Prove that then
+  $ integral_(-oo)^(oo) f(x)hat(u)(x) dif x = 0. $
+]
+
 #solution[
   Fix $n$.
   For every $epsilon > 0$ let $H_epsilon = K + overline(B(0, epsilon))$.

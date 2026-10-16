@@ -109,3 +109,7 @@
 
 // Notation
 #let ip(x, y) = $lr(chevron.l #x, #y chevron.r)$
+
+// Upright "Re"/"Im" operators instead of the default fraktur ℜ/ℑ symbols.
+#let Re = math.op("Re")
+#let Im = math.op("Im")
