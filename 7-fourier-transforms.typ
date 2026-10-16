@@ -64,6 +64,7 @@
   and so we found a metric $d$ on $Sn$ which induces the standard topology, is translation invariant, and with respect to which the Fourier transform is an isometry, as required.
 ]
 
+
 = <ex-3>
 + #problem[
     Suppose $f(x) = e^x$ on the real line. Show that $f$ is not a tempered distribution.
@@ -190,7 +191,7 @@
   Fix $x in RR^n$. Then for every $phi.alt in Sn$
   $
     hat(tau_x u)(phi.alt) & = (tau_x u)(Phi phi.alt) = u(tau_(-x) Phi phi.alt) = u(Phi^4 (tau_(-x) Phi phi.alt)) = u(Phi^3 (e_x Phi^2 phi.alt)) \
-                      & = u(Phi rho (e_x rho phi.alt)) = u(Phi (e_(-x) phi.alt)) = hat(u)(e_(-x) phi.alt) = (e_(-x) u)(phi.alt)
+    & = u(Phi rho (e_x rho phi.alt)) = u(Phi (e_(-x) phi.alt)) = hat(u)(e_(-x) phi.alt) = (e_(-x) u)(phi.alt)
   $
   and so $hat(tau_x u) = e_(-x) u$, as required.
 
@@ -299,7 +300,9 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   #solution[
     We need to show that for every $phi.alt in cal(D)(Omega)$ we have $integral_(RR^n) hat(phi.alt) dif mu = integral_(RR^n) hat(mu) phi.alt dif m_n$, where $hat(mu)$ is defined as a function as in the exercise.
     We have
-    $ integral_(RR^n) integral_(RR^n) |phi.alt(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi.alt)_1 mu(RR^n) < oo $
+    $
+      integral_(RR^n) integral_(RR^n) |phi.alt(x) e^(-i t dot x)| dif m_n (x) dif mu(t) = norm(phi.alt)_1 mu(RR^n) < oo
+    $
     and so by Fubini's theorem
     $
       integral_(RR^n) integral_(RR^n) phi.alt(x) e^(-i t dot x) dif m_n (x) dif mu(t) = integral_(RR^n) integral_(RR^n) phi.alt(x) e^(-i t dot x) dif mu(t) dif m_n (x)
@@ -307,8 +310,8 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     and so we get
     $
       integral_(RR^n) hat(phi.alt) dif mu & = integral_(RR^n) integral_(RR^n) phi.alt(x) e^(-i t dot x) dif m_n (x) dif mu(t) \
-                                      & = integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi.alt(x) dif m_n (x) \
-                                      & = integral_(RR^n) hat(mu)(x) phi.alt(x) dif m_n (x)
+      & = integral_(RR^n) (integral_(RR^n) e^(-i t dot x) dif mu(t)) phi.alt(x) dif m_n (x) \
+      & = integral_(RR^n) hat(mu)(x) phi.alt(x) dif m_n (x)
     $
     as required.
   ]
@@ -417,25 +420,30 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
   But if ${h_j}$ is an approximate identity, then ${rho h_j}$ is also an approximate identity, and so by @approx-identity, for every $u in cal(S)'_n$ and every $phi.alt in Sn$ we get
   $
     (u * h_j)(phi.alt) & = ((u * h_j) * rho phi.alt)(0) = (u * (h_j * rho phi.alt))(0) = u(rho (h_j * rho phi.alt)) \
-                   & = u((rho h_j) * phi.alt) stretch(->)_(j -> oo) u(phi.alt)
+                       & = u((rho h_j) * phi.alt) stretch(->)_(j -> oo) u(phi.alt)
   $
   that is, $u * h_j -> u$ in the weak\* topology of $cal(S)'_n$, as required.
 ]
 
 =
-#solution[
-  // TODO: in the first part, sequences and points are taken in X, but f is only defined on A; probably A was meant
-  + Let ${x_n}$ be a Cauchy sequence in $X$.
-    Let $epsilon > 0$. Then there is $delta > 0$ such that for every $a, b in X$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
-    Since ${x_n}$ is a Cauchy sequence, there is $N$ such that $d(x_m, x_n) < delta$ for every $m, n >= N$.
+Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is uniformly continuous.
+
++ #problem[
+    Prove that $f$ has a unique continuous extension $F:X -> Y$.
+  ]
+  #solution[
+    // TODO: in the first part, sequences and points are taken in X, but f is only defined on A; probably A was meant
+    Let ${x_n}$ be a Cauchy sequence in $A$.
+    Let $epsilon > 0$. Then there is $delta > 0$ such that for every $a, b in A$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
+    Since ${x_n}$ is a Cauchy sequence in $X$, there is $N$ such that $d(x_m, x_n) < delta$ for every $m, n >= N$.
     Then $d(f(x_m), f(x_n)) < epsilon$ for every $m, n >= N$.
     This shows that ${f(x_n)}$ is a Cauchy sequence in $Y$.
-    That is, we showed that the image of every Cauchy sequence in $X$ is a Cauchy sequence in $Y$. Since $Y$ is complete, we get that the image of a convergent sequence in $X$ is a convergent sequence in $Y$.
+    That is, we showed that the image of every Cauchy sequence in $X$ which is contained in $A$, is a Cauchy sequence in $Y$. Since $Y$ is complete, we get that the image under $f$ of a sequence in $A$ which is convergent in $X$ is a convergent sequence in $Y$.
 
-    Now suppose ${a_n}, {b_n}$ are two sequences in $X$ which both converge to $x_0 in X$.
+    Now suppose ${a_n}, {b_n}$ are two sequences in $A$ which both converge to $x_0 in X$.
     By what we saw, there are $y_1, y_2 in Y$ for which $f(a_n) -> y_1$ and $f(b_n) -> y_2$ in $Y$.
     Let $epsilon > 0$. Then there is $N$ such that $d(y_1, f(a_n)), d(f(b_n), y_2) < epsilon$ for every $n > N$.
-    Also, there is $delta > 0$ such that for every $a, b in X$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
+    Also, there is $delta > 0$ such that for every $a, b in A$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
     Since $a_n -> x_0$ and also $b_n -> x_0$, we have $d(a_n, b_n) -> 0$.
     Then there is some $m > N$ for which $d(a_m, b_m) < delta$. Then we get
     $
@@ -443,7 +451,7 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
                   & < epsilon + epsilon + epsilon = 3 epsilon
     $
     and since $epsilon$ is arbitrary we get $d(y_1, y_2) = 0$, that is, $y_1 = y_2$.
-    This shows that if two sequences converge to the same limit in $X$, then their images in $Y$ also converge to the same limit.
+    This shows that if two sequences in $A$ converge to the same limit in $X$, then their images in $Y$ also converge to the same limit.
 
     Now for $x in X$, take a sequence ${a_n}$ in $A$ for which $a_n -> x$, and define $F(x) = lim_(n -> oo) f(a_n)$.
     By what we saw, the limit always exists, and it does not depend on the specific sequence we chose, but only on its limit, that is, only on $x$.
@@ -470,8 +478,14 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     By the continuity of $G$ we get $f(a_n) = G(a_n) -> G(x)$, but on the other hand $f(a_n) -> F(x)$ directly from the definition.
     Then by the uniqueness of the limit in a metric space we get $F(x) = G(x)$.
     So indeed $F = G$, as required.
+  ]
 
-  + Suppose $f : A -> Y$ is an isometry, and $F$ is the unique continuous extension of $f$ to $X$.
++ #problem[
+    if $f$ is an isometry, prove that the same is true of $F$, and prove that $F(X)$ is closed in $Y$.
+  ]
+
+  #solution[
+    Suppose $f : A -> Y$ is an isometry, and $F$ is the unique continuous extension of $f$ to $X$.
 
     #claim[$d(F(x_1), F(x_2)) <= d(x_1, x_2)$ for every $x_1, x_2 in X$.] <extension-contraction>
     #proof[
@@ -500,9 +514,9 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     but on the other hand, for every $n$
     $ G(F(a_n)) = G(f(a_n)) = f^(-1) (f(a_n)) = a_n $
     and so $a_n -> G(F(x))$, and by the uniqueness of the limit we got $G(F(x)) = x$.
-    That is, $G compose F$ is the identity function.
+    That is, $G compose F$ is the identity function on $X$.
 
-    Exactly the same argument as in the proof of @extension-contraction, applied to $f^(-1)$ and $G$, shows that $d(G(y_1), G(y_2)) <= d(y_1, y_2)$ for every $y_1, y_2 in F(X)$.
+    @extension-contraction, applied to $G$, $f^(-1)$ instead of $F$, $f$, shows that $d(G(y_1), G(y_2)) <= d(y_1, y_2)$ for every $y_1, y_2 in F(X)$.
     That is, for every $x_1, x_2 in X$
     $ d(x_1, x_2) = d(G(F(x_1)), G(F(x_2))) <= d(F(x_1), F(x_2)) $
     and so, together with @extension-contraction, for every $x_1, x_2 in X$
@@ -512,7 +526,7 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     Since $F : X -> F(X)$ is an isometry and $X$ is complete, $F(X)$ is also a complete metric space.
     Then if ${y_n}$ is a sequence in $F(X)$ which converges to some $y in Y$, then in particular ${y_n}$ is a Cauchy sequence, and so it must converge in $F(X)$, that is, there is $y' in F(X)$ for which $y_n -> y'$ in $F(X)$, and so $y_n -> y'$ in $Y$, and so by the uniqueness of the limit $y = y' in F(X)$.
     This shows that $F(X)$ is closed, as required.
-]
+  ]
 
 =
 #solution[
@@ -618,8 +632,8 @@ $ hat(mu)(x) = integral_(Rn) e^(-i x dot t) dif mu(t) quad (x in Rn). $
     Finally, if $phi.alt$ is any Borel function on $RR^3$, then since $mu$ is concentrated on $S^2$ we get
     $
       integral_(RR^3) phi.alt dif mu & = integral_(S^2) phi.alt dif mu = integral_(S^2) chi_(S^2) phi.alt dif mu \
-                                 & = C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi.alt(abs(t)^(-1) t) dif m(t) \
-                                 & = C^(-1) integral_(B(0, 1)) phi.alt(abs(t)^(-1) t) dif m(t)
+                                     & = C^(-1) integral_(B(0, 1)) chi_(S^2) (abs(t)^(-1) t) phi.alt(abs(t)^(-1) t) dif m(t) \
+                                     & = C^(-1) integral_(B(0, 1)) phi.alt(abs(t)^(-1) t) dif m(t)
     $
   ]
 
