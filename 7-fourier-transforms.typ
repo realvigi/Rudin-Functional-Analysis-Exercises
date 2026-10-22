@@ -829,15 +829,15 @@ Prove that $F$ is a polynomial.
     $
     Short calculation gives
     $
-      D_j g(x) & = x_j / (|x|) \
+        D_j g(x) & = x_j / (|x|) \
       D_j^2 g(x) & = (|x|^2 - x_j^2) / (|x|^3) \
-       f'(x) & = (cos x)/x - (sin x)/x^2 \
-      f''(x) & = ((2 - x^2) sin x - 2x cos x )/x^3
+           f'(x) & = (cos x)/x - (sin x)/x^2 \
+          f''(x) & = ((2 - x^2) sin x - 2x cos x )/x^3
     $
     Summing over $j = 1, 2, 3$, for $x != 0$ we get
     $
-      sum_(j=1)^3 (D_j g(x))^2 &= (|x|^2) / (|x|^2) = 1 \
-      sum_(j=1)^3 D_j^2 g(x) &= (3|x|^2 - |x|^2) / (|x|^3) = 2 / (|x|)
+      sum_(j=1)^3 (D_j g(x))^2 & = (|x|^2) / (|x|^2) = 1 \
+        sum_(j=1)^3 D_j^2 g(x) & = (3|x|^2 - |x|^2) / (|x|^3) = 2 / (|x|)
     $
     and so
     $
@@ -847,8 +847,8 @@ Prove that $F$ is a polynomial.
     $
     Now $hat(u)(x) = x_1 F(x)$, and so by the product rule, for $x != 0$ we get
     $
-      D_j hat(u)(x) &= delta_(1 j) F(x) + x_1 D_j F(x) \
-      D_j^2 hat(u)(x) &= 2 delta_(1 j) D_j F(x) + x_1 D_j^2 F(x)
+        D_j hat(u)(x) & = delta_(1 j) F(x) + x_1 D_j F(x) \
+      D_j^2 hat(u)(x) & = 2 delta_(1 j) D_j F(x) + x_1 D_j^2 F(x)
     $
     and summing over $j$, for $x != 0$ we get
     $
@@ -891,6 +891,9 @@ Prove that $F$ is a polynomial.
 ]
 
 =
+#problem[
+  Was it necessary to introduce the function $psi$ into the proof of Teorem 7.25? Could the proof have been simplified by setting $F(x) = f(x)$ on $K$, $F(x)=0$ off K?
+]
 #solution[
   Replacing $F$ by the suggestion from the exercise will not work, since then we would get $D_i^r F = sum_(s=0)^r binom(r, s) (D_i^(r-s) chi_K) g_(i s)$ in $Omega$, and $D_i^(r-s) chi_K$ is necessarily a distribution which is not a function, and so $D_i^r F$ cannot be in $L^2 (Omega)$, and so also not in $L^2 (RR^n)$.
 
@@ -899,6 +902,9 @@ Prove that $F$ is a polynomial.
 ]
 
 =
+#problem[
+  Show that the hypotheses of Theorem 7.25 imply that $D^alpha f$ is locally $L^2$ for every multi-index $alpha$ with $|alpha|<=r$.
+]
 #solution[
   Let $r >= 0$ be an integer.
   Let $f$ be a function on an open set $Omega subset.eq RR^n$ such that for every $1 <= i <= n$ and $0 <= k <= r$, the distributional derivative $D_i^k f$ is a locally $L^2$ function in $Omega$.
@@ -959,6 +965,13 @@ Prove that $F$ is a polynomial.
 ]
 
 =
+#problem[
+  Let $f in L^2(RR^2)$ be the continuous function whose Fourier transform is
+  $ hat(f)(y) = (1+|y|)^(-4)(log(2+|y|))^(-1) quad (y in RR^2). $
+  since $|y|^3hat(f)(y)$ is in $L^2(RR^2)$, Theorem 7.25 implies that $f in C^((1))(RR^2)$. Show that the stronger conclusion $f in C^((2))(RR^2)$ is false, by proving that
+  $ (f(h,0) + f(-h,0) - 2f(0,0))/(h^2) -> -oo "as" h->0. $
+  This shows that $>$ cannot be replaced by $>=$ in (1) of Theorem 7.25.
+]
 #solution[
   Put $g(y) = (1 + abs(y))^(-4) (log(2 + abs(y)))^(-1)$. Then
   $
@@ -1068,3 +1081,72 @@ Prove that $F$ is a polynomial.
   in contradiction to what we just saw.
   So indeed $f in.not C^((2)) (RR^2)$, as required.
 ]
+
+=
+#problem[
+  Suppose $u$ is a distribution in $Rn$ whose first derivatives $D_1 u, dots, D_n u$ are functions in $L^2(Rn)$. Prove that $u$ is also a function and that $u$ is locally $L^2$. Show that "locally" cannot be omitted in the conclusion. Show that $u$ is in fact the sum of an $L^2$-function and an entire function. \
+  When $n=1$, show that $u$ is actually a continuous function. Show that this stronger conclusion is false when $n=2$. For example, the gradient of the function
+  $ u(r e^(i theta)) = log log(2 + 1/r) $
+  is in $L^2(RR^2)$.
+]
+#solution[
+  Fix some $psi in cal(D)(Rn)$ for which $psi=1$ on the unit ball of $Rn$, and also $0<=psi<=1$ everywhere. \
+  For $0<=j<=n$, Put $P_j (x)=x_j$ and also put $Q(x)=|x|^2$. So $Q=sum_(j=1)^n P_j^2$. \
+  On $Rn without {0}$ define
+  $ g = (1 - psi)/(i Q) sum_(j=1)^n P_j hat(D_j u) $
+  and also put $g(0) = 0$. Then we have $g=0$ on the unit ball of $Rn$. Also, outside the unit ball we have
+  $
+    |g(x)| & <= (|1-psi(x)|)/(|x|^2) sum_(j=1)^n |x_j| |hat(D_j u)(x)| <= 1/(|x|^2) sum_(j=1)^n |x| |hat(D_j u)(x)| \
+           & <= 1/(|x|) sum_(j=1)^n |hat(D_j u)(x)| <= sum_(j=1)^n |hat(D_j u)(x)|.
+  $
+  By the Plancherel theorem, $hat(D_j u)$ is in $L^2(Rn)$ for all $j$, and so $sum_(j=1)^n |hat(D_j u)(x)|$ is also in $L^2(Rn)$. So from the inequality we saw we get that $g$ is in $L^2(Rn)$.\
+  Again by the Plancherel theorem, there exists some $h in L^2(Rn)$ for which $hat(h)=g$. So for all $1<=k<=n$ we have the following distibutional equalities
+  $
+    hat(D_k h) &= i P_k hat(h) = i P_k g = i P_k (1 - psi)/(i Q) sum_(j=1)^n P_j hat(D_j u) = (1 - psi)/(i Q) sum_(j=1)^n P_j i P_k hat(D_j u)\
+    &= (1 - psi)/(i Q) sum_(j=1)^n P_j hat(D_k D_j u) = (1 - psi)/(i Q) sum_(j=1)^n P_j hat(D_j D_k u) = (1 - psi)/(i Q) sum_(j=1)^n i P_j^2 hat(D_k u)\
+    &= (1 - psi) hat(D_k u).
+  $
+  Put $v = u - h$. So for each $k$, since $D_k u$ and $D_k h$ are both in $Sn'$, we get $D_k v in Sn'$ as well and so $hat(D_k v)$ is defined. We now get $ hat(D_k v) = hat(D_k u) - hat(D_k h) = hat(D_k u) - (1-psi)hat(D_k u) = psi hat(D_k u) $
+  And in particular it shows that $hat(D_k v)$ has compact support, andso by the Paley-Weiner theorem we get that $rho D_k v = hat(hat(D_k v))$ is a restriction to $Rn$ of an entire function on $Cn$, and so is $D_k v$, for all $k$. So for each $k$ there is some $f_k in H(Cn)$ s.t. $f_k = D_k v$ as distributions on $Rn$. \
+  For each $k$ and $w in Cn$ put $F_k (w) = integral_(0)^(1) f_k (s w) dif s$. The dominated convergence theorem shows that $F_k$ are all continuous in $Cn$ (indeed if we fix some $z$, then the family of integrands $s mapsto f(s w)$ for $|w-z|<1$ is uniformly bounded by the supremum of $f$ in $B(0,|z|+1)$).
+  Also, if we fix $w_2, dots, w_n$ and take some closed path $gamma:[0,1]->CC$, we see that
+  $
+    integral_(gamma) F_k (lambda, z_2, dots, z_n) dif lambda &= integral_(0)^(1) integral_(0)^(1) f_k (s gamma(t), s z_2, dots, s z_n) dif s gamma'(t) dif t \
+    &= integral_(0)^(1) integral_(0)^(1) f_k (s gamma(t), s z_2, dots, s z_n) gamma'(t) dif t dif s \
+    &= integral_(0)^(1) integral_gamma f_k (s lambda, s z_2, dots, s z_n) dif lambda dif s = 0 \
+  $
+  where the last transition is from the Cauchy theorem and the fact that f_k is entire in each coordinate separately.\
+  This shows that $F_k$ is entire in the first coordinate. Same argument shows that $F_k$ is entire in each coordinate separately. Since we already know that $F_k$ is continuous, we get that $F_k$ is entire in $Cn$. \
+  Since the $F_k$ is entire, and $[0,1]$ is compact, we can calculate $D_j F_k$ with derivation under the integral sign and get
+  $
+    D_j F(w) = integral_(0)^(1) partial / (partial w_j) (f_k (s w)) dif s
+    = integral_(0)^(1) s dot (partial f_k) / (partial w_j) (s w) dif s.
+  $
+  Moreover, since $f_k = D_k v$ as distributions on $Rn$, we also get $D_j f_k = D_j D_k v = D_k D_j v = D_k f_j$ as distributions on $Rn$. But since $f_j, f_k$ are both smooth on $Rn$ we get that their distributional drivatives are compatible with their regular derivatives on $Rn$, which are just the restriction to $Rn$ of $(partial f_k) / (partial w_j), (partial f_j) / (partial w_k)$, and so we get that
+  $
+    (partial f_k) / (partial w_j) = (partial f_j) / (partial w_k)
+  $
+  on $Rn$, and since both sides of this equation are entire in $Cn$ we get that the equation holds everywhere in $Cn$.
+  So we get
+  $
+    D_j F(w) = integral_(0)^(1) s dot (partial f_j) / (partial w_k) (s w) dif s.
+  $
+  for all $j,k$. \
+  Now define $F(w) = sum_(k=1)^n w_k F_k (w)$. It is clear that $F$ is entire in $Cn$, and by the product law we get
+  $
+    D_j F(w) &= F_j (w) + sum_(k=1)^n w_k D_j F_k (w) = F_j (w) + sum_(k=1)^n w_k integral_(0)^(1) s dot (partial f_j) / (partial w_k) (s w) dif s \
+    &= F_j (w) + integral_(0)^(1) s dot dif / (dif s) (f_j (s w)) dif s 
+  $
+  and from integration by parts we get
+  $
+    integral_(0)^(1) s dot dif / (dif s) (f_j (s w)) dif s = f_j (w) - integral_(0)^(1) f_j (s w) dif s = f_j (w) - F_j (w)
+  $
+  and so we get $D_j F(w) = f_j (w)$. This is for all $j$ and all $w in Cn$. \
+  In particular we get $D_j (v - F) = D_j v - f_j = 0$ for all $j$. \
+
+
+
+
+
+]
+
