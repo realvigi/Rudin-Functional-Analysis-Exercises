@@ -42,7 +42,7 @@
     In the first direction, from the definition of $q_N$ it is clear that $p_N (f) <= q_N (f)$ for every $f in Sn$, and so if $q_N (f) < N^(-1)$ then also $p_N (f) < N^(-1)$. Hence $W_N subset.eq V_N$ for every $N$.
 
     In the second direction, fix $N$; we need to show that there is some $k$ for which $V_k subset.eq W_N$.
-    For $0 <= j <= 3$, the function $p_N compose Phi^j$ is a continuous map from $Sn$ to $[0, oo)$. // FIX: original has (0, ∞)
+    For $0 <= j <= 3$, the function $p_N compose Phi^j$ is a continuous map from $Sn$ to $[0, oo)$.
     So for every $0 <= j <= 3$ there is a neighborhood $U_j$ of $0$ in $Sn$ such that $p_N (Phi^j f) < (4N)^(-1)$ for every $f in U_j$.
     There is some $k$ for which $V_k subset.eq inter.big_(j=0)^3 U_j$. Then for every $f in V_k$ and every $0 <= j <= 3$ we have $p_N (Phi^j f) < (4N)^(-1)$.
     So for every $f in V_k$ we have $q_N (f) = sum_(j=0)^3 p_N (Phi^j f) < N^(-1)$, that is, $f in W_N$.
@@ -433,7 +433,6 @@ Suppose $X$ and $Y$ are complete metric spaces, $A$ dense in $X$, $f:A -> Y$ is 
     Prove that $f$ has a unique continuous extension $F:X -> Y$.
   ]
   #solution[
-    // TODO: in the first part, sequences and points are taken in X, but f is only defined on A; probably A was meant
     Let ${x_n}$ be a Cauchy sequence in $A$.
     Let $epsilon > 0$. Then there is $delta > 0$ such that for every $a, b in A$, if $d(a, b) < delta$ then $d(f(a), f(b)) < epsilon$.
     Since ${x_n}$ is a Cauchy sequence in $X$, there is $N$ such that $d(x_m, x_n) < delta$ for every $m, n >= N$.
@@ -767,7 +766,7 @@ Prove that $F$ is a polynomial.
     $
     and by Plancherel's theorem we get $norm(hat(u * h_epsilon))_2^2 <= norm(hat(u))_oo^2 epsilon^(-n) norm(h)_2^2$.
     From the assumption that $hat(u)$ is a bounded function we get $norm(hat(u * h_epsilon))_2^2 < oo$, and so by Plancherel's theorem again we get $norm(hat(u * h_epsilon))_2^2 = norm(u * h_epsilon)_2^2$.
-    So altogether $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$. // FIX: dropped an unfinished sentence that follows in the original ("For every ε > 0, if")
+    So altogether $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-n\/2) norm(h)_2$.
   ]
 
   #claim[For every $phi.alt in cal(D)(RR^n)$ we have $|u(phi.alt)| <= norm(hat(u))_oo norm(h)_2 liminf_(epsilon -> 0) (epsilon^(-n) integral_(H_epsilon) |phi.alt|^2 dif m_n)^(1\/2)$.] <liminf-estimate>
@@ -783,7 +782,7 @@ Prove that $F$ is a polynomial.
     $
     But $u * h_epsilon -> u$ in $cal(D)'(RR^n)$, and in particular for every $phi.alt in cal(D)(RR^n)$
     $ u(phi.alt) = lim_(epsilon -> 0) (u * h_epsilon)(phi.alt) = liminf_(epsilon -> 0) (u * h_epsilon)(phi.alt) $
-    and so we get the required inequality. // FIX: the original's final inequality has liminf as ε → ∞
+    and so we get the required inequality.
   ]
 
   All this holds for every $n$ we choose. Now we can prove the parts.
@@ -810,29 +809,57 @@ Prove that $F$ is a polynomial.
 
   + Suppose $n = 2$, and $P$ is a real polynomial in two variables for which $P = 0$ on $K$.
     Then by the previous part, $P u = 0$.
-    Then also $hat(P u) = 0$, but $hat(P u) = P(-D) hat(u)$, and so we get that $hat(u)$ satisfies the partial differential equation $P(-D) hat(u) = 0$. // FIX: original says u (not û) satisfies the equation
+    Then also $hat(P u) = 0$, but $hat(P u) = P(-D) hat(u)$, and so we get that $hat(u)$ satisfies the partial differential equation $P(-D) hat(u) = 0$.
     Then for example, if we take $K$ to be the unit circle and take $P(x_1, x_2) = 1 - x_1^2 - x_2^2$, then $P$ indeed vanishes on $K$, and so in this case we get the equation
     $ hat(u) + partial^2 / (partial x_1^2) hat(u) + partial^2 / (partial x_2^2) hat(u) = 0 $
     that is, $hat(u) + Delta hat(u) = 0$.
 
   + Put $P(x) = 1 - x_1^2 - x_2^2 - x_3^2$.
-    Let $mu$ be the measure from @ex-16, that is, $mu$ is a Borel probability measure on $RR^3$ which is concentrated on $S^2$ and invariant under rotations.
-    We saw in @ex-16 that in this case $hat(mu)(x) = abs(x)^(-1) sin abs(x)$ for every $x != 0$, and so $hat(mu)$ is bounded.
-    If, by contradiction, the previous part holds with $n = 3$, then we get $P(-D) hat(mu) = 0$, that is, $hat(mu) + Delta hat(mu) = 0$. // FIX: original writes û for μ̂ here
-    Put $f(x) = x^(-1) sin x$ for every $x in RR without {0}$. // FIX: original has R \ (0)
-    Then $f'(x) = x^(-1) cos x - x^(-2) sin x$.
-    Also put $g(x) = abs(x)$ for every $x in RR^3$. Then for $x != 0$ we get
-    $ partial / (partial x_j) g(x) = x_j / abs(x) $
-    and so by the chain rule we get
-    $ partial / (partial x_j) (f compose g)(x) = (abs(x) cos abs(x) - sin abs(x)) / abs(x)^3 x_j $
-    But $hat(mu) = f compose g$, and so for every $x in RR^3 without {0}$
-    $ Delta hat(mu)(x) = (abs(x) cos abs(x) - sin abs(x)) / abs(x)^3 (x_1 + x_2 + x_3) $ // TODO: this sums first derivatives; Δ is the sum of second derivatives
-    and so, since $hat(mu) + Delta hat(mu) = 0$, we get for every $x in RR^3 without {0}$ the equality
-    $ (sin abs(x)) / abs(x) + (abs(x) cos abs(x) - sin abs(x)) / abs(x)^3 (x_1 + x_2 + x_3) = 0 $
-    But if we plug in $x = (1, 0, 0)$ we get the equality $cos(1) = 0$, which is certainly false.
+    Let $mu$ be the measure from @ex-16 and put $u = D_1 mu$. We saw in @ex-16 that the support of $u$ is contained in $S^2$, that $hat(u)$ is bounded, and that $hat(u)(x) = x_1 abs(x)^(-1) sin abs(x)$ for every $x != 0$.
+    Assume toward contradiction that the previous part holds with $n = 3$, then we get $P(-D) hat(u) = 0$, that is, $hat(u) + Delta hat(u) = 0$.\
+    Put $f(x) = x^(-1) sin x$ for every $x in RR without {0}$, $g(x)=|x|$ and $F = f compose g$. So $hat(u)(x) = x_1 F(x)$ for $x != 0$.
+    So we get on $RR^3 without {0}$ the equation
+    $
+      D_j^2 F & = D_j ((f' compose g)D_j g) = D_j (f' compose g)D_j g + (f' compose g)D_j^2 g \
+              & = (f'' compose g)(D_j g)^2 + (f' compose g)D_j^2 g
+    $
+    and so for $x != 0$ we got
+    $
+      D_j^2 F(x) & = f''(g(x))(D_j g(x))^2 + (f'(g(x)))D_j^2 g(x)
+    $
+    Short calculation gives
+    $
+      D_j g(x) & = x_j / (|x|) \
+      D_j^2 g(x) & = (|x|^2 - x_j^2) / (|x|^3) \
+       f'(x) & = (cos x)/x - (sin x)/x^2 \
+      f''(x) & = ((2 - x^2) sin x - 2x cos x )/x^3
+    $
+    Summing over $j = 1, 2, 3$, for $x != 0$ we get
+    $
+      sum_(j=1)^3 (D_j g(x))^2 &= (|x|^2) / (|x|^2) = 1 \
+      sum_(j=1)^3 D_j^2 g(x) &= (3|x|^2 - |x|^2) / (|x|^3) = 2 / (|x|)
+    $
+    and so
+    $
+      Delta F(x) & = f''(|x|) + 2 / (|x|) f'(|x|) \
+                 & = ((2 - |x|^2) sin |x| - 2|x| cos |x|)/(|x|^3) + (2|x| cos |x| - 2 sin |x|)/(|x|^3) \
+                 & = -(sin |x|)/(|x|) = -F(x).
+    $
+    Now $hat(u)(x) = x_1 F(x)$, and so by the product rule, for $x != 0$ we get
+    $
+      D_j hat(u)(x) &= delta_(1 j) F(x) + x_1 D_j F(x) \
+      D_j^2 hat(u)(x) &= 2 delta_(1 j) D_j F(x) + x_1 D_j^2 F(x)
+    $
+    and summing over $j$, for $x != 0$ we get
+    $
+      Delta hat(u)(x) = 2 D_1 F(x) + x_1 Delta F(x) = 2 f'(|x|) x_1 / (|x|) - hat(u)(x).
+    $
+    So since $hat(u) + Delta hat(u) = 0$, we get for every $x in RR^3 without {0}$ the equality
+    $ 2 f'(|x|) x_1 / (|x|) = 0. $
+    But if we plug in $x = (pi, 0, 0)$ we get $2 f'(pi) = 2 ((cos pi)/pi - (sin pi)/pi^2) = -2/pi$, so $-2/pi = 0$, which is certainly false.
     So the previous part cannot hold with $n = 3$.
 
-  + By @conv-estimate, for every $epsilon > 0$ we have $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-1\/2) norm(h)_2$, and the support of $u * h_epsilon$ is contained in $H_epsilon$. // FIX: original says the support "is" H_ε
+  + By @conv-estimate, for every $epsilon > 0$ we have $norm(u * h_epsilon)_2 <= norm(hat(u))_oo epsilon^(-1\/2) norm(h)_2$, and the support of $u * h_epsilon$ is contained in $H_epsilon$.
     In particular, $u * h_epsilon$ is a smooth function with compact support, and so $u * h_epsilon in L^1 (RR^n)$.
     So for every $epsilon > 0$ we get
     $
@@ -879,7 +906,7 @@ Prove that $F$ is a polynomial.
   Let $omega$ be an open set whose closure $K$ is compact and contained in $Omega$.
   Take $psi in cal(D)(Omega)$ with $psi = 1$ on $K$, and define $F = psi f$ on $Omega$, and $F = 0$ outside $Omega$.
   In the proof of Sobolev's lemma, we saw that
-  $ integral_(RR^n) (1 + abs(x))^(2r) abs(hat(F)(x))^2 dif m_n (x) < oo $ // FIX: original has |F̂(x)| without the square
+  $ integral_(RR^n) (1 + abs(x))^(2r) abs(hat(F)(x))^2 dif m_n (x) < oo $
   and so we get
   $
     integral_(RR^n) abs(x^alpha hat(F)(x))^2 dif m_n &<= integral_(RR^n) abs(x)^(2|alpha|) abs(hat(F)(x))^2 dif m_n <= integral_(RR^n) (1 + abs(x))^(2|alpha|) abs(hat(F)(x))^2 dif m_n \
@@ -984,7 +1011,7 @@ Prove that $F$ is a polynomial.
   Then by Sobolev's lemma we get $f in C^((1)) (RR^2)$, as required.
 
   Now we show that $f in.not C^((2)) (RR^2)$.
-  From the definition of $f$ we get $f = Phi^3 g = rho Phi g$, and so for almost every $x$ // FIX: original has RΦg
+  From the definition of $f$ we get $f = Phi^3 g = rho Phi g$, and so for almost every $x$
   $ f(x) = Phi g(-x) = integral_(RR^2) e^(i x dot y) / ((1 + abs(y))^4 log(2 + abs(y))) dif m_n (y) $
   For every $y in RR^2$ and $h in RR without {0}$ put $phi_h (y) = 2 h^(-2) (cos(h y_1) - 1)$.
   Then for every $h in RR without {0}$ we get
