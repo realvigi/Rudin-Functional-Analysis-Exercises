@@ -4,6 +4,10 @@
 #let Sn = $cal(S)_n$
 #let Rn = $RR^n$
 #let Cn = $CC^n$
+#let testn = $cal(D)(Rn)$
+#let smoothn = $C^(oo)(Rn)$
+#let distn = $cal(D)'(Rn)$
+#let L2n = $L^2(Rn)$
 
 =
 #problem[
@@ -1090,5 +1094,171 @@ Prove that $F$ is a polynomial.
   is in $L^2(RR^2)$.
 ]
 #solution[
+  We start with a general claim.
+  #claim[
+    If $v in distn$ and for all $1<=j<=n$ we have $D_j v = 0$, then $v$ is a constant funciton.
+  ]<derivetives-vanish-imply-constant>
+  #proof[
+    Take some ${h_m}$ some approxmiate identity in $testn$.
+    Then $v * h_m -> v$ in $distn$.
+    Also, for each $m$ we have $v*h_m in smoothn$, and $D_j (v*h_m) = (D_j v)*h_m = 0$ for all $j$.
+    So all of the distributional derivatives of $v*h_m$ vanish.
+    But since $v*h_m$ are all smooth, their distributional derivatives coincide with their regular derivatives, and so their regular derivatives vanish too.
+    This shows that $v*h_m$ is constant for all $m$. \
+    So for each $m$ there's some $c_m in CC$ for which $v*h_m = c_m$.
+    So we have $c_m -> v$ in $distn$. That is, we get
+    $
+      c_m integral_(Rn) phi.alt dif m_n -> v(phi.alt)
+    $
+    for all $phi.alt in testn$.
+    In particular, if we take some $psi in testn$ with $integral_(Rn) psi dif m_n = 1$, then we get $c_m -> v(psi)$.
+    So for all $phi.alt in testn$ we now get
+    $
+      c_m integral_(Rn) phi.alt dif m_n -> v(psi) integral_(Rn) phi.alt dif m_n
+    $
+    so the uniquness of the limit shows that $v(phi.alt) = v(psi) integral_(Rn) phi.alt dif m_n$.
+    So $v = v(psi)$.
+  ]
+  Fix $psi in testn$ for which $0<=psi<=1$ and $psi = 1$ on the unit ball.
+  For $1<=j<=n$ put $P_j (x) = x_j$ and put $Q=sum_(j=1)^n P_j^2$, that is $Q(x)=|x|^2$.
+  Define
+  $
+    g = (1-psi)/(i Q) sum_(j=1)^n P_j hat(D_j u)
+  $
+  on $Rn without {0}$, and $g(0)=0$.
+  So for $x in Rn$ with $|x| >= 1$ we have
+  $
+    |g(x)| <= (|1-psi(x)|)/(|x|) sum_(j=1)^n (|x_j|)/(|x|) |hat(D_j u)(x)|
+    <= 1/(|x|) sum_(j=1)^n |hat(D_j u)(x)|
+    <= sum_(j=1)^n |hat(D_j u)(x)|
+  $
+  And for $x$ with $|x|<1$ with $psi(x)=1$, so $g(x)=0$. So we got $|g|<=sum_(j=1)^n |hat(D_j u)|$ in all of $Rn$. \
+  By the Plancherel theorem, $hat(D_j u) in L2n$ for all $j$, and so $sum_(j=1)^n |hat(D_j u)| in L2n$. So
+  $
+    integral_(Rn) |g|^2 dif m_n <= integral_(Rn) (sum_(j=1)^n |hat(D_j u)|)^2 dif m_n < oo
+  $
+  and so $g in L2n$. \
+  By the Plancherel theorem again, there is some $h in L2n$ with $hat(h)=g$.
+  In particular, $h in Sn'$ and so $D_k h in Sn'$ for all $k$, and we get
+  $
+    hat(D_k h) & = i P_k hat(h) = i P_k g = i P_k (1-psi)/(i Q) sum_(j=1)^n P_j hat(D_j u) \
+               & = (1-psi)/(i Q) sum_(j=1)^n P_j hat(D_k D_j u)
+                 = (1-psi)/(i Q) sum_(j=1)^n P_j hat(D_j D_k u) \
+               & = (1-psi)/(i Q) sum_(j=1)^n i P_j^2 hat(D_k u)
+                 = (1-psi) hat(D_k u).
+  $
+  Note that we used the fact that $D_j, D_k$ commute as operators on $distn$, and the fact that $D_j u in Sn'$ for all $j$. \
+  Put $v=u-h$. So for all $k$ we have $D_k v = D_k u - D_k h$, so $D_k v in Sn'$. So $hat(D_k v)$ is exists and
+  $
+    hat(D_k v) = hat(D_k u) - hat(D_k h) = hat(D_k u) - (1-psi)hat(D_k u) = psi hat(D_k u)
+  $
+  And so $hat(D_k v)$ has compact support, so from the Paley-Weiner theorem $rho D_k v = hat(hat(D_k v))$ is the restriction to $Rn$ of an entire function in $Cn$.
+  This is true for all $1<=k<=n$. \
+  So for each $k$ there is some $f in H(Cn)$ for which $f_k = D_k v$ as distribution on $Rn$. \
+  For $w in Cn$ put $F_k (w) = integral_(0)^(1) f_k (s w) dif s$.
+  Fix $k$ and fix some $z in Cn$. Then for $w$ with $|w-z|<1$ and $s in [0,1]$ we have $|s w - s z|<1$.
+  There's some $M>0$ for which $|f_k|<=M$ on the ball $B(0,|z|+1)$, and so we get $|f(s w)|<=M$ for $s in [0,1], w in B(z, 1)$.
+  So the family $s mapsto f(s w)$ for $w in B(z, 1)$ is uniformly bounded on $[0,1]$ by $M$.
+  The dominated convergence theorem now gives
+  $
+    integral_(0)^(1) f_k (s w) dif s stretch(->)_(w->z) integral_(0)^(1) f_k (s z) dif s
+  $
+  That is, $F_k$ is continuous at $z$. Since $z$ was arbitrary, we see that $F_k$ is continuous on $Cn$. \
+  Now fix some $w in Cn$ and $1<=j<=n$. For the moment, put $phi(lambda, s)=f_k (s(w+lambda e_j))$.
+  It is clear then that $phi$ is bounded on $D(0,1) times [0,1]$.
+  It is also clear that fixed $lambda$, the function $s mapsto phi(lambda, s)$ is measurable, and for fixed $s$, the function $lambda mapsto phi(lambda, s)$ is holomorphic in $D(0,1)$.
+  So if we put $Phi(lambda) = integral_(0)^(1) phi(lambda, s) dif s$, then $Phi$ is holomorphic in $D(0,1)$ and $Phi'(lambda)=integral_(0)^(1) partial / (partial lambda) phi(lambda, s) dif s$. \
+  However, by definition we have $Phi(lambda) = F_k (w+lambda e_j)$. So $F_k$ is holomorphic in the $j$-th coordinate, and from the chain rule
+  $
+    D_j F_k (w) = Phi'(0) = integral_(0)^(1) partial / (partial lambda) phi(lambda, s) dif s
+    = integral_(0)^(1) partial / (partial w_j)(f_k (s w)) dif s
+    = integral_(0)^(1) s dot D_j f_k (s w) dif s.
+  $
+  And this is for all $j$. Since $F_k$ is continuous, we see that $F_k$ is entire in $Cn$. \
+  For all $k, j$, since $f_k = D_k v$ as distributions on $Rn$, we have $D_j f_k = D_j D_k v = D_k D_j v = D_k f_j$ as distributions on $Rn$.
+  So $D_j f_k = D_k f_j$ as functions on $Rn$.
+  But $D_j f_k, D_k f_j$ are both entire in $Cn$, and so we get $D_j f_k = D_k f_j$ on $Cn$.
+  So for all $k, j$ we have
+  $
+    D_j F_k = integral_(0)^(1) s dot D_j f_k (s w) dif s = integral_(0)^(1) s dot D_k f_j (s w) dif s.
+  $
+  Define $F(w) = sum_(k=1)^n w_k F_k (w)$. So $F$ is entire in $Cn$, and from the product rule for derivatives we get
+  $
+    D_j F(w) &= F_j (w) + sum_(k=1)^n w_k D_j F_k (w) = F_j (w) + integral_(0)^(1) s dot sum_(k=1)^n w_k D_k f_j (s w) dif s \
+    &= F_j (w) + integral_(0)^(1) s dot d/(d s) (f_j (s w)) dif s
+    = F_j (w) + f_j (w) - integral_(0)^(1) f_j (s w) dif s \
+    &= F_j (w) + f_j (w) - F_j (w) = f_j (w).
+  $
+  So $D_j F = f_j$ on $Cn$ for all $j$. So for all $j$ we have $D_j (v-F)=0$.
+  Now from @derivetives-vanish-imply-constant we get that $v-F$ is a constant function.
+  So there's some $c in CC$ for which $v-F = c$. So we get
+  $
+    u = u-h+h = v+h = (F+c)+h
+  $
+  that is, $u$ the sum of an entire function and an $L2n$ function, as required. \
+  For a compact $K subset.eq Rn$ we now get by the Minkowsky inequality
+  $
+    (integral_(K) |F+c+h|^2 dif)^(1/2) & <= (integral_(K) |F+c|^2 dif)^(1/2) + (integral_(K) |h|^2 dif)^(1/2) \
+                                       & <= sup_(x in K) |F(x)+c|+norm(h)_2 < oo
+  $
+  and so $u$ is locally-$L^2$ on $Rn$ as required. \
+
+  Assume now that $n=1$, and we show that $u$ is actaully continuous. It is enough to show that $h$ is continuous.
+  But $hat(h)=g$, and for $t!=0$ we have
+  $
+    g(t) = (1-psi(t))/(i t^2) t hat(D u) = (1-psi(t))/(i t) hat(D u)
+  $
+  and on $(-1,1)$ we have $g=0$.
+  So the Holder inequality gives
+  $
+    integral_(RR) |g| dif m &= integral_(R without (-1,1)) (|1-psi(t)|)/(|t|) |hat(D u)(t)| dif m(t) <= integral_(R without (-1,1)) (hat(D u)(t))/(|t|) dif m(t) \
+    &<= (integral_(R without (-1,1)) 1/(|t|^2) dif m(t))^(1/2) (integral_(R without (-1,1)) |hat(D u)| dif m)^(1/2) \
+    &<= (integral_(R without (-1,1)) 1/(|t|^2) dif m(t))^(1/2) norm(hat(D u))_2 < oo
+  $
+  so $g in L^1 (RR)$. So $hat(g) in C_0 (RR)$. But $hat(g)=hat(hat(h))=rho h$, and so $rho h$ is continuous, and so $h$ is continuous as required.
+
+  Now we show that if $n=2$, then $u$ need not be continuous. \
+  For $x in RR^2 without {0}$ define $u(x) = log log (2+|x|^(-1))$. then $u$ is continous outside of ${0}$, and also
+  $
+    integral_(B(0,1)) |u| dif m_2 & = 1/(sqrt(2 pi)) integral_(0)^(1) r integral_(0)^(2 pi) log log (2+1/r) dif theta dif r \
+                                  & = sqrt(2 pi) integral_(0)^(1) r log log (2+1/r) dif r.
+  $
+  It is easy to show (for example with Lohpital's rule) that $r log log (2+1/r) -> 0$ as $r ->0$.
+  So the integrand of the last integral is continuous on $[0,1]$, and so we got $integral_(B(0,1)) |u| dif m_2<oo$.
+  Together with the continuouity of $u$ outside of ${0}$, we get that $u$ is locally integrable on $RR^2$, and so $u in cal(D)'(RR^2)$. \
+  For $x!=0$, $partial/(partial x_j)|x|=|x|^(-1)x_j$ ($j=1,2$)
+  $
+    partial / (partial x_j) u(x) & = 1/(log(2+|x|^(-1))) dot 1/(2+|x|^(-1)) dot (-1/(|x|^2)) dot (x_j)/(|x|) \
+                                 & = -(x_j)/(|x|^2 (2|x|+1) log(2+|x|^(-1)))
+  $
+  so
+  $
+    integral_(RR^2) abs((partial u)/(partial x_j))^2 dif m_2 &<= integral_(RR^2) (x_j)/(|x|^2 (2|x|+1) log(2+|x|^(-1))) dif m_2 (x) \
+    &= 1/(sqrt(2 pi)) integral_(0)^(oo) integral_(0)^(2 pi) r/(r^2 (2r+1)^2 log^2 (2+r^(-1))) dif theta  dif r \
+    &= sqrt(2 pi) integral_(0)^(oo) r/(r^2 (2r+1)^2 log^2 (2+r^(-1))) dif r \
+    &<= sqrt(2 pi) (integral_(0)^(1/2) 1/(r log^2(r^(-1))) dif r + integral_(1/2)^(oo) 1/(r(2r)^2 log^2 (2)) dif r ) \
+    &<= sqrt(2 pi) (integral_(0)^(1/2) 1/(r log^2(r)) dif r + 1/(4 log^2 (2)) integral_(1/2)^(oo) 1/(r^3) dif r) \
+    &<= sqrt(2 pi) lim_(epsilon -> 0)(-1/(log 1/2) + 1/(log epsilon)) + (16 sqrt(2 pi))/(log^2 2) \
+    &= sqrt(2 pi)/(log 2) + (16 sqrt(2 pi))/(log^2 2) < oo
+  $
+  So the partial derivatives of $u$ are all in $L^2 (RR^2)$ as required. \
+  Fix some $phi.alt in cal(D)(RR^2)$.
+  The partial derivatives of $u$ are continuous outside of ${0}$, so from integration by parts, for any $epsilon>0$ we get
+  $
+    integral_(RR^2 without B(0,epsilon)) (partial u)/(partial x_j) phi.alt dif m_2 = -integral_(RR^2 without B(0,epsilon)) u (partial phi.alt)/(partial x_j) dif m_2
+  $
+  and if we take $epsilon->0$ on both sides we get
+  $
+    integral_(RR^2) (partial u)/(partial x_j) phi.alt dif m_2 = -integral_(RR^2) u (partial phi.alt)/(partial x_j) dif m_2.
+  $
+  So the first-order distributional derivatives of $u$ coincide with the the regular first order derivatives of $u$.
+  So from what we saw, we get the the first order distributional derivatives of $u$ are all in $L^2(RR^2)$, as required.
+  Lastly, we need to show that $u$ isn't equivalent up to zero-measure to a continuous function on $RR^2$. Indeed, there was such continuous $f$ on $RR^2$ with $u=f$ a.e., then the continuouity of $u$ on $RR^2 without {0}$ shows that $u=f$ everywhere on $RR^2 without {0}$, but then $f(x)->oo$ as $x->0$, which contrdicts the fact that $f$ is continuous.
+
+  We now show that the assumption that the derivatives of $u$ are in $L2n$ does not imply that $u in L2n$. Indeed we choose $n=2$ and take $u$ to be the function we used for the previous part. Then as we saw, $u$ is a distribution on $Rn$ whose first order derivatives is in $L^2(RR^2)$. But
+  $
+    integral_(RR^2) |u|^2 dif m_2 = sqrt(2 pi) integral_(0)^(oo) (r log log (2+1/r))^2 dif r >= log^2 log(2) sqrt(2 pi) integral_(0)^(oo) r^2 dif r = oo
+  $
+  and so $u$ is not in $L^2 (RR^2)$.
 ]
 
