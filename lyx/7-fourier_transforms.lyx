@@ -7832,5 +7832,1769 @@ g\left(t\right)=\frac{1-\psi\left(t\right)}{it^{2}}t\widehat{Du}=\frac{1-\psi\le
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $p:R^{n}\rightarrow T^{n}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $p\left(x\right)=\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ברור ש-
+\begin_inset Formula $p$
+\end_inset
+
+ הומומורפיזם רציף מהחבורה החיבורית 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ על החבורה 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו עבור 
+\begin_inset Formula $\phi$
+\end_inset
+
+ פונקציה על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $\Psi\phi=\phi\circ p$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בדיקה פשוטה מראה ש-
+\begin_inset Formula $\Psi$
+\end_inset
+
+ היא העתקה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל ממרחב הפונקציות על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ למרחב הפונקציות על 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ שהן מחזוריות עם מחזור 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ בכל קואורדינטה בנפרד, ויתרה מזאת קל לראות ש-
+\begin_inset Formula $\Psi$
+\end_inset
+
+ היא לינארית וכפלית )כלומר 
+\begin_inset Formula $\Psi\left(\phi\psi\right)=\left(\Psi\phi\right)\left(\Psi\psi\right)$
+\end_inset
+
+( ולכן כך גם 
+\begin_inset Formula $\Psi^{-1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עבור פונקציה 
+\begin_inset Formula $\phi$
+\end_inset
+
+ על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מולטי-אינדקס אם 
+\begin_inset Formula $D^{\alpha}\Psi\phi$
+\end_inset
+
+ קיימת אז היא גם כן עם מחזור 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ בכל קואורדינאטה ונוכל להגדיר 
+\begin_inset Formula $D^{\alpha}\phi=\Psi^{-1}D^{\alpha}\Psi\phi$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $D^{\alpha}\phi,D^{\alpha}\psi$
+\end_inset
+
+ קיימות אז 
+\begin_inset Formula 
+\begin{align*}
+D^{\alpha}\left(\phi\psi\right) & =\Psi^{-1}D^{\alpha}\Psi\left(\phi\psi\right)=\Psi^{-1}D^{\alpha}\left(\Psi\phi\Psi\psi\right)\\
+ & =\Psi^{-1}\left(\sum_{\beta\leq\alpha}c_{\alpha\beta}\left(D^{\alpha-\beta}\Psi\phi\right)\left(D^{\beta}\Psi\psi\right)\right)\\
+ & =\sum_{\beta\leq\alpha}c_{\alpha\beta}\left(\Psi^{-1}D^{\alpha-\beta}\Psi\phi\right)\left(\Psi^{-1}D^{\beta}\Psi\psi\right)\\
+ & =\sum_{\beta\leq\alpha}c_{\alpha\beta}D^{\alpha-\beta}\phi D^{\beta}\psi
+\end{align*}
+
+\end_inset
+
+כלומר כלל לייבניץ עדיין מתקיים.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+D_{j}\phi\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right) & =\Psi D_{j}\phi\left(x\right)=D_{j}\Psi\phi\left(x\right)\\
+ & =\lim_{\varepsilon\rightarrow0}\frac{\Psi\phi\left(x+\varepsilon e_{j}\right)-\Psi\phi\left(x\right)}{\varepsilon}\\
+ & =\lim_{\varepsilon\rightarrow0}\frac{\phi\left(p\left(x+\varepsilon e_{j}\right)\right)-\phi\left(p\left(x\right)\right)}{\varepsilon}\\
+ & =\lim_{\varepsilon\rightarrow0}\frac{\phi\left(\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)p\left(\varepsilon e_{j}\right)\right)-\phi\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)}{\varepsilon}
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\zeta\in T^{n}$
+\end_inset
+
+ נקבל את הגבול המתבקש
+\begin_inset Formula 
+\[
+\frac{\phi\left(\zeta p\left(\varepsilon e_{j}\right)\right)-\phi\left(\zeta\right)}{\varepsilon}\xrightarrow[\varepsilon\rightarrow0]{}D_{j}\phi\left(\zeta\right)
+\]
+
+\end_inset
+
+כמו כן באופן דומה אפשר לראות שאם 
+\begin_inset Formula $\lim_{\varepsilon\rightarrow0}\varepsilon^{-1}\left(\phi\left(\zeta p\left(\varepsilon e_{j}\right)\right)-\phi\left(\zeta\right)\right)$
+\end_inset
+
+ קיים אז 
+\begin_inset Formula $D_{j}\phi$
+\end_inset
+
+ מוגדר.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+ שלם אם 
+\begin_inset Formula $k=\infty$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula $C^{k}\left(T^{n}\right)=\Psi\left(C^{k}\left(R^{n}\right)\right)$
+\end_inset
+
+ ואופן דומה נגדיר את 
+\begin_inset Formula $C^{k}\left(T^{n}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+.
+ נסמן גם 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)=C^{\infty}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ מידת האאר על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\phi\in C^{1}\left(T^{n}\right)$
+\end_inset
+
+.
+ אז מהאינווריאנטיות של 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $\varepsilon\in R$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\intop_{T^{n}}\phi\left(\zeta p\left(\varepsilon e_{j}\right)\right)d\sigma_{n}\left(\zeta\right)=\intop_{T^{n}}\phi\left(\zeta\right)d\sigma_{n}
+\]
+
+\end_inset
+
+ומצד שני, מהקומפקטיות של 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+, והרציפות של 
+\begin_inset Formula $\phi$
+\end_inset
+
+, משפט ההתכנסות הנשלטת נותן
+\begin_inset Formula 
+\[
+\intop_{T^{n}}\frac{\phi\left(\zeta p\left(\varepsilon e_{j}\right)\right)-\phi\left(\zeta\right)}{\varepsilon}d\sigma_{n}\left(\zeta\right)\xrightarrow[\varepsilon\rightarrow0]{}\intop_{T^{n}}D_{j}\phi d\sigma_{n}
+\]
+
+\end_inset
+
+ולכן קיבלנו
+\begin_inset Formula 
+\[
+\intop_{T^{n}}D_{j}\phi d\sigma_{n}=0
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in C^{1}\left(T^{n}\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו מכלל לייבניץ לכל 
+\begin_inset Formula $\phi,\psi\in C^{1}\left(T^{n}\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+0=\intop_{T^{n}}D_{j}\left(\phi\psi\right)d\sigma_{n}=\intop_{T^{n}}\left(D_{j}\phi\right)\psi d\sigma_{n}+\intop_{T^{n}}\phi D_{j}\psi d\sigma_{n}
+\]
+
+\end_inset
+
+כלומר קיבלנו את הגרסא הבאה של אינטגרציה בחלקים
+\begin_inset Formula 
+\[
+\intop_{T^{n}}\phi D_{j}\psi d\sigma_{n}=-\intop_{T^{n}}\left(D_{j}\phi\right)\psi d\sigma_{n}
+\]
+
+\end_inset
+
+על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $k=\left(k_{1},\ldots,k_{n}\right)\in\kaliInteger^{n}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\zeta=\left(\zeta_{1},\ldots,\zeta_{n}\right)\in T^{n}$
+\end_inset
+
+ נגדירנבחין כי 
+\begin_inset Formula $\Psi e_{k}\left(x\right)=e^{ik\cdot x}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $e_{k}\in C^{\infty}\left(T^{n}\right)$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula 
+\[
+\Psi D_{j}e_{k}\left(x\right)=D_{j}\Psi e_{k}\left(x\right)=ik_{j}e^{ik\cdot x}=ik_{j}\left(\Psi e_{k}\right)\left(x\right)
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+D_{j}e_{k}=\Psi^{-1}\Psi D_{j}e_{k}=\Psi^{-1}\left(ik_{j}\left(\Psi e_{k}\right)\right)=ik_{j}e_{k}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $P\left(D\right)e_{k}=P\left(k\right)e_{k}$
+\end_inset
+
+ לכל פולינום 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן מתקיים 
+\begin_inset Formula $\overline{e_{k}}=e_{-k}$
+\end_inset
+
+ ו-
+\begin_inset Formula $e_{k}e_{l}=e_{k+l}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $l,k\in\kaliInteger^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $X$
+\end_inset
+
+ תת-המרחב של 
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+ שנפרש 
+\begin_inset Formula $\left\{ e_{k}:k\in\kaliInteger^{n}\right\} $
+\end_inset
+
+, ויהא 
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+ הסגור שלו ב-
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $e_{k}e_{l}=e_{k+l}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k,l$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $X$
+\end_inset
+
+ היא תת-אלגברה של 
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מרציפות הכפל הנקודתי באלגברה 
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+, נקבל ש-
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+ תת-אלגברה סגורה של 
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $X$
+\end_inset
+
+ סגורה להצמדה כי 
+\begin_inset Formula $\overline{e_{k}}=e_{-k}$
+\end_inset
+
+, ולכן מרציפות פונקצית ההצמדה על 
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+, הרי שגם 
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+ סגורה להצמדה.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\zeta,\xi\in T^{n}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in\overline{X}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\phi\left(\zeta\right)=\phi\left(\xi\right)$
+\end_inset
+
+, אז בפרט לכל 
+\begin_inset Formula $k\in\kaliInteger^{n}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $e_{k}\left(\zeta\right)=e_{k}\left(\xi\right)$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ נוכל לבחור את 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $k_{j}=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $k_{l}=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $l\neq j$
+\end_inset
+
+, ואז נקבל 
+\begin_inset Formula $\zeta_{j}=\xi_{j}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\zeta=\xi$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+ מפרידה נקודות על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף, לכל 
+\begin_inset Formula $\zeta\in T^{n}$
+\end_inset
+
+ יש 
+\begin_inset Formula $\phi\in\overline{X}$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\phi\left(\zeta\right)\neq0$
+\end_inset
+
+ )למשל כי 
+\begin_inset Formula $1\in\overline{X}$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+אז ממשפט סטון-ויירשטראס נקבל 
+\begin_inset Formula $\overline{X}=C\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+במילים אחרות, כל פונקציה רציפה על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ היא גבול במ
+\begin_inset Quotes erd
+\end_inset
+
+ש של פונקציות ב-
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $1\leq p<\infty$
+\end_inset
+
+ ו-
+\begin_inset Formula $\phi\in L^{p}\left(\sigma_{n}\right)$
+\end_inset
+
+, ו-
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, אז מכך ש-
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+ צפוף ב-
+\begin_inset Formula $L^{p}\left(\sigma_{n}\right)$
+\end_inset
+
+ יש 
+\begin_inset Formula $\psi\in C\left(T^{n}\right)$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left\Vert \psi-\phi\right\Vert _{p}<\varepsilon$
+\end_inset
+
+, וממה שראינו יש 
+\begin_inset Formula $\psi_{0}\in X$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\left\Vert \psi-\psi_{0}\right\Vert _{\infty}<\varepsilon$
+\end_inset
+
+, ואז נקבל
+\begin_inset Formula 
+\begin{align*}
+\left\Vert \phi-\psi_{0}\right\Vert _{p} & \leq\left\Vert \phi-\psi\right\Vert _{p}+\left\Vert \psi-\psi_{0}\right\Vert _{p}<\varepsilon+\left(\intop_{T^{n}}\left|\psi-\psi_{0}\right|^{p}d\sigma_{n}\right)^{\nicefrac{1}{p}}\\
+ & \leq\varepsilon+\left(\intop_{T^{n}}\varepsilon^{p}d\sigma_{n}\right)^{\nicefrac{1}{p}}=2\varepsilon
+\end{align*}
+
+\end_inset
+
+וזה מראה ש-
+\begin_inset Formula $X$
+\end_inset
+
+ צפוף ב-
+\begin_inset Formula $L^{p}\left(\sigma_{n}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\leq p<\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נזכור כי 
+\begin_inset Formula $L^{2}\left(\sigma_{n}\right)$
+\end_inset
+
+ הוא מרחב הילברט עם המכפלה הפנימית 
+\begin_inset Formula $\left\langle \phi,\psi\right\rangle =\intop_{T^{n}}\phi\overline{\psi}d\sigma_{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $k,l\in\kaliInteger^{n}$
+\end_inset
+
+ ו-
+\begin_inset Formula $k\neq l$
+\end_inset
+
+, אז קיים 
+\begin_inset Formula $j$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $k_{j}\neq l_{j}$
+\end_inset
+
+ ואז נקבל
+\begin_inset Formula 
+\[
+\left\langle e_{k},e_{l}\right\rangle =\intop_{T^{n}}e_{k}\overline{e_{l}}d\sigma_{n}=\intop_{T^{n}}e_{k-l}d\sigma_{n}=\frac{1}{i\left(k_{j}-l_{j}\right)}\intop_{T^{n}}D_{j}e_{k-l}d\sigma_{n}=0
+\]
+
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $k\in\kaliInteger^{n}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\left\langle e_{k},e_{k}\right\rangle =\intop_{T^{n}}e_{k}\overline{e_{k}}d\sigma_{n}=\intop_{T^{n}}\left|e_{k}\right|^{2}d\sigma_{n}=\intop_{T^{n}}1d\sigma_{n}=1
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\left\{ e_{k}:k\in\kaliInteger^{n}\right\} $
+\end_inset
+
+ היא קבוצה אורתונורמלית ב-
+\begin_inset Formula $L^{2}\left(\sigma_{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך ש-
+\begin_inset Formula $X$
+\end_inset
+
+ צפוף ב-
+\begin_inset Formula $L^{2}\left(\sigma_{n}\right)$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\left\{ e_{k}:k\in\kaliInteger^{n}\right\} $
+\end_inset
+
+ היא קבוצה אורתונורמלית שלמה ב-
+\begin_inset Formula $L^{2}\left(\sigma_{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\phi\in L^{1}\left(\sigma_{n}\right)$
+\end_inset
+
+, אז לכל 
+\begin_inset Formula $k\in\kaliInteger^{n}$
+\end_inset
+
+ נגדיר
+\begin_inset Formula 
+\[
+\widehat{\phi}\left(k\right)=\intop_{T^{n}}e_{-k}\phi d\sigma_{n}
+\]
+
+\end_inset
+
+מקדם פוריה ה-
+\begin_inset Formula $k$
+\end_inset
+
+ של 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\widehat{D_{j}\phi}\left(k\right) & =\intop_{T^{n}}e_{-k}D_{j}\phi d\sigma_{n}=-\intop_{T^{n}}D_{j}e_{-k}\phi d\sigma_{n}=ik_{j}\intop_{T^{n}}e_{-k}\phi d\sigma_{n}\\
+ & =ik_{j}\widehat{\phi}
+\end{align*}
+
+\end_inset
+
+ולכן מהפעלה חוזרת של אותה התוצאה נקבל 
+\begin_inset Formula $\widehat{P\left(D\right)\phi}=P\widehat{\phi}$
+\end_inset
+
+ לכל פולינום 
+\begin_inset Formula $P$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בפרט, לכל 
+\begin_inset Formula $k\in\kaliInteger^{n}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $m\geq0$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left(1+\left|k\right|^{2}\right)^{m}\widehat{\phi}\left(k\right)=\widehat{\left(1-\Delta\right)^{m}\phi}\left(k\right)
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+\left|\widehat{\phi}\left(k\right)\right|\leq\frac{1}{\left(1+\left|k\right|^{2}\right)^{m}}\intop_{T^{n}}\left|e_{-k}\right|\left|\left(1-\Delta\right)^{m}\phi\right|d\sigma_{n}\leq\frac{\left\Vert \left(1-\Delta\right)^{m}\phi\right\Vert _{\infty}}{\left(1+\left|k\right|^{2}\right)^{m}}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in L^{1}\left(\sigma_{n}\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $N\geq0$
+\end_inset
+
+ שלם נגדיר 
+\begin_inset Formula 
+\[
+p_{N}\left(\phi\right)=\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}
+\]
+
+\end_inset
+
+)אם הטור לא מתכנס נגדיר 
+\begin_inset Formula $p_{N}\left(\phi\right)=\infty$
+\end_inset
+
+(.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $N$
+\end_inset
+
+ כלשהו.
+ נבחר 
+\begin_inset Formula $m,l$
+\end_inset
+
+ שלמים עבורם 
+\begin_inset Formula $2m\geq N$
+\end_inset
+
+ וגם 
+\begin_inset Formula $l$
+\end_inset
+
+ גדול מספיק בשביל שיתקיים 
+\begin_inset Formula 
+\[
+\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2\left(m-l\right)}<\infty
+\]
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi}\left(k\right)\right|^{2} & =\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2m}\left|\widehat{\phi}\left(k\right)\right|^{2}\\
+ & =\sum_{k\in\kaliInteger^{n}}\left|\left(1+\left|k\right|^{2}\right)^{m}\widehat{\phi}\left(k\right)\right|^{2}\leq\sum_{k\in\kaliInteger^{n}}\left|\left(1+\left|k\right|^{2}\right)^{m-l}\left\Vert \left(1-\Delta\right)^{l}\phi\right\Vert _{\infty}\right|^{2}\\
+ & =\left\Vert \left(1-\Delta\right)^{l}\phi\right\Vert _{\infty}^{2}\sum_{z\in\kaliNatural}\left(1+\left|k\right|^{2}\right)^{2\left(m-l\right)}<\infty
+\end{align*}
+
+\end_inset
+
+כלומר הראינו ש-
+\begin_inset Formula $p_{N}$
+\end_inset
+
+ סופית על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נראה ש-
+\begin_inset Formula $p_{N}$
+\end_inset
+
+ היא למעשה נורמה על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ברור ש-
+\begin_inset Formula $p_{N}\left(0\right)=0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $p_{N}\left(\phi\right)=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\widehat{\phi}\left(k\right)=0$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\left\langle \phi,e_{k}\right\rangle =0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula $\phi\in L^{2}\left(\sigma_{n}\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $\left\{ e_{k}\right\} $
+\end_inset
+
+ אורתונורמלית שלמה, הרי ש-
+\begin_inset Formula $\phi=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\lambda\in\kaliComplex$
+\end_inset
+
+, 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula 
+\begin{align*}
+p_{N}\left(\lambda\phi\right) & =\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\lambda\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & =\left(\left|\lambda\right|^{2}\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & =\left|\lambda\right|\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & =\left|\lambda\right|p_{N}\left(\phi\right)
+\end{align*}
+
+\end_inset
+
+ולבסוף אם 
+\begin_inset Formula $\phi,\psi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ אז נסמן לרגע 
+\begin_inset Formula 
+\begin{align*}
+a\left(k\right) & =\left|\left(1+\left|k\right|^{2}\right)^{\nicefrac{N}{2}}\widehat{\phi}\left(k\right)\right|\\
+b\left(k\right) & =\left|\left(1+\left|k\right|^{2}\right)^{\nicefrac{N}{2}}\widehat{\psi}\left(k\right)\right|
+\end{align*}
+
+\end_inset
+
+אז 
+\begin_inset Formula $a\leq\widehat{\phi},b\leq\left|\psi\right|$
+\end_inset
+
+ ו-
+\begin_inset Formula $\widehat{\phi},\widehat{\psi}\in L^{2}\left(\kaliInteger^{n}\right)$
+\end_inset
+
+ כאשר המידה על 
+\begin_inset Formula $\kaliInteger^{n}$
+\end_inset
+
+ היא מידת המניה )למשל כי 
+\begin_inset Formula $\left\Vert \widehat{\phi}\right\Vert _{2}=p_{0}\left(\phi\right)<\infty$
+\end_inset
+
+(, ולכן גם 
+\begin_inset Formula $a,b\in L^{2}\left(\kaliInteger^{n}\right)$
+\end_inset
+
+, ולכן א
+\begin_inset Quotes erd
+\end_inset
+
+ש מינקובסקי נותן 
+\begin_inset Formula 
+\begin{align*}
+p_{N}\left(\phi+\psi\right) & =\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi+\psi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & =\left(\sum_{k\in\kaliInteger^{n}}\left|a\left(k\right)+b\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|a\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}+\left(\sum_{k\in\kaliInteger^{n}}\left|b\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}+\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\psi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & =p_{N}\left(\phi\right)+p_{N}\left(\psi\right)
+\end{align*}
+
+\end_inset
+
+וזה מסיים את ההוכחה ש-
+\begin_inset Formula $p_{N}$
+\end_inset
+
+ היא נורמה על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני, לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $q_{N}\left(\phi\right)=\max_{\left|\alpha\right|\leq N}\left\Vert D^{\alpha}\phi\right\Vert _{\infty}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+גם 
+\begin_inset Formula $q_{N}$
+\end_inset
+
+ היא נורמה על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $N$
+\end_inset
+
+, והפעם ההוכחה ברורה ולכן נדלג עליה.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $\tau_{p},\tau_{q}$
+\end_inset
+
+ הטופולוגיות המושרות ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left\{ p_{N}\right\} ,\left\{ q_{N}\right\} $
+\end_inset
+
+ בהתאמה.
+ נטען ש-
+\begin_inset Formula $\tau_{p}=\tau_{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $N$
+\end_inset
+
+ ויהיו שוב 
+\begin_inset Formula $l,m\geq0$
+\end_inset
+
+ שלמים עבורם 
+\begin_inset Formula $2m\geq N$
+\end_inset
+
+ וגם 
+\begin_inset Formula 
+\[
+\sum_{z\in\kaliNatural}\left(1+\left|k\right|^{2}\right)^{2\left(m-l\right)}<\infty
+\]
+
+\end_inset
+
+אז ראינו קודם כבר שלכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{N}\left|\widehat{\phi}\left(k\right)\right|^{2}\leq\left\Vert \left(1-\Delta\right)^{l}\phi\right\Vert _{\infty}^{2}\sum_{z\in\kaliNatural}\left(1+\left|k\right|^{2}\right)^{2\left(m-l\right)}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+p_{N}\left(\phi\right)\leq\left\Vert \left(1-\Delta\right)^{l}\phi\right\Vert _{\infty}\left(\sum_{z\in\kaliNatural}\left(1+\left|k\right|^{2}\right)^{2\left(m-l\right)}\right)^{\nicefrac{1}{2}}
+\]
+
+\end_inset
+
+כלומר קיים 
+\begin_inset Formula $C>0$
+\end_inset
+
+ גדול מספיק, כך שלכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+p_{N}\left(\phi\right)\leq Cq_{2l}\left(\phi\right)
+\]
+
+\end_inset
+
+ומשרירותיות 
+\begin_inset Formula $N$
+\end_inset
+
+, קיבלנו שלכל 
+\begin_inset Formula $N$
+\end_inset
+
+ יש 
+\begin_inset Formula $C_{N}>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $m_{N}\geq0$
+\end_inset
+
+ שלם גדולים מספיק עבורם 
+\begin_inset Formula $p_{N}\leq C_{N}q_{m_{N}}$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $\tau_{q}\subseteq\tau_{p}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתיאוריה של מרחבי הילברט, לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left\Vert \phi-\sum_{\left|k\right|\leq N}\widehat{\phi}\left(k\right)e_{k}\right\Vert _{2}\xrightarrow[N\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+ולכן יש סדרה עולה ממש 
+\begin_inset Formula $\left\{ N_{m}\right\} $
+\end_inset
+
+ עבורה
+\begin_inset Formula 
+\[
+\sum_{\left|k\right|\leq N_{m}}\widehat{\phi}\left(k\right)e_{k}\rightarrow\phi
+\]
+
+\end_inset
+
+ כמעט בכל מקום 
+\begin_inset Formula $\left[\sigma_{n}\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ומצד שני, מתקיים
+\begin_inset Formula 
+\[
+\left|\sum_{\left|k\right|\leq N}\widehat{\phi}\left(k\right)e_{k}\right|\leq\sum_{\left|k\right|\leq N}\left|\widehat{\phi}\left(k\right)\right|
+\]
+
+\end_inset
+
+ועבור 
+\begin_inset Formula $m$
+\end_inset
+
+ גדול מספיק נקבל
+\begin_inset Formula 
+\begin{align*}
+\sum_{k\in\kaliInteger^{n}}\left|\widehat{\phi}\left(k\right)\right| & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{-2m}\right)^{\nicefrac{1}{2}}\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2m}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{-2m}\right)^{\nicefrac{1}{2}}\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2m}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{-2m}\right)^{\nicefrac{1}{2}}\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{m}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & <\infty
+\end{align*}
+
+\end_inset
+
+ולכן הסדרה 
+\begin_inset Formula $\sum_{\left|k\right|\leq N}\widehat{\phi}\left(k\right)e_{k}$
+\end_inset
+
+ מתכנסת בהחלט במ
+\begin_inset Quotes erd
+\end_inset
+
+ש כאשר 
+\begin_inset Formula $N\rightarrow\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל 
+\begin_inset Formula $\phi=\sum_{k\in\kaliInteger^{n}}\widehat{\phi}\left(k\right)e_{k}$
+\end_inset
+
+ כאשר ההתכנסות של הטור היא בהחלט ובמ
+\begin_inset Quotes erd
+\end_inset
+
+ש.
+\begin_inset Newline newline
+\end_inset
+
+זה נכון לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+, ולכן לכל פולינום 
+\begin_inset Formula $P$
+\end_inset
+
+ נקבל גם
+\begin_inset Formula 
+\[
+P\left(D\right)\phi=\sum_{k\in\kaliInteger^{n}}\widehat{P\left(D\right)\phi}\left(k\right)e_{k}=\sum_{k\in\kaliInteger^{n}}P\left(k\right)\widehat{\phi}\left(k\right)e_{k}
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מולטי-אינדקס נקבל
+\begin_inset Formula 
+\[
+\left\Vert D^{\alpha}\phi\right\Vert _{\infty}\leq\sum_{k\in\kaliInteger^{n}}\left|k^{\alpha}\widehat{\phi}\left(k\right)\right|\leq\sum_{k\in\kaliInteger^{n}}\left|k\right|^{\left|\alpha\right|}\left|\widehat{\phi}\left(k\right)\right|
+\]
+
+\end_inset
+
+עכשיו נקבע 
+\begin_inset Formula $N$
+\end_inset
+
+ כלשהו.
+ ניקח 
+\begin_inset Formula $m$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2\left(N-m\right)}<\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|\alpha\right|\leq N$
+\end_inset
+
+ נקבל מא
+\begin_inset Quotes erd
+\end_inset
+
+ש הולדר
+\begin_inset Formula 
+\begin{align*}
+\left\Vert D^{\alpha}\phi\right\Vert _{\infty} & \leq\sum_{k\in\kaliInteger^{n}}\left|k\right|^{\left|\alpha\right|}\left|\widehat{\phi}\left(k\right)\right|=\sum_{k\in\kaliInteger^{n}}\left|k\right|^{\left|\alpha\right|-m}\left|k\right|^{m}\left|\widehat{\phi}\left(k\right)\right|\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2\left(\left|\alpha\right|-m\right)}\right)^{\nicefrac{1}{2}}\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2m}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2\left(N-m\right)}\right)^{\nicefrac{1}{2}}\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{m}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & \leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2\left(N-m\right)}\right)^{\nicefrac{1}{2}}p_{m}\left(\phi\right)
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula 
+\[
+q_{N}\left(\phi\right)\leq\left(\sum_{k\in\kaliInteger^{n}}\left|k\right|^{2\left(N-m\right)}\right)^{\nicefrac{1}{2}}p_{m}\left(\phi\right)
+\]
+
+\end_inset
+
+כלומר הראינו שלכל 
+\begin_inset Formula $N$
+\end_inset
+
+ יש 
+\begin_inset Formula $C_{N}>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $m_{N}$
+\end_inset
+
+ שלם עבורם 
+\begin_inset Formula $q_{N}\leq C_{N}p_{m_{N}}$
+\end_inset
+
+ על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+ זה מראה ש-
+\begin_inset Formula $\tau_{p}\subseteq\tau_{q}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כלומר אכן 
+\begin_inset Formula $\tau_{q}=\tau_{p}$
+\end_inset
+
+ כפי שרצינו.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+ המרחב של הפונקציונלים הלינארים הרציפים על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ ביחס לטופולוגיה האחרונה.
+\begin_inset Newline newline
+\end_inset
+
+האיברים של 
+\begin_inset Formula $\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+ הם ההתפלגויות על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר את מקדמי פוריה של התפלגות 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\widehat{u}\left(k\right)=u\left(e_{-k}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\in\kaliInteger^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $V_{N}=\left\{ \phi\in\mathcal{D}\left(T^{n}\right):p_{N}\left(\phi\right)<N^{-1}\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מכך שלכל 
+\begin_inset Formula $\phi$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $p_{1}\left(\phi\right)\leq p_{2}\left(\phi\right)\leq\ldots$
+\end_inset
+
+, הרי ש-
+\begin_inset Formula $\left\{ V_{N}\right\} $
+\end_inset
+
+ הוא בסיס מקומי של 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו תהא 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+.
+ אז מרציפות, קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ עבורו לכל 
+\begin_inset Formula $\phi\in V_{N}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|u\left(\phi\right)\right|<1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $p_{N}\left(e_{-k}\right)=\left(1+\left|k\right|^{2}\right)^{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+p_{N}\left(\left(2N\left(1+\left|k\right|^{2}\right)^{N}\right)^{-1}e_{-k}\right)=\frac{1}{2N}<\frac{1}{N}
+\]
+
+\end_inset
+
+כלומר לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(2N\left(1+\left|k\right|^{2}\right)^{N}\right)^{-1}e_{-k}\in V_{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|u\left(\left(2N\left(1+\left|k\right|^{2}\right)^{N}\right)^{-1}e_{-k}\right)\right|<1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכן לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\left|u\left(e_{-k}\right)\right|\leq2N\left(1+\left|k\right|^{2}\right)^{N}\leq2N\left(1+\left|k\right|\right)^{2N}
+\]
+
+\end_inset
+
+אז הראינו בכך שלכל 
+\begin_inset Formula $u$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $C>0$
+\end_inset
+
+ ו-
+\begin_inset Formula $N$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\left|\widehat{u}\left(k\right)\right|\leq C\left(1+\left|k\right|\right)^{N}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עכשיו תהא 
+\begin_inset Formula $g$
+\end_inset
+
+ פונקציה מרוכבת כלשהי על 
+\begin_inset Formula $\kaliInteger^{n}$
+\end_inset
+
+ עבורה יש 
+\begin_inset Formula $C,N$
+\end_inset
+
+ עם 
+\begin_inset Formula $\left|g\left(k\right)\right|\leq C\left(1+\left|k\right|\right)^{N}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ניקח 
+\begin_inset Formula $m$
+\end_inset
+
+ גדול מספיק עבורו 
+\begin_inset Formula $\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2\left(N-m\right)}<\infty$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ נקבל מא
+\begin_inset Quotes erd
+\end_inset
+
+ש הלדר
+\begin_inset Formula 
+\begin{align*}
+\sum_{k\in\kaliInteger^{n}}\left|g\left(-k\right)\right|\left|\widehat{\phi}\left(k\right)\right| & \leq C\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|\right)^{N}\left|\widehat{\phi}\left(k\right)\right|\\
+ & \leq C\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2\left(N-m\right)}\right)^{\nicefrac{1}{2}}\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2m}\left|\widehat{\phi}\left(k\right)\right|^{2}\right)^{\nicefrac{1}{2}}\\
+ & <C\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2\left(N-m\right)}\right)^{\nicefrac{1}{2}}p_{2m}\left(\phi\right)<\infty
+\end{align*}
+
+\end_inset
+
+ולכן הטור 
+\begin_inset Formula $\sum_{k\in\kaliInteger^{n}}g\left(-k\right)\widehat{\phi}\left(k\right)$
+\end_inset
+
+ מתכנס בהחלט לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נוכל להגדיר 
+\begin_inset Formula $u\left(\phi\right)=\sum_{k\in\kaliInteger^{n}}g\left(-k\right)\widehat{\phi}\left(k\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+קל לראות ש-
+\begin_inset Formula $u$
+\end_inset
+
+ פונקציונל לינארי על 
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+עבור 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, מרציפות 
+\begin_inset Formula $p_{2m}$
+\end_inset
+
+ נוכל לבחור 
+\begin_inset Formula $V$
+\end_inset
+
+ סביבה של 
+\begin_inset Formula $0$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula 
+\[
+p_{2m}\left(\phi\right)<C^{-1}\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2\left(N-m\right)}\right)^{-\nicefrac{1}{2}}\varepsilon
+\]
+
+\end_inset
+
+ לכל 
+\begin_inset Formula $\phi\in V$
+\end_inset
+
+.
+ אז ממה שראינו נקבל
+\begin_inset Formula 
+\begin{align*}
+\left|u\left(\phi\right)\right| & \leq\sum_{k\in\kaliInteger^{n}}\left|g\left(-k\right)\right|\left|\widehat{\phi}\left(k\right)\right|<C\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\right|^{2}\right)^{2\left(N-m\right)}\right)^{\nicefrac{1}{2}}p_{2m}\left(\phi\right)\\
+ & <\varepsilon
+\end{align*}
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $u$
+\end_inset
+
+ רציפה, כלומר 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לבסוף, לכל 
+\begin_inset Formula $l\in\kaliInteger^{n}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\widehat{u}\left(l\right)=u\left(e_{-l}\right)=\sum_{k\in\kaliInteger^{n}}g\left(-k\right)\widehat{e_{-l}}\left(k\right)=g\left(l\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\widehat{u}=g$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $u\mapsto\widehat{u}$
+\end_inset
+
+ האי העתקה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל מ-
+\begin_inset Formula $\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+ לאוסף הפונקציות על 
+\begin_inset Formula $\kaliInteger^{n}$
+\end_inset
+
+ עם גידול פולינומי.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $E_{1}\subseteq E_{2}\subseteq E_{3}\subseteq\cdots$
+\end_inset
+
+ תתי-קבוצות סופיות של 
+\begin_inset Formula $\kaliInteger^{n}$
+\end_inset
+
+ עבורן 
+\begin_inset Formula $\kaliInteger^{n}=\bigcup_{m}E_{m}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $u\in\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כפי שראינו קודם, מתקיים 
+\begin_inset Formula $u\left(\phi\right)=\sum_{k\in\kaliInteger^{n}}\widehat{u}\left(-k\right)\widehat{\phi}\left(k\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ כאשר ההתכנסות היא בהחלט.
+\begin_inset Newline newline
+\end_inset
+
+אז בפרט מתקיים 
+\begin_inset Formula $\sum_{k\in E_{m}}\widehat{u}\left(-k\right)\widehat{\phi}\left(k\right)\xrightarrow[m\rightarrow\infty]{}u\left(\phi\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מצד שני לכל 
+\begin_inset Formula $m$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\sum_{k\in E_{m}}\widehat{u}\left(-k\right)\widehat{\phi}\left(k\right) & =\sum_{k\in E_{m}}\widehat{u}\left(-k\right)\intop_{T^{n}}e_{-k}\phi d\sigma_{n}\\
+ & =\intop_{T^{n}}\left(\sum_{k\in E_{m}}\widehat{u}\left(k\right)e_{k}\right)\phi d\sigma_{n}
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\intop_{T^{n}}\left(\sum_{k\in E_{m}}\widehat{u}\left(k\right)e_{k}\right)\phi d\sigma_{n}\xrightarrow[m\rightarrow\infty]{}u\left(\phi\right)
+\]
+
+\end_inset
+
+כלומר אכן 
+\begin_inset Formula $\sum_{k\in E_{m}}\widehat{u}\left(k\right)e_{k}\xrightarrow[m\rightarrow\infty]{}u$
+\end_inset
+
+ בטופולוגיה החלשה
+\begin_inset Formula $^{*}$
+\end_inset
+
+ של 
+\begin_inset Formula $\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
 \end_body
 \end_document
