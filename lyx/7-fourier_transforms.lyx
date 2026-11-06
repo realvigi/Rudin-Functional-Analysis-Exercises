@@ -9596,5 +9596,1520 @@ p_{2m}\left(\phi\right)<C^{-1}\left(\sum_{k\in\kaliInteger^{n}}\left(1+\left|k\r
  כנדרש.
 \end_layout
 
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $g\in L^{1}\left(R^{n}\right)$
+\end_inset
+
+ עם תומך קומפקטי, אז הסכום 
+\begin_inset Formula $\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}g$
+\end_inset
+
+ הוא סופי מקומית, במובן שלכל 
+\begin_inset Formula $K$
+\end_inset
+
+ קומפקטית, הפונקציה היא סכום סופי של הזזות של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ ברור שזו גם פונקציה עם מחזור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2\pi$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בכל קואורדינאטה, ולכן נוכל להגדיר 
+\begin_inset Formula $\kaliPowerSet g$
+\end_inset
+
+ פונקציה על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula 
+\[
+\kaliPowerSet g\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)=\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}g\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $L$
+\end_inset
+
+ פונקציונל על 
+\begin_inset Formula $C_{c}\left(R^{n}\right)$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $Lg=\intop_{T^{n}}\kaliPowerSet gd\sigma_{n}$
+\end_inset
+
+ )נבחין שאם 
+\begin_inset Formula $g\in C_{c}\left(R^{n}\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula $\kaliPowerSet g$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ ולכן אינטגרבילית(.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $g\geq0$
+\end_inset
+
+, אז מההגדרה גם 
+\begin_inset Formula $\kaliPowerSet g\geq0$
+\end_inset
+
+, ומכך ש-
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ מידה חיובית, נקבל 
+\begin_inset Formula $Lg\geq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $L$
+\end_inset
+
+ הוא פונקציונל לינארי חיובי על 
+\begin_inset Formula $C_{c}\left(R^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז קיימת מידת בורל רגולרית 
+\begin_inset Formula $\mu$
+\end_inset
+
+ על 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ עבורה
+\begin_inset Formula 
+\[
+\intop_{T^{n}}\kaliPowerSet gd\sigma_{n}=Lg=\intop_{R^{n}}gd\mu
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $g\in C_{c}\left(R^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+עבור 
+\begin_inset Formula $g\in C\left(T^{n}\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula 
+\[
+Lg=\intop_{\left[0,2\pi\right]^{n}}g\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx
+\]
+
+\end_inset
+
+אז ברור ש-
+\begin_inset Formula $L$
+\end_inset
+
+ פונקציונל לינארי על 
+\begin_inset Formula $C_{c}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יתרה מזאת, אם 
+\begin_inset Formula $g\geq0$
+\end_inset
+
+, אז 
+\begin_inset Formula $Lg\geq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז ממשפט ההצגה של ריס, יש 
+\begin_inset Formula $\mu$
+\end_inset
+
+ מידת בורל חיובית רגולרית של 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+ עבורה
+\begin_inset Formula 
+\[
+\intop_{\left[0,2\pi\right]^{n}}g\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx=Lg=\intop_{T^{n}}gd\mu
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $g\in C\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אבל אז לכל 
+\begin_inset Formula $\xi=\left(e^{iy_{1}},\ldots,e^{iy_{n}}\right)\in T^{n}$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\intop_{T^{n}}g\left(\xi^{-1}\zeta\right)d\mu\left(\zeta\right) & =\intop_{\left[0,2\pi\right]^{n}}g\left(e^{i\left(x_{1}-y_{1}\right)},\ldots,e^{i\left(x_{n}-y_{n}\right)}\right)dx\\
+ & =\intop_{\left[0,2\pi\right]^{n}}g\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx\\
+ & =\intop_{T^{n}}g\left(\zeta\right)d\mu\left(\zeta\right)
+\end{align*}
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\mu$
+\end_inset
+
+ אינווריאנטית להזזות בחבורה 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+\mu\left(T^{n}\right)=\intop_{T^{n}}1d\mu=\intop_{\left[0,2\pi\right]^{n}}1dx=\left(2\pi\right)^{n}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left(2\pi\right)^{-n}\mu$
+\end_inset
+
+ היא מידת הסתברות בורל רגולרית אינווריאנטית להזזות.
+\begin_inset Newline newline
+\end_inset
+
+כלומר 
+\begin_inset Formula $\sigma_{n}=\left(2\pi\right)^{-n}\mu$
+\end_inset
+
+, כלומר
+\begin_inset Formula 
+\[
+\intop_{T}gd\sigma_{n}=\left(2\pi\right)^{-n}\intop_{T}gd\mu=\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}g\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $g\in C\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $C\left(T^{n}\right)$
+\end_inset
+
+ צפופה ב-
+\begin_inset Formula $L^{1}\left(T^{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula 
+\[
+\left|\intop_{T}gd\sigma_{n}-\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi gdx\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\intop_{T}gd\sigma_{n}-\intop_{T}g_{0}d\sigma_{n}+\intop_{T}g_{0}d\sigma_{n}-\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi g_{0}dx+\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi g_{0}dx-\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi gdx\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\intop_{T}gd\sigma_{n}-\intop_{T}g_{0}d\sigma_{n}\right|+\left|\intop_{T}g_{0}d\sigma_{n}-\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi g_{0}dx\right|+\left|\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi g_{0}dx-\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\Psi gdx\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\intop_{T}\left|g-g_{0}\right|d\sigma_{n}+\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\left|\Psi\left(g_{0}-g\right)\right|dx
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מההנחה, יש פונקציות 
+\begin_inset Formula $g_{ik}$
+\end_inset
+
+, 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+-מקומיות ב-
+\begin_inset Formula $\Omega$
+\end_inset
+
+, עבורן
+\begin_inset Formula 
+\[
+\intop_{\Omega}g_{ik}\phi dm_{n}=\left(-1\right)^{k}\intop_{\Omega}fD_{i}^{k}\phi dm_{n}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(\Omega\right)$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $1\leq i\leq n,0\leq k\leq r$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\omega$
+\end_inset
+
+ קבוצה פתוחה שהסגור שלה 
+\begin_inset Formula $K$
+\end_inset
+
+ הוא תת-קבוצה קומפקטית של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נרחיב את 
+\begin_inset Formula $f$
+\end_inset
+
+ לכל 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י הגדרת 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in R^{n}\setminus\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+תהא 
+\begin_inset Formula $\psi\in\mathcal{D}\left(\Omega\right)$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\psi=1$
+\end_inset
+
+ על 
+\begin_inset Formula $K$
+\end_inset
+
+, ונגדיר 
+\begin_inset Formula $F$
+\end_inset
+
+ על 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\begin_inset Formula 
+\[
+F\left(x\right)=\sum_{k\in\kaliInteger^{n}}\psi\left(x+2\pi k\right)f\left(x+2\pi k\right)
+\]
+
+\end_inset
+
+מכך ש-
+\begin_inset Formula $\psi$
+\end_inset
+
+ בעלת תומך קומפקטי, הסכום שמגדיר את 
+\begin_inset Formula $F$
+\end_inset
+
+ היא סופי על כל תת-קבוצה קומפקטית של 
+\begin_inset Formula $R^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מקומפקטיות 
+\begin_inset Formula $\left[0,2\pi\right]^{n}$
+\end_inset
+
+ יש 
+\begin_inset Formula $N\geq0$
+\end_inset
+
+ עבורו על 
+\begin_inset Formula $S$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+F\left(x\right)=\sum_{k\leq\left(N,\ldots,N\right)}\psi\left(x+2\pi k\right)f\left(x+2\pi k\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $x\in\left[0,2\pi\right]^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז מא
+\begin_inset Quotes erd
+\end_inset
+
+ש ינסן, לכל 
+\begin_inset Formula $x\in\left[0,2\pi\right]^{n}$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\left|F\left(x\right)\right|^{2} & \leq N^{2n}\left(\frac{1}{N^{n}}\sum_{k\leq\left(N,\ldots,N\right)}\left|\psi\left(x+2\pi k\right)\right|\left|f\left(x+2\pi k\right)\right|\right)^{2}\\
+ & \leq N^{2n}\frac{1}{N^{n}}\sum_{k\leq\left(N,\ldots,N\right)}\left|\psi\left(x+2\pi k\right)\right|^{2}\left|f\left(x+2\pi k\right)\right|^{2}\\
+ & \leq N^{n}\sum_{k\leq\left(N,\ldots,N\right)}\left|\psi\left(x+2\pi k\right)\right|^{2}\left|f\left(x+2\pi k\right)\right|^{2}
+\end{align*}
+
+\end_inset
+
+ברור ש-
+\begin_inset Formula $F$
+\end_inset
+
+ היא עם מחזור 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ בכל קואורדינאטה בנפרד, ולכן נוכל לזהות אותה עם פונקציה על 
+\begin_inset Formula $T^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז נקבל
+\begin_inset Formula 
+\begin{align*}
+\intop_{T^{n}}\left|F\right|^{2}d\sigma_{n} & =\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\left|F\left(x\right)\right|^{2}dx\\
+ & \leq\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}N^{n}\sum_{k\leq\left(N,\ldots,N\right)}\left|\psi\left(x+2\pi k\right)\right|^{2}\left|f\left(x+2\pi k\right)\right|^{2}dx\\
+ & =\left(2\pi\right)^{-n}N^{n}\sum_{k\leq\left(N,\ldots,N\right)}\intop_{\left[0,2\pi\right]^{n}+2\pi k}\left|\psi\left(x\right)\right|^{2}\left|f\left(x\right)\right|^{2}dx\\
+ & \leq\left(2\pi\right)^{-n}N^{n}\sum_{k\in\kaliInteger^{n}}\intop_{\left[0,2\pi\right]^{n}+2\pi k}\left|\psi\left(x\right)f\left(x\right)\right|^{2}dx\\
+ & \leq\left(2\pi\right)^{-n}N^{n}\intop_{R^{n}}\left|\psi\left(x\right)f\left(x\right)\right|^{2}dx<\infty
+\end{align*}
+
+\end_inset
+
+כאשר הנעבר האחרון הוא כי 
+\begin_inset Formula $\psi$
+\end_inset
+
+ היא חסומה ועם תומך קומפקטי שמוכל ב-
+\begin_inset Formula $\Omega$
+\end_inset
+
+ ו-
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+-מקומית ב-
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+זה מראה ש-
+\begin_inset Formula $F\in L^{2}\left(\sigma_{n}\right)$
+\end_inset
+
+.
+ מכך ש-
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ סופית, נקבל גם 
+\begin_inset Formula $F\in L^{1}\left(\sigma_{n}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בפרט 
+\begin_inset Formula $F\in\mathcal{D}^{\prime}\left(T^{n}\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $\phi\in\mathcal{D}\left(T^{n}\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+D_{i}^{r}F\left(\phi\right) & =\left(-1\right)^{r}\intop_{T^{n}}FD_{i}^{r}\phi d\sigma_{n}\\
+ & =\left(-1\right)^{r}\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\sum_{k\in\kaliInteger^{n}}\psi\left(x+2\pi k\right)f\left(x+2\pi k\right)D_{i}^{r}\phi\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx\\
+ & =\left(-1\right)^{r}\left(2\pi\right)^{-n}\intop_{\left[0,2\pi\right]^{n}}\sum_{k\in\kaliInteger^{n}}\left(\tau_{2\pi k}\left(\psi f\right)\right)\left(x\right)D_{i}^{r}\phi\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx\\
+\\
+\\
+\\
+ & =\left(-1\right)^{r}\left(2\pi\right)^{-n}\sum_{k\in\kaliInteger^{n}}\intop_{\left[0,2\pi\right]^{n}+2\pi k}\psi\left(x\right)f\left(x\right)D_{i}^{r}\phi\left(e^{i\left(x_{1}-k_{1}\right)},\ldots,e^{i\left(x_{n}-k_{n}\right)}\right)dx\\
+ & =\left(-1\right)^{r}\left(2\pi\right)^{-n}\sum_{k\in\kaliInteger^{n}}\intop_{\left[0,2\pi\right]^{n}+2\pi k}\psi\left(x\right)f\left(x\right)D_{i}^{r}\phi\left(e^{ix_{1}},\ldots,e^{ix_{n}}\right)dx\\
+ & =\left(-1\right)^{r}\left(2\pi\right)^{-n}\intop_{R^{n}}\psi\left(x\right)f\left(x\right)D_{i}^{r}\phi\left(e^{ix}\right)dx\\
+ & =\left(2\pi\right)^{-n}D_{i}^{r}\left(\psi f\right)\left(\Psi\phi\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)g_{is}\right)\right)\left(\phi\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)g_{is}\left(\phi\right)\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)\left(D_{i}^{s}f\right)\left(\phi\right)\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\left(D_{i}^{r}\left(\psi f\right)\right)\left(\phi\right)\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D_{i}^{r}F\left(x\right)=D_{i}^{r}\sum_{k\in\kaliInteger^{n}}\psi\left(x\right)f\left(x+2\pi k\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D_{i}^{r}F=\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)\left(D_{i}^{s}f\right)=\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)g_{is}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\psi f\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+D_{i}^{r}F & =\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}D_{i}^{r}\left(\psi f\right)\\
+ & =\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)\left(D_{i}^{s}f\right)\right)\\
+ & =\sum_{k\in\kaliInteger^{n}}\tau_{2\pi k}\left(\sum_{s=0}^{r}{r \choose s}\left(D_{i}^{r-s}\psi\right)g_{is}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $0<a\leq b<\infty$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $b\leq1$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\[
+\left|\intop_{a}^{b}\frac{\sin\left(s\right)}{s}ds\right|\leq\intop_{0}^{1}\left|\frac{\sin\left(s\right)}{s}\right|ds\leq\intop_{0}^{1}1ds=1
+\]
+
+\end_inset
+
+אם 
+\begin_inset Formula $1\leq a$
+\end_inset
+
+, אז
+\begin_inset Formula 
+\begin{align*}
+\left|\intop_{a}^{b}\frac{\sin\left(s\right)}{s}ds\right| & =\left|\frac{1}{a}\cos a-\frac{1}{b}\cos b-\intop_{a}^{b}\frac{\cos\left(s\right)}{s^{2}}ds\right|\\
+ & \leq\frac{1}{a}+\frac{1}{b}+\intop_{a}^{b}\frac{1}{s^{2}}ds\leq2+\intop_{1}^{\infty}\frac{1}{s^{2}}ds\\
+ & =3
+\end{align*}
+
+\end_inset
+
+ואם 
+\begin_inset Formula $a\leq1\leq b$
+\end_inset
+
+ אז משני המקרים הקודמים נקבל
+\begin_inset Formula 
+\[
+\left|\intop_{a}^{b}\frac{\sin\left(s\right)}{s}ds\right|\leq\left|\intop_{a}^{1}\frac{\sin\left(s\right)}{s}ds\right|+\left|\intop_{1}^{b}\frac{\sin\left(s\right)}{s}ds\right|\leq1+3=4
+\]
+
+\end_inset
+
+כלומר בכל מקרה מתקיים
+\begin_inset Formula 
+\[
+\left|\intop_{a}^{b}\frac{\sin\left(s\right)}{s}ds\right|\leq4
+\]
+
+\end_inset
+
+עכשיו, לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $y\in R\setminus\left\{ 0\right\} $
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\widehat{g_{j}}\left(y\right) & =\intop_{R}g_{j}\left(t\right)e^{-ity}dm_{1}\left(t\right)\\
+ & =c\left(\intop_{-j}^{-\nicefrac{1}{j}}\frac{e^{-ity}}{t}dm_{1}\left(t\right)+\intop_{\nicefrac{1}{j}}^{j}\frac{e^{-ity}}{t}dm_{1}\left(t\right)\right)\\
+ & =\frac{1}{\pi}\left(\intop_{-j}^{-\nicefrac{1}{j}}\frac{e^{-ity}}{t}dt+\intop_{\nicefrac{1}{j}}^{j}\frac{e^{-ity}}{t}dt\right)\\
+ & =\frac{1}{\pi}\left(\intop_{\nicefrac{1}{j}}^{j}\frac{e^{ity}}{-t}dt+\intop_{\nicefrac{1}{j}}^{j}\frac{e^{-ity}}{t}dt\right)\\
+ & =\frac{1}{\pi}\left(\intop_{\nicefrac{1}{j}}^{j}\frac{e^{-ity}-e^{ity}}{t}dt\right)\\
+ & =\frac{-2i}{\pi}\intop_{\nicefrac{1}{j}}^{j}\frac{\sin\left(ty\right)}{t}dt
+\end{align*}
+
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{g_{j}}\left(0\right)=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן לכל 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\widehat{g_{j}}\left(y\right) & =\frac{-2i}{\pi}\intop_{\nicefrac{1}{j}}^{j}\frac{\sin\left(ty\right)}{t}dt=\frac{-2i}{\pi\left|y\right|}\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}\frac{\sin\left(\left|y\right|^{-1}ys\right)}{\left|y\right|^{-1}s}ds\\
+ & =\frac{-2iy}{\pi\left|y\right|}\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds=\frac{-2iy}{\pi\left|y\right|}\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds
+\end{align*}
+
+\end_inset
+
+ולכן ממה שראינו, עבור 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ מתקיים לכל 
+\begin_inset Formula $j$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\widehat{g_{j}}\left(y\right)\right|=\frac{2}{\pi}\left|\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds\right|\leq\frac{8}{\pi}
+\]
+
+\end_inset
+
+כלומר אכן 
+\begin_inset Formula $\left\{ \widehat{g_{j}}\right\} $
+\end_inset
+
+ היא סדרה חסומה במידה שווה, כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+ממה שראינו, 
+\begin_inset Formula $\left\{ \widehat{g_{j}}\left(0\right)\right\} $
+\end_inset
+
+ היא סדרה קבועה ובפרט מתכנסת.
+\begin_inset Newline newline
+\end_inset
+
+הפונקציה 
+\begin_inset Formula $s\mapsto s^{-1}\sin\left(s\right)$
+\end_inset
+
+ היא עם המשכה רציפה ב-
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ ולכן היא ב-
+\begin_inset Formula $L^{1}\left(\left[0,1\right]\right)$
+\end_inset
+
+, ולכן לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\intop_{\nicefrac{\left|y\right|}{j}}^{1}\frac{\sin\left(s\right)}{s}ds\xrightarrow[j\rightarrow\infty]{}\intop_{0}^{1}\frac{\sin\left(s\right)}{s}ds<\infty
+\]
+
+\end_inset
+
+כמו כן מתקיים
+\begin_inset Formula 
+\[
+\intop_{1}^{\infty}\left|\frac{\cos\left(s\right)}{s^{2}}\right|ds\leq\intop_{1}^{\infty}\frac{1}{s^{2}}ds=1
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\intop_{1}^{\infty}s^{-2}\cos\left(s\right)ds$
+\end_inset
+
+ מוגדר ולכל 
+\begin_inset Formula $y$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\intop_{1}^{\left|y\right|j}\frac{\cos\left(s\right)}{s^{2}}ds\xrightarrow[j\rightarrow\infty]{}\intop_{1}^{\infty}s^{-2}\cos\left(s\right)ds
+\]
+
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\begin{align*}
+\intop_{1}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds & =\cos1-\frac{1}{\left|y\right|j}\cos\left|y\right|j-\intop_{1}^{\left|y\right|j}\frac{\cos\left(s\right)}{s^{2}}ds\\
+ & \xrightarrow[j\rightarrow\infty]{}\cos1-\intop_{1}^{\infty}\frac{\cos\left(s\right)}{s^{2}}ds
+\end{align*}
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\begin{align*}
+\widehat{g_{j}}\left(y\right) & =\frac{-2iy}{\pi\left|y\right|}\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds=\frac{-2iy}{\pi\left|y\right|}\left(\intop_{\nicefrac{\left|y\right|}{j}}^{1}\frac{\sin\left(s\right)}{s}ds+\intop_{1}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds\right)\\
+ & \xrightarrow[j\rightarrow\infty]{}=\frac{-2iy}{\pi\left|y\right|}\left(\intop_{0}^{1}\frac{\sin\left(s\right)}{s}ds+\cos1-\intop_{1}^{\infty}\frac{\cos\left(s\right)}{s^{2}}ds\right)
+\end{align*}
+
+\end_inset
+
+ובפרט הראינו ש-
+\begin_inset Formula $\left\{ \widehat{g_{j}}\left(y\right)\right\} $
+\end_inset
+
+ סדרה מתכנסת לכל 
+\begin_inset Formula $y\in R$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $f\in L^{2}\left(R\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $g_{j}\in L^{1}\left(R\right)$
+\end_inset
+
+ ולכן א
+\begin_inset Quotes erd
+\end_inset
+
+ש מינקובסקי האינטגרלי נותן
+\begin_inset Formula 
+\begin{align*}
+\left(\intop_{R}\left|\left(f\ast g_{j}\right)\left(x\right)\right|^{2}dx\right)^{\nicefrac{1}{2}} & \leq\left(\intop_{R}\left(\intop_{R}\left|f\left(x-y\right)g_{j}\left(y\right)\right|dy\right)^{2}dx\right)^{\nicefrac{1}{2}}\\
+ & \leq\intop_{R}\left(\intop_{R}\left|f\left(x-y\right)g_{j}\left(y\right)\right|^{2}dx\right)^{\nicefrac{1}{2}}dy\\
+ & =\intop_{R}\left|g_{j}\left(y\right)\right|\left(\intop_{R}\left|f\left(x-y\right)\right|^{2}dx\right)^{\nicefrac{1}{2}}dy\\
+ & =\intop_{R}\left|g_{j}\left(y\right)\right|\left(\intop_{R}\left|f\left(x\right)\right|^{2}dx\right)^{\nicefrac{1}{2}}dy\\
+ & =\left\Vert g_{j}\right\Vert _{1}\left\Vert f\right\Vert _{2}<\infty
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $f\ast g_{j}\in L^{2}\left(R\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\widehat{f\ast g_{j}}=\widehat{f}\widehat{g_{j}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{f\ast g_{j}}=\widehat{f}\widehat{g_{j}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $h$
+\end_inset
+
+ הגבול הנקודתי של 
+\begin_inset Formula $\left\{ \widehat{g_{j}}\right\} $
+\end_inset
+
+ ויהא 
+\begin_inset Formula $M>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left|\widehat{g_{j}}\right|\leq M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ אז גם 
+\begin_inset Formula $\left|h\right|\leq M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\widehat{f}\widehat{g_{j}}-\widehat{f}h\rightarrow0$
+\end_inset
+
+ נקודתית, וכמו כן
+\begin_inset Formula 
+\[
+\left|\widehat{f}\widehat{g_{j}}-\widehat{f}h\right|^{2}\leq\left|\widehat{f}\right|^{2}\left|\widehat{g_{j}}-h\right|^{2}\leq\left|\widehat{f}\right|^{2}\left(2M\right)^{2}=2M^{2}\left|\widehat{f}\right|^{2}
+\]
+
+\end_inset
+
+ממשפט פלנצ'רל, 
+\begin_inset Formula $\left|f\right|^{2}\in L^{1}\left(R\right)$
+\end_inset
+
+ ולכן ממשפט ההתכנסות הנשלטת נקבל
+\begin_inset Formula 
+\[
+\intop_{R}\left|\widehat{f}\widehat{g_{j}}-\widehat{f}h\right|^{2}dm\xrightarrow[j\rightarrow\infty]{}0
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $\widehat{f}\widehat{g_{j}}\rightarrow\widehat{f}h$
+\end_inset
+
+ ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\widehat{f\ast g_{j}}\rightarrow\widehat{f}h$
+\end_inset
+
+ ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז 
+\begin_inset Formula $\widehat{f\ast g_{j}}$
+\end_inset
+
+ סדרה מתכנסת ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+, ולכן ממשפט פלנצ'רל, גם 
+\begin_inset Formula $f\ast g_{j}$
+\end_inset
+
+ היא סדרה מתכנסת ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+ראשית נחשב את 
+\begin_inset Formula $\lim_{j}g_{j}$
+\end_inset
+
+ יותר במדויק.
+\begin_inset Newline newline
+\end_inset
+
+נקבע 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ כלשהו.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $\phi\left(z\right)=z^{-1}e^{iz}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הולומורפית ב-
+\begin_inset Formula $\kaliComplex\setminus\left\{ 0\right\} $
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $r>0$
+\end_inset
+
+, תהא 
+\begin_inset Formula $\gamma_{r}$
+\end_inset
+
+ המסילה 
+\begin_inset Formula $\gamma_{r}\left(t\right)=re^{it}$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $t\in\left[0,\pi\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ גדול מספיק אז 
+\begin_inset Formula 
+\[
+\gamma_{\left|y\right|j}+\left[-\left|y\right|j,-\frac{\left|y\right|}{j}\right]-\gamma_{j^{-1}\left|y\right|}+\left[\frac{\left|y\right|}{j},\left|y\right|j\right]
+\]
+
+\end_inset
+
+ היא מסילה סגורה.
+ אז ממשפט קושי נקבל
+\begin_inset Formula 
+\[
+\intop_{\gamma_{\left|y\right|j}+\left[-\left|y\right|j,-\frac{\left|y\right|}{j}\right]-\gamma_{j^{-1}\left|y\right|}+\left[\frac{\left|y\right|}{j},\left|y\right|j\right]}\phi\left(z\right)dz=0
+\]
+
+\end_inset
+
+מצד שני מתקיים
+\begin_inset Formula 
+\[
+\intop_{\gamma_{r}}\phi\left(z\right)dz=\intop_{0}^{\pi}i\exp\left(ire^{it}\right)dt
+\]
+
+\end_inset
+
+ו-
+\begin_inset Formula $\left|i\exp\left(ire^{it}\right)\right|=\exp\left(-r\sin t\right)\leq1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $r,t\geq0$
+\end_inset
+
+, וכמו כן
+\begin_inset Formula 
+\begin{align*}
+\exp\left(ire^{it}\right) & \xrightarrow[r\rightarrow\infty]{}0\\
+\exp\left(ire^{it}\right) & \xrightarrow[r\rightarrow0]{}1
+\end{align*}
+
+\end_inset
+
+ולכן ממשפט ההתכנסות הנשלטת נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\intop_{\gamma_{r}}\phi\left(z\right)dz & \xrightarrow[r\rightarrow\infty]{}0\\
+\intop_{\gamma_{r^{-1}}}\phi\left(z\right)dz & \xrightarrow[r\rightarrow\infty]{}i\pi
+\end{align*}
+
+\end_inset
+
+ולכן נקבל
+\begin_inset Formula 
+\[
+\intop_{\left[-\left|y\right|j,-\frac{\left|y\right|}{j}\right]+\left[\frac{\left|y\right|}{j},\left|y\right|j\right]}\phi\left(z\right)dz=\intop_{\gamma_{j^{-1}\left|y\right|}}\phi\left(z\right)dz-\intop_{\gamma_{\left|y\right|j}}\phi\left(z\right)dz\xrightarrow[j\rightarrow\infty]{}i\pi
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\intop_{-\left|y\right|j}^{-\nicefrac{\left|y\right|}{j}}t^{-1}e^{it}dt+\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}t^{-1}e^{it}dt\xrightarrow[j\rightarrow\infty]{}i\pi
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\text{Im}\left(\intop_{-\left|y\right|j}^{-\nicefrac{\left|y\right|}{j}}t^{-1}e^{it}dt+\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}t^{-1}e^{it}dt\right)\xrightarrow[j\rightarrow\infty]{}\text{Im}\left(i\pi\right)
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\intop_{-\left|y\right|j}^{-\nicefrac{\left|y\right|}{j}}t^{-1}\sin tdt+\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}t^{-1}\sin tdt\xrightarrow[j\rightarrow\infty]{}\pi
+\]
+
+\end_inset
+
+מתקיים
+\begin_inset Formula 
+\[
+\intop_{-\left|y\right|j}^{-\nicefrac{\left|y\right|}{j}}t^{-1}\sin tdt=\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}-t^{-1}\sin\left(-t\right)dt=\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}t^{-1}\sin tdt
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+2\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}t^{-1}\sin tdt\xrightarrow[j\rightarrow\infty]{}\pi
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}t^{-1}\sin tdt\xrightarrow[j\rightarrow\infty]{}\frac{\pi}{2}
+\]
+
+\end_inset
+
+ולכן נקבל
+\begin_inset Formula 
+\[
+\widehat{g_{j}}\left(y\right)=\frac{-2iy}{\pi\left|y\right|}\intop_{\nicefrac{\left|y\right|}{j}}^{\left|y\right|j}\frac{\sin\left(s\right)}{s}ds\xrightarrow[j\rightarrow\infty]{}\frac{-2iy}{\pi\left|y\right|}\cdot\frac{\pi}{2}=-i\frac{y}{\left|y\right|}
+\]
+
+\end_inset
+
+עכשיו נוכל לחשב את 
+\begin_inset Formula $\left\Vert Hf\right\Vert _{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+מתקיים 
+\begin_inset Formula $f\ast g_{j}\rightarrow Hf$
+\end_inset
+
+ ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+, ולכן
+\begin_inset Formula 
+\[
+\left\Vert \widehat{f}\widehat{g_{j}}\right\Vert _{2}=\left\Vert \widehat{f\ast g_{j}}\right\Vert _{2}=\left\Vert f\ast g_{j}\right\Vert _{2}\xrightarrow[j\rightarrow\infty]{}\left\Vert Hf\right\Vert _{2}
+\]
+
+\end_inset
+
+ומצד שני ממה שראינו לכל 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\widehat{g_{j}}\left(y\right)\right|\rightarrow1$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left|\widehat{f}\left(y\right)\right|^{2}\left|\widehat{g_{j}}\left(y\right)\right|^{2}\rightarrow\left|\widehat{f}\left(y\right)\right|$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כמו כן ראינו כבר קודם שיש 
+\begin_inset Formula $C>0$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $\left|\widehat{f}\right|^{2}\left|\widehat{g_{j}}\right|^{2}\leq C\left|\widehat{f}\right|^{2}$
+\end_inset
+
+.
+ אז ממשפט ההתכנסות הנשלטת נקבל
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \widehat{f}\widehat{g_{j}}\right\Vert _{2}=\left(\intop_{R}\left|\widehat{f}\right|^{2}\left|\widehat{g_{j}}\right|^{2}dm\right)^{\nicefrac{1}{2}}\xrightarrow[j\rightarrow\infty]{}\left(\intop_{R}\left|\widehat{f}\right|^{2}dm\right)^{\nicefrac{1}{2}}=\left\Vert f\right\Vert _{2}
+\]
+
+\end_inset
+
+ולכן 
+\begin_inset Formula $\left\Vert Hf\right\Vert _{2}=\left\Vert f\right\Vert _{2}$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $f\in L^{2}\left(R\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{f}\widehat{g_{j}}\rightarrow\widehat{Hf}$
+\end_inset
+
+ ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+, ולכן יש תת-סדרה 
+\begin_inset Formula $j_{k}$
+\end_inset
+
+ עבורה 
+\begin_inset Formula $\widehat{f}\widehat{g_{j_{k}}}\rightarrow\widehat{Hf}$
+\end_inset
+
+ נקודתית כמעט בכל מקום.
+\begin_inset Newline newline
+\end_inset
+
+אז ממה שראינו, לכל 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\widehat{g_{j_{k}}}\left(y\right)\xrightarrow[k\rightarrow\infty]{}-i\frac{y}{\left|y\right|}
+\]
+
+\end_inset
+
+ולכן לכל 
+\begin_inset Formula $f\in L{}^{2}\left(R\right)$
+\end_inset
+
+ וכמעט לכל 
+\begin_inset Formula $y$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+\widehat{Hf}\left(y\right)=-i\frac{y}{\left|y\right|}\widehat{f}\left(y\right)
+\]
+
+\end_inset
+
+ולכן כמעט לכל 
+\begin_inset Formula $y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\widehat{H^{2}f}\left(y\right)=-i\frac{y}{\left|y\right|}\widehat{Hf}\left(y\right)=\left(-i\frac{y}{\left|y\right|}\right)^{2}\widehat{f}\left(y\right)=-\widehat{f}\left(y\right)=\widehat{-f}\left(y\right)
+\]
+
+\end_inset
+
+אבל אז 
+\begin_inset Formula $\widehat{H^{2}f}=\widehat{-f}$
+\end_inset
+
+ ב-
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $H^{2}f=-f$
+\end_inset
+
+ כנדרש.
+\begin_inset Newline newline
+\end_inset
+
+אז אכן 
+\begin_inset Formula $H$
+\end_inset
+
+ היא איזומטריה של 
+\begin_inset Formula $L^{2}\left(R\right)$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+תהא 
+\begin_inset Formula $f\in\mathcal{S}_{1}$
+\end_inset
+
+ כלשהי עבורה 
+\begin_inset Formula $\widehat{f}=1$
+\end_inset
+
+ על הקטע 
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אז לפונקציה 
+\begin_inset Formula $y\mapsto-i\left|y\right|^{-1}y\widehat{f}\left(y\right)$
+\end_inset
+
+ יש אי-רציפות מהותית ב-
+\begin_inset Formula $0$
+\end_inset
+
+, כלומר ובוודאי שזו לא שיכולה להיות שווה כמעט בכל מקום לפונקציה חלקה.
+\begin_inset Newline newline
+\end_inset
+
+אבל 
+\begin_inset Formula $\widehat{Hf}\left(y\right)=-i\left|y\right|^{-1}y\widehat{f}\left(y\right)$
+\end_inset
+
+ כמעט בכל מקום, ולכן 
+\begin_inset Formula $\widehat{Hf}$
+\end_inset
+
+ לא חלקה ולכן 
+\begin_inset Formula $\widehat{Hf}\notin\mathcal{S}_{1}$
+\end_inset
+
+, ולכן גם 
+\begin_inset Formula $Hf\notin\mathcal{S}_{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כלומר 
+\begin_inset Formula $H$
+\end_inset
+
+ לא משמרת את 
+\begin_inset Formula $\mathcal{S}_{1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
